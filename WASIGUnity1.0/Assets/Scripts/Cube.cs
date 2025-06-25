@@ -22,4 +22,9 @@ public class Cube : Interactable
     {
         material.color = Color.cyan;
     }
+
+    public void Test()
+    {
+        Debug.Log("Pose detected");
+    }
 }
