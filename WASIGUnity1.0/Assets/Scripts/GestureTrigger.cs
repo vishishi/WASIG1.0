@@ -11,6 +11,7 @@ public class GestureTrigger : MonoBehaviour
 
     public bool heartRight = false;
     public bool heartLeft = false;
+    public bool bothTrue = true;
 
     private bool hasFaded = false;
     private float fadeSpeed = 200f;
@@ -20,6 +21,8 @@ public class GestureTrigger : MonoBehaviour
     {
         image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
         Debug.Log("alpha to 0");
+        heartParticles.Play();
+        heartParticles.Pause();
     }
 
     void Update()
