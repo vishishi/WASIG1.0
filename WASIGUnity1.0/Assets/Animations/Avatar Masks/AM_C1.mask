@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AM_C1
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Railing
+    m_Weight: 1
+  - m_Path: Plane.038
+    m_Weight: 1
+  - m_Path: Plane.037
+    m_Weight: 1
+  - m_Path: Plane.036
+    m_Weight: 1
+  - m_Path: Plane.035
+    m_Weight: 1
+  - m_Path: Plane.034
+    m_Weight: 1
+  - m_Path: Plane.025
+    m_Weight: 1
+  - m_Path: Plane
+    m_Weight: 1
+  - m_Path: Entryway.003
+    m_Weight: 1
+  - m_Path: Entryway.002
+    m_Weight: 1
+  - m_Path: Entryway.001
+    m_Weight: 1
+  - m_Path: Entryway
+    m_Weight: 1
+  - m_Path: Cube.010
+    m_Weight: 1
+  - m_Path: Cube.003
+    m_Weight: 1
+  - m_Path: Cube.002
+    m_Weight: 1
+  - m_Path: Circle.029
+    m_Weight: 1
+  - m_Path: Circle.028
+    m_Weight: 1
+  - m_Path: Circle.027
+    m_Weight: 1
+  - m_Path: Circle.026
+    m_Weight: 1
+  - m_Path: Circle.025
+    m_Weight: 1
+  - m_Path: Circle.024
+    m_Weight: 1
+  - m_Path: Circle.021
+    m_Weight: 1
+  - m_Path: Circle.019
+    m_Weight: 1
+  - m_Path: Circle.018
+    m_Weight: 1
+  - m_Path: Circle.017
+    m_Weight: 1
+  - m_Path: Circle.015
+    m_Weight: 1
+  - m_Path: Circle
+    m_Weight: 1
+  - m_Path: Ceiling Circle Light.002
+    m_Weight: 1
+  - m_Path: Animated LIght Emission.012
+    m_Weight: 1
+  - m_Path: Animated LIght Emission.011
+    m_Weight: 1
+  - m_Path: Animated LIght Emission.008
+    m_Weight: 1
+  - m_Path: Animated LIght Emission.007
+    m_Weight: 1
+  - m_Path: Animated LIght Emission.006
+    m_Weight: 1
+  - m_Path: Animated LIght Emission.004
+    m_Weight: 1
+  - m_Path: Animated LIght Emission.001
+    m_Weight: 1
+  - m_Path: Animated Light
+    m_Weight: 1
+  - m_Path: Stars
+    m_Weight: 1

@@ -3,7 +3,62 @@ guid: 25585872312dff549b0d742eaaf6ccb8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome
+    second: {fileID: 2100000, guid: 99f422961dfafd24d82655155fd6723b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Edge Branding
+    second: {fileID: 2100000, guid: 9b298863fcae3f14ebc6ef4d84421a29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground Contour
+    second: {fileID: 2100000, guid: 64ed3fd512419b7488d7446cf4efce2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holographic Blue
+    second: {fileID: 2100000, guid: 61bde55fdccec7642b524c97718e26ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holographic Blue Dark
+    second: {fileID: 2100000, guid: 5123916c600bd7a4eab9c4043069aec4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Purple
+    second: {fileID: 2100000, guid: dbb10608deb5084458452419d33aff69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Red
+    second: {fileID: 2100000, guid: c5ce2498050f92e458bbe636edeef343, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pole Lights
+    second: {fileID: 2100000, guid: 0da4ffe971c088241b2e5b989885713f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Profile Light.004
+    second: {fileID: 2100000, guid: bce9f2f0b3fdea34694f3c003d52106b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red Light_
+    second: {fileID: 2100000, guid: c5ce2498050f92e458bbe636edeef343, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stars Seamless
+    second: {fileID: 2100000, guid: 00dea1357130d1d4abe3c44e19112f87, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -13,7 +68,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
@@ -22,8 +77,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
-    importConstraints: 0
+    importAnimatedCustomProperties: 1
+    importConstraints: 1
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -99,7 +154,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
