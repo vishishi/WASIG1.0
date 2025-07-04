@@ -23,15 +23,25 @@ TagManager:
   - QDSUITextInputField
   - SamplesInfoPanel
   - QDSUIToggleCheckboxRadio
+  - PassThroughButton
+  - PassThrough
+  - Locomotion
+  - LocoButton
+  - LocoText
+  - Gesture 1
+  - Gesture 2
+  - Gesture 3
+  - Hover
+  - loading
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Interactable
+  - 
   - Water
   - UI
   - Overlay UI
-  - 
+  - Interactable
   - 
   - 
   - 

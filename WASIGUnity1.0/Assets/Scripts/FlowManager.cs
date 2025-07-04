@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class FlowManager : MonoBehaviour
 {
     public Image[] beats;
-    public Image bigHeart;
+    public ParticleSystem hearts;
     public Collider[] colliders;
     public StartGame game;
     public GameObject heartHands;
@@ -46,7 +46,7 @@ public class FlowManager : MonoBehaviour
         StartCoroutine(RadialFill(beats[5], 1f));
         yield return new WaitUntil(() => beats[5].fillAmount == 0f);
         heartHands.SetActive(true);
-        yield return new WaitUntil(() => bigHeart.fillAmount == 1f);
+        yield return new WaitUntil(() => hearts.isPlaying == true);
         heartHands.SetActive(false);
 
 
