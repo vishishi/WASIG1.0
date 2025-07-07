@@ -22,6 +22,9 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-774196505-0
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1863693649-0
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-379104294-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1326501455-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-898908462-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1058438778-0
         values:
         - colorIndex: 0
           iconNameOrGuid: Canvas Icon
@@ -31,3 +34,9 @@ MonoBehaviour:
           iconNameOrGuid: cs Script Icon
         - colorIndex: 9
           iconNameOrGuid: Favorite
+        - colorIndex: 9
+          iconNameOrGuid: 
+        - colorIndex: 9
+          iconNameOrGuid: 
+        - colorIndex: 5
+          iconNameOrGuid: 

@@ -1,4 +1,4 @@
-﻿using Meta.XR.Editor.Tags;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,6 +31,15 @@ public class GestureChoice : Interactable
         }
     }
 
+    private void Update()
+    {
+     //  if (IsOnlyThisGestureSelected(gameObject.tag))
+       // {
+         //   gameObject.SetActive(false);
+        //}
+    
+    }
+
     public override void Interact()
     {
         Choose();
@@ -53,6 +62,20 @@ public class GestureChoice : Interactable
                 ChoiceManager.Instance.gesture3Selected = true;
                 Debug.Log("Gesture 3 chosen");
                 break;
+        }
+
+        string[] allGestureTags = { "Gesture 1", "Gesture 2", "Gesture 3" };
+
+        foreach (string tag in allGestureTags)
+        {
+            if (tag != gameObject.tag)
+            {
+                GameObject[] others = GameObject.FindGameObjectsWithTag(tag);
+                foreach (GameObject obj in others)
+                {
+                    obj.SetActive(false);
+                }
+            }
         }
 
         // Fade hover image alpha to 0.5
@@ -93,29 +116,25 @@ public class GestureChoice : Interactable
         yield return new WaitUntil(() => fill.fillAmount == 0);
         SceneManager.LoadScene("Main");
 
-        // 🔽 Clean version of gesture exclusivity check
-        if (IsOnlyThisGestureSelected(gameObject.tag))
-        {
-            gameObject.SetActive(false);
-        }
-    }
 
+    }
     // 🔧 Helper function for clean tag logic
     private bool IsOnlyThisGestureSelected(string tag)
     {
         return tag switch
         {
-            "Gesture 1" => ChoiceManager.Instance.gesture1Selected &&
+            "Gesture 2" => ChoiceManager.Instance.gesture1Selected &&
                            !ChoiceManager.Instance.gesture2Selected &&
                            !ChoiceManager.Instance.gesture3Selected,
 
-            "Gesture 2" => ChoiceManager.Instance.gesture2Selected &&
+            "Gesture 3" => ChoiceManager.Instance.gesture2Selected &&
                            !ChoiceManager.Instance.gesture1Selected &&
                            !ChoiceManager.Instance.gesture3Selected,
 
-            "Gesture 3" => ChoiceManager.Instance.gesture3Selected &&
+            "Gesture 1" => ChoiceManager.Instance.gesture3Selected &&
                            !ChoiceManager.Instance.gesture1Selected &&
                            !ChoiceManager.Instance.gesture2Selected,
+
 
             _ => false
         };

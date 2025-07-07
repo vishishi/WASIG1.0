@@ -96,10 +96,7 @@ public class GestureTrigger : MonoBehaviour
         Color startColor = image.color;
         Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 1f);
 
-        if(ChoiceManager.Instance.gesture2Selected)
-        {
-            Debug.Log("Singleton works!");
-        }
+   
 
         while (elapsed < duration)
         {
