@@ -33,8 +33,8 @@ public class Interactor : MonoBehaviour
         {
          
             
-            lineRenderer.SetPosition(0, origin);
-            lineRenderer.SetPosition(1, hit.point);
+           // lineRenderer.SetPosition(0, origin);
+          //  lineRenderer.SetPosition(1, hit.point);
             interactable = hit.collider.GetComponent<Interactable>();
             if (interactable != null)
             {
@@ -44,8 +44,8 @@ public class Interactor : MonoBehaviour
         else
         {
             
-            lineRenderer.SetPosition(0, origin);
-            lineRenderer.SetPosition(1, origin + direction * rayLength);
+           // lineRenderer.SetPosition(0, origin);
+          //  lineRenderer.SetPosition(1, origin + direction * rayLength);
         }
     }
 }

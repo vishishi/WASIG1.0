@@ -5,21 +5,27 @@ using UnityEngine.UI;
 
 public class StartGame : Interactable
 {
-    public AudioSource LOT;
+   // public AudioSource LOT;
     public Image hoverImage;
     public Image circleFill;
     private Color hoverColor;
     [HideInInspector]
     public bool hasStarted = false;
-    
+    public BeatMapSpawner spawner;
 
-    // Start is called before the first frame update
+
+    private void Awake()
+    {
+        spawner.enabled = false;
+    }
     void Start()
     {
         myCollider = GetComponent<Collider>();
         hasStarted = false;
         myImage = GetComponent<Image>();
         hoverColor = new Color(hoverImage.color.r, hoverImage.color.g, hoverImage.color.b, 0.2f);
+       
+
 
     }
 
@@ -51,8 +57,8 @@ public class StartGame : Interactable
         yield return new WaitUntil(() => fill.fillAmount > 0.99f);
         hoverImage.enabled = false;
         fill.fillAmount = 0f;
-        hasStarted = true;
-        LOT.Play();
+        spawner.enabled = true;
+        //LOT.Play();
         myCollider.enabled = false;
         myImage.enabled = false;
 
