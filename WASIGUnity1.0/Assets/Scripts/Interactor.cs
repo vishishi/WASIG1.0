@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
-using Meta.XR.ImmersiveDebugger;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Interactor : MonoBehaviour
 {
    LayerMask interactableLayer;
    Interactable interactable;
+   Beat beat;
    public float rayLength = 100f;
    private LineRenderer lineRenderer;
+   public ScoreCounter scoreCounter;
+   private Scene scene;
    
     void Start()
     {
         interactableLayer = LayerMask.GetMask("Interactable");
+        scene = SceneManager.GetActiveScene();
+
+        
+        
+        
+        
+        
+        
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
         lineRenderer.startWidth = 0.01f;
@@ -20,32 +31,39 @@ public class Interactor : MonoBehaviour
         lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
         lineRenderer.startColor = Color.green;
         lineRenderer.endColor = Color.green;
+
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
         Vector3 origin = transform.position;
         Vector3 direction = transform.forward;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out var hit, Mathf.Infinity, interactableLayer))
+
+        RaycastHit hit;
+        if (Physics.Raycast(origin, direction, out hit, Mathf.Infinity, interactableLayer))
         {
-         
-            
-           // lineRenderer.SetPosition(0, origin);
-          //  lineRenderer.SetPosition(1, hit.point);
+            // Only runs if the raycast hit something in the correct layer
             interactable = hit.collider.GetComponent<Interactable>();
+
             if (interactable != null)
             {
                 interactable.Interact();
             }
+
+            // Check tag of the hit object
+            if (scene.name == "Main" && scoreCounter != null & hit.collider.CompareTag("Beat"))
+            {
+                scoreCounter.score++;
+                Debug.Log("Current score:" + scoreCounter.score);
+
+            }
         }
         else
         {
-            
-           // lineRenderer.SetPosition(0, origin);
-          //  lineRenderer.SetPosition(1, origin + direction * rayLength);
+            interactable = null;
         }
     }
+
 }
