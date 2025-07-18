@@ -10,7 +10,8 @@ public class GestureChoice : Interactable
     private Image hoverImage;
     private Image loadingImage;
 
-    public float fillDuration = 2f; // Adjust in Inspector if needed
+    [HideInInspector]
+    public float fillDuration = 2f; 
 
     void Start()
     {
@@ -118,27 +119,7 @@ public class GestureChoice : Interactable
 
 
     }
-    // 🔧 Helper function for clean tag logic
-    private bool IsOnlyThisGestureSelected(string tag)
-    {
-        return tag switch
-        {
-            "Gesture 2" => ChoiceManager.Instance.gesture1Selected &&
-                           !ChoiceManager.Instance.gesture2Selected &&
-                           !ChoiceManager.Instance.gesture3Selected,
 
-            "Gesture 3" => ChoiceManager.Instance.gesture2Selected &&
-                           !ChoiceManager.Instance.gesture1Selected &&
-                           !ChoiceManager.Instance.gesture3Selected,
-
-            "Gesture 1" => ChoiceManager.Instance.gesture3Selected &&
-                           !ChoiceManager.Instance.gesture1Selected &&
-                           !ChoiceManager.Instance.gesture2Selected,
-
-
-            _ => false
-        };
-    }
 }
 
 

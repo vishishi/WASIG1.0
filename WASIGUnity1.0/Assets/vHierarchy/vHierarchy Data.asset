@@ -25,6 +25,9 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1326501455-0
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-898908462-0
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1058438778-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1678834927-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1550187049-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-919132149155446097-572869911
         values:
         - colorIndex: 0
           iconNameOrGuid: Canvas Icon
@@ -40,3 +43,9 @@ MonoBehaviour:
           iconNameOrGuid: 
         - colorIndex: 5
           iconNameOrGuid: 
+        - colorIndex: 2
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioReverbZone Icon
