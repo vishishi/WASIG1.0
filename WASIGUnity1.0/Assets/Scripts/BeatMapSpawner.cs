@@ -11,9 +11,12 @@ public class BeatMapSpawner : MonoBehaviour
     [Header("Gameplay")]
     public GameObject[] beatPrefabs;
     public List<Transform> gridCells;
+    public GameObject reticle;
+    public Transform barrier;
 
     private List<BeatEvent> beatEvents;
     private int nextBeatIndex = 0;
+    private bool previousBeatHit = false;
 
     void Start()
     {
@@ -53,14 +56,21 @@ public class BeatMapSpawner : MonoBehaviour
 
         Transform cell = gridCells[cellIndex];
         GameObject prefab = beatPrefabs[prefabIndex];
+      
+
 
         GameObject instance = Instantiate(prefab, cell.position, Quaternion.Euler(-90f, 0f, 0f));
         Debug.Log($"[Beat {beat.time:F2}s] Spawned {prefab.name} at cell {cellIndex}");
+
+        Instantiate (reticle, new Vector3 (cell.position.x, cell.position.y, barrier.position.z-2f), Quaternion.identity);
+
+       
 
         // Add forward movement
         BeatMover mover = instance.AddComponent<BeatMover>();
         mover.moveSpeed = 4f; // Set speed as you prefer
     }
+
 
 
     [System.Serializable]
