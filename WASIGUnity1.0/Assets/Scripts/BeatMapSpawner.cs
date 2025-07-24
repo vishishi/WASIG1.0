@@ -11,12 +11,12 @@ public class BeatMapSpawner : MonoBehaviour
     [Header("Gameplay")]
     public GameObject[] beatPrefabs;
     public List<Transform> gridCells;
-    public GameObject reticle;
+    public GameObject [] reticlePrefabs;
     public Transform barrier;
 
     private List<BeatEvent> beatEvents;
     private int nextBeatIndex = 0;
-    private bool previousBeatHit = false;
+    
 
     void Start()
     {
@@ -56,10 +56,43 @@ public class BeatMapSpawner : MonoBehaviour
 
         Transform cell = gridCells[cellIndex];
         GameObject prefab = beatPrefabs[prefabIndex];
-      
+        GameObject reticle;
+
+        Quaternion rotation;
 
 
-        GameObject instance = Instantiate(prefab, cell.position, Quaternion.Euler(-90f, 0f, 0f));
+
+
+        if (prefabIndex == 2)
+        {
+            rotation = Quaternion.Euler(0f, 90f, 0f);
+            reticle = reticlePrefabs[2];
+        }
+
+        else if (prefabIndex == 1)
+        {
+            rotation = Quaternion.Euler(-90f, 0f, 0f);
+            reticle = reticlePrefabs[1];
+        }
+
+        else if (prefabIndex == 0)
+        {
+            rotation = Quaternion.Euler(-90f, 0f, 0f);
+            reticle = reticlePrefabs[0];
+        }
+
+        else
+        {
+            rotation = Quaternion.identity;
+            reticle = reticlePrefabs[0];
+        }
+
+
+
+
+
+            GameObject instance = Instantiate(prefab, cell.position, rotation);
+
         Debug.Log($"[Beat {beat.time:F2}s] Spawned {prefab.name} at cell {cellIndex}");
 
         Instantiate (reticle, new Vector3 (cell.position.x, cell.position.y, barrier.position.z-2f), Quaternion.identity);

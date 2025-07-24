@@ -54,12 +54,13 @@ public class StartGame : Interactable
             yield return null;
         }
 
-        yield return new WaitUntil(() => fill.fillAmount > 0.99f);
+        yield return new WaitUntil(() => fill.fillAmount > 0.98f);
+        myCollider.enabled = false;
         hoverImage.enabled = false;
         fill.fillAmount = 0f;
         spawner.enabled = true;
         //LOT.Play();
-        myCollider.enabled = false;
+       
         myImage.enabled = false;
 
     }

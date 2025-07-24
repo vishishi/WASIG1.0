@@ -2,14 +2,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
+using static BeatMapSpawner;
 
 public class BeatMapGenerator : EditorWindow
 {
-    private float bpm = 154f;
-    private float duration = 60f; // seconds
-    private float spawnChance = 0.5f; // 0–1
+    private float bpm =136;
+    private float duration = 0; // seconds
+    private float spawnChance = 0f; // 0–1
     private int gridCellCount = 9;
-    private int prefabCount = 2;
+    private int prefabCount = 3;
     private string fileName = "beatmap.json";
 
     [MenuItem("Tools/Generate Beat Map")]
@@ -40,13 +41,24 @@ public class BeatMapGenerator : EditorWindow
         int totalBeats = Mathf.FloorToInt(duration / beatInterval);
 
         List<BeatEvent> events = new List<BeatEvent>();
+        int? lastCellIndex = null;
+        int? secondLastCellIndex = null;
 
         for (int i = 0; i < totalBeats; i++)
         {
             if (Random.value <= spawnChance)
             {
                 float time = i * beatInterval;
-                int cellIndex = Random.Range(0, gridCellCount);
+
+                int cellIndex;
+                int attempts = 0;
+                do
+                {
+                    cellIndex = Random.Range(0, gridCellCount);
+                    attempts++;
+                }
+                while ((cellIndex == lastCellIndex || cellIndex == secondLastCellIndex) && gridCellCount > 2 && attempts < 10);
+
                 int prefabIndex = Random.Range(0, prefabCount);
 
                 events.Add(new BeatEvent
@@ -55,6 +67,10 @@ public class BeatMapGenerator : EditorWindow
                     cellIndex = cellIndex,
                     prefabIndex = prefabIndex
                 });
+
+                // Update the history
+                secondLastCellIndex = lastCellIndex;
+                lastCellIndex = cellIndex;
             }
         }
 
@@ -69,17 +85,4 @@ public class BeatMapGenerator : EditorWindow
         }
     }
 
-    [System.Serializable]
-    public class BeatEvent
-    {
-        public float time;
-        public int cellIndex;
-        public int prefabIndex;
-    }
-
-    [System.Serializable]
-    public class BeatEventList
-    {
-        public List<BeatEvent> events;
-    }
 }

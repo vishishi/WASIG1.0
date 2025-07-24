@@ -49,7 +49,7 @@ public class Interactor : MonoBehaviour
 
             if (interactable != null)
             {
-                interactable.Interact();
+                interactable.Interact(gameObject);
             }
 
             // Check tag of the hit object
@@ -59,11 +59,11 @@ public class Interactor : MonoBehaviour
                 Debug.Log("Current score:" + scoreCounter.score);
 
             }
+
+
+
         }
-        else
-        {
-            interactable = null;
-        }
+ 
     }
 
 }

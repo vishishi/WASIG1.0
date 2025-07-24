@@ -23,6 +23,11 @@ abstract public class Interactable : MonoBehaviour
 
     public abstract void Interact();
 
+    public virtual void Interact(GameObject rayOrigin)
+    {
+        Interact();
+    }
+
     public void Disable()
     {
         myImage.fillAmount = 0;
