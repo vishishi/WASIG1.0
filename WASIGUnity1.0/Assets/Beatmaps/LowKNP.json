@@ -8,12 +8,12 @@
         {
             "time": 2.6666667461395265,
             "cellIndex": 4,
-            "prefabIndex": 2
+            "prefabIndex": 0
         },
         {
             "time": 3.1111111640930177,
             "cellIndex": 1,
-            "prefabIndex": 2
+            "prefabIndex": 1
         },
         {
             "time": 3.555555582046509,
@@ -23,7 +23,7 @@
         {
             "time": 5.333333492279053,
             "cellIndex": 3,
-            "prefabIndex": 2
+            "prefabIndex": 1
         },
         {
             "time": 10.666666984558106,
@@ -98,12 +98,12 @@
         {
             "time": 24.44444465637207,
             "cellIndex": 8,
-            "prefabIndex": 2
+            "prefabIndex": 1
         },
         {
             "time": 24.88888931274414,
             "cellIndex": 4,
-            "prefabIndex": 2
+            "prefabIndex": 0
         },
         {
             "time": 26.66666603088379,
@@ -148,17 +148,17 @@
         {
             "time": 47.55555725097656,
             "cellIndex": 7,
-            "prefabIndex": 2
+            "prefabIndex": 1
         },
         {
             "time": 49.77777862548828,
             "cellIndex": 5,
-            "prefabIndex": 2
+            "prefabIndex":0
         },
         {
             "time": 53.33333206176758,
             "cellIndex": 0,
-            "prefabIndex": 2
+            "prefabIndex": 1
         },
         {
             "time": 54.22222137451172,
@@ -213,12 +213,12 @@
         {
             "time": 62.22222137451172,
             "cellIndex": 5,
-            "prefabIndex": 2
+            "prefabIndex": 1
         },
         {
             "time": 65.33333587646485,
             "cellIndex": 1,
-            "prefabIndex": 2
+            "prefabIndex": 0
         },
         {
             "time": 65.77777862548828,
@@ -253,7 +253,7 @@
         {
             "time": 79.55555725097656,
             "cellIndex": 1,
-            "prefabIndex": 2
+            "prefabIndex": 1
         },
         {
             "time": 80.8888931274414,
@@ -273,7 +273,7 @@
         {
             "time": 89.33333587646485,
             "cellIndex": 4,
-            "prefabIndex": 1
+            "prefabIndex": 2
         }
     ]
 }

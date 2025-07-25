@@ -1,4 +1,5 @@
 using Oculus.Interaction;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -67,28 +68,37 @@ public class Beat : Interactable
             if (hand.handType == HandType.Right) rightHand = hand;
         }
 
-        // Now you can safely reference both hands
+// Method for changing color
         switch (identity.handType, colorID.colorid, hits)
         {
             case (HandType.Left, ColorID.Pink, _):
                 Dissapear();
+
+                StartCoroutine(ToggleBooleans(hand => hand.hasToGlowPink = true, hand => hand.hasToGlowPink = false));
+
+
                 if (leftHand != null)
                     leftHand.hasToBeYellow = false;
+                if (rightHand != null)
+                    rightHand.hasToBeYellow = false;
                 break;
 
             case (HandType.Right, ColorID.Blue, _):
                 Dissapear();
+
+                StartCoroutine(ToggleBooleans(hand => hand.hasToGlowBlue = true, hand =>  hand.hasToGlowBlue = false));
+
+
+                if (leftHand != null)
+                    leftHand.hasToBeYellow = false;
                 if (rightHand != null)
                     rightHand.hasToBeYellow = false;
                 break;
 
             case (_, ColorID.Yellow, 2):
                 Dissapear();
-                // Set both hands to yellow
-                if (leftHand != null)
-                    leftHand.hasToBeYellow = true;
-                if (rightHand != null)
-                    rightHand.hasToBeYellow = true;
+
+                StartCoroutine(ToggleBooleans(hand => hand.hasToBeYellow = true, hand => hand.hasToBeYellow = false));
                 break;
 
             default:
@@ -157,6 +167,30 @@ public class Beat : Interactable
         throw new System.NotImplementedException();
     }
 
+
+    IEnumerator ToggleBooleans(Action<HandIdentity> setTrueAction, Action<HandIdentity> setFalseAction) 
+    {
+        HandIdentity leftHand = null;
+        HandIdentity rightHand = null;
+
+
+
+        var hands = FindObjectsByType<HandIdentity>(FindObjectsSortMode.None);
+        foreach (var hand in hands)
+        {
+            if (hand.handType == HandType.Left) leftHand = hand;
+            if (hand.handType == HandType.Right) rightHand = hand;
+        }
+
+        if (leftHand != null)setTrueAction(leftHand);
+        if (rightHand != null)setTrueAction(rightHand);
+           
+        yield return new WaitForSeconds(0.2f);
+
+        if (leftHand != null) setFalseAction(leftHand);
+        if (rightHand != null) setFalseAction(rightHand);
+            
+    }
 }
 
   

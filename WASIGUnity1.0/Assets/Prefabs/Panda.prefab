@@ -9861,7 +9861,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9908,6 +9908,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCollider: {fileID: 0}
   myImage: {fileID: 0}
+  handIdentity: {fileID: 0}
+  hits: 0
   targetIntensity: -2
   fadeDuration: 1
 --- !u!114 &8899370716593023937

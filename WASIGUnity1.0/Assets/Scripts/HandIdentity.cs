@@ -8,20 +8,26 @@ public class HandIdentity : MonoBehaviour
 {
 
     public bool hasToBeYellow = false;
+    public bool hasToGlowPink = false;
+    public bool hasToGlowBlue = false;
     public HandType handType;
 
   [Header ("Colours")]
   [ColorUsage(true, true)]
-  public Color Yellow;
+  public Color yellow;
   [ColorUsage(true, true)]
   public Color pink;
-    [ColorUsage(true, true)]
-    public Color blue;
-        
+  [ColorUsage(true, true)]
+  public Color blue;
+  [ColorUsage(true, true)]
+  public Color pinker;
+  [ColorUsage(true, true)]
+  public Color bluer;
 
-  public Renderer [] HandRenderer;
+
+    public Renderer [] HandRenderer;
   private Material myMaterial1;
-    private Material myMaterial2;
+  private Material myMaterial2;
 
 
 
@@ -33,27 +39,42 @@ public class HandIdentity : MonoBehaviour
     }
     private void Update()
     {
-        switch (hasToBeYellow, handType)
+        switch (hasToBeYellow,hasToGlowPink,hasToGlowBlue, handType)
         {
-            case (false, HandType.Left):
+//Base pink color
+            case (false, false, _, HandType.Left):
                 {
                     myMaterial1.SetColor("_EmissionColor", pink);
 
                     break;
                 }
+//FB Glow to pink
+            case (false, true, _, HandType.Left):
+                {
+                    myMaterial1.SetColor("_EmissionColor", pinker);
 
-            case (false, HandType.Right):
+                    break;
+                }
+//Base blue color
+            case (false, _, false, HandType.Right):
                 {
                     myMaterial2.SetColor("_EmissionColor", blue);
 
                     break;
                 }
+//FB Glow to blue
+            case (false, _, true, HandType.Right):
+                {
+                    myMaterial2.SetColor("_EmissionColor", bluer);
 
-            case (true, _):
+                    break;
+                }
+//FB Change to yellow
+            case (true, _, _,_):
 
                 {
-                    myMaterial1.SetColor("_EmissionColor", Yellow);
-                    myMaterial2.SetColor("_EmissionColor", Yellow);
+                    myMaterial1.SetColor("_EmissionColor", yellow);
+                    myMaterial2.SetColor("_EmissionColor", yellow);
                     break;
                 }
         }
