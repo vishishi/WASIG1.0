@@ -4,6 +4,8 @@ using UnityEngine;
 
 public enum HandType { Left, Right }
 
+//This script is attached to the game object with the raycast on them (which is called "Raycast" on the scene), it identifies which hand is doing the pointing to handle the correct id
+//of the hand that should point to the correct beat prefab. It uses booleans to change the colors, but the timing of this color change is managed on the "Beat" script.
 public class HandIdentity : MonoBehaviour
 {
 
@@ -15,9 +17,11 @@ public class HandIdentity : MonoBehaviour
   [Header ("Colours")]
   [ColorUsage(true, true)]
   public Color yellow;
+  //Base colors
   [ColorUsage(true, true)]
   public Color pink;
   [ColorUsage(true, true)]
+  //Feedback colors
   public Color blue;
   [ColorUsage(true, true)]
   public Color pinker;

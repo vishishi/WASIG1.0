@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+//This script handles the heart gesture specifically. It works by checking if both hands are making the heart gestures, there are public functions to change the booleans related to the hand gestures
+//They are public so that they can be accesed by the hand gesture scripts for meta
 public class GestureTrigger : MonoBehaviour
 {
     public Image image;
@@ -31,6 +32,7 @@ public class GestureTrigger : MonoBehaviour
 
     void Update()
     {
+        //This is the way to access the emission amount of the heart particle system
         var emission = heartParticles.emission;
         emission.enabled = moduleEnabled;
         if (heartLeft)
@@ -61,7 +63,7 @@ public class GestureTrigger : MonoBehaviour
         }
 
     }
-
+    //This are the booleans that are called when performing the gesture
     public void TriggerRight()
     {
         heartRight = true;
@@ -89,10 +91,11 @@ public class GestureTrigger : MonoBehaviour
         Debug.Log("Started fading image...");
     }
 
+    //Coroutine to make the heart appear and trigger the heart particles
     IEnumerator FadeInImage()
     {
         float elapsed = 0f;
-        float duration = fadeSpeed; // You can rename fadeSpeed to something more descriptive if needed
+        float duration = fadeSpeed;
         Color startColor = image.color;
         Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 1f);
 
@@ -120,6 +123,7 @@ public class GestureTrigger : MonoBehaviour
         bothTrue = false;
     }
 
+    //Coroutine to make the heart fade out and the particles stop
     IEnumerator FadeOutImage(float duration)
     {
         float elapsed = 0f;

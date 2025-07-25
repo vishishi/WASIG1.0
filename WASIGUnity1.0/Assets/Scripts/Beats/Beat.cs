@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
+
+//This is a script attached to the beat prefabs, it handles the logic for the beats dissapearing and the particles bursting, it also tell the hand to change colors
+//if they are hit with the correct hand (Left --> pink, right --> blue, both --> yellow)
 public class Beat : Interactable
 {
     public HandIdentity handIdentity;
@@ -57,7 +60,7 @@ public class Beat : Interactable
 
         hits++;
 
-        // Find both hands in the scene (if not cached)
+   
         HandIdentity leftHand = null;
         HandIdentity rightHand = null;
 
@@ -71,6 +74,7 @@ public class Beat : Interactable
 // Method for changing color
         switch (identity.handType, colorID.colorid, hits)
         {
+// FB Glowing pink
             case (HandType.Left, ColorID.Pink, _):
                 Dissapear();
 
@@ -82,7 +86,7 @@ public class Beat : Interactable
                 if (rightHand != null)
                     rightHand.hasToBeYellow = false;
                 break;
-
+// FB Glowing Blue
             case (HandType.Right, ColorID.Blue, _):
                 Dissapear();
 
@@ -94,7 +98,7 @@ public class Beat : Interactable
                 if (rightHand != null)
                     rightHand.hasToBeYellow = false;
                 break;
-
+//FB Glowing to yellow
             case (_, ColorID.Yellow, 2):
                 Dissapear();
 
@@ -102,7 +106,7 @@ public class Beat : Interactable
                 break;
 
             default:
-                // This is your "else" case
+                
                 if (leftHand != null)
                     leftHand.hasToBeYellow = false;
                 if (rightHand != null)
@@ -138,7 +142,7 @@ public class Beat : Interactable
 
     public void OnTriggerEnter(Collider other)
     {
-
+//destroy the beat prefabs once they hit the barrier
         Destroy(gameObject);
 
 
@@ -147,6 +151,7 @@ public class Beat : Interactable
     }
 
     IEnumerator EnableCollider()
+//The collider is disable for 1.5 seconds to make it hitable in a shorter timeframe
     {
         yield return new WaitForSeconds(1.5f);
         myCollider.enabled = true;
@@ -167,7 +172,7 @@ public class Beat : Interactable
         throw new System.NotImplementedException();
     }
 
-
+//Coroutines that takes parameter for changing the booleans in the Hand Identity script (manages colors)  
     IEnumerator ToggleBooleans(Action<HandIdentity> setTrueAction, Action<HandIdentity> setFalseAction) 
     {
         HandIdentity leftHand = null;

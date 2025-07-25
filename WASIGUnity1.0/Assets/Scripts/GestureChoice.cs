@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GestureChoice : Interactable
+
+//An interactable child script that passes the information of the selected gesture by changing a flag in the singleton "ChoiceManager" script.
 {
     private Image hoverImage;
     private Image loadingImage;
@@ -32,14 +34,6 @@ public class GestureChoice : Interactable
         }
     }
 
-    private void Update()
-    {
-     //  if (IsOnlyThisGestureSelected(gameObject.tag))
-       // {
-         //   gameObject.SetActive(false);
-        //}
-    
-    }
 
     public override void Interact()
     {
@@ -64,7 +58,7 @@ public class GestureChoice : Interactable
                 Debug.Log("Gesture 3 chosen");
                 break;
         }
-
+//When you choose a gesture the other two gesture images are disabled.
         string[] allGestureTags = { "Gesture 1", "Gesture 2", "Gesture 3" };
 
         foreach (string tag in allGestureTags)
@@ -95,6 +89,7 @@ public class GestureChoice : Interactable
         }
     }
 
+    //Fills the loading circle
     IEnumerator FillCircle(Image fill, float duration)
     {
         float elapsed = 0f;

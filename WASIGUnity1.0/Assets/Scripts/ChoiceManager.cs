@@ -1,5 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
+//Simple singleton that record your choise of gesture in Shiki's room and passes that information into the stage level. 
 
 public class ChoiceManager : MonoBehaviour
 {
@@ -46,7 +48,7 @@ public class ChoiceManager : MonoBehaviour
     {
         
     }
-
+//This function is called when you interact with the choice UI
     public void MarkGestureAsSelected(string tag)
     {
         switch (tag)

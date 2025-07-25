@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StartGame : Interactable
+ //Another interactable that starts the game currently by enabling the Beat Spam Spawner script. Currently a placeholder as there shouldn't be an actual start button in the game
 {
    // public AudioSource LOT;
     public Image hoverImage;

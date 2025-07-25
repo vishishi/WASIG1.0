@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Interactor : MonoBehaviour
+
+//It's a simple script with the raycast. When it hits an interactable it triggers the "interact" function in them, the only extra logic is that it adds to the score counter when it hits a beat.
 {
    LayerMask interactableLayer;
    Interactable interactable;
@@ -23,7 +25,7 @@ public class Interactor : MonoBehaviour
         
         
         
-        
+        //Don't mind this, it's for debugging
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
         lineRenderer.startWidth = 0.01f;
