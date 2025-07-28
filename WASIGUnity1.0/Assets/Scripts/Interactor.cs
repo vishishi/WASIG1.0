@@ -54,13 +54,7 @@ public class Interactor : MonoBehaviour
                 interactable.Interact(gameObject);
             }
 
-            // Check tag of the hit object
-            if (scene.name == "Main" && scoreCounter != null & hit.collider.CompareTag("Beat"))
-            {
-                scoreCounter.score++;
-                Debug.Log("Current score:" + scoreCounter.score);
-
-            }
+        
 
 
 

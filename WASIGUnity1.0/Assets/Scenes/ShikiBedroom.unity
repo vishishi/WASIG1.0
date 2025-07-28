@@ -19878,6 +19878,79 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1001 &1896656744
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.857
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.293
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.174
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.06018703
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.6532324
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7178514
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.23314014
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 14.838
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -203.859
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -87.755
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00eafb588012dee44a84c135bb87dbbd, type: 2}
+    - target: {fileID: 919132149155446097, guid: e50213d711718974a83227a91a37efa8,
+        type: 3}
+      propertyPath: m_Name
+      value: PandaPlushie
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e50213d711718974a83227a91a37efa8, type: 3}
 --- !u!1 &1900676437
 GameObject:
   m_ObjectHideFlags: 0
@@ -22372,3 +22445,4 @@ SceneRoots:
   - {fileID: 897451521}
   - {fileID: 259579395}
   - {fileID: 4853167343655517817}
+  - {fileID: 1896656744}

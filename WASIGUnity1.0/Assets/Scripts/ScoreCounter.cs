@@ -6,43 +6,38 @@ public class ScoreCounter : MonoBehaviour
 {
     [HideInInspector]
     public int score;
+    [HideInInspector]
+    public float fillAmount;
+    [HideInInspector]
+    public int maxScore = 5500;
+    [HideInInspector]
+    public int bad;
+    [HideInInspector]
+    public int good;
+    [HideInInspector]
+    public int perfect;
+    [HideInInspector]
+    public int miss;
+    [HideInInspector]
+    public int superCharge;
     public EnergyFiller energyFiller;
 
-    // Update is called once per frame
+
+    private void Awake()
+    {
+        maxScore = 5500;
+    }
+    private void Start()
+    {
+        score = 0;  
+      
+       //s score =Mathf.Clamp(score, 0, maxScore);
+    }
     void Update()
     {
-        if (score == 5)
-        {
-            energyFiller.Increase(0.1f);
-        }
 
-        if (score == 10)
-        {
-            energyFiller.Increase(0.3f);
-        }
+        superCharge = perfect - (bad + miss);
+        fillAmount = (float)score/maxScore;
 
-        if (score == 15)
-        {
-            energyFiller.Increase(0.5f);
-
-        }
-
-        if (score == 20)
-        {
-            energyFiller.Increase(0.7f);
-        }
-
-        if (score == 25)
-        {
-            energyFiller.Increase(0.9f);
-
-        }
-
-        if ( score > 30)
-        {
-            energyFiller.Increase(1);
-        }
     }
-
- 
 }

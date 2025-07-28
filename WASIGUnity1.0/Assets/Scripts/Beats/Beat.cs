@@ -8,8 +8,25 @@ using UnityEngine;
 
 //This is a script attached to the beat prefabs, it handles the logic for the beats dissapearing and the particles bursting, it also tell the hand to change colors
 //if they are hit with the correct hand (Left --> pink, right --> blue, both --> yellow)
-public class Beat : Interactable
+
+[HideInInspector]
+public enum Accuracy
 {
+    Perfect,
+    Good,
+    Bad,
+    Miss
+}
+public class Beat : Interactable
+
+{
+    [System.Serializable]
+    public struct AccuracyColorPair
+    {
+        public Accuracy accuracy;
+        [ColorUsage(true, true)] public Color color;
+    }
+
     public HandIdentity handIdentity;
     private ParticleSystem[] particles;
     private ParticleSystem shape;
@@ -21,11 +38,12 @@ public class Beat : Interactable
 
     private HandIdentity leftHand;
     private HandIdentity rightHand;
+    private ScoreCounter scoreCounter;
 
     [HideInInspector]
     public int hits;
     [HideInInspector]
-  
+    public float hitAcc;
 
     private Color color;
     [HideInInspector]
@@ -33,8 +51,12 @@ public class Beat : Interactable
     [HideInInspector]
     public float fadeDuration = 1.5f;
 
+    private float spawnTime;
+    private float hitTime;
+    
 
-
+    public AccuracyColorPair[] accuracyColors;
+    private Dictionary<Accuracy, Color> accuracyColorMap;
 
     void Start()
     {
@@ -49,10 +71,39 @@ public class Beat : Interactable
         //Coroutine for enable collider and find the two sets of particles
         StartCoroutine(EnableCollider());
         FindParticles();
-
+        spawnTime = Time.time;
+        scoreCounter = FindAnyObjectByType<ScoreCounter>();
  
     }
 
+    public void FindParticles()
+    {
+        //shape is the actual form of the prefab, burst is the hit feedback
+        particles = GetComponentsInChildren<ParticleSystem>();
+        foreach (ParticleSystem particle in particles)
+        {
+
+            if (particle.name == "Shape")
+            {
+
+                shape = particle;
+
+            }
+
+            if (particle.name == "Burst")
+            {
+                burst = particle;
+            }
+
+
+        }
+    }
+    IEnumerator EnableCollider()
+    //The collider is disable for 1.5 seconds to make it hitable in a shorter timeframe
+    {
+        yield return new WaitForSeconds(1.1f);
+        myCollider.enabled = true;
+    }
     public override void Interact(GameObject rayOrigin)
     {
         HandIdentity identity = rayOrigin.GetComponent<HandIdentity>();
@@ -60,7 +111,11 @@ public class Beat : Interactable
 
         hits++;
 
-   
+       
+        
+        
+
+//Variables for hand color change   
         HandIdentity leftHand = null;
         HandIdentity rightHand = null;
 
@@ -113,49 +168,55 @@ public class Beat : Interactable
                     rightHand.hasToBeYellow = false;
                 break;
         }
-    }
+//Method for adding score
 
+        float actualHitTime = Time.time;
+        Accuracy result = CalculateAccuracy(actualHitTime);
 
-
-    public void FindParticles()
-    {
-        //shape is the actual form of the prefab, burst is the hit feedback
-        particles = GetComponentsInChildren<ParticleSystem>();
-        foreach (ParticleSystem particle in particles)
+        switch (result)
         {
-
-            if (particle.name == "Shape")
-            {
-
-                shape = particle;
-
-            }
-
-            if (particle.name == "Burst")
-            {
-                burst = particle;
-            }
-
+            case Accuracy.Perfect:
+                scoreCounter.score += 100;
+                scoreCounter.perfect++;
+                Debug.Log("Perfect!");
+                break;
+            case Accuracy.Good:
+                scoreCounter.score += 75;
+                scoreCounter.good++;
+                Debug.Log("Good!");
+                break;
+             case Accuracy.Bad:
+                scoreCounter.score += 25;
+                scoreCounter.good++;
+                Debug.Log("Bad!");
+                break;
+            case Accuracy.Miss:
+                scoreCounter.miss++;
+                Debug.Log("Miss!");
+                break;
 
         }
+
     }
+
+
 
     public void OnTriggerEnter(Collider other)
     {
-//destroy the beat prefabs once they hit the barrier
-        Destroy(gameObject);
+     float timeToHit = Time.time - spawnTime;  // how long this beat has traveled
+    Debug.Log("Time to hit wall: " + timeToHit.ToString("F2") + " seconds");
 
+        scoreCounter.miss++;
+    Destroy(gameObject);
+      
+
+       
 
         Debug.Log("collided!" + other.gameObject.name);
 
     }
 
-    IEnumerator EnableCollider()
-//The collider is disable for 1.5 seconds to make it hitable in a shorter timeframe
-    {
-        yield return new WaitForSeconds(1.5f);
-        myCollider.enabled = true;
-    }
+
 
     public void Dissapear()
     {
@@ -165,6 +226,20 @@ public class Beat : Interactable
         myCollider.enabled = false;
         shapeColor.enabled = true;
         shapeColor.color = new Color(0, 0, 0, 0);
+    }
+    public Accuracy CalculateAccuracy(float actualHitTime)
+    {
+        float idealHitTime = spawnTime + 1.8f;
+        float offset = Mathf.Abs(actualHitTime - idealHitTime);
+
+        if (offset <= 0.05f)
+            return Accuracy.Perfect;
+        else if (offset <= 0.10f)
+            return Accuracy.Good;
+        else if (offset <= 0.25f)
+            return Accuracy.Bad;
+        else
+            return Accuracy.Miss;
     }
 
     public override void Interact()
