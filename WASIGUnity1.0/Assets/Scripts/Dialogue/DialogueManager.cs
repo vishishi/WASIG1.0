@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] TextMeshPro dialogueText;
     [SerializeField] Button nextButton;
+    [SerializeField] Button dialogueObject;
 
     //make an array of the snippet class
     [SerializeField] DialogueSnippet[] dialogueSnippets;
