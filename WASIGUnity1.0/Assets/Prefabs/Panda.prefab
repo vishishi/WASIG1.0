@@ -9910,8 +9910,10 @@ MonoBehaviour:
   myImage: {fileID: 0}
   handIdentity: {fileID: 0}
   hits: 0
+  hitAcc: 0
   targetIntensity: -2
   fadeDuration: 1
+  accuracyColors: []
 --- !u!114 &8899370716593023937
 MonoBehaviour:
   m_ObjectHideFlags: 0
