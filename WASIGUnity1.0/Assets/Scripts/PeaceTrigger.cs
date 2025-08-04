@@ -8,6 +8,8 @@ public class PeaceTrigger : MonoBehaviour
 {
     public Image image;
     public ParticleSystem heartParticles;
+    public ParticleSystem rightHand;
+    public ParticleSystem leftHand;
     private bool hasFaded = false;
     private bool peaceRight = false;
     private bool peaceLeft = false;  
@@ -40,10 +42,11 @@ public class PeaceTrigger : MonoBehaviour
         {
             timeElapsed += Time.deltaTime;
             StartCoroutine(FadeInImage());
+            
       
         }
 
-        else if (peaceRight)
+        if (peaceRight)
         {
             timeElapsed += Time.deltaTime;
             StartCoroutine(FadeInImage());
@@ -56,12 +59,14 @@ public class PeaceTrigger : MonoBehaviour
     {
         peaceRight = true;
         Debug.Log(" right to true");
+        rightHand.Play();
 
     }
 
     public void TriggerLeft()
     {
         peaceLeft = true;
+        leftHand.Play();
       
     }
 
@@ -70,6 +75,7 @@ public class PeaceTrigger : MonoBehaviour
         peaceLeft = false;
         timeElapsed = 0;
         Debug.Log("time to 0");
+        leftHand.Stop();
 
 
     }
@@ -80,6 +86,7 @@ public class PeaceTrigger : MonoBehaviour
         Debug.Log("right to false");
         timeElapsed = 0;
         Debug.Log("time to 0");
+        rightHand.Stop();
     }
 
     IEnumerator FadeInImage()

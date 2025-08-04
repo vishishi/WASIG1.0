@@ -41,6 +41,10 @@ public class StartGame : Interactable
         Debug.Log("Interact called: starting game");
         StartCoroutine(StartGemu(circleFill, 1f));
         hoverImage.color = hoverColor;
+        hasStarted = true;
+          spawner.enabled = true; //LOT.Play();
+        
+       
     }
 
     IEnumerator StartGemu(Image fill, float duration)
@@ -59,8 +63,7 @@ public class StartGame : Interactable
         myCollider.enabled = false;
         hoverImage.enabled = false;
         fill.fillAmount = 0f;
-        spawner.enabled = true;
-        //LOT.Play();
+      
        
         myImage.enabled = false;
 

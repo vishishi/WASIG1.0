@@ -53,11 +53,13 @@ public class ScoreCounter : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         Debug.Log("right timer:" + trigger.timeElapsed);
-        if (trigger.timeElapsed >= 4)
+        if (trigger.timeElapsed >= 3.8)
         {
             score += 500;
             Debug.Log("Timer worked!");
         }
+
+        yield return null;
     }
 }
 
