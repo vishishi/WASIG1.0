@@ -52,6 +52,7 @@ public class ScoreCounter : MonoBehaviour
 
     {
         yield return new WaitForSeconds(4);
+        Debug.Log("right timer:" + trigger.timeElapsed);
         if (trigger.timeElapsed >= 4)
         {
             score += 500;
