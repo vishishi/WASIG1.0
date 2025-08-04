@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreCounter : MonoBehaviour
 {
     [HideInInspector]
-    public int score;
+    public float score;
     [HideInInspector]
     public float fillAmount;
     [HideInInspector]
@@ -22,6 +22,8 @@ public class ScoreCounter : MonoBehaviour
     public int superCharge;
     public EnergyFiller energyFiller;
 
+    public PeaceTrigger trigger;
+
 
     private void Awake()
     {
@@ -29,15 +31,33 @@ public class ScoreCounter : MonoBehaviour
     }
     private void Start()
     {
-        score = 0;  
-      
-       //s score =Mathf.Clamp(score, 0, maxScore);
+        score = 0;
+
+
     }
     void Update()
     {
 
         superCharge = perfect - (bad + miss);
-        fillAmount = (float)score/maxScore;
+        fillAmount = (float)score / maxScore;
 
     }
+
+    public void AddGestureScore()
+    {
+        StartCoroutine(GestureTimer());
+    }
+
+    IEnumerator GestureTimer()
+
+    {
+        yield return new WaitForSeconds(4);
+        if (trigger.timeElapsed >= 4)
+        {
+            score += 500;
+            Debug.Log("Timer worked!");
+        }
+    }
 }
+
+

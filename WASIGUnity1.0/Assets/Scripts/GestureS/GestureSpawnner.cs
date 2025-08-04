@@ -43,15 +43,20 @@ public class GestureSpawnner : MonoBehaviour
        // yield return new WaitUntil(() => gameStarter.hasStarted);
         Debug.Log("Gesture spawnning started!");
         yield return new WaitForSeconds(spawnTime[0]);
-        Instantiate(gesture, transform1.position, Quaternion.identity);
+        GameObject firstGesture = Instantiate(gesture, transform1.position, Quaternion.identity);
         Debug.Log ("Gesture" + gesture.name + "spawwned at" + gesture.transform.position.ToString());
         yield return new WaitForSeconds(5);
-        gesture.SetActive(false);
+        Destroy(firstGesture );
         yield return new WaitForSeconds(spawnTime[1]);
-        Instantiate(gesture, transform1.position, Quaternion.identity);
+        GameObject secondGesture = Instantiate(gesture, transform1.position, Quaternion.identity);
+        yield return new WaitForSeconds(5);
+        Destroy(secondGesture);
         yield return new WaitForSeconds(spawnTime[2]);
-        Instantiate(gesture, transform);
-        
+        GameObject thirdGesture = Instantiate(gesture, transform1.position, Quaternion.identity);
+        yield return new WaitForSeconds(5);
+        Destroy(thirdGesture);
+
+
     }
 
 

@@ -2357,6 +2357,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1522564532}
+        m_TargetAssemblyTypeName: ScoreCounter, Assembly-CSharp
+        m_MethodName: AddGestureScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_GestureEnded:
     m_PersistentCalls:
       m_Calls:
@@ -9424,6 +9436,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 521354946}
   heartParticles: {fileID: 860488140}
+  timeElapsed: 0
+  scoreCounter: {fileID: 1522564532}
   moduleEnabled: 0
 --- !u!1 &1265694657
 GameObject:
@@ -10928,6 +10942,7 @@ MonoBehaviour:
   miss: 0
   superCharge: 0
   energyFiller: {fileID: 1265694658}
+  trigger: {fileID: 1264575325}
 --- !u!1 &1550174035
 GameObject:
   m_ObjectHideFlags: 0
@@ -11075,8 +11090,8 @@ MonoBehaviour:
   - {fileID: 6998077368723908507, guid: 9e4755bc3acb69a45a6d105cf9f83b6e, type: 3}
   barrier: {fileID: 1506042017}
   pausePoints:
-  - time: 0
-    duration: 0
+  - time: 25
+    duration: 5
   - time: 0
     duration: 0
 --- !u!1 &1570459989

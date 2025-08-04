@@ -1,5 +1,6 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,11 @@ public class PeaceTrigger : MonoBehaviour
     private bool peaceLeft = false;  
     private float fadeSpeed = 4f;
     private float fadeProgress = 0f;
+    private bool reachedScore = false;
+    [HideInInspector]
+    public float timeElapsed = 0; 
+
+    public ScoreCounter scoreCounter;
 
     [HideInInspector]
     public bool moduleEnabled;
@@ -25,40 +31,55 @@ public class PeaceTrigger : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update()                                                                                                                                               
+
     {
+        Debug.Log ("scoretimer:" + timeElapsed);
+        
         if (peaceLeft)
         {
+            timeElapsed += Time.deltaTime;
             StartCoroutine(FadeInImage());
-
+      
         }
 
         else if (peaceRight)
         {
+            timeElapsed += Time.deltaTime;
             StartCoroutine(FadeInImage());
+
         }
 
     }
 
-          public void TriggerRight()
-            {
-                peaceRight = true;
-           }
+    public void TriggerRight()
+    {
+        peaceRight = true;
+        Debug.Log(" right to true");
+
+    }
 
     public void TriggerLeft()
     {
         peaceLeft = true;
+      
     }
 
     public void UntriggerLeft()
     {
         peaceLeft = false;
-        Debug.Log("left is false!");
+        timeElapsed = 0;
+        Debug.Log("time to 0");
+
+
     }
 
     public void UntriggerRight()
     {
         peaceRight = false;
+        Debug.Log("right to false");
+        timeElapsed = 0;
+        Debug.Log("time to 0");
     }
 
     IEnumerator FadeInImage()
@@ -68,22 +89,16 @@ public class PeaceTrigger : MonoBehaviour
         Color startColor = image.color;
         Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 1f);
 
-        if (ChoiceManager.Instance.gesture2Selected)
-        {
-            Debug.Log("Singleton works!");
-        }
-
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
             float fadeProgress = Mathf.Clamp01(elapsed / duration);
             image.color = Color.Lerp(startColor, targetColor, fadeProgress);
-
+            
             // Trigger particles halfway through fade
             if (image.color.a >= 0.5f && !heartParticles.isPlaying)
             {
                 heartParticles.Play();
-                Debug.Log("Particles playing!");
             }
 
             yield return null;
@@ -118,8 +133,10 @@ public class PeaceTrigger : MonoBehaviour
 
         }
         yield return new WaitUntil(() => image.color.a <= 0.05f);
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
 
     }
+
+   
 
 }
