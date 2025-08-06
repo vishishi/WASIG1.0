@@ -28,15 +28,47 @@ public class BeatMapSpawner : MonoBehaviour
 
     private float songTimer = 0f;
     private bool isPaused = false;
+    //
+
+    [Header("Gesture Spawnner Variables")]
+    public GameObject spawnTransform;
+    private Transform transform1;
+    public GameObject[] gesturePrefab;
+
+    [HideInInspector]
+    public int gestureChoice;
+
 
     void Start()
     {
         beatEvents = JsonUtility.FromJson<BeatEventList>(beatMapJSON.text).events;
+        transform1 = spawnTransform.transform;
+
         musicSource.Play();
-        StartCoroutine(SpawnBeatsWithPauses());
+        
+        switch(gestureChoice)
+        {
+            case (1):
+                {
+                    StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[0]));
+                }
+                break;
+            case (2):
+                {
+                    StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[1]));
+                }
+                break;
+            case (3):
+                {
+                    StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[2]));
+                }
+                break;
+        }
+
+        
     }
 
-    IEnumerator SpawnBeatsWithPauses()
+    IEnumerator SpawnBeatsWithPauses(GameObject gesture)
     {
         int beatIndex = 0;
         int pauseIndex = 0;
@@ -54,8 +86,10 @@ public class BeatMapSpawner : MonoBehaviour
                 isPaused = true;
                 float pauseDuration = pausePoints[pauseIndex].duration;
                 Debug.Log($"[Pause] Pausing spawn logic for {pauseDuration}s at songTime={songTimer:F2}s");
-
+                GameObject firstGesture = Instantiate(gesture, transform1.position, Quaternion.identity);
+                Debug.Log("Gesture" + gesture.name + "spawwned at" + gesture.transform.position.ToString());
                 yield return new WaitForSeconds(pauseDuration);
+                Destroy(firstGesture);
 
                 pauseIndex++;
                 isPaused = false;

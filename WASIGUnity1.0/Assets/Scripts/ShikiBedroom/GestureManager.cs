@@ -8,7 +8,7 @@ public class GestureManager : MonoBehaviour
     public GameObject gesture2;
     public GameObject gesture3;
 
-    public GestureSpawnner spawnner;
+    public BeatMapSpawner beatSpawner;
     public ChoiceManager choiceManager;
 
 
@@ -25,14 +25,14 @@ public class GestureManager : MonoBehaviour
             if (ChoiceManager.Instance.gesture1Selected)
             {
                 gesture1.SetActive(true);
-                spawnner.Gesture1();
+                beatSpawner.gestureChoice = 1;
                 Debug.Log("Gesture 1 was selected!");
             }
 
             if (ChoiceManager.Instance.gesture2Selected)
             {
                 gesture2.SetActive(true);
-                spawnner.Gesture2();
+                beatSpawner.gestureChoice = 2;
                 Debug.Log("Gesture 2 was selected!");
 
             }
@@ -40,7 +40,7 @@ public class GestureManager : MonoBehaviour
             if (ChoiceManager.Instance.gesture3Selected)
             {
                 gesture3.SetActive(true);
-                spawnner.Gesture3();
+                beatSpawner.gestureChoice = 3;
                 Debug.Log("Gesture 3 was selected!");
             }
         }
@@ -49,21 +49,21 @@ public class GestureManager : MonoBehaviour
             if (choiceManager.gesture1Selected)
             {
                 gesture1.SetActive(true);
-                spawnner.Gesture1();
+                beatSpawner.gestureChoice = 1;
                 Debug.Log("Gesture 1 was selected!");
             }
 
             if (choiceManager.gesture2Selected)
             {
                 gesture2.SetActive(true);
-                spawnner.Gesture2();
+                beatSpawner.gestureChoice = 2;
 
             }
 
             if(choiceManager.gesture3Selected)
             {
                 gesture3.SetActive(true);
-                spawnner.Gesture3();
+                beatSpawner.gestureChoice = 3;
             }
         }
     }

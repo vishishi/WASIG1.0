@@ -1185,7 +1185,7 @@ MonoBehaviour:
   gesture1: {fileID: 922186569}
   gesture2: {fileID: 1264575323}
   gesture3: {fileID: 412035079}
-  spawnner: {fileID: 2028425160}
+  beatSpawner: {fileID: 1550187052}
   choiceManager: {fileID: -7624613305261039162, guid: ac209508a3d01f741bc5f98c7a476a66,
     type: 3}
 --- !u!1 &349581836
@@ -20774,12 +20774,18 @@ MonoBehaviour:
   - {fileID: 6998077368723908507, guid: 9e4755bc3acb69a45a6d105cf9f83b6e, type: 3}
   barrier: {fileID: 1506042017}
   pausePoints:
-  - time: 10
+  - time: 15
     duration: 7
   - time: 40
     duration: 7
   - time: 50
     duration: 7
+  spawnTransform: {fileID: 1135229216}
+  gesturePrefab:
+  - {fileID: 3452406797305931171, guid: 4329b846599ef404992285338feb1e90, type: 3}
+  - {fileID: 4961869915877618205, guid: 9030780cc0b41604fab53e1b06a688c2, type: 3}
+  - {fileID: 6913391080521926532, guid: 6d3f59c8c7fa8534eb2cc7bc30c10f48, type: 3}
+  gestureChoice: 0
 --- !u!1 &1570459989
 GameObject:
   m_ObjectHideFlags: 0
@@ -21945,7 +21951,6 @@ MonoBehaviour:
   circleFill: {fileID: 1138930226}
   hasStarted: 0
   spawner: {fileID: 1550187052}
-  gestureSpawnner: {fileID: 2028425160}
 --- !u!65 &1797832561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27156,7 +27161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2028425159
 Transform:
   m_ObjectHideFlags: 0

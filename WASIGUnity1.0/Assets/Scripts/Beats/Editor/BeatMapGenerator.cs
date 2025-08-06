@@ -2,11 +2,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
-using static BeatMapSpawner;
 
 public class BeatMapGenerator : EditorWindow
 {
-    private float bpm =136;
+    private float bpm = 136;
     private float duration = 0; // seconds
     private float spawnChance = 0f; // 0–1
     private int gridCellCount = 9;
@@ -84,5 +83,18 @@ public class BeatMapGenerator : EditorWindow
             Debug.Log($"Beat map saved to: {path}");
         }
     }
+}
 
+[System.Serializable]
+public class BeatEvent
+{
+    public float time;
+    public int cellIndex;
+    public int prefabIndex;
+}
+
+[System.Serializable]
+public class BeatEventList
+{
+    public List<BeatEvent> events;
 }
