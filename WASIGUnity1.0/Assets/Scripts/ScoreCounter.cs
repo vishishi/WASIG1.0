@@ -23,6 +23,7 @@ public class ScoreCounter : MonoBehaviour
     public EnergyFiller energyFiller;
 
     public PeaceTrigger trigger;
+    public bool isSuperCharged;
 
 
     private void Awake()
@@ -40,6 +41,11 @@ public class ScoreCounter : MonoBehaviour
 
         superCharge = perfect - (bad + miss);
         fillAmount = (float)score / maxScore;
+
+        if(superCharge > 3)
+        {
+            isSuperCharged = true;           
+        }
 
     }
 
