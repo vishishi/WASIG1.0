@@ -29,6 +29,23 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1550187049-0
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-919132149155446097-572869911
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-337613794-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1813338858-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-174792532-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-363494842-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-157993413-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1402094661-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1335923907-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-988688368-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1544625037-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1132968453-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-859167611-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1369758571-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1723270137-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-892421819-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-60221423-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-891078230-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-842496767-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1067368106-0
         values:
         - colorIndex: 0
           iconNameOrGuid: Canvas Icon
@@ -52,3 +69,37 @@ MonoBehaviour:
           iconNameOrGuid: AudioReverbZone Icon
         - colorIndex: 0
           iconNameOrGuid: LightProbes Icon
+        - colorIndex: 0
+          iconNameOrGuid: ParticleSystem Icon
+        - colorIndex: 3
+          iconNameOrGuid: Light Icon
+        - colorIndex: 7
+          iconNameOrGuid: 
+        - colorIndex: 9
+          iconNameOrGuid: 
+        - colorIndex: 7
+          iconNameOrGuid: 
+        - colorIndex: 9
+          iconNameOrGuid: 
+        - colorIndex: 9
+          iconNameOrGuid: 
+        - colorIndex: 7
+          iconNameOrGuid: 
+        - colorIndex: 7
+          iconNameOrGuid: 
+        - colorIndex: 3
+          iconNameOrGuid: 
+        - colorIndex: 3
+          iconNameOrGuid: 
+        - colorIndex: 3
+          iconNameOrGuid: 
+        - colorIndex: 9
+          iconNameOrGuid: 
+        - colorIndex: 7
+          iconNameOrGuid: 
+        - colorIndex: 9
+          iconNameOrGuid: 
+        - colorIndex: 7
+          iconNameOrGuid: 
+        - colorIndex: 9
+          iconNameOrGuid: 

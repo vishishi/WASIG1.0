@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class Starstick : MonoBehaviour
@@ -71,10 +73,6 @@ public class Starstick : MonoBehaviour
         initialPosition = gameObject.transform.position;
         initialRotation = gameObject.transform.rotation;
         wavingSpeed = Random.Range(wavingSpeedMin, wavingSpeedMax);
-        previousWavingSpeed = wavingSpeed;
-        newWavingSpeed = wavingSpeed;
-
-        targetSpeed = wavingSpeed;
         localPhaseX = localPhaseY = localPhaseZ = 0f;
 
         //initialise color changing variables
@@ -123,6 +121,7 @@ public class Starstick : MonoBehaviour
 
     IEnumerator UpdatePhases()
     {
+     
         while (true)
         {
             // NEW: auto-exit sync when the window expires (checked once per frame across all sticks)
@@ -135,7 +134,7 @@ public class Starstick : MonoBehaviour
 
             if (allSynced)
             {
-                // All sticks share phases, but update them only once per frame globally
+                
                 if (lastPhaseUpdateFrame != Time.frameCount)
                 {
                     float delta = wavingSpeed * Time.deltaTime;
@@ -146,6 +145,15 @@ public class Starstick : MonoBehaviour
                     lastPhaseUpdateFrame = Time.frameCount;
                 }
             }
+
+            else if (score.isSuperCharged)
+            {
+                // This stick advances its own local phases
+                float delta = wavingSpeed * Time.deltaTime *2;
+                localPhaseX = Mathf.Repeat(localPhaseX + delta, Mathf.PI * 2f);
+                localPhaseY = Mathf.Repeat(localPhaseY + delta * 0.7f, Mathf.PI * 2f);
+                localPhaseZ = Mathf.Repeat(localPhaseZ + delta * 1.3f, Mathf.PI * 2f);
+            }
             else
             {
                 // This stick advances its own local phases
@@ -155,7 +163,9 @@ public class Starstick : MonoBehaviour
                 localPhaseZ = Mathf.Repeat(localPhaseZ + delta * 1.3f, Mathf.PI * 2f);
             }
 
-            yield return null; // wait a frame
+          
+
+                yield return null; // wait a frame
         }
     }
 
@@ -166,19 +176,20 @@ public class Starstick : MonoBehaviour
         {
             yield return new WaitUntil(() => score.isSuperCharged);
             myMaterials[1].SetColor("_EmissionColor", overrideColor);
+            Debug.Log("Material color was set at:" + Time.time);
 
             yield return new WaitUntil(() => !score.isSuperCharged);
             myMaterials[1].SetColor("_EmissionColor", copyColor);
+            Debug.Log("Material color was reset at:" + Time.time);
         }
     }
-
-    // NEW: call this from gameplay to sync everyone for a duration (seamless entry)
-    public void TriggerSync(float duration)
+    public void TriggerSync(float duration, float beat)
     {
         // Seed shared phases from THIS instance so there is no pop when entering sync
         globalPhaseX = localPhaseX;
         globalPhaseY = localPhaseY;
         globalPhaseZ = localPhaseZ;
+        wavingSpeed = wavingSpeed * beat; 
 
         allSynced = true;
         syncUntilTime = Time.time + Mathf.Max(0f, duration);
@@ -194,25 +205,6 @@ public class Starstick : MonoBehaviour
         Debug.Log($"[Sync] SetSynced({enabled})");
     }
 }
-
-    //Test coroutine to verify timing & smoothness: wait 5s, sync 2s, repeat x3
-  //  private IEnumerator TestSyncSequence()
-    //{
-      //  for (int i = 0; i < 3; i++)
-        //{
-          //  Debug.Log($"[TestSync] Waiting 5 seconds before sync #{i + 1}...");
-            //yield return new WaitForSeconds(5f);
-            //
-            //Debug.Log($"[TestSync] Starting sync #{i + 1} for 2 seconds (blended)!");
-            //TriggerSync(2f);
-            //
-            //yield return new WaitForSeconds(2f);
-            //Debug.Log($"[TestSync] Sync #{i + 1} duration elapsed. (Blend will fade out)");
-       // }
-
-        //Debug.Log("[TestSync] Sequence complete.");
-    //}
-//}
 
 
 

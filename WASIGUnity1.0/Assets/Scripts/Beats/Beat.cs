@@ -107,15 +107,15 @@ public class Beat : Interactable
     public override void Interact(GameObject rayOrigin)
     {
         HandIdentity identity = rayOrigin.GetComponent<HandIdentity>();
-//Vairables for burst particles to be used in score
+        //Vairables for burst particles to be used in score
         var shapeColor = shape.colorOverLifetime;
         var burstCount = burst.emission.burstCount;
 
         hits++;
-        
-        
 
-//Variables for hand color change   
+
+
+        //Variables for hand color change   
         HandIdentity leftHand = null;
         HandIdentity rightHand = null;
 
@@ -126,10 +126,10 @@ public class Beat : Interactable
             if (hand.handType == HandType.Right) rightHand = hand;
         }
 
-// Method for changing color
+        // Method for changing color
         switch (identity.handType, colorID.colorid, hits)
         {
-// FB Glowing pink
+            // FB Glowing pink
             case (HandType.Left, ColorID.Pink, _):
                 Dissapear();
 
@@ -141,11 +141,11 @@ public class Beat : Interactable
                 if (rightHand != null)
                     rightHand.hasToBeYellow = false;
                 break;
-// FB Glowing Blue
+            // FB Glowing Blue
             case (HandType.Right, ColorID.Blue, _):
                 Dissapear();
 
-                StartCoroutine(ToggleBooleans(hand => hand.hasToGlowBlue = true, hand =>  hand.hasToGlowBlue = false));
+                StartCoroutine(ToggleBooleans(hand => hand.hasToGlowBlue = true, hand => hand.hasToGlowBlue = false));
 
 
                 if (leftHand != null)
@@ -153,7 +153,7 @@ public class Beat : Interactable
                 if (rightHand != null)
                     rightHand.hasToBeYellow = false;
                 break;
-//FB Glowing to yellow
+            //FB Glowing to yellow
             case (_, ColorID.Yellow, 2):
                 Dissapear();
 
@@ -161,45 +161,79 @@ public class Beat : Interactable
                 break;
 
             default:
-                
+
                 if (leftHand != null)
                     leftHand.hasToBeYellow = false;
                 if (rightHand != null)
                     rightHand.hasToBeYellow = false;
                 break;
         }
-//Method for adding score and spawming particle amounts accordingly
+        //Method for adding score and spawming particle amounts accordingly
 
         float actualHitTime = Time.time;
         Accuracy result = CalculateAccuracy(actualHitTime);
 
-        switch (result)
+        if (scoreCounter.isSuperCharged)
         {
-            case Accuracy.Perfect:
-                scoreCounter.score += 100;
-                burstCount = 100;
-                scoreCounter.perfect++;
-                Debug.Log("Perfect!");
-                break;
-            case Accuracy.Good:
-                scoreCounter.score += 75;
-                burstCount = 75;
-                scoreCounter.good++;
-                Debug.Log("Good!");
-                break;
-             case Accuracy.Bad:
-                scoreCounter.score += 25;
-                burstCount = 75;
-                scoreCounter.good++;
-                Debug.Log("Bad!");
-                break;
-            case Accuracy.Miss:
-                scoreCounter.miss++;
-                Debug.Log("Miss!");
-                break;
+            switch (result)
+            {
+                case Accuracy.Perfect:
+                    scoreCounter.score += 125;
+                    burstCount = 100;
+                    scoreCounter.perfect++;
+                    Debug.Log("Perfect!");
+                    break;
+                case Accuracy.Good:
+                    scoreCounter.score += 100;
+                    burstCount = 75;
+                    scoreCounter.good++;
+                    Debug.Log("Good!");
+                    break;
+                case Accuracy.Bad:
+                    scoreCounter.score += 50;
+                    burstCount = 75;
+                    scoreCounter.good++;
+                    Debug.Log("Bad!");
+                    break;
+                case Accuracy.Miss:
+                    scoreCounter.miss++;
+                    Debug.Log("Miss!");
+                    break;
 
+            }
         }
 
+        else
+        {
+            switch (result)
+            {
+                case Accuracy.Perfect:
+                    scoreCounter.score += 100;
+                    burstCount = 100;
+                    scoreCounter.perfect++;
+                    Debug.Log("Perfect!");
+                    break;
+                case Accuracy.Good:
+                    scoreCounter.score += 75;
+                    burstCount = 75;
+                    scoreCounter.good++;
+                    Debug.Log("Good!");
+                    break;
+                case Accuracy.Bad:
+                    scoreCounter.score += 25;
+                    burstCount = 75;
+                    scoreCounter.good++;
+                    Debug.Log("Bad!");
+                    break;
+                case Accuracy.Miss:
+                    scoreCounter.miss++;
+                    Debug.Log("Miss!");
+                    break;
+
+            }
+
+
+        }
     }
 
 

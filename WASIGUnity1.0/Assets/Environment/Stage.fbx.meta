@@ -57,6 +57,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Stage
+    second: {fileID: 2100000, guid: 750331c9ebe3651458bf549d1364a7e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Stars Seamless
     second: {fileID: 2100000, guid: 00dea1357130d1d4abe3c44e19112f87, type: 2}
   materials:
