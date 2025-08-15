@@ -10,6 +10,7 @@ using UnityEngine;
 //if they are hit with the correct hand (Left --> pink, right --> blue, both --> yellow)
 
 [HideInInspector]
+
 public enum Accuracy
 {
     Perfect,
@@ -20,7 +21,10 @@ public enum Accuracy
 public class Beat : Interactable
 
 {
+    private PlayHitFeedback playHitFeedback;
+
     [System.Serializable]
+
     public struct AccuracyColorPair
     {
         public Accuracy accuracy;
@@ -73,6 +77,9 @@ public class Beat : Interactable
         FindParticles();
         spawnTime = Time.time;
         scoreCounter = FindAnyObjectByType<ScoreCounter>();
+
+        //initiliase play hit feedback
+        playHitFeedback = FindObjectOfType<PlayHitFeedback>();
  
     }
 
@@ -210,18 +217,21 @@ public class Beat : Interactable
                 case Accuracy.Perfect:
                     scoreCounter.score += 100;
                     burstCount = 100;
+                    playHitFeedback.PlayPerfectHit();
                     scoreCounter.perfect++;
                     Debug.Log("Perfect!");
                     break;
                 case Accuracy.Good:
                     scoreCounter.score += 75;
                     burstCount = 75;
+                    playHitFeedback.PlayGoodHit();
                     scoreCounter.good++;
                     Debug.Log("Good!");
                     break;
                 case Accuracy.Bad:
                     scoreCounter.score += 25;
                     burstCount = 75;
+                    playHitFeedback.PlayOKHit();
                     scoreCounter.good++;
                     Debug.Log("Bad!");
                     break;
