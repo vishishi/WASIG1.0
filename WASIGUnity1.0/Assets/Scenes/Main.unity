@@ -32865,7 +32865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &786254432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -79872,7 +79872,7 @@ MonoBehaviour:
   spawnTransform: {fileID: 1135229216}
   gesturePrefab:
   - {fileID: 3452406797305931171, guid: 4329b846599ef404992285338feb1e90, type: 3}
-  - {fileID: 4961869915877618205, guid: 9030780cc0b41604fab53e1b06a688c2, type: 3}
+  - {fileID: 4961869915877618205, guid: ce62daaac92c44d48be577b601adfe68, type: 3}
   - {fileID: 6913391080521926532, guid: 6d3f59c8c7fa8534eb2cc7bc30c10f48, type: 3}
   sequencer: {fileID: 755247592}
   gestureChoice: 0

@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638908701386163592
+  lastModified: 638899297220000000
   FileSizes: []
   Exists: 1
 --- !u!114 &-6370227157185312619
@@ -87,7 +87,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638908701386190342
+  lastModified: 638908728940000000
   FileSizes:
   - Name: 
     Value: 998
@@ -107,7 +107,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/RhythmLevelFeedback.bank
   Name: RhythmLevelFeedback
   StudioPath: bank:/RhythmLevelFeedback
-  lastModified: 638908701388889772
+  lastModified: 638908728940000000
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -137,7 +137,7 @@ MonoBehaviour:
   - {fileID: -7091779832778927146}
   StringsBanks:
   - {fileID: -5602807261778410792}
-  cacheTime: 638908701388889772
+  cacheTime: 638908728940000000
   cacheVersion: 131622
 --- !u!114 &3463483860509372784
 MonoBehaviour:
@@ -208,6 +208,6 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638908701386787797
+  lastModified: 638899297220000000
   FileSizes: []
   Exists: 1
