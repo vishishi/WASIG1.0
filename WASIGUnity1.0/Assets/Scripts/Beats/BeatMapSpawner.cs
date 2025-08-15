@@ -35,6 +35,8 @@ public class BeatMapSpawner : MonoBehaviour
     private Transform transform1;
     public GameObject[] gesturePrefab;
 
+    public StageSequencer sequencer;
+
     [HideInInspector]
     public int gestureChoice;
 
@@ -44,7 +46,7 @@ public class BeatMapSpawner : MonoBehaviour
         beatEvents = JsonUtility.FromJson<BeatEventList>(beatMapJSON.text).events;
         transform1 = spawnTransform.transform;
 
-        musicSource.Play();
+       
         
         switch(gestureChoice)
         {
@@ -70,41 +72,47 @@ public class BeatMapSpawner : MonoBehaviour
 
     IEnumerator SpawnBeatsWithPauses(GameObject gesture)
     {
-        int beatIndex = 0;
-        int pauseIndex = 0;
-
-        while (beatIndex < beatEvents.Count)
+        while (true)
         {
-            if (!isPaused)
+            yield return new WaitUntil(() => sequencer.hasStarted);
+            musicSource.Play();
+            int beatIndex = 0;
+            int pauseIndex = 0;
+
+            while (beatIndex < beatEvents.Count)
             {
-                songTimer += Time.deltaTime;
+                if (!isPaused)
+                {
+                    songTimer += Time.deltaTime;
+                }
+
+                // Handle any pause
+                if (pauseIndex < pausePoints.Count && songTimer >= pausePoints[pauseIndex].time && !isPaused)
+                {
+                    isPaused = true;
+                    float pauseDuration = pausePoints[pauseIndex].duration;
+                    Debug.Log($"[Pause] Pausing spawn logic for {pauseDuration}s at songTime={songTimer:F2}s");
+                    GameObject firstGesture = Instantiate(gesture, transform1.position, Quaternion.identity);
+                    Debug.Log("Gesture" + gesture.name + "spawwned at" + gesture.transform.position.ToString());
+                    yield return new WaitForSeconds(pauseDuration);
+                    Destroy(firstGesture);
+
+                    pauseIndex++;
+                    isPaused = false;
+                    continue;
+                }
+
+                // Spawn beat if it’s time
+                if (!isPaused && beatIndex < beatEvents.Count && songTimer >= beatEvents[beatIndex].time)
+                {
+                    Debug.Log($"[Spawn] Spawning Beat #{beatIndex} at {songTimer:F2}s (scheduled: {beatEvents[beatIndex].time:F2}s)");
+                    SpawnBeat(beatEvents[beatIndex]);
+                    beatIndex++;
+                }
+
+                yield return null;
             }
-
-            // Handle any pause
-            if (pauseIndex < pausePoints.Count && songTimer >= pausePoints[pauseIndex].time && !isPaused)
-            {
-                isPaused = true;
-                float pauseDuration = pausePoints[pauseIndex].duration;
-                Debug.Log($"[Pause] Pausing spawn logic for {pauseDuration}s at songTime={songTimer:F2}s");
-                GameObject firstGesture = Instantiate(gesture, transform1.position, Quaternion.identity);
-                Debug.Log("Gesture" + gesture.name + "spawwned at" + gesture.transform.position.ToString());
-                yield return new WaitForSeconds(pauseDuration);
-                Destroy(firstGesture);
-
-                pauseIndex++;
-                isPaused = false;
-                continue;
-            }
-
-            // Spawn beat if it’s time
-            if (!isPaused && beatIndex < beatEvents.Count && songTimer >= beatEvents[beatIndex].time)
-            {
-                Debug.Log($"[Spawn] Spawning Beat #{beatIndex} at {songTimer:F2}s (scheduled: {beatEvents[beatIndex].time:F2}s)");
-                SpawnBeat(beatEvents[beatIndex]);
-                beatIndex++;
-            }
-
-            yield return null;
+            yield return null ;
         }
     }
 

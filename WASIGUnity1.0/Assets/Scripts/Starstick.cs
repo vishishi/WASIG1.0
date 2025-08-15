@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class Starstick : MonoBehaviour
@@ -44,6 +42,8 @@ public class Starstick : MonoBehaviour
 
     [HideInInspector]
     public BeatMapSpawner spawner;
+    [HideInInspector]
+    StageSequencer stageSequencer;
 
 
     private float targetSpeed;
@@ -68,6 +68,7 @@ public class Starstick : MonoBehaviour
     {
         spawner = FindAnyObjectByType<BeatMapSpawner>();
         score = FindAnyObjectByType<ScoreCounter>();
+        stageSequencer = FindAnyObjectByType<StageSequencer>();
 
         //initialise movement variables
         initialPosition = gameObject.transform.position;
@@ -150,6 +151,13 @@ public class Starstick : MonoBehaviour
             {
                 // This stick advances its own local phases
                 float delta = wavingSpeed * Time.deltaTime *2;
+                localPhaseX = Mathf.Repeat(localPhaseX + delta, Mathf.PI * 2f);
+                localPhaseY = Mathf.Repeat(localPhaseY + delta * 0.7f, Mathf.PI * 2f);
+                localPhaseZ = Mathf.Repeat(localPhaseZ + delta * 1.3f, Mathf.PI * 2f);
+            }
+            else if (stageSequencer.isChearing)
+            {
+                float delta = wavingSpeed * Time.deltaTime * 2;
                 localPhaseX = Mathf.Repeat(localPhaseX + delta, Mathf.PI * 2f);
                 localPhaseY = Mathf.Repeat(localPhaseY + delta * 0.7f, Mathf.PI * 2f);
                 localPhaseZ = Mathf.Repeat(localPhaseZ + delta * 1.3f, Mathf.PI * 2f);

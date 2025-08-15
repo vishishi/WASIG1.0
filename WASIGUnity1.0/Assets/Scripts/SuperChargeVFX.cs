@@ -1,26 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SuperChargeVFX : MonoBehaviour
 {
     public ScoreCounter score;
-    public ParticleSystem[] particleSystems;
-    public Animator [] animatorSmall;
-    public Animator [] animatorLarge;
+    public Image[] ringImages;
+    public ParticleSystem [] particles;
+    public GameObject[] bracelets; 
+    
 
     private void Awake()
     {
-
+        foreach (var image in ringImages)
+        {
+            image.enabled = false;
+        }
+        foreach (var brace in bracelets)
+        {
+            brace.SetActive(false);
+        }
     }
     void Start()
     {
         StartCoroutine(VFXController());
-        foreach (var particleSystem in particleSystems)
-        {
-            var mainParticles = particleSystem.main; // use the loop variable
-            mainParticles.playOnAwake = false;
-        }
+
     }
 
 
@@ -36,22 +41,43 @@ public class SuperChargeVFX : MonoBehaviour
 
             yield return new WaitUntil(() => score.isSuperCharged);
 
-            animatorSmall[0].SetBool("supercharged", true);
-            animatorLarge[0].SetBool("supercharged", true);
-            animatorSmall[1].SetBool("supercharged", true);
-            animatorLarge[1].SetBool("supercharged", true);
-            foreach (var ps in particleSystems)
-                ps.Play();
+            
+            foreach (var image in ringImages)
+            {
+                image.enabled = true;
+            }
+
+            foreach (var brace in bracelets)
+            {
+                brace.SetActive(true);
+            }
+
+            foreach (var particle in particles)
+            {
+                particle.Play();
+            }
+
 
 
             yield return new WaitUntil(() => !score.isSuperCharged);
-            animatorSmall[0].SetBool("unsupercharged", true);
-            animatorLarge[0].SetBool("unsupercharged", true);
-            animatorSmall[1].SetBool("unsupercharged", true);
-            animatorLarge[1].SetBool("unsupercharged", true);
 
-            foreach (var ps in particleSystems)
-                ps.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+
+            foreach (var brace in bracelets)
+            {
+                brace.SetActive(false);
+            }
+
+            foreach (var image in ringImages)
+            {
+                image.enabled = false;
+            }
+
+            foreach(var particle in particles)
+            {
+                particle.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);
+            }
+
+
         }
     }
 }

@@ -46,6 +46,9 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-891078230-0
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-842496767-0
         - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1067368106-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-755247590-0
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-100004-779552705
+        - globalObjectIdString: GlobalObjectId_V1-2-311826b272d5dd5488aa83a1b7d60e75-1012327428-0
         values:
         - colorIndex: 0
           iconNameOrGuid: Canvas Icon
@@ -69,7 +72,7 @@ MonoBehaviour:
           iconNameOrGuid: AudioReverbZone Icon
         - colorIndex: 0
           iconNameOrGuid: LightProbes Icon
-        - colorIndex: 0
+        - colorIndex: 3
           iconNameOrGuid: ParticleSystem Icon
         - colorIndex: 3
           iconNameOrGuid: Light Icon
@@ -103,3 +106,9 @@ MonoBehaviour:
           iconNameOrGuid: 
         - colorIndex: 9
           iconNameOrGuid: 
+        - colorIndex: 8
+          iconNameOrGuid: cs Script Icon
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: ParticleSystem Icon
