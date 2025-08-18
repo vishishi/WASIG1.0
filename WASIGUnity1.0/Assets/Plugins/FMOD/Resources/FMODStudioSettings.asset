@@ -452,9 +452,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
   HasSourceProject: 0
-  HasPlatforms: 0
+  HasPlatforms: 1
   sourceProjectPath: 
-  sourceBankPath: Assets/FMOD/FMODBanks/Desktop
+  sourceBankPath: Assets/FMOD/FMODBanks
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -478,6 +478,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - HypeTrack
   - Music
   - OpeningSequence
   - RhythmLevelFeedback

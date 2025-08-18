@@ -29488,6 +29488,7 @@ MonoBehaviour:
   Banks:
   - RhythmLevelFeedback
   - OpeningSequence
+  - Music
   CollisionTag: 
   PreloadSamples: 0
 --- !u!4 &674135791 stripped
@@ -32567,11 +32568,16 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 8100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: _enableDynamicResolution
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 459718, guid: 126d619cf4daa52469682f85c1378b4a,
@@ -79843,7 +79849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd2a51ff1224cf4a9bba74cb1028b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 1590814125}
   beatMapJSON: {fileID: 4900000, guid: ce642d8a28797b54fbbdc73e09dfeea8, type: 3}
   beatPrefabs:
   - {fileID: 847908770007087361, guid: 18efff16a88566340a000db8be7241ae, type: 3}

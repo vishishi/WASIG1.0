@@ -233,7 +233,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638911243627642436
+  lastModified: 638911335929730753
   FileSizes: []
   Exists: 1
 --- !u!114 &-1019056639945598649
@@ -289,7 +289,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 262764
+  Length: 190222
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,6 +308,7 @@ MonoBehaviour:
   - {fileID: -1946606201457688097}
   - {fileID: 7018060656198680145}
   - {fileID: 3199480242070379926}
+  - {fileID: 4722116300417015435}
   EditorEvents:
   - {fileID: -166729680427481333}
   - {fileID: -3261778949483979707}
@@ -321,7 +322,7 @@ MonoBehaviour:
   - {fileID: 8068267868134143997}
   StringsBanks:
   - {fileID: 5035290636382228996}
-  cacheTime: 638911317028980190
+  cacheTime: 638911347437779086
   cacheVersion: 131622
 --- !u!114 &1229083714412118662
 MonoBehaviour:
@@ -422,6 +423,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4722116300417015435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/HypeTrack.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMODBanks/Desktop/HypeTrack.bank
+  Name: HypeTrack
+  StudioPath: bank:/HypeTrack
+  lastModified: 638911347437779086
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5035290636382228996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,10 +456,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638911317024741727
+  lastModified: 638911347437643297
   FileSizes:
   - Name: 
-    Value: 1196
+    Value: 1236
   Exists: 1
 --- !u!114 &7018060656198680145
 MonoBehaviour:
@@ -475,7 +494,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638911317024726539
+  lastModified: 638911347437628232
   FileSizes: []
   Exists: 1
 --- !u!114 &9182502411242320898
