@@ -7,6 +7,7 @@ public class ProtoManager : MonoBehaviour
 {
     public GameObject chooser;
     public GameObject maki;
+    public WatchInteractor interactor;
     void Start()
     {
         StartCoroutine(Sequencer());
@@ -20,7 +21,8 @@ public class ProtoManager : MonoBehaviour
 
     IEnumerator Sequencer()
     {
-        
+        yield return new WaitForSeconds(5);
+        interactor.ReceiveCall();
         yield return new WaitForSeconds(15);
         maki.SetActive(false);
         chooser.SetActive(true);

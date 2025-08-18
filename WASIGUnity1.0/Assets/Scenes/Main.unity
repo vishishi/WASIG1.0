@@ -65561,6 +65561,7 @@ MonoBehaviour:
   spawnGO: {fileID: 1135229216}
   rightHand: {fileID: 862560794}
   leftHand: {fileID: 435257991}
+  spawnPoint: {fileID: 1135229217}
   timeElapsed: 0
   scoreCounter: {fileID: 1522564532}
   moduleEnabled: 0

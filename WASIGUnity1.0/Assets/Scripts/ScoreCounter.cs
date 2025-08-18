@@ -101,8 +101,7 @@ public class ScoreCounter : MonoBehaviour
         Debug.Log("right timer:" + trigger.timeElapsed);
         if (trigger.timeElapsed >= 3.8f)
         {
-            score += 500;
-            perfect += 2;
+      
             Debug.Log("Timer worked!");
         }
     }
