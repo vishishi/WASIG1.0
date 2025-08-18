@@ -10,8 +10,10 @@ public class StageSequencer : MonoBehaviour
     public GameObject innerStage;
     public GameObject outerStage;
     public GameObject outerRing;
-    public AudioSource platformSound;
-    public AudioSource cheering;
+    
+    
+    //public AudioSource platformSound;
+    //public AudioSource cheering;
     // public ParticleSystem smoke;
 
 
@@ -64,9 +66,11 @@ public class StageSequencer : MonoBehaviour
     {
         float elapsed = 0;
         float duration = 5;
-        cheering.Play();
+        //cheering.Play();
+        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/OpeningCheer", gameObject);
         yield return new WaitForSeconds (5.0f);
-        platformSound.Play();
+        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/PlatformSound", innerStage);
+        //platformSound.Play();
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
@@ -82,7 +86,10 @@ public class StageSequencer : MonoBehaviour
         isChearing = true;
 
 
-        yield return new WaitUntil(() => !cheering.isPlaying);
+        //yield return new WaitUntil(() => !cheering.isPlaying);
+        //change this but just for now
+        yield return new WaitForSeconds(5);
+
         isChearing = false;
         lightsAnimator.SetBool("hasBegan", true);
         hasStarted = true;
