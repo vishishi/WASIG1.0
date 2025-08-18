@@ -29,11 +29,6 @@ public class SuperChargeVFX : MonoBehaviour
     }
 
 
-    void Update()
-    {
-
-    }
-
     IEnumerator VFXController()
     {
         while (true)

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +8,12 @@ public class PeaceTrigger : MonoBehaviour
 {
     public Image image;
     public ParticleSystem heartParticles;
+    public GameObject peacePrefab;
+    public GameObject spawnGO;
     public ParticleSystem rightHand;
     public ParticleSystem leftHand;
+    private Vector3 spawnPoint;
+    private Animator animator;
     private bool hasFaded = false;
     private bool peaceRight = false;
     private bool peaceLeft = false;  
@@ -16,7 +21,9 @@ public class PeaceTrigger : MonoBehaviour
     private float fadeProgress = 0f;
     private bool reachedScore = false;
     [HideInInspector]
-    public float timeElapsed = 0; 
+    public float timeElapsed = 0;
+    [HideInInspector]
+    
 
     public ScoreCounter scoreCounter;
 
@@ -29,6 +36,10 @@ public class PeaceTrigger : MonoBehaviour
         heartParticles.Play();
         heartParticles.Pause();
         moduleEnabled = true;
+        animator = peacePrefab.GetComponent<Animator>();
+
+        StartCoroutine(SpawnImage());
+        spawnPoint = spawnGO.transform.position;
     }
 
     // Update is called once per frame
@@ -41,6 +52,7 @@ public class PeaceTrigger : MonoBehaviour
         {
             timeElapsed += Time.deltaTime;
             StartCoroutine(FadeInImage());
+            animator.SetBool("isGesture", true);
             
       
         }
@@ -49,7 +61,13 @@ public class PeaceTrigger : MonoBehaviour
         {
             timeElapsed += Time.deltaTime;
             StartCoroutine(FadeInImage());
+           
 
+        }
+
+        else
+        {
+            
         }
 
     }
@@ -87,7 +105,9 @@ public class PeaceTrigger : MonoBehaviour
         Debug.Log("time to 0");
         rightHand.Stop();
     }
-
+    
+    
+    #region      Coroutines
     IEnumerator FadeInImage()
     {
         float elapsed = 0f;
@@ -143,6 +163,40 @@ public class PeaceTrigger : MonoBehaviour
 
     }
 
-   
+    IEnumerator SpawnImage()
+
+    {
+        while(true)
+        {
+            yield return new WaitUntil(() => peaceLeft || peaceRight);
+
+            float timeHeld = 0f;
+            timeHeld += Time.deltaTime;
+            GameObject geturefiller = Instantiate (peacePrefab, spawnPoint, Quaternion.identity);
+            Debug.Log("Peace gesture filler instantiated!");
+            Image fillerimage = geturefiller.GetComponent<Image>();
+            fillerimage.fillAmount = Mathf.Lerp(fillerimage.fillAmount, 1, timeHeld);
+
+            if (timeHeld == 3.5f)
+            {
+                Debug.Log("gesture was filled up to :" + fillerimage.fillAmount);  
+                Destroy(geturefiller);
+            }
+            timeHeld = 0f;
+            yield return new WaitUntil(() => !peaceLeft || !peaceRight);
+            fillerimage.fillAmount = Mathf.Lerp(fillerimage.fillAmount, 0, timeHeld);
+            if (fillerimage.fillAmount < 0.2f)
+            {
+                Destroy(geturefiller);
+            }
+            timeHeld = 0f;
+
+
+       
+        }
+    }
+
+
+    #endregion
 
 }
