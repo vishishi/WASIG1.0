@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/OKHit
   Guid:
-    Data1: -522689922
-    Data2: 1153226636
-    Data3: 1372280707
-    Data4: -1719560569
+    Data1: 82627555
+    Data2: 1105075389
+    Data3: 2140860597
+    Data4: 513878078
   Banks:
   - {fileID: 7018060656198680145}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -99,6 +99,33 @@ MonoBehaviour:
   lastModified: 638899297220000000
   FileSizes: []
   Exists: 1
+--- !u!114 &-6387526900900675165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlatformSound
+  m_EditorClassIdentifier: 
+  Path: event:/PlatformSound
+  Guid:
+    Data1: -423297966
+    Data2: 1100220348
+    Data3: -2096025973
+    Data4: 1201307245
+  Banks:
+  - {fileID: 3199480242070379926}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5407
 --- !u!114 &-6370227157185312619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,14 +205,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/GoodHit
   Guid:
-    Data1: -1605348502
-    Data2: 1306527561
-    Data3: -1465546079
-    Data4: -769708631
+    Data1: -2129028015
+    Data2: 1279784311
+    Data3: -1281814117
+    Data4: 527239933
   Banks:
   - {fileID: 7018060656198680145}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -206,7 +233,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638911246280000000
+  lastModified: 638911335929730753
   FileSizes: []
   Exists: 1
 --- !u!114 &-1019056639945598649
@@ -223,14 +250,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/PerfectHit
   Guid:
-    Data1: -437796152
-    Data2: 1299050535
-    Data3: -662073212
-    Data4: 856915792
+    Data1: 2083840868
+    Data2: 1238569199
+    Data3: -1748921418
+    Data4: -162246623
   Banks:
   - {fileID: 7018060656198680145}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -262,7 +289,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 262764
+  Length: 190222
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,19 +307,68 @@ MonoBehaviour:
   - {fileID: 8068267868134143997}
   - {fileID: -1946606201457688097}
   - {fileID: 7018060656198680145}
+  - {fileID: 3199480242070379926}
+  - {fileID: 4722116300417015435}
   EditorEvents:
   - {fileID: -166729680427481333}
   - {fileID: -3261778949483979707}
   - {fileID: -9150351178269222815}
   - {fileID: -1019056639945598649}
   - {fileID: -7659984219157267451}
+  - {fileID: -6387526900900675165}
+  - {fileID: 1229083714412118662}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8068267868134143997}
   StringsBanks:
   - {fileID: 5035290636382228996}
-  cacheTime: 638911246280000000
+  cacheTime: 638911347437779086
   cacheVersion: 131622
+--- !u!114 &1229083714412118662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OpeningCheer
+  m_EditorClassIdentifier: 
+  Path: event:/OpeningCheer
+  Guid:
+    Data1: 133879001
+    Data2: 1323094708
+    Data3: -384269430
+    Data4: 1063934817
+  Banks:
+  - {fileID: 3199480242070379926}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18168
+--- !u!114 &3199480242070379926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/OpeningSequence.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMODBanks/Desktop/OpeningSequence.bank
+  Name: OpeningSequence
+  StudioPath: bank:/OpeningSequence
+  lastModified: 638911317028980190
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3463483860509372784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,6 +423,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4722116300417015435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/HypeTrack.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMODBanks/Desktop/HypeTrack.bank
+  Name: HypeTrack
+  StudioPath: bank:/HypeTrack
+  lastModified: 638911347437779086
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5035290636382228996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,10 +456,10 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638911246280000000
+  lastModified: 638911347437643297
   FileSizes:
   - Name: 
-    Value: 1052
+    Value: 1236
   Exists: 1
 --- !u!114 &7018060656198680145
 MonoBehaviour:
@@ -382,7 +476,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/RhythmLevelFeedback.bank
   Name: RhythmLevelFeedback
   StudioPath: bank:/RhythmLevelFeedback
-  lastModified: 638908728940000000
+  lastModified: 638911254346460469
   FileSizes: []
   Exists: 1
 --- !u!114 &8068267868134143997
@@ -400,7 +494,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638899297220000000
+  lastModified: 638911347437628232
   FileSizes: []
   Exists: 1
 --- !u!114 &9182502411242320898

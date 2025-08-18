@@ -9,19 +9,19 @@ public class PlayHitFeedback : MonoBehaviour
     [SerializeField] EventReference goodHitEventRef;
     [SerializeField] EventReference perfectHitEventRef;
 
-    public void PlayOKHit()
+    public void PlayOKHit(Vector3 hitLocation)
     {
-        RuntimeManager.PlayOneShot(okHitEventRef);
+        RuntimeManager.PlayOneShot(okHitEventRef, hitLocation);
     }
 
-    public void PlayGoodHit()
+    public void PlayGoodHit(Vector3 hitLocation)
     {
-        RuntimeManager.PlayOneShot(goodHitEventRef);
+        RuntimeManager.PlayOneShot(goodHitEventRef, hitLocation);
     }
 
-    public void PlayPerfectHit()
+    public void PlayPerfectHit(Vector3 hitLocation)
     {
-        RuntimeManager.PlayOneShot(perfectHitEventRef);
+        RuntimeManager.PlayOneShot(perfectHitEventRef, hitLocation);
     }
     
 

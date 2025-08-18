@@ -57,6 +57,8 @@ public class Beat : Interactable
 
     private float spawnTime;
     private float hitTime;
+    [HideInInspector]
+    public Vector3 beatLocation;
     
 
     public AccuracyColorPair[] accuracyColors;
@@ -80,6 +82,8 @@ public class Beat : Interactable
 
         //initiliase play hit feedback
         playHitFeedback = FindObjectOfType<PlayHitFeedback>();
+
+        
  
     }
 
@@ -113,6 +117,9 @@ public class Beat : Interactable
     }
     public override void Interact(GameObject rayOrigin)
     {
+       
+        beatLocation = gameObject.transform.position;
+        
         HandIdentity identity = rayOrigin.GetComponent<HandIdentity>();
         //Vairables for burst particles to be used in score
         var shapeColor = shape.colorOverLifetime;
@@ -217,21 +224,21 @@ public class Beat : Interactable
                 case Accuracy.Perfect:
                     scoreCounter.score += 100;
                     burstCount = 100;
-                    playHitFeedback.PlayPerfectHit();
+                    playHitFeedback.PlayPerfectHit(beatLocation);
                     scoreCounter.perfect++;
                     Debug.Log("Perfect!");
                     break;
                 case Accuracy.Good:
                     scoreCounter.score += 75;
                     burstCount = 75;
-                    playHitFeedback.PlayGoodHit();
+                    playHitFeedback.PlayGoodHit(beatLocation);
                     scoreCounter.good++;
                     Debug.Log("Good!");
                     break;
                 case Accuracy.Bad:
                     scoreCounter.score += 25;
                     burstCount = 75;
-                    playHitFeedback.PlayOKHit();
+                    playHitFeedback.PlayOKHit(beatLocation);
                     scoreCounter.good++;
                     Debug.Log("Bad!");
                     break;

@@ -29487,6 +29487,8 @@ MonoBehaviour:
   UnloadEvent: 2
   Banks:
   - RhythmLevelFeedback
+  - OpeningSequence
+  - Music
   CollisionTag: 
   PreloadSamples: 0
 --- !u!4 &674135791 stripped
@@ -31661,8 +31663,6 @@ MonoBehaviour:
   innerStage: {fileID: 565526735}
   outerStage: {fileID: 406064315}
   outerRing: {fileID: 1165469813}
-  platformSound: {fileID: 1035629102}
-  cheering: {fileID: 1002190014}
   isChearing: 0
   hasStarted: 0
 --- !u!4 &755328278 stripped
@@ -32568,11 +32568,16 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 8100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: _enableDynamicResolution
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 459718, guid: 126d619cf4daa52469682f85c1378b4a,
@@ -52263,7 +52268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1863693650}
+  m_Father: {fileID: 1678834928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &945774960
 MonoBehaviour:
@@ -52279,24 +52284,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   okHitEventRef:
     Guid:
-      Data1: -522689922
-      Data2: 1153226636
-      Data3: 1372280707
-      Data4: -1719560569
+      Data1: 82627555
+      Data2: 1105075389
+      Data3: 2140860597
+      Data4: 513878078
     Path: event:/OKHit
   goodHitEventRef:
     Guid:
-      Data1: -1605348502
-      Data2: 1306527561
-      Data3: -1465546079
-      Data4: -769708631
+      Data1: -2129028015
+      Data2: 1279784311
+      Data3: -1281814117
+      Data4: 527239933
     Path: event:/GoodHit
   perfectHitEventRef:
     Guid:
-      Data1: -437796152
-      Data2: 1299050535
-      Data3: -662073212
-      Data4: 856915792
+      Data1: 2083840868
+      Data2: 1238569199
+      Data3: -1748921418
+      Data4: -162246623
     Path: event:/PerfectHit
 --- !u!1001 &954722619
 PrefabInstance:
@@ -79845,7 +79850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd2a51ff1224cf4a9bba74cb1028b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 1590814125}
   beatMapJSON: {fileID: 4900000, guid: ce642d8a28797b54fbbdc73e09dfeea8, type: 3}
   beatPrefabs:
   - {fileID: 847908770007087361, guid: 18efff16a88566340a000db8be7241ae, type: 3}
@@ -88114,6 +88118,8 @@ Transform:
   - {fileID: 1590814126}
   - {fileID: 1002190013}
   - {fileID: 670942182}
+  - {fileID: 945774959}
+  - {fileID: 2071885569}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1678840878
@@ -97350,7 +97356,6 @@ Transform:
   - {fileID: 689159518}
   - {fileID: 2103138946}
   - {fileID: 1226427671}
-  - {fileID: 945774959}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1865239490
@@ -103120,6 +103125,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1264755856}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2071885568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071885569}
+  m_Layer: 0
+  m_Name: BGMPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2071885569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071885568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1678834928}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2075674162
 PrefabInstance:
   m_ObjectHideFlags: 0

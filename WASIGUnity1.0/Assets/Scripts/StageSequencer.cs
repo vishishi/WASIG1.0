@@ -10,8 +10,12 @@ public class StageSequencer : MonoBehaviour
     public GameObject innerStage;
     public GameObject outerStage;
     public GameObject outerRing;
-    public AudioSource platformSound;
-    public AudioSource cheering;
+
+
+    
+    
+    //public AudioSource platformSound;
+    //public AudioSource cheering;
     // public ParticleSystem smoke;
 
 
@@ -21,6 +25,7 @@ public class StageSequencer : MonoBehaviour
     private Vector3 isTargetPosition;
     private Vector3 osTargetPosition;
     private Vector3 ovrTargetPosition;
+    private Vector3 circlePosition;
 
 
     [HideInInspector]
@@ -36,6 +41,7 @@ public class StageSequencer : MonoBehaviour
         isPosition = new Vector3(innerStage.transform.position.x, innerStage.transform.position.y - 2f, innerStage.transform.position.z);
         osPosition = new Vector3(outerStage.transform.position.x, outerStage.transform.position.y - 2f, outerStage.transform.position.z);
         ovrPosition = new Vector3(OVRCamera.transform.position.x, OVRCamera.transform.position.y - 2f, OVRCamera.transform.position.z);
+        circlePosition = new Vector3( -1.1877313e-07f, 6.41739988f, 2.24810004f);
     }
     void Start()
     {
@@ -64,9 +70,11 @@ public class StageSequencer : MonoBehaviour
     {
         float elapsed = 0;
         float duration = 5;
-        cheering.Play();
+        //cheering.Play();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/OpeningCheer", circlePosition);
         yield return new WaitForSeconds (5.0f);
-        platformSound.Play();
+        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/PlatformSound", innerStage);
+        //platformSound.Play();
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
@@ -82,7 +90,10 @@ public class StageSequencer : MonoBehaviour
         isChearing = true;
 
 
-        yield return new WaitUntil(() => !cheering.isPlaying);
+        //yield return new WaitUntil(() => !cheering.isPlaying);
+        //change this but just for now
+        yield return new WaitForSeconds(5);
+
         isChearing = false;
         lightsAnimator.SetBool("hasBegan", true);
         hasStarted = true;
