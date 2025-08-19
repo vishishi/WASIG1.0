@@ -79851,6 +79851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd2a51ff1224cf4a9bba74cb1028b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hypeTrackAudio: {fileID: 2071885568}
   beatMapJSON: {fileID: 4900000, guid: ce642d8a28797b54fbbdc73e09dfeea8, type: 3}
   beatPrefabs:
   - {fileID: 847908770007087361, guid: 18efff16a88566340a000db8be7241ae, type: 3}
@@ -103142,7 +103143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2071885569
 Transform:
   m_ObjectHideFlags: 0
@@ -103170,6 +103171,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a2bb7dbb5461342934a0b093f634f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hyperModeHTref:
+    Guid:
+      Data1: 872300193
+      Data2: 1104867977
+      Data3: 438512812
+      Data4: 1208271645
+    Path: event:/HypeTrackHyperMode
+  score: {fileID: 1522564532}
 --- !u!1001 &2075674162
 PrefabInstance:
   m_ObjectHideFlags: 0
