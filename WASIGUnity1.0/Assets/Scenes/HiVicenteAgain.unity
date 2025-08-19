@@ -669,6 +669,7 @@ MonoBehaviour:
   Banks:
   - Music
   - RhythmLevelFeedback
+  - HypeTrack
   CollisionTag: 
   PreloadSamples: 0
 --- !u!4 &263922176
@@ -1560,6 +1561,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578341474}
   m_CullTransparentMesh: 1
+--- !u!1 &652512756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652512758}
+  - component: {fileID: 652512757}
+  - component: {fileID: 652512759}
+  m_Layer: 0
+  m_Name: HypeTrackTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &652512757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652512756}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 872300193
+      Data2: 1104867977
+      Data3: 438512812
+      Data4: 1208271645
+    Path: event:/HypeTrackHyperMode
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params:
+  - Name: VolumeOnOff
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &652512758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652512756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &652512759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652512756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a2bb7dbb5461342934a0b093f634f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hyperModeHTref:
+    Guid:
+      Data1: 872300193
+      Data2: 1104867977
+      Data3: 438512812
+      Data4: 1208271645
+    Path: event:/HypeTrackHyperMode
 --- !u!1 &743948717
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,3 +5086,4 @@ SceneRoots:
   - {fileID: 263922176}
   - {fileID: 1232453245}
   - {fileID: 1093753838}
+  - {fileID: 652512758}
