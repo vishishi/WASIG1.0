@@ -5,6 +5,9 @@ using UnityEngine;
 public class BeatMapSpawner : MonoBehaviour
 {
     [Header("Audio & Map")]
+    [SerializeField] GameObject hypeTrackAudio;
+
+
     //public AudioSource musicSource;
     public TextAsset beatMapJSON;
 
@@ -76,6 +79,8 @@ public class BeatMapSpawner : MonoBehaviour
         {
             yield return new WaitUntil(() => sequencer.hasStarted);
             FMODUnity.RuntimeManager.PlayOneShot("event:/KagamiNoPanda");
+            hypeTrackAudio.SetActive(true);
+
 
             int beatIndex = 0;
             int pauseIndex = 0;
