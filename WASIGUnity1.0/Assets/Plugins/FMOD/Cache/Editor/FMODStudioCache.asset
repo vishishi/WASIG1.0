@@ -1,133 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9150351178269222815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/OKHit
-  m_EditorClassIdentifier: 
-  Path: event:/OKHit
-  Guid:
-    Data1: 82627555
-    Data2: 1105075389
-    Data3: 2140860597
-    Data4: 513878078
-  Banks:
-  - {fileID: 7018060656198680145}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-8660539378566046328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PerfectHit
-  m_EditorClassIdentifier: 
-  Path: event:/PerfectHit
-  Guid:
-    Data1: -437796152
-    Data2: 1299050535
-    Data3: -662073212
-    Data4: 856915792
-  Banks:
-  - {fileID: -5296662726834459141}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7659984219157267451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PandaKaraoke
-  m_EditorClassIdentifier: 
-  Path: event:/PandaKaraoke
-  Guid:
-    Data1: -848331244
-    Data2: 1213349296
-    Data3: -1246335347
-    Data4: 1660188378
-  Banks:
-  - {fileID: -1946606201457688097}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 235967
---- !u!114 &-7552142783102630079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HypeTrackHyperMode
-  m_EditorClassIdentifier: 
-  Path: event:/HypeTrackHyperMode
-  Guid:
-    Data1: 872300193
-    Data2: 1104867977
-    Data3: 438512812
-    Data4: 1208271645
-  Banks:
-  - {fileID: 4722116300417015435}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 4325790756545090771}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 190222
---- !u!114 &-7091779832778927146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638899297220000000
-  FileSizes: []
-  Exists: 1
---- !u!114 &-6387526900900675165
+--- !u!114 &-8694967052426926803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +19,7 @@ MonoBehaviour:
     Data3: -2096025973
     Data4: 1201307245
   Banks:
-  - {fileID: 3199480242070379926}
+  - {fileID: 7901349544856890458}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -154,215 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5407
---- !u!114 &-6370227157185312619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/OKHit
-  m_EditorClassIdentifier: 
-  Path: event:/OKHit
-  Guid:
-    Data1: -522689922
-    Data2: 1153226636
-    Data3: 1372280707
-    Data4: -1719560569
-  Banks:
-  - {fileID: -5296662726834459141}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5602807261778410792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638908728940000000
-  FileSizes:
-  - Name: 
-    Value: 998
-  Exists: 1
---- !u!114 &-5296662726834459141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/RhythmLevelFeedback.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/RhythmLevelFeedback.bank
-  Name: RhythmLevelFeedback
-  StudioPath: bank:/RhythmLevelFeedback
-  lastModified: 638908728940000000
-  FileSizes: []
-  Exists: 1
---- !u!114 &-3261778949483979707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/GoodHit
-  m_EditorClassIdentifier: 
-  Path: event:/GoodHit
-  Guid:
-    Data1: -2129028015
-    Data2: 1279784311
-    Data3: -1281814117
-    Data4: 527239933
-  Banks:
-  - {fileID: 7018060656198680145}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1946606201457688097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-
-  lastModified: 638911466421805464
-
-  FileSizes:
-  - Name: Desktop
-    Value: 5592736
-  - Name: Mobile
-    Value: 11190336
-  Exists: 1
---- !u!114 &-1019056639945598649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/PerfectHit
-  m_EditorClassIdentifier: 
-  Path: event:/PerfectHit
-  Guid:
-    Data1: 2083840868
-    Data2: 1238569199
-    Data3: -1748921418
-    Data4: -162246623
-  Banks:
-  - {fileID: 7018060656198680145}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-166729680427481333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/KagamiNoPanda
-  m_EditorClassIdentifier: 
-  Path: event:/KagamiNoPanda
-  Guid:
-    Data1: -153359398
-    Data2: 1226460374
-    Data3: 2007143832
-    Data4: -1036485042
-  Banks:
-  - {fileID: -1946606201457688097}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 190222
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 5035290636382228996}
-  - {fileID: 8068267868134143997}
-  - {fileID: -1946606201457688097}
-  - {fileID: 7018060656198680145}
-  - {fileID: 3199480242070379926}
-  - {fileID: 4722116300417015435}
-  EditorEvents:
-  - {fileID: -166729680427481333}
-  - {fileID: -3261778949483979707}
-  - {fileID: -9150351178269222815}
-  - {fileID: -1019056639945598649}
-  - {fileID: -7659984219157267451}
-  - {fileID: -6387526900900675165}
-  - {fileID: 1229083714412118662}
-  - {fileID: 8811419079145148995}
-  - {fileID: -7552142783102630079}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 8068267868134143997}
-  StringsBanks:
-  - {fileID: 5035290636382228996}
-
-  cacheTime: 638912899371801513
-
-  cacheVersion: 131622
---- !u!114 &1229083714412118662
+--- !u!114 &-7820571419854101377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,7 +46,7 @@ MonoBehaviour:
     Data3: -384269430
     Data4: 1063934817
   Banks:
-  - {fileID: 3199480242070379926}
+  - {fileID: 7901349544856890458}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -389,7 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18168
---- !u!114 &3199480242070379926
+--- !u!114 &-6690322879505632687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,48 +64,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/OpeningSequence.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/OpeningSequence.bank
-  Name: OpeningSequence
-  StudioPath: bank:/OpeningSequence
-
-  lastModified: 638912875519358570
+  Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638912964773448949
   FileSizes:
   - Name: Desktop
-    Value: 273984
+    Value: 1386
   - Name: Mobile
-    Value: 622240
-
+    Value: 1386
   Exists: 1
---- !u!114 &3463483860509372784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/KagamiNoPanda
-  m_EditorClassIdentifier: 
-  Path: event:/KagamiNoPanda
-  Guid:
-    Data1: -153359398
-    Data2: 1226460374
-    Data3: 2007143832
-    Data4: -1036485042
-  Banks:
-  - {fileID: 9182502411242320898}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 262764
---- !u!114 &3739103470117774333
+--- !u!114 &-6233912887879246225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -454,20 +90,225 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/GoodHit
   Guid:
-    Data1: -1605348502
-    Data2: 1306527561
-    Data3: -1465546079
-    Data4: -769708631
+    Data1: -2129028015
+    Data2: 1279784311
+    Data3: -1281814117
+    Data4: 527239933
   Banks:
-  - {fileID: -5296662726834459141}
+  - {fileID: 700724080410345252}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &4325790756545090771
+--- !u!114 &-4216587579583814281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638912228165400200
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  - Name: Mobile
+    Value: 1036
+  Exists: 1
+--- !u!114 &-3934825650242793238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/HypeTrack.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMODBanks/Desktop/HypeTrack.bank
+  Name: HypeTrack
+  StudioPath: bank:/HypeTrack
+  lastModified: 638912964773438949
+  FileSizes:
+  - Name: Desktop
+    Value: 7138272
+  - Name: Mobile
+    Value: 13344256
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -6690322879505632687}
+  - {fileID: -3934825650242793238}
+  - {fileID: -4216587579583814281}
+  - {fileID: 4717356256963440274}
+  - {fileID: 7901349544856890458}
+  - {fileID: 700724080410345252}
+  EditorEvents:
+  - {fileID: 1950392324314742481}
+  - {fileID: 5378432089692548819}
+  - {fileID: 5381060159442165402}
+  - {fileID: 7513612006379757633}
+  - {fileID: -8694967052426926803}
+  - {fileID: -7820571419854101377}
+  - {fileID: -6233912887879246225}
+  - {fileID: 1177819295891586321}
+  - {fileID: 517176625352221254}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -4216587579583814281}
+  StringsBanks:
+  - {fileID: -6690322879505632687}
+  cacheTime: 638912964773478952
+  cacheVersion: 131622
+--- !u!114 &517176625352221254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OKHit
+  m_EditorClassIdentifier: 
+  Path: event:/OKHit
+  Guid:
+    Data1: 82627555
+    Data2: 1105075389
+    Data3: 2140860597
+    Data4: 513878078
+  Banks:
+  - {fileID: 700724080410345252}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &700724080410345252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/RhythmLevelFeedback.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMODBanks/Desktop/RhythmLevelFeedback.bank
+  Name: RhythmLevelFeedback
+  StudioPath: bank:/RhythmLevelFeedback
+  lastModified: 638912964773478952
+  FileSizes:
+  - Name: Desktop
+    Value: 57664
+  - Name: Mobile
+    Value: 144896
+  Exists: 1
+--- !u!114 &1177819295891586321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PerfectHit
+  m_EditorClassIdentifier: 
+  Path: event:/PerfectHit
+  Guid:
+    Data1: 2083840868
+    Data2: 1238569199
+    Data3: -1748921418
+    Data4: -162246623
+  Banks:
+  - {fileID: 700724080410345252}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1950392324314742481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HypeTrackNormal
+  m_EditorClassIdentifier: 
+  Path: event:/HypeTrackNormal
+  Guid:
+    Data1: 510662661
+    Data2: 1193768057
+    Data3: -1478754385
+    Data4: -700166387
+  Banks:
+  - {fileID: -3934825650242793238}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 190222
+--- !u!114 &4717356256963440274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638911466421805464
+  FileSizes:
+  - Name: Desktop
+    Value: 5592736
+  - Name: Mobile
+    Value: 11190336
+  Exists: 1
+--- !u!114 &5270258796615307457
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -491,103 +332,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &4722116300417015435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/HypeTrack.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/HypeTrack.bank
-  Name: HypeTrack
-  StudioPath: bank:/HypeTrack
-
-  lastModified: 638912234007340562
-  FileSizes:
-  - Name: Desktop
-    Value: 7138272
-  - Name: Mobile
-    Value: 13344256
-
-  Exists: 1
---- !u!114 &5035290636382228996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-
-  lastModified: 638912228165420220
-  FileSizes:
-  - Name: Desktop
-    Value: 1386
-  - Name: Mobile
-    Value: 1386
-
-  Exists: 1
---- !u!114 &7018060656198680145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/RhythmLevelFeedback.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/RhythmLevelFeedback.bank
-  Name: RhythmLevelFeedback
-  StudioPath: bank:/RhythmLevelFeedback
-
-  lastModified: 638912899371801513
-  FileSizes:
-  - Name: Desktop
-    Value: 57664
-  - Name: Mobile
-    Value: 144896
-
-  Exists: 1
---- !u!114 &8068267868134143997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-
-  lastModified: 638912228165400200
-
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  - Name: Mobile
-    Value: 1036
-  Exists: 1
---- !u!114 &8811419079145148995
+--- !u!114 &5378432089692548819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -597,24 +342,79 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HypeTrackNormal
+  m_Name: event:/HypeTrackHyperMode
   m_EditorClassIdentifier: 
-  Path: event:/HypeTrackNormal
+  Path: event:/HypeTrackHyperMode
   Guid:
-    Data1: 510662661
-    Data2: 1193768057
-    Data3: -1478754385
-    Data4: -700166387
+    Data1: 872300193
+    Data2: 1104867977
+    Data3: 438512812
+    Data4: 1208271645
   Banks:
-  - {fileID: 4722116300417015435}
+  - {fileID: -3934825650242793238}
   IsStream: 1
   Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5270258796615307457}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 190222
+--- !u!114 &5381060159442165402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PandaKaraoke
+  m_EditorClassIdentifier: 
+  Path: event:/PandaKaraoke
+  Guid:
+    Data1: -848331244
+    Data2: 1213349296
+    Data3: -1246335347
+    Data4: 1660188378
+  Banks:
+  - {fileID: 4717356256963440274}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 235967
+--- !u!114 &7513612006379757633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KagamiNoPanda
+  m_EditorClassIdentifier: 
+  Path: event:/KagamiNoPanda
+  Guid:
+    Data1: -153359398
+    Data2: 1226460374
+    Data3: 2007143832
+    Data4: -1036485042
+  Banks:
+  - {fileID: 4717356256963440274}
+  IsStream: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 190222
---- !u!114 &9182502411242320898
+--- !u!114 &7901349544856890458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -624,11 +424,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
+  m_Name: bank:/OpeningSequence.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638899297220000000
-  FileSizes: []
+  Path: Assets/FMOD/FMODBanks/Desktop/OpeningSequence.bank
+  Name: OpeningSequence
+  StudioPath: bank:/OpeningSequence
+  lastModified: 638912964773468954
+  FileSizes:
+  - Name: Desktop
+    Value: 273984
+  - Name: Mobile
+    Value: 622240
   Exists: 1
