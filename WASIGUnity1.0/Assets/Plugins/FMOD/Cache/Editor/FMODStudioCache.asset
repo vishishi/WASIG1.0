@@ -261,7 +261,9 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
+
   lastModified: 638911466421805464
+
   FileSizes:
   - Name: Desktop
     Value: 5592736
@@ -356,7 +358,9 @@ MonoBehaviour:
   - {fileID: 8068267868134143997}
   StringsBanks:
   - {fileID: 5035290636382228996}
+
   cacheTime: 638912899371801513
+
   cacheVersion: 131622
 --- !u!114 &1229083714412118662
 MonoBehaviour:
@@ -400,12 +404,14 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/OpeningSequence.bank
   Name: OpeningSequence
   StudioPath: bank:/OpeningSequence
+
   lastModified: 638912875519358570
   FileSizes:
   - Name: Desktop
     Value: 273984
   - Name: Mobile
     Value: 622240
+
   Exists: 1
 --- !u!114 &3463483860509372784
 MonoBehaviour:
@@ -500,12 +506,14 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/HypeTrack.bank
   Name: HypeTrack
   StudioPath: bank:/HypeTrack
+
   lastModified: 638912234007340562
   FileSizes:
   - Name: Desktop
     Value: 7138272
   - Name: Mobile
     Value: 13344256
+
   Exists: 1
 --- !u!114 &5035290636382228996
 MonoBehaviour:
@@ -522,12 +530,14 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+
   lastModified: 638912228165420220
   FileSizes:
   - Name: Desktop
     Value: 1386
   - Name: Mobile
     Value: 1386
+
   Exists: 1
 --- !u!114 &7018060656198680145
 MonoBehaviour:
@@ -544,12 +554,14 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/RhythmLevelFeedback.bank
   Name: RhythmLevelFeedback
   StudioPath: bank:/RhythmLevelFeedback
+
   lastModified: 638912899371801513
   FileSizes:
   - Name: Desktop
     Value: 57664
   - Name: Mobile
     Value: 144896
+
   Exists: 1
 --- !u!114 &8068267868134143997
 MonoBehaviour:
@@ -566,7 +578,9 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+
   lastModified: 638912228165400200
+
   FileSizes:
   - Name: Desktop
     Value: 1036
