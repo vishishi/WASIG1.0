@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.meta.xr.sdk.acoustics": "file:C:/Users/Julia/GitHub/WASIG1/WASIG1.0/MetaXRSDKAcousticsFMOD.tgz",
+    "com.meta.xr.sdk.acoustics": "file:D:/WASIG/WASIG1.0/MetaXRSDKAcousticsFMOD.tgz",
     "com.meta.xr.sdk.core": "77.0.0",
     "com.meta.xr.sdk.interaction.ovr": "77.0.0",
     "com.unity.collab-proxy": "2.8.2",

@@ -116,6 +116,30 @@ MonoBehaviour:
     - goDatas_byGlobalId:
         keys:
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-732909832-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-919132149155446097-139219623
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-3781747557506731667-1911368803
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-919132149155446097-1952703436
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-8272132634370880892-881091939
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-204188794-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1255203512-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1742459343-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1540916377-0
         values:
         - colorIndex: 0
           iconNameOrGuid: cs Script Icon
+        - colorIndex: 6
+          iconNameOrGuid: WheelCollider Icon
+        - colorIndex: 6
+          iconNameOrGuid: WheelCollider Icon
+        - colorIndex: 6
+          iconNameOrGuid: WheelCollider Icon
+        - colorIndex: 6
+          iconNameOrGuid: WheelCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon

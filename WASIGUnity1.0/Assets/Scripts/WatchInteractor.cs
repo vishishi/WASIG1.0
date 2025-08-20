@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WatchInteractor : MonoBehaviour
 {
-    public ParticleSystem[] ringers;
+    public ParticleSystem ringer;
     private AudioSource callSound;
     private Animator animator;
     void Start()
@@ -15,30 +15,31 @@ public class WatchInteractor : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collision happened!");
-        foreach (var ringer in ringers)
-        {
-            ringer.Stop(true, ParticleSystemStopBehavior.StopEmitting);
-           
-        }
+
+
+        ringer.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+
+
         callSound.Stop();
         animator.StopPlayback();
-        
+
     }
     public void ReceiveCall()
     {
-        foreach (var ringer in ringers)
+
         {
             ringer.Play();
-           
-        }
 
-        callSound.Play();
-        animator.SetBool("isCalling", true);
+
+
+            callSound.Play();
+            animator.SetBool("isCalling", true);
+        }
     }
 }
