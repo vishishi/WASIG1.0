@@ -13,7 +13,9 @@ public class GestureChoice : Interactable
     private Image loadingImage;
 
     [HideInInspector]
-    public float fillDuration = 2f; 
+    public float fillDuration = 2f;
+
+    [SerializeField] SceneLoader sceneLoader;
 
     void Start()
     {
@@ -110,7 +112,8 @@ public class GestureChoice : Interactable
         fill.fillAmount = 0f;
 
         yield return new WaitUntil(() => fill.fillAmount == 0);
-        SceneManager.LoadScene("Main");
+        Debug.Log("Change conditions met!");
+        sceneLoader.LoadNextScene();
 
 
     }

@@ -11,12 +11,21 @@ public class SceneLoader : MonoBehaviour
     public List<string> Banks;
 
     //name of scene to load and switch to
-    public string Scene = null;
+    //public string Scene = null;
+
+
+    public void LoadNextScene()
+    {
+        StartCoroutine(LoadSceneAsync());
+        Debug.Log("Scene change coroutine started!");
+    }
+
+
 
 
     IEnumerator LoadSceneAsync()
     {
-        AsyncOperation async = SceneManager.LoadSceneAsync(Scene);
+        AsyncOperation async = SceneManager.LoadSceneAsync("Main");
 
         async.allowSceneActivation = false;
 
@@ -31,6 +40,7 @@ public class SceneLoader : MonoBehaviour
         }
 
         async.allowSceneActivation = true;
+        Debug.Log("Scene has been allowed!");
 
         while (!async.isDone)
         {
