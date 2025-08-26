@@ -12,7 +12,7 @@ public class Interactor : MonoBehaviour
    Beat beat;
    public float rayLength = 100f;
    private LineRenderer lineRenderer;
-   public ScoreCounter scoreCounter;
+   //public ScoreCounter scoreCounter;
    private Scene scene;
    
     void Start()
@@ -26,13 +26,13 @@ public class Interactor : MonoBehaviour
         
         
         //Don't mind this, it's for debugging
-        lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.positionCount = 2;
-        lineRenderer.startWidth = 0.01f;
-        lineRenderer.endWidth = 0.01f;
-        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
-        lineRenderer.startColor = Color.green;
-        lineRenderer.endColor = Color.green;
+     //   lineRenderer = GetComponent<LineRenderer>();
+       // lineRenderer.positionCount = 2;
+        //lineRenderer.startWidth = 0.01f;
+        //lineRenderer.endWidth = 0.01f;
+        //lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        //lineRenderer.startColor = Color.green;
+        //lineRenderer.endColor = Color.green;
 
         
     }
@@ -54,6 +54,9 @@ public class Interactor : MonoBehaviour
                 interactable.Interact(gameObject);
             }
 
+
+            
+           
         
 
 

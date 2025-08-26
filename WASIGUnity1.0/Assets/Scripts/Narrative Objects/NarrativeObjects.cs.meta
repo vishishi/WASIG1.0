@@ -3,7 +3,14 @@ guid: be3e18f8da2243046ba621207cdc1e45
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - audioSource: {instanceID: 0}
+  - particles: {instanceID: 0}
+  - canvas: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - touchVFX: {fileID: 438364737867621480, guid: 0c87b1e8afada9f42a6074aea2046262,
+      type: 3}
+  - myCol: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
