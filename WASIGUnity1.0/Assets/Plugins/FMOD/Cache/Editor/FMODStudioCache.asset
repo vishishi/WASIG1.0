@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: -2096025973
     Data4: 1201307245
   Banks:
-  - {fileID: 7901349544856890458}
+  - {fileID: -2268036109286542251}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -46,7 +46,7 @@ MonoBehaviour:
     Data3: -384269430
     Data4: 1063934817
   Banks:
-  - {fileID: 7901349544856890458}
+  - {fileID: -2268036109286542251}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -54,7 +54,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18168
---- !u!114 &-6690322879505632687
+--- !u!114 &-6515327726757676506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,17 +64,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638912972260000000
-  FileSizes:
-  - Name: Desktop
-    Value: 1386
-  - Name: Mobile
-    Value: 1386
+  Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638914692944301333
+  FileSizes: []
   Exists: 1
 --- !u!114 &-6233912887879246225
 MonoBehaviour:
@@ -95,7 +91,7 @@ MonoBehaviour:
     Data3: -1281814117
     Data4: 527239933
   Banks:
-  - {fileID: 700724080410345252}
+  - {fileID: -5558690715224804797}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -103,7 +99,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-4216587579583814281
+--- !u!114 &-5558690715224804797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,19 +109,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/RhythmLevelFeedback.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638899297220000000
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  - Name: Mobile
-    Value: 1036
+  Path: Assets/FMOD/FMODBanks/Desktop/RhythmLevelFeedback.bank
+  Name: RhythmLevelFeedback
+  StudioPath: bank:/RhythmLevelFeedback
+  lastModified: 638919467046145524
+  FileSizes: []
   Exists: 1
---- !u!114 &-3934825650242793238
+--- !u!114 &-4261773831254345445
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,12 +132,46 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/HypeTrack.bank
   Name: HypeTrack
   StudioPath: bank:/HypeTrack
-  lastModified: 638912972260000000
+  lastModified: 638914692944078317
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2959445637374904108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638914692944331691
   FileSizes:
-  - Name: Desktop
-    Value: 7138272
-  - Name: Mobile
-    Value: 13344256
+  - Name: 
+    Value: 1386
+  Exists: 1
+--- !u!114 &-2268036109286542251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/OpeningSequence.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/FMODBanks/Desktop/OpeningSequence.bank
+  Name: OpeningSequence
+  StudioPath: bank:/OpeningSequence
+  lastModified: 638919467045459578
+  FileSizes: []
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -160,12 +186,12 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -6690322879505632687}
-  - {fileID: -3934825650242793238}
-  - {fileID: -4216587579583814281}
-  - {fileID: 4717356256963440274}
-  - {fileID: 7901349544856890458}
-  - {fileID: 700724080410345252}
+  - {fileID: -2959445637374904108}
+  - {fileID: -4261773831254345445}
+  - {fileID: -6515327726757676506}
+  - {fileID: 1112122648378613382}
+  - {fileID: -2268036109286542251}
+  - {fileID: -5558690715224804797}
   EditorEvents:
   - {fileID: 1950392324314742481}
   - {fileID: 5378432089692548819}
@@ -178,10 +204,10 @@ MonoBehaviour:
   - {fileID: 517176625352221254}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4216587579583814281}
+  - {fileID: -6515327726757676506}
   StringsBanks:
-  - {fileID: -6690322879505632687}
-  cacheTime: 638912972260000000
+  - {fileID: -2959445637374904108}
+  cacheTime: 638919467046145524
   cacheVersion: 131622
 --- !u!114 &517176625352221254
 MonoBehaviour:
@@ -202,7 +228,7 @@ MonoBehaviour:
     Data3: 2140860597
     Data4: 513878078
   Banks:
-  - {fileID: 700724080410345252}
+  - {fileID: -5558690715224804797}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -210,7 +236,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &700724080410345252
+--- !u!114 &1112122648378613382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,17 +246,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/RhythmLevelFeedback.bank
+  m_Name: bank:/Music.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/RhythmLevelFeedback.bank
-  Name: RhythmLevelFeedback
-  StudioPath: bank:/RhythmLevelFeedback
-  lastModified: 638912972260000000
-  FileSizes:
-  - Name: Desktop
-    Value: 57664
-  - Name: Mobile
-    Value: 144896
+  Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638911466421805464
+  FileSizes: []
   Exists: 1
 --- !u!114 &1177819295891586321
 MonoBehaviour:
@@ -251,7 +273,7 @@ MonoBehaviour:
     Data3: -1748921418
     Data4: -162246623
   Banks:
-  - {fileID: 700724080410345252}
+  - {fileID: -5558690715224804797}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -278,7 +300,7 @@ MonoBehaviour:
     Data3: -1478754385
     Data4: -700166387
   Banks:
-  - {fileID: -3934825650242793238}
+  - {fileID: -4261773831254345445}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -286,28 +308,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 190222
---- !u!114 &4717356256963440274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638911375280000000
-  FileSizes:
-  - Name: Desktop
-    Value: 5592736
-  - Name: Mobile
-    Value: 11190336
-  Exists: 1
 --- !u!114 &5270258796615307457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,7 +351,7 @@ MonoBehaviour:
     Data3: 438512812
     Data4: 1208271645
   Banks:
-  - {fileID: -3934825650242793238}
+  - {fileID: -4261773831254345445}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -379,7 +379,7 @@ MonoBehaviour:
     Data3: -1246335347
     Data4: 1660188378
   Banks:
-  - {fileID: 4717356256963440274}
+  - {fileID: 1112122648378613382}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -406,7 +406,7 @@ MonoBehaviour:
     Data3: 2007143832
     Data4: -1036485042
   Banks:
-  - {fileID: 4717356256963440274}
+  - {fileID: 1112122648378613382}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -414,25 +414,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 190222
---- !u!114 &7901349544856890458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/OpeningSequence.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/FMODBanks/Desktop/OpeningSequence.bank
-  Name: OpeningSequence
-  StudioPath: bank:/OpeningSequence
-  lastModified: 638912972260000000
-  FileSizes:
-  - Name: Desktop
-    Value: 273984
-  - Name: Mobile
-    Value: 622240
-  Exists: 1

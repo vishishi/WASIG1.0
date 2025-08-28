@@ -986,7 +986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &181322244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,11 +1002,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -153359398
-      Data2: 1226460374
-      Data3: 2007143832
-      Data4: -1036485042
-    Path: event:/KagamiNoPanda
+      Data1: 133879001
+      Data2: 1323094708
+      Data3: -384269430
+      Data4: 1063934817
+    Path: event:/OpeningCheer
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
@@ -21917,7 +21917,12 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 215
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 459718, guid: 126d619cf4daa52469682f85c1378b4a,
@@ -48420,7 +48425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1904956372}
-  - component: {fileID: 1904956371}
+  - component: {fileID: 1904956373}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -48428,24 +48433,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1904956371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904956370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LoadEvent: 1
-  UnloadEvent: 0
-  Banks:
-  - Music
-  CollisionTag: 
-  PreloadSamples: 0
 --- !u!4 &1904956372
 Transform:
   m_ObjectHideFlags: 0
@@ -48461,6 +48448,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1433898260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1904956373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904956370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbb5a0cbc6834164ba37c7dd07df5ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bankName: OpeningSequence
 --- !u!1001 &1911368803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50500,7 +50500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &2095065686
 AudioSource:
   m_ObjectHideFlags: 0
