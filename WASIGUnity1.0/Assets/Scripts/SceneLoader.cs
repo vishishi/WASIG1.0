@@ -14,11 +14,17 @@ public class SceneLoader : MonoBehaviour
     //public string Scene = null;
 
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     public void LoadNextScene()
     {
         StartCoroutine(LoadSceneAsync());
         Debug.Log("Scene change coroutine started!");
     }
+
 
 
 
@@ -46,6 +52,7 @@ public class SceneLoader : MonoBehaviour
         {
             yield return null;
         }
+        Destroy(this.gameObject);
 
 
     }

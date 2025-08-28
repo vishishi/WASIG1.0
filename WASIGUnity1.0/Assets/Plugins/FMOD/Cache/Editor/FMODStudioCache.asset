@@ -87,7 +87,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Mobile/OpeningSequence.bank
   Name: OpeningSequence
   StudioPath: bank:/OpeningSequence
-  lastModified: 638914692947635700
+  lastModified: 638919416366553371
   FileSizes: []
   Exists: 1
 --- !u!114 &-6503189975559480210
@@ -189,7 +189,7 @@ MonoBehaviour:
   - {fileID: -6503189975559480210}
   StringsBanks:
   - {fileID: -611636879542381953}
-  cacheTime: 638914692948066479
+  cacheTime: 638919416366553371
   cacheVersion: 131622
 --- !u!114 &517176625352221254
 MonoBehaviour:

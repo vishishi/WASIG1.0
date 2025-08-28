@@ -968,7 +968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &181322244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -984,11 +984,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -153359398
-      Data2: 1226460374
-      Data3: 2007143832
-      Data4: -1036485042
-    Path: event:/KagamiNoPanda
+      Data1: 133879001
+      Data2: 1323094708
+      Data3: -384269430
+      Data4: 1063934817
+    Path: event:/OpeningCheer
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
@@ -5994,7 +5994,7 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   myImage: {fileID: 0}
   fillDuration: 2
-  sceneLoader: {fileID: 688418848}
+  sceneLoader: {fileID: 0}
 --- !u!4 &371455660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8421864934474098442, guid: 792667e79c8b35149b182675a9ccb746,
@@ -13353,55 +13353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetCanvas: {fileID: 2052182588}
---- !u!1 &688418847
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 688418849}
-  - component: {fileID: 688418848}
-  m_Layer: 0
-  m_Name: SceneLoader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &688418848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688418847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58f0efda82b15d24c9a50397efbbc556, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Banks:
-  - OpeningSequence
-  - Music
-  - HypeTrack
-  - RhythmLevelFeedback
---- !u!4 &688418849
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688418847}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689131503
 GameObject:
   m_ObjectHideFlags: 0
@@ -13748,7 +13699,7 @@ MonoBehaviour:
   interactor: {fileID: 910802332}
   comms: {fileID: 1438765925}
   choice: {fileID: 1530624885}
-  sceneLoader: {fileID: 688418848}
+  sceneLoader: {fileID: 0}
 --- !u!1 &734716626
 GameObject:
   m_ObjectHideFlags: 0
@@ -47601,11 +47552,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadEvent: 1
-  UnloadEvent: 0
+  UnloadEvent: 2
   Banks:
-  - Music
+  - OpeningSequence
   CollisionTag: 
-  PreloadSamples: 0
+  PreloadSamples: 1
 --- !u!4 &1904956372
 Transform:
   m_ObjectHideFlags: 0
@@ -50253,4 +50204,3 @@ SceneRoots:
   - {fileID: 732909833}
   - {fileID: 1433898260}
   - {fileID: 1188512032}
-  - {fileID: 688418849}
