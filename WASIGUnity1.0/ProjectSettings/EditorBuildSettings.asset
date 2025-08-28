@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ShikiBedroom.unity
     guid: a408bea6dd1f7b8478110bb388fbe953
   - enabled: 1

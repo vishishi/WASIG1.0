@@ -14,9 +14,9 @@ public class StageSequencer : MonoBehaviour
 
     
     
-    //public AudioSource platformSound;
-    //public AudioSource cheering;
-    // public ParticleSystem smoke;
+    public AudioSource platformSound;
+    public AudioSource cheering;
+    public ParticleSystem smoke;
 
 
     private Vector3 isPosition;
@@ -70,11 +70,12 @@ public class StageSequencer : MonoBehaviour
     {
         float elapsed = 0;
         float duration = 5;
-        //cheering.Play();
-        FMODUnity.RuntimeManager.PlayOneShot("event:/OpeningCheer", circlePosition);
+        cheering.Play();
+       // FMODUnity.RuntimeManager.PlayOneShot("event:/OpeningCheer", circlePosition);
         yield return new WaitForSeconds (5.0f);
-        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/PlatformSound", innerStage);
-        //platformSound.Play();
+        //FMODUnity.RuntimeManager.PlayOneShotAttached("event:/PlatformSound", innerStage);
+        //
+        platformSound.Play();
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
