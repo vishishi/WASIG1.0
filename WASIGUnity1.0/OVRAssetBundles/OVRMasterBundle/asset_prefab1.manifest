@@ -1,0 +1,95 @@
+ManifestFileVersion: 0
+CRC: 2131518133
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e7f4d98e0870b08ce283515beb68794d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 55952f59a210db395b98ebbcf77dfe6d
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e7f4d98e0870b08ce283515beb68794d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7e933e81d3c20c74ea6fdc708a67e3a5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 674a40251fe8ad841b18517ac5209957, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cb7623a8f0b49cf4dbaa40aea4d4be64, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: df9f338034892c44ebb62d97894772f1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d4f052b718d2004eb44ba48884c6e67, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5178bc8574ce2bf4388e787a2e2af326, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 134
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: TGGameEngine.TGDoor/TGDoorItem
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Wardrobe01_1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Desk01.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/OfficeDeskSet02_7.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MWall03-350x350-5.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MFloor01-350x50.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MWall03-350x350-2.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MWall03-700x350-3.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/DeskChair02.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MPilaster01-350x350-2.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MFloor03-350x350-1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Plant02_4.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/OfficeDeskSet02_3.prefab
+- Assets/Prefabs/telecom 1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/DecorPhotoFrame01_1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Sofa03_1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Planter01_1.prefab
+- Assets/Prefabs/watch.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/LampWall02_2.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Planter02.prefab
+- Packages/com.meta.xr.sdk.core/Prefabs/OpenXRCustomHandPrefab_L.prefab
+- Packages/com.meta.xr.sdk.core/Prefabs/OVRCameraRig.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/BathroomShower01.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/ClothesBoots01L.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MWall03-350x350-Door2.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/DecorShapes01_5.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/LampTable02.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MWall03-Shelf-1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Wardrobe01_3.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/BathroomSink01_2.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MFloor03-700x350-1.prefab
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_fbx0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_fbx1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat2
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_physicmaterial0

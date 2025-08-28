@@ -1,0 +1,120 @@
+ManifestFileVersion: 0
+CRC: 1518861746
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b3665c8d83c52d44985e9ead5fda24c1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 90737072d50ea3b268bd317ef64d08c0
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b3665c8d83c52d44985e9ead5fda24c1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 674a40251fe8ad841b18517ac5209957, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cb7623a8f0b49cf4dbaa40aea4d4be64, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4d4f052b718d2004eb44ba48884c6e67, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 134
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: TGGameEngine.TGDoor/TGDoorItem
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.VertexGradient
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MWall03-350x350-6.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/OfficeDeskSet02_12.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/DecorPhotoFrame01_2.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/KitchenFurniture01_6.prefab
+- Packages/com.meta.xr.sdk.core/Prefabs/OpenXRCustomHandPrefab_R.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MWall03-350x350-4.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MPilaster01-700x350-2.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MCeiling02-350x350-3.prefab
+- Assets/Prefabs/lamp tree.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/ClothesSuitBeg01.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MFloor03-700x700-1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/LampWall02_1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/OfficeDeskSet02_11.prefab
+- Assets/Prefabs/Narration Canvas.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/OfficeDeskSet02_5.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Plant02_3.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MCeiling02-175x175-Corner.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MWall03-350x350-Door1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Display03.prefab
+- Assets/Prefabs/Posters.prefab
+- Assets/Prefabs/Reticle prefab.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/KitchenCoffeeCup01.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/LampTable01.prefab
+- Assets/Prefabs/PandaPlushie 2 .prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MDoor02-150x250x25.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/ClothesBoots01R.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/BathroomAccessories01_1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/DecorShapes01_1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/OfficeDeskSet02_10.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/OfficeDeskSet02_8.prefab
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_asset0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_controller0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_fbx0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_fbx1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat2
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_physicmaterial0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png2
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png3
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png7

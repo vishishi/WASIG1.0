@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 2923506510
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 282f0f50fd172eb28140998e25827614
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 282f0f50fd172eb28140998e25827614
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Textures/start button.png
+- Assets/Textures/Particles/Particle textures/Sprites/flare_01.png
+- Assets/Textures/Super charge/circle 1.png
+- Assets/Textures/Beat.png
+- Assets/Textures/UI/Pink Triangle.png
+- Assets/Textures/GroundPattern.png
+- Assets/Textures/gesture 2 blue.png
+- Assets/Textures/Particles/Particle textures/Sprites/circle_05.png
+- Assets/Textures/Super charge/star 1.png
+- Assets/Textures/Particles/Particle textures/Sprites/symbol_02.png
+- Assets/Textures/UI/panda reticle.png
+- Assets/Textures/grid spaceship.png
+- Assets/Textures/Super charge/star 2.png
+- Assets/Textures/battery.png
+- Assets/Textures/Particles/Particle textures/Sprites/smoke_04.png
+- Packages/com.unity.xr.hands/Editor/Icons/XRHandShape_ScriptIcon.png
+- Assets/Textures/hands.png
+- Assets/Textures/UI/full spaceship.png
+- Assets/Textures/Particles/Particle textures/Sprites/star_07.png
+- Assets/Textures/charge.png
+- Assets/Textures/Particles/Particle textures/Sprites/star_02.png
+- Assets/Textures/seamlessspace.png
+- Assets/Textures/Particles/Particle textures/Sprites/symbol_01.png
+- Assets/Textures/UI/Triangle.png
+- Assets/Textures/gesture 2 filled.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenCoffeeMachine01A_AO.png
+Dependencies: []

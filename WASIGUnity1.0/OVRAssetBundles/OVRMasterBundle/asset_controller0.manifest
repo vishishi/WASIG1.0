@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 4109662720
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4889d290d72ee3e6271154967cb0373d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 147058da82bee871bbce28e472030442
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4889d290d72ee3e6271154967cb0373d
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Animations/Animators/GreenPoster.controller
+- Assets/Animations/Narration.controller
+- Assets/Animations/Animators/Mug.controller
+- Assets/Animations/Animators/Lights.controller
+- Assets/Animations/Animators/Beats.controller
+- Assets/Animations/Animators/Peace controller.controller
+- Assets/Animations/Animators/Reticle Animator.controller
+- Assets/Animations/Animators/CommsAnimator.controller
+- Assets/Animations/Animators/Triangle.controller
+- Assets/Animations/Animators/Stage.controller
+- Assets/Animations/Animators/SuperCharge.controller
+- Assets/Animations/Animators/Watch.controller
+- Assets/Beatmaps/Bracelets.controller
+- Assets/Animations/Animators/PinkPoster.controller
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_anim0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_fbx0

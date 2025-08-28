@@ -54,11 +54,21 @@ using UnityEngine.UI;
 
     IEnumerator StartAnimation(Vector3 touchLocation)
     {
-        //bedroomManager.sceneChanger++;
+       
         myCol.enabled = false;
-        Instantiate(touchVFX, touchLocation, Quaternion.Euler(0f, 0f, 90f));
+        if(gameObject.name == "Books" || gameObject.name == "Computer")
+        {
+            Instantiate(touchVFX, touchLocation, Quaternion.Euler(0, -90, 90));
+        }
+
+        else
+        {
+            Instantiate(touchVFX, touchLocation, Quaternion.Euler(0f, 0f, 90f));
+        }
+        
         yield return new WaitUntil(() => !particles.isPlaying);
         animator.SetBool("hasTouched", true);
+        Debug.Log(gameObject.name + " is playing now");
         yield return new WaitForSeconds (5);
         if (gameObject.name == "Window")
         {
@@ -68,6 +78,8 @@ using UnityEngine.UI;
         {
             animator.SetBool("hasRead", true);
         }
+        yield return new WaitForSeconds (5);
+        bedroomManager.sceneChanger++;
     }
 
     protected virtual void OnTriggerEnter(Collider other)

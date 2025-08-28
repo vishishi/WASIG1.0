@@ -1,0 +1,49 @@
+ManifestFileVersion: 0
+CRC: 1847875018
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 982b64815a6450c22dcd0f5cf473fc29
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 982b64815a6450c22dcd0f5cf473fc29
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter02B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter02B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MCeiling02B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Computer emission map 4.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomAccessories01B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/CoffeeTable03B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesBoots01B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSink01A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MDoor02B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MWall03B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/OfficeDeskSet02_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MCeiling02A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomAccessories01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter02A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorShapes01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomAccessories01B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable01A_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/OfficeDeskSet02_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/CoffeeTable03B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MGlassFrosted01A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Display03A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor01A_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable02A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorPhotoFrame01B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/CoffeeTable03A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSink01A_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter02B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorShapes01B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter01B_NM.png
+- Assets/Textures/Textures/glitter noise.png
+Dependencies: []

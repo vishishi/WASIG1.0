@@ -1,0 +1,32 @@
+ManifestFileVersion: 0
+CRC: 3516662314
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 503802b3ec32fbdc9341f752258e1fb1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c0ff923d44eb8f68679063de7a325945
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 503802b3ec32fbdc9341f752258e1fb1
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Scenes/ShikiBedroom/Lightmap-1_comp_light.exr
+- Assets/Scenes/ShikiBedroom/ReflectionProbe-8.exr
+- Assets/Scenes/ShikiBedroom/ReflectionProbe-7.exr
+- Assets/Scenes/ShikiBedroom/ReflectionProbe-0.exr
+- Assets/Scenes/ShikiBedroom/ReflectionProbe-6.exr
+- Assets/Scenes/ShikiBedroom/ReflectionProbe-5.exr
+- Assets/Scenes/ShikiBedroom/ReflectionProbe-1.exr
+- Assets/Scenes/ShikiBedroom/ReflectionProbe-3.exr
+- Assets/Scenes/ShikiBedroom/ReflectionProbe-2.exr
+- Assets/Scenes/ShikiBedroom/ReflectionProbe-4.exr
+- Assets/Scenes/ShikiBedroom/Lightmap-0_comp_light.exr
+Dependencies: []

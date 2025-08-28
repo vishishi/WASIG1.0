@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 977440452
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 732bec5a374c211f699ebf78c1f533ab
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 732bec5a374c211f699ebf78c1f533ab
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Textures/makina poster.jpg
+- Assets/Textures/petal ref.jpg
+- Assets/Textures/ranka 3.jpg
+- Assets/Textures/pink carpet.jpg
+Dependencies: []

@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 1997120798
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 30ab4a66689f363a4bf6ef15338179c7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 30ab4a66689f363a4bf6ef15338179c7
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MWall03B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Wardrobe01B_Emission.png
+- Assets/Textures/Loading.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesBoots01B.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MPilaster01B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomShower01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorPhotoFrame01B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesBoots01B_NM.png
+- Assets/Free Skyboxes - Space/SBS Space 2/Small/Textures/Up_Skybox_Space 2 Small.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesSuitBeg01B_AO.png
+- Assets/Textures/Textures/tea pot texture.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/OfficeDeskSet02.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampWall02B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MCeiling02A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenCoffeeMachine01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable01A_AO.png
+- Assets/Textures/Gesture 3.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MCeiling02B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorShapes01B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenCoffeeMachine01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesSuitBeg01B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorShapes01B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampWall02A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MWall03B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Sofa03B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSink01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DeskChair02B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Wardrobe01A_NM.png
+- Assets/Textures/maki watch w bg.png
+Dependencies: []

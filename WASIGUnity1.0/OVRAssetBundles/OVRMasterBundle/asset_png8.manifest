@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 1334145549
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5ace232f697e9a3c129c7f7706fe93cd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5ace232f697e9a3c129c7f7706fe93cd
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSink01B.png
+- Assets/Free Skyboxes - Space/SBS Space 2/Small/Textures/Right_Skybox_Space 2 Small.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MDoor02B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter02B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSoapDispenser01A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSoapDispenser01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorShapes01B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenFurniture01A_Emission.png
+- Assets/Free Skyboxes - Space/SBS Space 2/Small/Textures/Down_Skybox_Space 2 Small.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesSuitBeg01B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampWall02A.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MWall03B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable01A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomShower01A_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesBoots01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable01B.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MCeiling02A_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSink01A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MPilaster01B.png
+- Assets/Scenes/ShikiBedroom/Lightmap-0_comp_dir.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MDoor02A.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesSuitBeg01A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomShower01B_Emission.png
+- Assets/Textures/Gesture 1.png
+- Assets/Free Skyboxes - Space/SBS Space 2/Small/Textures/Back_Skybox_Space 2 Small.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Plant02_S.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomAccessories01B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomShower01B.png
+Dependencies: []

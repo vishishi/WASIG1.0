@@ -1,0 +1,67 @@
+ManifestFileVersion: 0
+CRC: 3941203423
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: afd882f98b8c33aa41099437199e67e8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: afd882f98b8c33aa41099437199e67e8
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/CuteHands.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Display03A.mat
+- Assets/Materials/Particles/YellowBurst.mat
+- Assets/Materials/Particles/Supercharge_scificircle_particle.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MWall03AOff.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MPilaster01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Planter02B.mat
+- Assets/Materials/Particles/Supercharge_Sparkles_Particles.mat
+- Assets/Materials/Stage/Ground.mat
+- Assets/Materials/Stage/Stars.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/LampWall02A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/KitchenCoffeeMachine01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Wardrobe01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MCeiling02A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/KitchenFurniture01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MDoor02B.mat
+- Assets/Materials/Room Props/MakinaPoster.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Bed01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/LampWall02B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/DeskChair02B.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MFloor03-1B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/DecorShapes01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Plant02.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/ClothesSuitBeg01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MDoor02A.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MGlass01.mat
+- Assets/Materials/LightSpheres.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Sofa03B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/LampTable01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/BathroomAccessories01A.mat
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_jpg0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png10
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png2
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png3
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png4
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png5
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png6
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png7
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png8
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png9
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_shadergraph0

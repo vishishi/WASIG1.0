@@ -16,6 +16,7 @@ public class BeatMapSpawner : MonoBehaviour
     public List<Transform> gridCells;
     public GameObject[] reticlePrefabs;
     public Transform barrier;
+    public AudioSource knp;
 
     private List<BeatEvent> beatEvents;
 
@@ -78,7 +79,9 @@ public class BeatMapSpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitUntil(() => sequencer.hasStarted);
-            FMODUnity.RuntimeManager.PlayOneShot("event:/KagamiNoPanda");
+
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/KagamiNoPanda");
+            knp.Play();
             hypeTrackAudio.SetActive(true);
 
 

@@ -1,0 +1,54 @@
+ManifestFileVersion: 0
+CRC: 668663302
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4eae0dbf0b53e702671cfe0beea8ad0f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4eae0dbf0b53e702671cfe0beea8ad0f
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/Particles/Pyramid_Material.mat
+- Assets/Materials/Particles/Pyramid_Material 1.mat
+- Assets/Materials/Lights/Purple Light.mat
+- Assets/Materials/Particles/Supercharge_Hands_Particles.mat
+- Assets/Materials/Stage/HoloBlue.mat
+- Assets/Materials/SS_Transparent.mat
+- Assets/Materials/UI/HeartHands.mat
+- Assets/Materials/CuteHands 1.mat
+- Assets/Materials/Particles/CyanBurst.mat
+- Assets/Materials/Particles/BlueBurst.mat
+- Assets/Materials/Lights/Stajr Lights.mat
+- Assets/Materials/SS_Matte black.mat
+- Assets/Materials/Particles/Stage_smoke_particles.mat
+- Assets/Materials/Particles/FeedbackParticle.mat
+- Assets/Materials/UI/Heart UI.mat
+- Assets/Materials/Particles/FeedbackParticleBlue1.mat
+- Assets/Materials/Lights/Pole Lights Native.mat
+- Assets/Materials/Particles/PandaParticles.mat
+- Assets/Materials/Lights/Stage Cyan 1.mat
+- Assets/Materials/Particles/PinkBurst.mat
+- Assets/Materials/Stage/Metal.mat
+- Assets/Materials/Lights/Red Light.mat
+- Assets/Materials/SS_Emission.mat
+- Assets/Materials/Stage/Chrome.mat
+- Assets/Materials/Stage/HoloDarkBlue.mat
+- Assets/Materials/Particles/Supercharge_Stars_Particles.mat
+- Assets/Materials/SB_Emission.mat
+- Assets/Materials/UI/CyanBeat.mat
+- Assets/Materials/UI/MagentaBeat.mat
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png10
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_shader0

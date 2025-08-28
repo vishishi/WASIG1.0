@@ -124,6 +124,16 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1255203512-0
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1742459343-0
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1540916377-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-4813077249247778754-1973121753
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-5115778163452692559-54953991
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-276621617-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-156153082-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1433898259-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-899296243-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1791764698-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-313418072-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1881619077-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-2012677620-0
         values:
         - colorIndex: 0
           iconNameOrGuid: cs Script Icon
@@ -143,3 +153,23 @@ MonoBehaviour:
           iconNameOrGuid: BoxCollider Icon
         - colorIndex: 0
           iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 6
+          iconNameOrGuid: 
+        - colorIndex: 6
+          iconNameOrGuid: WheelCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 8
+          iconNameOrGuid: MeshCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: Terrain Icon
+        - colorIndex: 0
+          iconNameOrGuid: cs Script Icon
+        - colorIndex: 0
+          iconNameOrGuid: ScriptableObject Icon
+        - colorIndex: 3
+          iconNameOrGuid: Favorite
+        - colorIndex: 6
+          iconNameOrGuid: PreMatCube
+        - colorIndex: 0
+          iconNameOrGuid: TrailRenderer Icon

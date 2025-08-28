@@ -8,10 +8,14 @@ public class WatchInteractor : Interactable
     private AudioSource callSound;
     private Animator animator;
     public bool hasLooked = false;
-    void Start()
+    public GameObject interactor;
+   
+    void Awake()
     {
         callSound = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
+        myCollider = GetComponent<Collider>();
+        myCollider.enabled = false;
     }
 
     void Update()
@@ -23,7 +27,7 @@ public class WatchInteractor : Interactable
     public void ReceiveCall()
     {
        ringer.Play();
-
+       myCollider.enabled = true;
        callSound.Play();
        animator.SetBool("isCalling", true);
         
@@ -32,13 +36,13 @@ public class WatchInteractor : Interactable
     public override void Interact()
     {
         Debug.Log("player looked!");
+        interactor.SetActive(false);
 
-
-        ringer.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+        ringer.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
 
 
         callSound.Stop();
-        animator.StopPlayback();
+        animator.SetBool("isCalling", false);
         hasLooked = true;   
     }
 }

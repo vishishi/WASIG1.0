@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1472644561
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 97ea345f257821a8cc4219fadacebeca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a4b57b1a56d6b76d200651994ae0863
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 97ea345f257821a8cc4219fadacebeca
+HashAppended: 0
+ClassTypes:
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Scenes/New Lighting Settings.lighting
+Dependencies: []

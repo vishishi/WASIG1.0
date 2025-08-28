@@ -1,0 +1,24 @@
+ManifestFileVersion: 0
+CRC: 1059779687
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 11c5cc4cba8e68173afe15ccf96d49fd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f4d58da2e394c3ac790f4c422276af4f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 11c5cc4cba8e68173afe15ccf96d49fd
+HashAppended: 0
+ClassTypes:
+- Class: 134
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Shared/PhyMaterials/PhyLeather.physicMaterial
+- Assets/TirgamesAssets/SciFiWorld/Shared/PhyMaterials/PhyGlass.physicMaterial
+- Assets/TirgamesAssets/SciFiWorld/Shared/PhyMaterials/PhyMetal.physicMaterial
+- Assets/TirgamesAssets/SciFiWorld/Shared/PhyMaterials/PhyFabric.physicMaterial
+- Assets/TirgamesAssets/SciFiWorld/Shared/PhyMaterials/PhyPlastic.physicMaterial
+Dependencies: []

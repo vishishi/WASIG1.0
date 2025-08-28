@@ -1,0 +1,115 @@
+ManifestFileVersion: 0
+CRC: 4188431649
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bdbb1d131484e25673e926e2a69e61a9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e0d7f45433e0a399c61146dcb7b77904
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: bdbb1d131484e25673e926e2a69e61a9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 51404063eeedb2549a8c325b22956fa9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bb7d6f4946d27064ebc83c9dee81b090, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3bcab9b837ff3c54d9edb6e2855cdc2e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 26a2d342bd824be41b513420d56daf80, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 134
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 73398921
+  Script: {instanceID: 0}
+- Class: 2058629509
+  Script: {instanceID: 0}
+- Class: 2083052967
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Prefabs/BluieTriangleReticle.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/DecorPhotoFrame01_3.prefab
+- Assets/Prefabs/PandaReticle.prefab
+- Assets/Prefabs/HeartSign.prefab
+- Assets/Prefabs/Peace Sign blue.prefab
+- Assets/Prefabs/PinkTriangleReticle.prefab
+- Assets/Prefabs/KHeart Sign.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/BathroomSoapDispenser01.prefab
+- Assets/Models/pyramid.prefab
+- Assets/Prefabs/Blue Pyramid Variant.prefab
+- Assets/Prefabs/starstick.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/CoffeeTable03_1.prefab
+- Assets/Prefabs/Peace Sign.prefab
+- Assets/Prefabs/Pink Pyramid Variant.prefab
+- Assets/TirgamesAssets/SciFiWorld/Props/Prefabs/Bed01_1.prefab
+- Assets/Prefabs/ChoiceManager.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MCeiling02-350x350-1.prefab
+- Assets/Prefabs/TouchVFX.prefab
+- Assets/Prefabs/Panda.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MFloor03-350x50-1.prefab
+- Assets/TirgamesAssets/SciFiWorld/Modules/Prefabs/MCeiling02-350x175-1.prefab
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_controller0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_fbx0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_fbx1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat2
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat3
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_physicmaterial0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png10
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png8
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_vfx0

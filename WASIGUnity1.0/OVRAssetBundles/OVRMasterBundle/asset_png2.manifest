@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 4124011151
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 71de2787464fa29b812adecaf1580aa8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 71de2787464fa29b812adecaf1580aa8
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Plant02.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MWall03B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter01B.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor03-1B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor03-1A_NM.png
+- Assets/Textures/unnamed_project_voronoi2.png
+- Assets/Textures/comms light.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenCoffeeMachine01B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenCoffeeMachine01B.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor03-1B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorShapes01A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Display03A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/CoffeeTable03B_Emission.png
+- Assets/Textures/Textures/Teleport reticle.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor01A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorPhotoFrame01A_AO.png
+- Assets/Scenes/ShikiBedroom/Lightmap-1_comp_dir.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampWall02B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Bed01B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MWall03A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorPhotoFrame01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter02A_Emission.png
+- Assets/Free Skyboxes - Space/SBS Space 2/Small/Textures/Front_Skybox_Space 2 Small.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesSuitBeg01A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Display03B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesSuitBeg01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomShower01B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesBoots01A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor03-1B.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor03-1A_Metallic.png
+Dependencies: []

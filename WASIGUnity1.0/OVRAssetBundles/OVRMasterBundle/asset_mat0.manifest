@@ -1,0 +1,66 @@
+ManifestFileVersion: 0
+CRC: 3726727542
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4c03d809987206564572123d449f54f8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4c03d809987206564572123d449f54f8
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/Shader Graph/Tree.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MPilaster01B.mat
+- Assets/Materials/Flowers.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/DecorShapes01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/BathroomSink01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/BathroomSink01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MCeiling02B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/CoffeeTable03B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Display03B.mat
+- Assets/Materials/Room Props/Pink Carpet.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/BathroomSoapDispenser01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/CoffeeTable03A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/BathroomAccessories01B.mat
+- Assets/Materials/Particles/Outercall.mat
+- Assets/Materials/Tea set/Beige mug.mat
+- Assets/Free Skyboxes - Space/SBS Space 2/Small/Skybox_Space 2 Small.mat
+- Assets/Models/Books material.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/ClothesBoots01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MGlassFrosted01A.mat
+- Assets/Materials/Watch/innerbandnotcall.mat
+- Assets/Materials/Panda faces/Panda face.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/BathroomSoapDispenser01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MWall03B.mat
+- Assets/Materials/Room Props/Telecom.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/BathroomShower01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Planter02A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Desk01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/ClothesSuitBeg01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/DecorPhotoFrame01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Planter01A.mat
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_jpg0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png2
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png3
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png4
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png5
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png6
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png7
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png8
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png9
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_shadergraph0

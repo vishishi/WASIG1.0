@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 38420083
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2875dce93295e95078aa8427cccf1979
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ee91e22d3717f0d680b10bc94fe7cf1e
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2875dce93295e95078aa8427cccf1979
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 72
+  Script: {instanceID: 0}
+- Class: 2058629509
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Materials/New VFX.vfx
+Dependencies: []

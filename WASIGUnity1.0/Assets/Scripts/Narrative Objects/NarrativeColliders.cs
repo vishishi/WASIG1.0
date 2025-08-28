@@ -5,9 +5,10 @@ using UnityEngine;
 public class NarrativeColliders : MonoBehaviour
 {
     public NarrativeObjects narrativeObject;
+    private Collider myCollider;
     void Start()
     {
-        
+        myCollider = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -29,6 +30,8 @@ public class NarrativeColliders : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             narrativeObject.UnSignpost();
+            myCollider.enabled = false;
+          
         }
     }
 }

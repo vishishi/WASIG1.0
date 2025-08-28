@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 919709553
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1647a6b20dae9851a45b31c37348d50e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2efc7cb271410f566fa6baec4ab376f1
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1647a6b20dae9851a45b31c37348d50e
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Animations/Animators/Rotation.anim
+- Assets/Animations/call.anim
+- Assets/Animations/Animators/Movement.anim
+- Assets/Animations/fix.anim
+- Assets/Scripts/lights to 0.anim
+- Assets/Animations/Animators/intensity.anim
+- Assets/Animations/Animators/Rotation 2.anim
+- Assets/Animations/CommsBedroom.anim
+- Assets/Animations/Gestures/FillPeaceBlue.anim
+- Assets/Animations/Green Poster.anim
+- Assets/Animations/Animators/ShrinkTriangle.anim
+- Assets/Animations/ReticleFiller.anim
+- Assets/Animations/Animators/Movement 1.anim
+- Assets/Animations/NarrAppear2.anim
+- Assets/Animations/Gestures/UnFillPeaceBlue.anim
+- Assets/Animations/NarrApear.anim
+Dependencies: []

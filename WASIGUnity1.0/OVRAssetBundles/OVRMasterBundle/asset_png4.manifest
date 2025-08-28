@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 1887245477
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 53afbb47d23571461a0f6710038196fa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 53afbb47d23571461a0f6710038196fa
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable01B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Wardrobe01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesBoots01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor03-1B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenFurniture01B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MDoor02A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MFloor01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Display03B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Desk01B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorPhotoFrame01B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Wardrobe01B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesBoots01B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenCoffeeMachine01A_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Desk01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampWall02A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Bed01B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Wardrobe01B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable02A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Sofa03A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable02B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampWall02A_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MCeiling02B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DeskChair02A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSoapDispenser01A_Metallic.png
+- Assets/Textures/Textures/Chair 2.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MPilaster01B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/CoffeeTable03B_AO.png
+- Assets/Textures/Maki UI 2.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorPhotoFrame01A_NM.png
+Dependencies: []

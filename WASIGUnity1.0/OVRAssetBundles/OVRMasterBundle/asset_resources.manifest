@@ -1,0 +1,210 @@
+ManifestFileVersion: 0
+CRC: 2562971522
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 76dcfb1dfa7d04d76d0c3038e9565c8e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 54b589c1c965befb7821b64becfeb2fe
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 76dcfb1dfa7d04d76d0c3038e9565c8e
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: b87314b32fbe18943af496e4b47136c6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 82874db8faf1071438bbcf855a2e8a93, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: efa1458c2bc55e04b872c61942be2866, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 97ba6cc2660c0ca498540d254701057a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2705215ac5b84b70bacc50632be6e391, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8f591a193113347409efedcc618e83d6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bc1f51bc35d549941904cf062bae93a3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8922a6ca86889d84f8371a29d37b6dc8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2b76bcf034ab49e4a8cd30239a716460, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 690929a59dc7a42da9030305190d391f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 60e5406209e5ed147bb02ed71f9c40f3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 335f0a4b26fb46942858ea029e030d2a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9587379c972e4a54da1949613f11e1c6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 73549a74f689f0849a8271d9e908c514, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 93a382382f106584e8f8f62412fee177, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ab2114bdc8544297b417dfefe9f1e410, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a7d75bea1662418ab5f9e0c22110bc09, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 17eea195bdfbf014e91ba7620ee491f8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 191492db6e452eb468b95433ec162164, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 54d21f6ece3b46479f0c328f8c6007e0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 84a92b25f83d49b9bc132d206b370281, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3abeb1429547a134480f4f2f1efc7e21, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: eef8d824ea7b63742966aaa0e94ac383, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3863570e7e6387a40ae4f323d83291e5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9660e62d6232af242877f0cc2b90c63d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d92d0baf34dae0e4ea032a42bd6107c0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.BankLoadType
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.ImportType
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Legacy/Platform
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.MeterChannelOrderingType
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertyBool
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertyCallbackHandler
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertyCodecChannels
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertyInt
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertyScreenPosition
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertySpeakerMode
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertyStorage
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertyString
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertyStringList
+- AssemblyName: FMODUnity
+  ClassName: FMODUnity.Platform/PropertyThreadAffinityList
+- AssemblyName: Meta.XR.ImmersiveDebugger.Interface
+  ClassName: Meta.XR.ImmersiveDebugger.DebugMember
+- AssemblyName: Meta.XR.ImmersiveDebugger
+  ClassName: Meta.XR.ImmersiveDebugger.DebugData
+- AssemblyName: Meta.XR.ImmersiveDebugger
+  ClassName: Meta.XR.ImmersiveDebugger.InspectedMember
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FaceInfo_Legacy
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.FontAssetCreationSettings
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.KerningTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Character
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontFeatureTable
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_FontWeightPair
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_GlyphAdjustmentRecord
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_GlyphPairAdjustmentRecord
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_GlyphValueRecord
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Sprite
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_SpriteCharacter
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_SpriteGlyph
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Style
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.FaceInfo
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.Glyph
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.GlyphMetrics
+- AssemblyName: UnityEngine.TextCoreFontEngineModule
+  ClassName: UnityEngine.TextCore.GlyphRect
+Assets:
+- Assets/Resources/OVROverlayCanvasSettings.asset
+- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+- Assets/XRI/Settings/Resources/InteractionLayerSettings.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans
+  SDF - Metalic Green.mat
+- Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/Default Sprite Asset.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans
+  SDF - Soft Mask.mat
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+- Assets/Resources/MetaXRAcousticMaterialMapping.asset
+- Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/DropCap Numbers.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans
+  SDF - Overlay.mat
+- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop
+  Shadow.mat
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
+- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF
+  - Surface.mat
+- Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+- Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Blue to
+  Purple - Vertical.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to
+  Dark Green - Vertical.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat
+- Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset
+- Assets/Resources/ImmersiveDebuggerSettings.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway
+  Sign SDF.asset
+- Assets/Resources/OVRPlatformToolSettings.asset
+- Assets/Resources/InputActions.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny
+  Days.mat
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF
+  - Drop Shadow.mat
+- Assets/TextMesh Pro/Resources/TMP Settings.asset
+- Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF -
+  Outline.mat
+- Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to
+  Light Green - Vertical.asset
+- Assets/Resources/OVRBuildConfig.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF -
+  Drop Shadow.mat
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat
+- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+- Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Yellow to
+  Orange - Vertical.asset
+- Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
+- Assets/Resources/MetaXRAcousticSettings.asset
+- Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+- Assets/Resources/OculusRuntimeSettings.asset
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_ttf0

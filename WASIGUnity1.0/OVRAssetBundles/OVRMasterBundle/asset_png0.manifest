@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 2410522571
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3756b7288a324884418d55b7f4c32959
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2d8df09e698f722ada1caa03d3413830
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 3756b7288a324884418d55b7f4c32959
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomShower01A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MDoor02A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorShapes01A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenCoffeeMachine01B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DeskChair02A_Metallic.png
+- Assets/Textures/Gesture 2.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/KitchenCoffeeMachine01B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomAccessories01A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Bed01A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampWall02B_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSoapDispenser01B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter01B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable02A.png
+- Assets/Textures/angry panda.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/LampTable02B.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Planter01A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/Wardrobe01A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MCeiling02B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MPilaster01A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomAccessories01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/ClothesSuitBeg01A_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/CoffeeTable03A_Metallic.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MWall03A_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MPilaster01B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MPilaster01A.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSoapDispenser01A_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSink01B_AO.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/BathroomSink01B_Emission.png
+- Assets/TirgamesAssets/SciFiWorld/Modules/Textures/MDoor02B_NM.png
+- Assets/TirgamesAssets/SciFiWorld/Props/Textures/DecorPhotoFrame01B.png
+Dependencies: []

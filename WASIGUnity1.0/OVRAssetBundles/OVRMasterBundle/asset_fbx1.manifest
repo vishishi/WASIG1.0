@@ -1,0 +1,59 @@
+ManifestFileVersion: 0
+CRC: 837382998
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ac5dd7be8852bec301b24e1fa29cc2ed
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 134b7874faf1e4f485ed3c5a681e862b
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ac5dd7be8852bec301b24e1fa29cc2ed
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/LampTable01.FBX
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/MWall03-700x350-3.FBX
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/MPilaster01-350x350-2.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/ClothesBoots01R.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/BathroomSoapDispenser01.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Sofa03_1.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/BathroomSink01_2.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/OfficeDeskSet02_11.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/OfficeDeskSet02_7.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/DecorPhotoFrame01_2.FBX
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/MWall03-350x350-6.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/DecorPhotoFrame01_1.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/OfficeDeskSet02_5.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/DeskChair02.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/BathroomShower01.FBX
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/MFloor03-700x700-1.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/LampWall02_1.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Display03.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/OfficeDeskSet02_12.FBX
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/MFloor03-700x350-1.FBX
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/MCeiling02-350x350-3.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/OfficeDeskSet02_10.FBX
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/MCeiling02-175x175-Corner.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Wardrobe01_1.FBX
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/MCeiling02-350x350-1.FBX
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/MCeiling02-350x175-1.FBX
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/DecorShapes01_1.FBX
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat2

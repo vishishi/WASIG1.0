@@ -1,0 +1,68 @@
+ManifestFileVersion: 0
+CRC: 1404317841
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ca19af249b545cec0e83381bbb515031
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c0e00cfb9c8873b3a2ae9a0bf437df32
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ca19af249b545cec0e83381bbb515031
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Models/watch.fbx
+- Assets/Models/telecom.fbx
+- Packages/com.meta.xr.sdk.core/Meshes/HandTracking/OpenXRLeftHand.fbx
+- Assets/Models/starstick.fbx
+- Assets/Models/black cat.fbx
+- Assets/Models/calico cat.fbx
+- Assets/Environment/Stage.fbx
+- Assets/Models/Panda.fbx
+- Assets/Models/pyramid.fbx
+- Assets/Models/star bracelet.fbx
+- Assets/Models/cat tea pot.fbx
+- Assets/Animations/Stage Animation.fbx
+- Packages/com.meta.xr.sdk.core/Meshes/HandTracking/OculusHand_R.fbx
+- Packages/com.meta.xr.sdk.core/Meshes/HandTracking/OpenXRRightHand.fbx
+- Packages/com.meta.xr.sdk.core/Meshes/HandTracking/OculusHand_L.fbx
+- Assets/Models/lamp tree.fbx
+- Assets/Models/rug fun.fbx
+- Assets/Models/PandaPlushie 2 .fbx
+- Assets/Models/beige cat.fbx
+- Assets/Models/books.fbx
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_jpg0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat2
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_mat3
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png2
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_shader0

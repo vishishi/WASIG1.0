@@ -1,0 +1,66 @@
+ManifestFileVersion: 0
+CRC: 3783540929
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9c54ddac48607323e1a85dcbe2283f9d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b30fce1a9ad74efb72be6c308c56e365
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9c54ddac48607323e1a85dcbe2283f9d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/LampTable01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MWall03BOff.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/BathroomShower01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Bed01B.mat
+- Assets/Materials/Panda faces/Panda face 2.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Phy.mat
+- Assets/Materials/Tea set/Black mug.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MFloor03-1A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/OfficeDeskSet02.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/DeskChair02A.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MFloor01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/ClothesBoots01A.mat
+- Assets/Materials/Watch/Outer.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Planter01B.mat
+- Assets/Materials/Panda faces/Panda face 1.mat
+- Assets/TirgamesAssets/SciFiWorld/Modules/Models/Materials/MWall03A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Sofa03A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/LampTable02B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/DecorPhotoFrame01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Wardrobe01A.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/LampTable02A.mat
+- Assets/Materials/Tea set/Calico mug.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/KitchenFurniture01B.mat
+- Assets/Materials/Tea set/Tea pot.mat
+- Assets/Materials/Watch/Outer band.mat
+- Assets/Materials/Room Props/RankaPoster.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/KitchenCoffeeMachine01B.mat
+- Assets/TirgamesAssets/SciFiWorld/Props/Models/Materials/Desk01A.mat
+- Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
+- Assets/Materials/Watch/Maki watch.mat
+Dependencies:
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_jpg0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png1
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png2
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png3
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png4
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png5
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png6
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png7
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png8
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_png9
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_shader0
+- D:/WASIG/WASIG1.0/WASIGUnity1.0/OVRAssetBundles/OVRMasterBundle/asset_shadergraph0
