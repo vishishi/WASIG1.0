@@ -18,6 +18,8 @@ using UnityEngine.UI;
     public GameObject touchVFX;
     public BedroomManager bedroomManager;
     [HideInInspector]
+    public DialogueManager dialogueManager;
+    [HideInInspector]
     public Collider myCol;
    void Start()
     {
@@ -54,9 +56,9 @@ using UnityEngine.UI;
 
     IEnumerator StartAnimation(Vector3 touchLocation)
     {
-       
+
         myCol.enabled = false;
-        if(gameObject.name == "Books" || gameObject.name == "Computer")
+        if (gameObject.name == "Books" || gameObject.name == "Computer")
         {
             Instantiate(touchVFX, touchLocation, Quaternion.Euler(0, -90, 90));
         }
@@ -65,11 +67,33 @@ using UnityEngine.UI;
         {
             Instantiate(touchVFX, touchLocation, Quaternion.Euler(0f, 0f, 90f));
         }
-        
+
         yield return new WaitUntil(() => !particles.isPlaying);
         animator.SetBool("hasTouched", true);
         Debug.Log(gameObject.name + " is playing now");
-        yield return new WaitForSeconds (5);
+        dialogueManager.StartConversation();
+        if (dialogueManager.isTesting)
+        {
+            foreach (var snippets in dialogueManager.dialogueSnippets)
+            {
+                yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+                dialogueManager.NextDialogueSnippet();
+
+
+
+            }
+        }
+        else
+        {
+            foreach (var snippets in dialogueManager.dialogueSnippets)
+            {
+                yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetVA.length + 1);
+                dialogueManager.NextDialogueSnippet();
+              }
+        }
+
+        // dialogueManager.NextDialogueSnippet();
+        //yield return new WaitForSeconds (5);
         if (gameObject.name == "Window")
         {
             animator.SetBool("hasRead", false);

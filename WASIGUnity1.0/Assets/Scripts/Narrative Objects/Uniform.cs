@@ -14,6 +14,7 @@ public class Uniform : NarrativeObjects
         images = canvas.GetComponentsInChildren<Image>();
         animator = GetComponentInChildren<Animator>();
         myCol = GetComponent<Collider>() ?? GetComponentInChildren<Collider>();
+        dialogueManager = GetComponentInChildren<DialogueManager>();
     }
 
     void Update()

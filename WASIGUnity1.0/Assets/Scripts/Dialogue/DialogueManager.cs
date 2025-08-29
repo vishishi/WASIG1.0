@@ -8,21 +8,23 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI dialogueText;
-    [SerializeField] Button nextButton;
-    [SerializeField] GameObject dialogueObjectButton;
-    [SerializeField] GameObject dialogueScriptObject;
+    //[SerializeField] Button nextButton;
+    //[SerializeField] GameObject dialogueObjectButton;
+    //[SerializeField] GameObject dialogueScriptObject;
     int numberOfDialogueObjects = 8;
 
     //make an array of the snippet class
-    [SerializeField] DialogueSnippet[] dialogueSnippets;
-    int currentSnippetIndex = 0;
+    public DialogueSnippet[] dialogueSnippets;
+    [HideInInspector]
+    public int currentSnippetIndex = 0;
+    public bool isTesting;
 
 
 
     private void Start()
     {
-        nextButton.onClick.RemoveAllListeners();
-        nextButton.onClick.AddListener(NextDialogueSnippet);
+        //nextButton.onClick.RemoveAllListeners();
+        //nextButton.onClick.AddListener(NextDialogueSnippet);
     }
 
     private void Update()
@@ -38,36 +40,39 @@ public class DialogueManager : MonoBehaviour
     public void StartConversation()
     {
         dialogueText.text = dialogueSnippets[currentSnippetIndex].dialogueSentenceEnglish;
-        dialogueObjectButton.SetActive(false);
+        //dialogueObjectButton.SetActive(false);
 
     }
     
 
     
     //trigger this on a button or an interactable
-    void NextDialogueSnippet()
+    public void NextDialogueSnippet()
     {
-        //increase index number of snippets
-        currentSnippetIndex++;
-
-        //update text every time button is pressed
-        dialogueText.text = dialogueSnippets[currentSnippetIndex].dialogueSentenceEnglish;
-
+        if (currentSnippetIndex >= dialogueSnippets.Length-1)
+        {
+            return;
+        }
         //when FMOD play monologue sound by key here
 
-        //if we have reached the end of the array
-        if (currentSnippetIndex >= dialogueSnippets.Length)
+        else
         {
-            EndThisDialogue();
+          
+            //increase index number of snippets
+            currentSnippetIndex++;
+
+            //update text every time button is pressed
+            dialogueText.text = dialogueSnippets[currentSnippetIndex].dialogueSentenceEnglish;
         }
+  
 
     }
 
     void EndThisDialogue()
     {
         Debug.Log("End of Dialogue");
-        numberOfDialogueObjects--;
-        dialogueScriptObject.SetActive(false);
+        //numberOfDialogueObjects--;
+        //dialogueScriptObject.SetActive(false);
 
     }
 

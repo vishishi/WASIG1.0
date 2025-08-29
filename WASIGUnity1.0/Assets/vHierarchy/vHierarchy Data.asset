@@ -134,6 +134,7 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-313418072-0
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1881619077-0
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-2012677620-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-2019728231-0
         values:
         - colorIndex: 0
           iconNameOrGuid: cs Script Icon
@@ -173,3 +174,5 @@ MonoBehaviour:
           iconNameOrGuid: PreMatCube
         - colorIndex: 0
           iconNameOrGuid: TrailRenderer Icon
+        - colorIndex: 9
+          iconNameOrGuid: LightProbes Icon

@@ -8,6 +8,9 @@ public class DialogueSnippet
 {
     [TextArea(3, 10)]
     public string dialogueSentenceEnglish;
+    public AudioClip snippetVA;
+    public float snippetTime;
+    public string characterName;  
 
     //when we put in FMOD add a string for the audio key
     
