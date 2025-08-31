@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.InputSystem.Utilities;
 
 
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI dialogueText;
+    [SerializeField] AudioSource dialogueAudioSource;
     //[SerializeField] Button nextButton;
     //[SerializeField] GameObject dialogueObjectButton;
     //[SerializeField] GameObject dialogueScriptObject;
@@ -31,10 +33,10 @@ public class DialogueManager : MonoBehaviour
     {
 
 
-        if (numberOfDialogueObjects > 0)
+        /*if (numberOfDialogueObjects > 0)
         {
             Debug.Log("there are no more dialogue objects");
-        }
+        }*/
     }
 
     public void StartConversation()
@@ -53,7 +55,7 @@ public class DialogueManager : MonoBehaviour
         {
             return;
         }
-        //when FMOD play monologue sound by key here
+        
 
         else
         {
@@ -63,8 +65,16 @@ public class DialogueManager : MonoBehaviour
 
             //update text every time button is pressed
             dialogueText.text = dialogueSnippets[currentSnippetIndex].dialogueSentenceEnglish;
+
+            //play audio clip
+            dialogueAudioSource.Stop();
+            dialogueAudioSource.clip = dialogueSnippets[currentSnippetIndex].snippetVA;
+            dialogueAudioSource.Play();
+
+
+
         }
-  
+
 
     }
 
