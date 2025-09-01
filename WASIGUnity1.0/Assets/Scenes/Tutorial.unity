@@ -5660,7 +5660,170 @@ MonoBehaviour:
   characterPortrait: {fileID: 45363629}
   shikiSprite: {fileID: 21300000, guid: f671973af56c57c48abb287dddea2ac7, type: 3}
   makiSprite: {fileID: 21300000, guid: 012169a26b7a0b74790b71a218e9272f, type: 3}
-  dialogueSnippets: []
+  dialogueSnippets:
+  - dialogueSentenceEnglish: "Wow, the stage is different when you\u2019re standing
+      on it"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I\u2019ve been to a bunch of idol concerts, sure."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s not like there\u2019s much else to do in
+      this place, and there have been even more than usual recently."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "You can\u2019t get away from it"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "But I\u2019ve never been actually on the stage."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: Security just waved me right through.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: It looks so weird with no one here.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "The tech is incredible though, I can\u2019t deny that."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I wonder how\u2026)"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: Blimey Maki, no time to even catch my breath! Better
+      answer.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: Are you psychic? I just got here
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I\u2019ve done the walk from our place to the stage
+      five to six times a week since I was 12, I know how long it takes."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: I added three minutes as you know it less well.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Minus one as you were in a hurry.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "\u2026Fair."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: You ready?
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "I kinda have to be, don\u2019t I? "
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: " Yes! Let\u2019s get started"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: 'OK, Shiki! So, as you know, idol concerts on our ship
+      are a sound and light extravaganza!! '
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "Fortunately for you, the flying lights aren\u2019t
+      just fun for the audience to look at, they tell you when to move!"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: OK... But which lights and which moves??
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I\u2019ll break it down. Let\u2019s do your left hand
+      first."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Left is pink right?
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: Left is pink. You read the handbook at least.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: 'OK Shiki, I want you to point at the pink triangles
+      to the beat. | '
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Just point?
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: Just point.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: 'If you really <i> feel </i> the rhythm it will be a
+      vibe, trust me. '
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: 'OK, for those of us with slightly less rhythm in our
+      bodies, when do you point? '
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: When the triangle and its spinning outline overlap.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Which is also the moment they reach the screen.  Which
+      is also on beat.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: " It\u2019s really not that hard"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "Easy for you to say\u2026"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: What was that?
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "Nothing, let\u2019s try it."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Finally! OK, I\u2019ll turn on some music."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Point at the triangles with your left hand, Shiki!
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "Let\u2019s go."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
   currentSnippetIndex: 0
   isTesting: 0
 --- !u!1001 &159689039
