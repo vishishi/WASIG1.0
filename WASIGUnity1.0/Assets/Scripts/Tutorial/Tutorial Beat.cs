@@ -1,27 +1,10 @@
-using Oculus.Interaction;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
-
-//This is a script attached to the beat prefabs, it handles the logic for the beats dissapearing and the particles bursting, it also tell the hand to change colors
-//if they are hit with the correct hand (Left --> pink, right --> blue, both --> yellow)
-
-[HideInInspector]
-
-public enum Accuracy
-{
-    Perfect,
-    Good,
-    Bad,
-    Miss
-}
-public class Beat : Interactable
-
-{
-    private PlayHitFeedback playHitFeedback;
+public class TutorialBeat : Interactable
+{ 
 
     [System.Serializable]
 
@@ -59,7 +42,7 @@ public class Beat : Interactable
     private float hitTime;
     [HideInInspector]
     public Vector3 beatLocation;
-    
+
 
     public AccuracyColorPair[] accuracyColors;
     private Dictionary<Accuracy, Color> accuracyColorMap;
@@ -82,8 +65,8 @@ public class Beat : Interactable
 
 
 
-        
- 
+
+
     }
 
     public void FindParticles()
@@ -116,9 +99,9 @@ public class Beat : Interactable
     }
     public override void Interact(GameObject rayOrigin)
     {
-       
+
         beatLocation = gameObject.transform.position;
-        
+
         HandIdentity identity = rayOrigin.GetComponent<HandIdentity>();
         //Vairables for burst particles to be used in score
         var shapeColor = shape.colorOverLifetime;
@@ -191,7 +174,7 @@ public class Beat : Interactable
             switch (result)
             {
                 case Accuracy.Perfect:
-                    scoreCounter.score += 125;
+           
                     burstCount = 100;
                     scoreCounter.perfect++;
                     Debug.Log("Perfect!");
@@ -221,26 +204,25 @@ public class Beat : Interactable
             switch (result)
             {
                 case Accuracy.Perfect:
-                    scoreCounter.score += 100;
+                  //  scoreCounter.score += 100;
                     burstCount = 100;
-                    playHitFeedback.PlayPerfectHit(beatLocation);
-                    scoreCounter.perfect++;
+                    //scoreCounter.perfect++;
                     Debug.Log("Perfect!");
                     break;
                 case Accuracy.Good:
-                    scoreCounter.score += 75;
+                    //scoreCounter.score += 75;
                     burstCount = 75;
-                    scoreCounter.good++;
+                    //scoreCounter.good++;
                     Debug.Log("Good!");
                     break;
                 case Accuracy.Bad:
-                    scoreCounter.score += 25;
+                    //scoreCounter.score += 25;
                     burstCount = 75;
-                    scoreCounter.good++;
+                    //scoreCounter.good++;
                     Debug.Log("Bad!");
                     break;
                 case Accuracy.Miss:
-                    scoreCounter.miss++;
+                    //scoreCounter.miss++;
                     Debug.Log("Miss!");
                     break;
 
@@ -254,14 +236,14 @@ public class Beat : Interactable
 
     public void OnTriggerEnter(Collider other)
     {
-     float timeToHit = Time.time - spawnTime;  // how long this beat has traveled
-    Debug.Log("Time to hit wall: " + timeToHit.ToString("F2") + " seconds");
+        float timeToHit = Time.time - spawnTime;  // how long this beat has traveled
+        Debug.Log("Time to hit wall: " + timeToHit.ToString("F2") + " seconds");
 
         scoreCounter.miss++;
-    Destroy(gameObject);
-      
+        Destroy(gameObject);
 
-       
+
+
 
         Debug.Log("collided!" + other.gameObject.name);
 
@@ -298,8 +280,8 @@ public class Beat : Interactable
         throw new System.NotImplementedException();
     }
 
-//Coroutines that takes parameter for changing the booleans in the Hand Identity script (manages colors)  
-    IEnumerator ToggleBooleans(Action<HandIdentity> setTrueAction, Action<HandIdentity> setFalseAction) 
+    //Coroutines that takes parameter for changing the booleans in the Hand Identity script (manages colors)  
+    IEnumerator ToggleBooleans(Action<HandIdentity> setTrueAction, Action<HandIdentity> setFalseAction)
     {
         HandIdentity leftHand = null;
         HandIdentity rightHand = null;
@@ -313,16 +295,13 @@ public class Beat : Interactable
             if (hand.handType == HandType.Right) rightHand = hand;
         }
 
-        if (leftHand != null)setTrueAction(leftHand);
-        if (rightHand != null)setTrueAction(rightHand);
-           
+        if (leftHand != null) setTrueAction(leftHand);
+        if (rightHand != null) setTrueAction(rightHand);
+
         yield return new WaitForSeconds(0.2f);
 
         if (leftHand != null) setFalseAction(leftHand);
         if (rightHand != null) setFalseAction(rightHand);
-            
+
     }
 }
-
-  
-

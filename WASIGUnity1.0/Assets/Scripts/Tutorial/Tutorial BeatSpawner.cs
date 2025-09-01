@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class TutorialBeatSpawner : MonoBehaviour
 {
-
+   public TutorialDialogueManager dialogueManager;
     [Header("Audio & Map")]
     //[SerializeField] GameObject hypeTrackAudio;
 
@@ -25,7 +26,7 @@ public class TutorialBeatSpawner : MonoBehaviour
     public class PausePoint
     {
         public float time;
-        public float duration;
+        public int dialoguePoint;
     }
     public StageSequencer stageSequencer;
 
@@ -34,7 +35,7 @@ public class TutorialBeatSpawner : MonoBehaviour
 
     private float songTimer = 0f;
     private bool isPaused = false;
-    //
+    private int dialogueInteger;
 
     [Header("Gesture Spawnner Variables")]
     public GameObject spawnTransform;
@@ -74,20 +75,15 @@ public class TutorialBeatSpawner : MonoBehaviour
 
             while (beatIndex < beatEvents.Count)
             {
-                if (!isPaused)
-                {
-                    songTimer += Time.deltaTime;
-                }
+            
 
                 // Handle any pause
-                if (pauseIndex < pausePoints.Count && songTimer >= pausePoints[pauseIndex].time && !isPaused)
+                if (pauseIndex < pausePoints.Count && !isPaused)
                 {
+
+                  
                     isPaused = true;
-                    float pauseDuration = pausePoints[pauseIndex].duration;
-                    Debug.Log($"[Pause] Pausing spawn logic for {pauseDuration}s at songTime={songTimer:F2}s");
-                    GameObject firstGesture = Instantiate(gesture, transform1.position, Quaternion.identity);
-                    Debug.Log("Gesture" + gesture.name + "spawwned at" + gesture.transform.position.ToString());
-                    yield return new WaitForSeconds(pauseDuration);
+                    yield return new WaitUntil(() => pausePoints[pauseIndex].dialoguePoint == dialogueManager.currentSnippetIndex);
    
 
                     pauseIndex++;
@@ -96,7 +92,7 @@ public class TutorialBeatSpawner : MonoBehaviour
                 }
 
                 // Spawn beat if it’s time
-                if (!isPaused && beatIndex < beatEvents.Count && songTimer >= beatEvents[beatIndex].time)
+                if (!isPaused && beatIndex < beatEvents.Count)
                 {
                     Debug.Log($"[Spawn] Spawning Beat #{beatIndex} at {songTimer:F2}s (scheduled: {beatEvents[beatIndex].time:F2}s)");
                     SpawnBeat(beatEvents[beatIndex]);
@@ -134,11 +130,11 @@ public class TutorialBeatSpawner : MonoBehaviour
                 if (pauseIndex < pausePoints.Count && songTimer >= pausePoints[pauseIndex].time && !isPaused)
                 {
                     isPaused = true;
-                    float pauseDuration = pausePoints[pauseIndex].duration;
-                    Debug.Log($"[Pause] Pausing spawn logic for {pauseDuration}s at songTime={songTimer:F2}s");
+                  
+                    Debug.Log($"[Pause] Pausing spawn logic for s at songTime={songTimer:F2}s");
                     GameObject firstGesture = Instantiate(gesture, transform1.position, Quaternion.identity);
                     Debug.Log("Gesture" + gesture.name + "spawwned at" + gesture.transform.position.ToString());
-                    yield return new WaitForSeconds(pauseDuration);
+                    yield return new WaitForSeconds(5);
                     Destroy(firstGesture);
 
                     pauseIndex++;
