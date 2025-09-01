@@ -71,40 +71,23 @@ using UnityEngine.UI;
         yield return new WaitUntil(() => !particles.isPlaying);
         animator.SetBool("hasTouched", true);
         Debug.Log(gameObject.name + " is playing now");
+        yield return new WaitForSeconds(3);
         dialogueManager.StartConversation();
-        if (dialogueManager.isTesting)
+        yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+
+        foreach (var snippets in dialogueManager.dialogueSnippets)
         {
-            foreach (var snippets in dialogueManager.dialogueSnippets)
-            {
-                yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
-                dialogueManager.NextDialogueSnippet();
+            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+            dialogueManager.NextDialogueSnippet();
 
-
-
-            }
-        }
-        else
-        {
-            foreach (var snippets in dialogueManager.dialogueSnippets)
-            {
-                yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetVA.length + 1);
-                dialogueManager.NextDialogueSnippet();
-              }
         }
 
-        // dialogueManager.NextDialogueSnippet();
-        //yield return new WaitForSeconds (5);
-        if (gameObject.name == "Window")
-        {
-            animator.SetBool("hasRead", false);
-        }
-        else
-        {
-            animator.SetBool("hasRead", true);
-        }
-        yield return new WaitForSeconds (5);
+        animator.SetBool("hasRead", true);
+
+        yield return new WaitForSeconds(5);
         bedroomManager.sceneChanger++;
     }
+            
 
     protected virtual void OnTriggerEnter(Collider other)
     {

@@ -42,6 +42,9 @@ public class DialogueManager : MonoBehaviour
     public void StartConversation()
     {
         dialogueText.text = dialogueSnippets[currentSnippetIndex].dialogueSentenceEnglish;
+        dialogueAudioSource.Stop();
+        dialogueAudioSource.clip = dialogueSnippets[currentSnippetIndex].snippetVA;
+        dialogueAudioSource.Play();
         //dialogueObjectButton.SetActive(false);
 
     }

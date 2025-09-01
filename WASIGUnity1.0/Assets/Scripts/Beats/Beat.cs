@@ -231,14 +231,12 @@ public class Beat : Interactable
                 case Accuracy.Good:
                     scoreCounter.score += 75;
                     burstCount = 75;
-                    playHitFeedback.PlayGoodHit(beatLocation);
                     scoreCounter.good++;
                     Debug.Log("Good!");
                     break;
                 case Accuracy.Bad:
                     scoreCounter.score += 25;
                     burstCount = 75;
-                    playHitFeedback.PlayOKHit(beatLocation);
                     scoreCounter.good++;
                     Debug.Log("Bad!");
                     break;

@@ -16,6 +16,7 @@ public class Mug : NarrativeObjects
         images = canvas.GetComponentsInChildren<Image>();
         animator = GetComponentInChildren<Animator>();
         myCol = GetComponent<Collider>() ?? GetComponentInChildren<Collider>();
+        dialogueManager = GetComponentInChildren<DialogueManager>();
     }
 
     // Update is called once per frame

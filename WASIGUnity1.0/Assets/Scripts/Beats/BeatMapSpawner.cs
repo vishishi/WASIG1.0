@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class BeatMapSpawner : MonoBehaviour
@@ -26,6 +28,7 @@ public class BeatMapSpawner : MonoBehaviour
         public float time;
         public float duration;
     }
+    public StageSequencer stageSequencer;
 
     [Header("Pause Settings")]
     public List<PausePoint> pausePoints;
@@ -39,7 +42,6 @@ public class BeatMapSpawner : MonoBehaviour
     private Transform transform1;
     public GameObject[] gesturePrefab;
 
-    public StageSequencer sequencer;
 
     [HideInInspector]
     public int gestureChoice;
@@ -50,9 +52,7 @@ public class BeatMapSpawner : MonoBehaviour
         beatEvents = JsonUtility.FromJson<BeatEventList>(beatMapJSON.text).events;
         transform1 = spawnTransform.transform;
 
-       
-        
-        switch(gestureChoice)
+        switch (gestureChoice)
         {
             case (1):
                 {
@@ -71,18 +71,18 @@ public class BeatMapSpawner : MonoBehaviour
                 break;
         }
 
-        
+
     }
 
     IEnumerator SpawnBeatsWithPauses(GameObject gesture)
     {
         while (true)
         {
-            yield return new WaitUntil(() => sequencer.hasStarted);
 
+            yield return new WaitUntil(() => stageSequencer.hasStarted);
             //FMODUnity.RuntimeManager.PlayOneShot("event:/KagamiNoPanda");
             knp.Play();
-           //hypeTrackAudio.SetActive(true);
+            //hypeTrackAudio.SetActive(true);
 
 
             int beatIndex = 0;
@@ -121,11 +121,15 @@ public class BeatMapSpawner : MonoBehaviour
 
                 yield return null;
             }
-            yield return null ;
+            yield return null;
         }
     }
 
-    void SpawnBeat(BeatEvent beat)
+
+
+
+
+    public void SpawnBeat(BeatEvent beat)
     {
         int cellIndex = Mathf.Clamp(beat.cellIndex, 0, gridCells.Count - 1);
         int prefabIndex = Mathf.Clamp(beat.prefabIndex, 0, beatPrefabs.Length - 1);
@@ -145,6 +149,7 @@ public class BeatMapSpawner : MonoBehaviour
         mover.moveSpeed = 4f;
     }
 
+
     [System.Serializable]
     public class BeatEvent
     {
@@ -158,7 +163,10 @@ public class BeatMapSpawner : MonoBehaviour
     {
         public List<BeatEvent> events;
     }
+
 }
+
+
 
 
 
