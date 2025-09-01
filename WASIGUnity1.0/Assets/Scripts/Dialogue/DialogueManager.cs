@@ -46,8 +46,12 @@ public class DialogueManager : MonoBehaviour
 
     public void StartConversation()
     {
+      
         dialogueText.text = dialogueSnippets[currentSnippetIndex].dialogueSentenceEnglish;
-        characterNameText.text = dialogueSnippets[currentSnippetIndex].characterName;
+        if (characterNameText != null)
+        {
+            characterNameText.text = dialogueSnippets[currentSnippetIndex].characterName;
+        }
         dialogueAudioSource.Stop();
         dialogueAudioSource.clip = dialogueSnippets[currentSnippetIndex].snippetVA;
         dialogueAudioSource.Play();
@@ -59,6 +63,11 @@ public class DialogueManager : MonoBehaviour
         else if ((dialogueSnippets[currentSnippetIndex].characterName == "Maki"))
         {
             characterPortrait.sprite = makiSprite;
+        }
+
+        else
+        {
+            return;
         }
         //dialogueObjectButton.SetActive(false);
 
