@@ -12,6 +12,8 @@ public class BedroomManager : MonoBehaviour
     public GameObject comms;
     public TextMeshProUGUI counter;
     public GameObject[] text;  
+    public DialogueManager dialogueManager;
+
     void Start()
     {
         StartCoroutine(ChangeSequence());
@@ -38,9 +40,17 @@ public class BedroomManager : MonoBehaviour
             comms.SetActive(true);
             Debug.Log("Comms set active!");
             yield return new WaitForSeconds(10);
-            text[0].SetActive(false);
-            yield return new WaitForSeconds(10);
-            text[1].SetActive(true);
+            dialogueManager.StartConversation();
+            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+
+            foreach (var snippets in dialogueManager.dialogueSnippets)
+            {
+                yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+                dialogueManager.NextDialogueSnippet();
+
+            }
+
+
 
 
 

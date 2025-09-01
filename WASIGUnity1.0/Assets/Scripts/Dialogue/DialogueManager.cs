@@ -9,7 +9,12 @@ using UnityEngine.InputSystem.Utilities;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI dialogueText;
+    [SerializeField] TextMeshProUGUI characterNameText;
     [SerializeField] AudioSource dialogueAudioSource;
+    [SerializeField] Image characterPortrait;
+    [SerializeField] Sprite shikiSprite;
+    [SerializeField] Sprite makiSprite;
+
     //[SerializeField] Button nextButton;
     //[SerializeField] GameObject dialogueObjectButton;
     //[SerializeField] GameObject dialogueScriptObject;
@@ -42,9 +47,19 @@ public class DialogueManager : MonoBehaviour
     public void StartConversation()
     {
         dialogueText.text = dialogueSnippets[currentSnippetIndex].dialogueSentenceEnglish;
+        characterNameText.text = dialogueSnippets[currentSnippetIndex].characterName;
         dialogueAudioSource.Stop();
         dialogueAudioSource.clip = dialogueSnippets[currentSnippetIndex].snippetVA;
         dialogueAudioSource.Play();
+        if (dialogueSnippets[currentSnippetIndex].characterName == "Shiki")
+        {
+            characterPortrait.sprite = shikiSprite;
+        }
+
+        else if ((dialogueSnippets[currentSnippetIndex].characterName == "Maki"))
+        {
+            characterPortrait.sprite = makiSprite;
+        }
         //dialogueObjectButton.SetActive(false);
 
     }
@@ -66,13 +81,26 @@ public class DialogueManager : MonoBehaviour
             //increase index number of snippets
             currentSnippetIndex++;
 
+   
+
             //update text every time button is pressed
             dialogueText.text = dialogueSnippets[currentSnippetIndex].dialogueSentenceEnglish;
+            characterNameText.text = dialogueSnippets[currentSnippetIndex].characterName;
 
             //play audio clip
             dialogueAudioSource.Stop();
             dialogueAudioSource.clip = dialogueSnippets[currentSnippetIndex].snippetVA;
             dialogueAudioSource.Play();
+            
+            if (dialogueSnippets[currentSnippetIndex].characterName == "Shiki")
+            {
+                characterPortrait.sprite = shikiSprite;
+            }
+
+            else if ((dialogueSnippets[currentSnippetIndex].characterName == "Maki"))
+            {
+                characterPortrait.sprite = makiSprite;
+            }
 
 
 

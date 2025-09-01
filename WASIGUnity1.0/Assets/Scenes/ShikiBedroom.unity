@@ -934,7 +934,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1569898601}
+  characterNameText: {fileID: 0}
   dialogueAudioSource: {fileID: 0}
+  characterPortrait: {fileID: 0}
+  shikiSprite: {fileID: 0}
+  makiSprite: {fileID: 0}
   dialogueSnippets:
   - dialogueSentenceEnglish: 'Miki''s books on idols. Of course, I haven''t read
       any. '
@@ -12046,7 +12050,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 880720574}
+  characterNameText: {fileID: 0}
   dialogueAudioSource: {fileID: 1045626674}
+  characterPortrait: {fileID: 0}
+  shikiSprite: {fileID: 0}
+  makiSprite: {fileID: 0}
   dialogueSnippets:
   - dialogueSentenceEnglish: 'Guess I''ll be wearing this today. '
     snippetVA: {fileID: 8300000, guid: 188fcceceddc81a438816ea625d899de, type: 3}
@@ -13329,6 +13337,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d37d5f07f45c87b479249ab8bc7503a0, type: 3}
+--- !u!1 &733324493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733324494}
+  - component: {fileID: 733324495}
+  m_Layer: 6
+  m_Name: Comms Dialogue Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &733324494
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733324493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2052182583}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &733324495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733324493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 797c8bd9f9d1f0f459a048a05d813fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 680681160}
+  characterNameText: {fileID: 966922696}
+  dialogueAudioSource: {fileID: 1045626674}
+  characterPortrait: {fileID: 1484322356}
+  shikiSprite: {fileID: 21300000, guid: f671973af56c57c48abb287dddea2ac7, type: 3}
+  makiSprite: {fileID: 21300000, guid: 012169a26b7a0b74790b71a218e9272f, type: 3}
+  dialogueSnippets: []
+  currentSnippetIndex: 0
+  isTesting: 0
 --- !u!1 &734716626
 GameObject:
   m_ObjectHideFlags: 0
@@ -20399,6 +20464,7 @@ MonoBehaviour:
   text:
   - {fileID: 1438765925}
   - {fileID: 1530624885}
+  dialogueManager: {fileID: 0}
 --- !u!4 &899296245
 Transform:
   m_ObjectHideFlags: 0
@@ -21114,6 +21180,141 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 776742773}
   m_SourcePrefab: {fileID: 100100000, guid: 5cf68994ee7ecef40a058432afd40968, type: 3}
+--- !u!1 &966922695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966922698}
+  - component: {fileID: 966922697}
+  - component: {fileID: 966922696}
+  m_Layer: 6
+  m_Name: Character Name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &966922696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966922695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Maki
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a70a379a93bab3147b89d3bcc6101451, type: 2}
+  m_sharedMaterial: {fileID: 9142292971662960327, guid: a70a379a93bab3147b89d3bcc6101451,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &966922697
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966922695}
+  m_CullTransparentMesh: 1
+--- !u!224 &966922698
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966922695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1438765926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -443, y: -183}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &975682570
 GameObject:
   m_ObjectHideFlags: 0
@@ -21492,7 +21693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.269
+      value: 1.156
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21500,7 +21701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.467
+      value: 1.917
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24484,7 +24685,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1815761607}
+  characterNameText: {fileID: 0}
   dialogueAudioSource: {fileID: 1045626674}
+  characterPortrait: {fileID: 0}
+  shikiSprite: {fileID: 0}
+  makiSprite: {fileID: 0}
   dialogueSnippets:
   - dialogueSentenceEnglish: I wonder what it would be like to look out of the window
       and see something different..
@@ -29549,7 +29754,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1569898601}
+  characterNameText: {fileID: 0}
   dialogueAudioSource: {fileID: 1045626674}
+  characterPortrait: {fileID: 0}
+  shikiSprite: {fileID: 0}
+  makiSprite: {fileID: 0}
   dialogueSnippets:
   - dialogueSentenceEnglish: 'Maki''s books on idols. '
     snippetVA: {fileID: 8300000, guid: 164bba903e21a86439a730f117d56a3b, type: 3}
@@ -30390,6 +30599,7 @@ RectTransform:
   - {fileID: 1105966519}
   - {fileID: 680681159}
   - {fileID: 1484322355}
+  - {fileID: 966922698}
   m_Father: {fileID: 2052182583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -30886,7 +31096,7 @@ GameObject:
   - component: {fileID: 1484322357}
   - component: {fileID: 1484322356}
   m_Layer: 6
-  m_Name: Maki Portrait
+  m_Name: Character Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41539,7 +41749,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 514645212}
+  characterNameText: {fileID: 0}
   dialogueAudioSource: {fileID: 1045626674}
+  characterPortrait: {fileID: 0}
+  shikiSprite: {fileID: 0}
+  makiSprite: {fileID: 0}
   dialogueSnippets:
   - dialogueSentenceEnglish: 'Idol Planet, Goto''s Garden.. '
     snippetVA: {fileID: 0}
@@ -51022,6 +51236,7 @@ RectTransform:
   - {fileID: 365753585}
   - {fileID: 1530624886}
   - {fileID: 1438765926}
+  - {fileID: 733324494}
   m_Father: {fileID: 1045626668}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -51715,7 +51930,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 809205627}
+  characterNameText: {fileID: 0}
   dialogueAudioSource: {fileID: 1045626674}
+  characterPortrait: {fileID: 0}
+  shikiSprite: {fileID: 0}
+  makiSprite: {fileID: 0}
   dialogueSnippets:
   - dialogueSentenceEnglish: 'Pandas, everywhere. '
     snippetVA: {fileID: 8300000, guid: 067f233369edd0d4b94a91ffe5afbbb4, type: 3}
@@ -52533,6 +52752,11 @@ PrefabInstance:
     - target: {fileID: 4837212363304045233, guid: a30a95e521154224c929c1d4d515712e,
         type: 3}
       propertyPath: m_FillMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456233340318478202, guid: a30a95e521154224c929c1d4d515712e,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7394592183103608811, guid: a30a95e521154224c929c1d4d515712e,
