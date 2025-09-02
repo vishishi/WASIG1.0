@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using UnityEngine;
 
 public class TutorialBeatSpawner : MonoBehaviour
 {
-   public TutorialDialogueManager dialogueManager;
+    [Header("References")]
+    public TutorialDialogueManager dialogueManager;
+    public TutorialSequencer stageSequencer;
+    public TutorialScoreCounter scoreCounter;
+
     [Header("Audio & Map")]
-    //[SerializeField] GameObject hypeTrackAudio;
-
-
-    //public AudioSource musicSource;
+    public AudioSource knp; // your music track
     public TextAsset beatMapJSON;
 
     [Header("Gameplay")]
@@ -18,147 +18,103 @@ public class TutorialBeatSpawner : MonoBehaviour
     public List<Transform> gridCells;
     public GameObject[] reticlePrefabs;
     public Transform barrier;
-    public AudioSource knp;
-
-    private List<BeatEvent> beatEvents;
 
     [System.Serializable]
     public class PausePoint
     {
-        public float time;
-        public int dialoguePoint;
+        public float time;                   // where in the track this pause starts
+        public int dialoguePoint;            // dialogue index that triggers it
+        public TutorialPhase requiredPhase;  // tutorial phase tied to this pause
     }
-    public StageSequencer stageSequencer;
 
     [Header("Pause Settings")]
     public List<PausePoint> pausePoints;
 
+    private List<BeatEvent> beatEvents;
     private float songTimer = 0f;
     private bool isPaused = false;
-    private int dialogueInteger;
+    private float lastCheckpointTime = 0f; // restart point for retries
+    private int currentPauseIndex = 0;
 
-    [Header("Gesture Spawnner Variables")]
+    [Header("Gesture Spawner Variables")]
     public GameObject spawnTransform;
     private Transform transform1;
     public GameObject[] gesturePrefab;
 
-
-    [HideInInspector]
-    public int gestureChoice;
-
-    [HideInInspector]
-    public bool hasChosen;
-
+    [HideInInspector] public int gestureChoice;
+    [HideInInspector] public bool hasChosen;
 
     void Start()
     {
+        // Load beat events from JSON
         beatEvents = JsonUtility.FromJson<BeatEventList>(beatMapJSON.text).events;
         transform1 = spawnTransform.transform;
-       
 
-
+        // Start waiting for tutorial sequence
+        StartCoroutine(MainLoop());
     }
 
-    IEnumerator SpawnBeatsWithPauses(GameObject gesture)
+    IEnumerator MainLoop()
     {
-        while (true)
+        // Wait until tutorial "has started"
+        yield return new WaitUntil(() => stageSequencer.hasStarted);
+
+        // Step through pause points
+        while (currentPauseIndex < pausePoints.Count)
         {
+            PausePoint currentPause = pausePoints[currentPauseIndex];
 
-            yield return new WaitUntil(() => stageSequencer.hasStarted);
-            //FMODUnity.RuntimeManager.PlayOneShot("event:/KagamiNoPanda");
+            // Wait until dialogue reaches the right snippet index
+            yield return new WaitUntil(() => dialogueManager.currentSnippetIndex == currentPause.dialoguePoint);
+
+            // Wait out the dialogue snippet duration
+            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[currentPause.dialoguePoint].snippetTime);
+
+            // Record checkpoint and start music/spawning
+            lastCheckpointTime = currentPause.time;
+            knp.time = lastCheckpointTime;
             knp.Play();
-            //hypeTrackAudio.SetActive(true);
+            yield return StartCoroutine(SpawnBeatsFromTime(lastCheckpointTime));
 
+            // Wait until the tutorial phase is marked complete
+            yield return new WaitUntil(() => scoreCounter.isCompleted(currentPause.requiredPhase));
 
-            int beatIndex = 0;
-            int pauseIndex = 0;
+            // Move to the next pause point
+            currentPauseIndex++;
+        }
+    }
 
-            while (beatIndex < beatEvents.Count)
+    IEnumerator SpawnBeatsFromTime(float startTime)
+    {
+        int beatIndex = beatEvents.FindIndex(b => b.time >= startTime);
+
+        while (beatIndex < beatEvents.Count && knp.isPlaying)
+        {
+            songTimer = knp.time; // sync timer to audio source
+
+            if (songTimer >= beatEvents[beatIndex].time)
             {
-            
-
-                // Handle any pause
-                if (pauseIndex < pausePoints.Count && !isPaused)
-                {
-
-                  
-                    isPaused = true;
-                    yield return new WaitUntil(() => pausePoints[pauseIndex].dialoguePoint == dialogueManager.currentSnippetIndex);
-   
-
-                    pauseIndex++;
-                    isPaused = false;
-                    continue;
-                }
-
-                // Spawn beat if it’s time
-                if (!isPaused && beatIndex < beatEvents.Count)
-                {
-                    Debug.Log($"[Spawn] Spawning Beat #{beatIndex} at {songTimer:F2}s (scheduled: {beatEvents[beatIndex].time:F2}s)");
-                    SpawnBeat(beatEvents[beatIndex]);
-                    beatIndex++;
-                }
-
-                yield return null;
+                SpawnBeat(beatEvents[beatIndex]);
+                beatIndex++;
             }
+
             yield return null;
         }
     }
 
-    IEnumerator SpawnBeatsWithPausesAndGestures(GameObject gesture)
+    public void RestartFromCheckpoint()
     {
-        while (true)
-        {
+        Debug.Log("[Tutorial] Restarting from checkpoint at " + lastCheckpointTime + "s");
 
-            yield return new WaitUntil(() => stageSequencer.hasStarted);
-            //FMODUnity.RuntimeManager.PlayOneShot("event:/KagamiNoPanda");
-            knp.Play();
-            //hypeTrackAudio.SetActive(true);
+        // Stop music and coroutines
+        knp.Stop();
+        StopAllCoroutines();
 
-
-            int beatIndex = 0;
-            int pauseIndex = 0;
-
-            while (beatIndex < beatEvents.Count)
-            {
-                if (!isPaused)
-                {
-                    songTimer += Time.deltaTime;
-                }
-
-                // Handle any pause
-                if (pauseIndex < pausePoints.Count && songTimer >= pausePoints[pauseIndex].time && !isPaused)
-                {
-                    isPaused = true;
-                  
-                    Debug.Log($"[Pause] Pausing spawn logic for s at songTime={songTimer:F2}s");
-                    GameObject firstGesture = Instantiate(gesture, transform1.position, Quaternion.identity);
-                    Debug.Log("Gesture" + gesture.name + "spawwned at" + gesture.transform.position.ToString());
-                    yield return new WaitForSeconds(5);
-                    Destroy(firstGesture);
-
-                    pauseIndex++;
-                    isPaused = false;
-                    continue;
-                }
-
-                // Spawn beat if it’s time
-                if (!isPaused && beatIndex < beatEvents.Count && songTimer >= beatEvents[beatIndex].time)
-                {
-                    Debug.Log($"[Spawn] Spawning Beat #{beatIndex} at {songTimer:F2}s (scheduled: {beatEvents[beatIndex].time:F2}s)");
-                    SpawnBeat(beatEvents[beatIndex]);
-                    beatIndex++;
-                }
-
-                yield return null;
-            }
-            yield return null;
-        }
+        // Restart main loop from last checkpoint
+        knp.time = lastCheckpointTime;
+        knp.Play();
+        StartCoroutine(SpawnBeatsFromTime(lastCheckpointTime));
     }
-
-
-
-
 
     public void SpawnBeat(BeatEvent beat)
     {
@@ -187,27 +143,62 @@ public class TutorialBeatSpawner : MonoBehaviour
             yield return new WaitUntil(() => hasChosen);
             switch (gestureChoice)
             {
-                case (1):
-                    {
-                        StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[0]));
-                    }
+                case 1:
+                    StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[0]));
                     break;
-                case (2):
-                    {
-                        StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[1]));
-                    }
+                case 2:
+                    StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[1]));
                     break;
-                case (3):
-                    {
-                        StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[2]));
-                    }
+                case 3:
+                    StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[2]));
                     break;
             }
             break;
         }
-
-        
     }
+
+    // Kept your original version of "SpawnBeatsWithPauses" for gestures to stay compatible
+    IEnumerator SpawnBeatsWithPauses(GameObject gesture)
+    {
+        while (true)
+        {
+            yield return new WaitUntil(() => stageSequencer.hasStarted);
+            knp.Play();
+
+            int beatIndex = 0;
+            int pauseIndex = 0;
+
+            while (beatIndex < beatEvents.Count)
+            {
+                if (pauseIndex < pausePoints.Count && !isPaused)
+                {
+                    isPaused = true;
+                    yield return new WaitUntil(() => pausePoints[pauseIndex].dialoguePoint == dialogueManager.currentSnippetIndex);
+                    yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+
+                    pauseIndex++;
+                    isPaused = false;
+                    continue;
+                }
+
+                if (!isPaused && beatIndex < beatEvents.Count)
+                {
+                    songTimer = knp.time;
+                    if (songTimer >= beatEvents[beatIndex].time)
+                    {
+                        Debug.Log($"[Spawn] Spawning Beat #{beatIndex} at {songTimer:F2}s (scheduled: {beatEvents[beatIndex].time:F2}s)");
+                        SpawnBeat(beatEvents[beatIndex]);
+                        beatIndex++;
+                    }
+                }
+
+                yield return null;
+            }
+
+            yield return null;
+        }
+    }
+
     [System.Serializable]
     public class BeatEvent
     {
@@ -221,5 +212,5 @@ public class TutorialBeatSpawner : MonoBehaviour
     {
         public List<BeatEvent> events;
     }
-
 }
+

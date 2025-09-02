@@ -25,7 +25,7 @@ public class TutorialBeat : Interactable
 
     private HandIdentity leftHand;
     private HandIdentity rightHand;
-    private ScoreCounter scoreCounter;
+    private TutorialScoreCounter scoreCounter;
 
     [HideInInspector]
     public int hits;
@@ -61,7 +61,7 @@ public class TutorialBeat : Interactable
         StartCoroutine(EnableCollider());
         FindParticles();
         spawnTime = Time.time;
-        scoreCounter = FindAnyObjectByType<ScoreCounter>();
+        scoreCounter = FindAnyObjectByType<TutorialScoreCounter>();
 
 
 

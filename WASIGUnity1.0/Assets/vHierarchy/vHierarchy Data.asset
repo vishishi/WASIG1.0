@@ -16,6 +16,7 @@ MonoBehaviour:
     keys:
     - 311826b272d5dd5488aa83a1b7d60e75
     - a408bea6dd1f7b8478110bb388fbe953
+    - 1e1dfebe50fcbf24986b03ef50aa8c97
     values:
     - goDatas_byGlobalId:
         keys:
@@ -176,3 +177,9 @@ MonoBehaviour:
           iconNameOrGuid: TrailRenderer Icon
         - colorIndex: 9
           iconNameOrGuid: LightProbes Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-970531546-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: cs Script Icon
