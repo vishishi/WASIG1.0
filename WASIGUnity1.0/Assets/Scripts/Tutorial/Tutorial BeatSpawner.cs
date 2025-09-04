@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class TutorialBeatSpawner : MonoBehaviour
 {
@@ -32,9 +33,10 @@ public class TutorialBeatSpawner : MonoBehaviour
 
     private List<BeatEvent> beatEvents;
     private float songTimer = 0f;
-    private bool isPaused = false;
     private float lastCheckpointTime = 0f; // restart point for retries
     private int currentPauseIndex = 0;
+
+    private Coroutine spawnRoutine; // keep track of active spawn coroutine
 
     [Header("Gesture Spawner Variables")]
     public GameObject spawnTransform;
@@ -44,6 +46,8 @@ public class TutorialBeatSpawner : MonoBehaviour
     [HideInInspector] public int gestureChoice;
     [HideInInspector] public bool hasChosen;
 
+    private float snippetTime;
+
     void Start()
     {
         // Load beat events from JSON
@@ -52,35 +56,63 @@ public class TutorialBeatSpawner : MonoBehaviour
 
         // Start waiting for tutorial sequence
         StartCoroutine(MainLoop());
+        StartCoroutine(WaitForChoice());
     }
+
+    private void Update()
+    {
+        snippetTime = dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime;
+    }
+
+
 
     IEnumerator MainLoop()
     {
-        // Wait until tutorial "has started"
-        yield return new WaitUntil(() => stageSequencer.hasStarted);
-
+        
         // Step through pause points
         while (currentPauseIndex < pausePoints.Count)
         {
+  
             PausePoint currentPause = pausePoints[currentPauseIndex];
 
             // Wait until dialogue reaches the right snippet index
             yield return new WaitUntil(() => dialogueManager.currentSnippetIndex == currentPause.dialoguePoint);
-
+            if (hasChosen)
+            {
+                //yield return new WaitForSeconds(snippetTime);
+                switch (gestureChoice)
+                {
+                    case 1:
+                        Instantiate(gesturePrefab[0], transform1.position, Quaternion.identity);
+                        Debug.Log("prefab instantiated!");
+                        break;
+                    case 2:
+                        Instantiate(gesturePrefab[1], transform1.position, Quaternion.identity);
+                        Debug.Log("prefab instantiated!");
+                        break;
+                    case 3:
+                        Instantiate(gesturePrefab[2], transform1.position, Quaternion.identity);
+                        Debug.Log("prefab instantiated!");
+                        break;
+                }
+            }
             // Wait out the dialogue snippet duration
-            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[currentPause.dialoguePoint].snippetTime);
+            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[currentPause.dialoguePoint].snippetTime + 2);
 
             // Record checkpoint and start music/spawning
             lastCheckpointTime = currentPause.time;
-            knp.time = lastCheckpointTime;
-            knp.Play();
-            yield return StartCoroutine(SpawnBeatsFromTime(lastCheckpointTime));
+            StartSpawnFromCheckpoint(lastCheckpointTime);
 
             // Wait until the tutorial phase is marked complete
             yield return new WaitUntil(() => scoreCounter.isCompleted(currentPause.requiredPhase));
 
+         
+            StopMusicAndSpawns();
+
             // Move to the next pause point
             currentPauseIndex++;
+
+
         }
     }
 
@@ -102,18 +134,33 @@ public class TutorialBeatSpawner : MonoBehaviour
         }
     }
 
+    // 🔹 Public helpers
+    public void StartSpawnFromCheckpoint(float startTime)
+    {
+        // Stop old routine if still running
+        if (spawnRoutine != null)
+            StopCoroutine(spawnRoutine);
+
+        knp.time = startTime;
+        knp.Play();
+        spawnRoutine = StartCoroutine(SpawnBeatsFromTime(startTime));
+    }
+
     public void RestartFromCheckpoint()
     {
         Debug.Log("[Tutorial] Restarting from checkpoint at " + lastCheckpointTime + "s");
+        StopMusicAndSpawns();
+        StartSpawnFromCheckpoint(lastCheckpointTime);
+    }
 
-        // Stop music and coroutines
+    public void StopMusicAndSpawns()
+    {
         knp.Stop();
-        StopAllCoroutines();
-
-        // Restart main loop from last checkpoint
-        knp.time = lastCheckpointTime;
-        knp.Play();
-        StartCoroutine(SpawnBeatsFromTime(lastCheckpointTime));
+        if (spawnRoutine != null)
+        {
+            StopCoroutine(spawnRoutine);
+            spawnRoutine = null;
+        }
     }
 
     public void SpawnBeat(BeatEvent beat)
@@ -153,16 +200,18 @@ public class TutorialBeatSpawner : MonoBehaviour
                     StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[2]));
                     break;
             }
+
+            yield return null;
+           Debug.Log("Gesture read by Beat Spawner!");
             break;
         }
     }
 
-    // Kept your original version of "SpawnBeatsWithPauses" for gestures to stay compatible
     IEnumerator SpawnBeatsWithPauses(GameObject gesture)
     {
         while (true)
         {
-            yield return new WaitUntil(() => stageSequencer.hasStarted);
+          
             knp.Play();
 
             int beatIndex = 0;
@@ -170,26 +219,21 @@ public class TutorialBeatSpawner : MonoBehaviour
 
             while (beatIndex < beatEvents.Count)
             {
-                if (pauseIndex < pausePoints.Count && !isPaused)
+                if (pauseIndex < pausePoints.Count)
                 {
-                    isPaused = true;
                     yield return new WaitUntil(() => pausePoints[pauseIndex].dialoguePoint == dialogueManager.currentSnippetIndex);
                     yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
 
                     pauseIndex++;
-                    isPaused = false;
                     continue;
                 }
 
-                if (!isPaused && beatIndex < beatEvents.Count)
+                songTimer = knp.time;
+                if (songTimer >= beatEvents[beatIndex].time)
                 {
-                    songTimer = knp.time;
-                    if (songTimer >= beatEvents[beatIndex].time)
-                    {
-                        Debug.Log($"[Spawn] Spawning Beat #{beatIndex} at {songTimer:F2}s (scheduled: {beatEvents[beatIndex].time:F2}s)");
-                        SpawnBeat(beatEvents[beatIndex]);
-                        beatIndex++;
-                    }
+                    Debug.Log($"[Spawn] Spawning Beat #{beatIndex} at {songTimer:F2}s (scheduled: {beatEvents[beatIndex].time:F2}s)");
+                    SpawnBeat(beatEvents[beatIndex]);
+                    beatIndex++;
                 }
 
                 yield return null;

@@ -35,7 +35,7 @@ public class PeaceTrigger : MonoBehaviour
         moduleEnabled = true;
 
 
-       // StartCoroutine(SpawnImage());
+     
 
     }
 
@@ -43,7 +43,7 @@ public class PeaceTrigger : MonoBehaviour
     void Update()
 
     {
-        Debug.Log("scoretimer:" + timeElapsed);
+     
 
         if (peaceLeft)
         {

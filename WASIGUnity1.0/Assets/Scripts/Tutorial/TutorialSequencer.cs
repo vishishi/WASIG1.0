@@ -34,6 +34,7 @@ public class TutorialSequencer : MonoBehaviour
             {
                 case 7:
                 {
+                hasStarted = true;
                 yield return new WaitForSeconds(snippetTime);
                 yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Right));
                 
@@ -43,9 +44,16 @@ public class TutorialSequencer : MonoBehaviour
                 case 10:
                     {
                         yield return new WaitForSeconds(snippetTime);
-                            yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Left));
+                        yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Left));
                     }
                      break;
+               
+                case 15:
+                    {
+                        yield return new WaitForSeconds(snippetTime);
+                        yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Panda));
+                    }
+                    break;
             }
             yield return null;
 

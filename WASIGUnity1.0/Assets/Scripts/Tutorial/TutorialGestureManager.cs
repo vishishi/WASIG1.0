@@ -10,63 +10,70 @@ public class TutorialGestureManager : MonoBehaviour
 
     public TutorialBeatSpawner beatSpawner;
     public ChoiceManager choiceManager;
+    [HideInInspector] public bool hasChosen = false;
 
 
     private void Awake()
     {
-        gesture1.SetActive(false);
-        gesture2.SetActive(false);
-        gesture3.SetActive(false);
+        //gesture1.SetActive(false);
+        //gesture2.SetActive(false);
+        //gesture3.SetActive(false);
     }
     void Start()
     {
-        if (ChoiceManager.Instance != null)
-        {
-            if (ChoiceManager.Instance.gesture1Selected)
-            {
-                gesture1.SetActive(true);
-                beatSpawner.gestureChoice = 1;
-                Debug.Log("Gesture 1 was selected!");
-            }
-
-            if (ChoiceManager.Instance.gesture2Selected)
-            {
-                gesture2.SetActive(true);
-                beatSpawner.gestureChoice = 2;
-                Debug.Log("Gesture 2 was selected!");
-
-            }
-
-            if (ChoiceManager.Instance.gesture3Selected)
-            {
-                gesture3.SetActive(true);
-                beatSpawner.gestureChoice = 3;
-                Debug.Log("Gesture 3 was selected!");
-            }
-        }
-        else
-        {
-            if (choiceManager.gesture1Selected)
-            {
-                gesture1.SetActive(true);
-                beatSpawner.gestureChoice = 1;
-                Debug.Log("Gesture 1 was selected!");
-            }
-
-            if (choiceManager.gesture2Selected)
-            {
-                gesture2.SetActive(true);
-                beatSpawner.gestureChoice = 2;
-
-            }
-
-            if (choiceManager.gesture3Selected)
-            {
-                gesture3.SetActive(true);
-                beatSpawner.gestureChoice = 3;
-            }
-        }
+      StartCoroutine (DetectChoice ());
+        hasChosen = false;
     }
 
+    IEnumerator DetectChoice()
+    {
+        while (true)
+        {
+            while(!hasChosen)
+            {
+                if (choiceManager.gesture1Selected)
+                {
+                    gesture1.SetActive(true);
+                    beatSpawner.hasChosen = true;
+                    beatSpawner.gestureChoice = 1;
+                    Debug.Log("Gesture 1 was selected!");
+                    hasChosen = true;
+                    break;
+                }
 
+                if (choiceManager.gesture2Selected)
+                {
+                    gesture2.SetActive(true);
+                    beatSpawner.hasChosen = true;
+                    beatSpawner.gestureChoice = 2;
+                    Debug.Log("Gesture 2 was selected!");
+                    hasChosen = true;
+                    break;
+
+                }
+
+                if (choiceManager.gesture3Selected)
+                {
+                    gesture3.SetActive(true);
+                    beatSpawner.hasChosen = true;
+                    beatSpawner.gestureChoice = 3;
+                    Debug.Log("Gesture 2 was selected!");
+                    hasChosen = true;
+                    break;
+                }
+                yield return null;
+               
+            }
+            yield return null;
+
+            if (hasChosen)
+            {
+                Debug.Log("Choosing loop broken!");
+                break;
+            }
+
+            
+
+        }
+    }
 }

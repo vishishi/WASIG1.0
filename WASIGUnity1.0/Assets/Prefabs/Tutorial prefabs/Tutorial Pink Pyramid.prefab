@@ -9957,6 +9957,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCollider: {fileID: 0}
   myImage: {fileID: 0}
+  hitSounds:
+  - {fileID: 5040892192510621655, guid: 6f556c5bc33bc5442b4d7561aaddcf9a, type: 3}
+  - {fileID: 1095337721455286336, guid: ae7c9070d90c8194dbfe25cb4096ea47, type: 3}
+  - {fileID: 7233694040193965686, guid: 8dea6c5c94ec2c34b97582010cc41a3f, type: 3}
   handIdentity: {fileID: 0}
   hits: 0
   hitAcc: 0

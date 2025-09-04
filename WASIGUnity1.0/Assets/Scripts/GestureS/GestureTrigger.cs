@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //This script handles the heart gesture specifically. It works by checking if both hands are making the heart gestures, there are public functions to change the booleans related to the hand gestures
 //They are public so that they can be accesed by the hand gesture scripts for meta
@@ -9,6 +10,7 @@ public class GestureTrigger : MonoBehaviour
 {
     public Image image;
     public ParticleSystem heartParticles;
+    public ChoiceManager choiceManager;
 
     public bool heartRight = false;
     public bool heartLeft = false;
@@ -17,7 +19,7 @@ public class GestureTrigger : MonoBehaviour
     private bool hasFaded = false;
     private float fadeSpeed = 4f;
     private float fadeProgress = 0f;
-
+    private Scene scene;
     [HideInInspector]
     public bool moduleEnabled;
 
@@ -28,11 +30,12 @@ public class GestureTrigger : MonoBehaviour
         heartParticles.Play();
         heartParticles.Pause();
         moduleEnabled = true;
+       scene = SceneManager.GetActiveScene();
     }
 
     void Update()
     {
-        //This is the way to access the emission amount of the heart particle system
+        
         var emission = heartParticles.emission;
         emission.enabled = moduleEnabled;
         if (heartLeft)
@@ -47,6 +50,7 @@ public class GestureTrigger : MonoBehaviour
         if (heartLeft && heartRight)
         {
             bothTrue = true;
+     
         }
 
         else
@@ -60,6 +64,10 @@ public class GestureTrigger : MonoBehaviour
         if (bothTrue)
         {
             StartCoroutine(FadeInImage());
+            if (scene.name == "Tutorial" && choiceManager != null)
+            {
+                choiceManager.gesture1Selected = true;
+            }
         }
 
     }

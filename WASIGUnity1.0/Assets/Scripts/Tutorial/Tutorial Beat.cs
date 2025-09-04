@@ -14,6 +14,7 @@ public class TutorialBeat : Interactable
         [ColorUsage(true, true)] public Color color;
     }
 
+    public GameObject[] hitSounds; 
     public HandIdentity handIdentity;
     private ParticleSystem[] particles;
     private ParticleSystem shape;
@@ -174,19 +175,22 @@ public class TutorialBeat : Interactable
             switch (result)
             {
                 case Accuracy.Perfect:
-           
+                    scoreCounter.score += 125;
+                    StartCoroutine(InstantiateSound(0));
                     burstCount = 100;
                     scoreCounter.perfect++;
                     Debug.Log("Perfect!");
                     break;
                 case Accuracy.Good:
                     scoreCounter.score += 100;
+                    StartCoroutine(InstantiateSound(1));
                     burstCount = 75;
                     scoreCounter.good++;
                     Debug.Log("Good!");
                     break;
                 case Accuracy.Bad:
-                    scoreCounter.score += 50;
+                    scoreCounter.score += 75;
+                    StartCoroutine(InstantiateSound(2));
                     burstCount = 75;
                     scoreCounter.good++;
                     Debug.Log("Bad!");
@@ -204,25 +208,28 @@ public class TutorialBeat : Interactable
             switch (result)
             {
                 case Accuracy.Perfect:
-                  //  scoreCounter.score += 100;
-                    burstCount = 100;
-                    //scoreCounter.perfect++;
+                   scoreCounter.score += 100;
+                    StartCoroutine(InstantiateSound(0));
+                    burstCount = 500;
+                    scoreCounter.perfect++;
                     Debug.Log("Perfect!");
                     break;
                 case Accuracy.Good:
-                    //scoreCounter.score += 75;
-                    burstCount = 75;
-                    //scoreCounter.good++;
+                    scoreCounter.score += 50;
+                    StartCoroutine(InstantiateSound(1));
+                    burstCount = 200;
+                    scoreCounter.good++;
                     Debug.Log("Good!");
                     break;
                 case Accuracy.Bad:
-                    //scoreCounter.score += 25;
+                    scoreCounter.score += 25;
+                    StartCoroutine(InstantiateSound(2));
                     burstCount = 75;
-                    //scoreCounter.good++;
+                    scoreCounter.good++;
                     Debug.Log("Bad!");
                     break;
                 case Accuracy.Miss:
-                    //scoreCounter.miss++;
+                    scoreCounter.miss++;
                     Debug.Log("Miss!");
                     break;
 
@@ -250,7 +257,14 @@ public class TutorialBeat : Interactable
     }
 
 
+    IEnumerator InstantiateSound(int accuracy)
+    {
+        GameObject sound = Instantiate(hitSounds[accuracy], transform.position, transform.rotation);
+        yield return new WaitForSeconds(2);
+        Destroy(sound);
+     
 
+    }
     public void Dissapear()
     {
         var shapeColor = shape.colorOverLifetime;

@@ -6,12 +6,12 @@ public class DebugSingleton : MonoBehaviour
 {
 
     public ChoiceManager choiceManagerPrefab;
-    void Start()
+    void Awake()
     {
         if (ChoiceManager.Instance == null)
         {
             Instantiate(choiceManagerPrefab);
-            choiceManagerPrefab.gesture2Selected = true;
+            choiceManagerPrefab.MarkGestureAsSelected("Gesture 2");
         }
     }
 

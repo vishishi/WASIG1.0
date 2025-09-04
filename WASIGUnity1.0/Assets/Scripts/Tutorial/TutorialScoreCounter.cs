@@ -30,6 +30,8 @@ public class TutorialScoreCounter : MonoBehaviour
     public TutorialDialogueManager dialogueManager;
     public TutorialBeatSpawner beatSpawner;
 
+    public GameObject tutorialRetryScreen;
+    public GameObject comms;
     public PeaceTrigger trigger;
     public bool isSuperCharged;
     public bool isTesting;
@@ -149,8 +151,23 @@ public class TutorialScoreCounter : MonoBehaviour
                 case 7:
                 {
                         yield return new WaitForSeconds(snippetTime);
-                        yield return StartCoroutine(RunPhase(TutorialPhase.Right, 10, 5));
+                        yield return StartCoroutine(RunPhase(TutorialPhase.Right, 20, 3));
                 }
+
+                    break;
+                case 10:
+                    {
+                        yield return new WaitForSeconds(snippetTime);
+                        yield return StartCoroutine(RunPhase(TutorialPhase.Left, 20, 3));
+                    }
+
+                    break;
+
+                case 15:
+                    {
+                        yield return new WaitForSeconds(snippetTime);
+                        yield return StartCoroutine(RunPhase(TutorialPhase.Panda, 20, 3));
+                    }
 
                     break;
             }
@@ -161,6 +178,8 @@ public class TutorialScoreCounter : MonoBehaviour
     IEnumerator RunPhase(TutorialPhase phase, float duration, int requiredPoints)
     {
         bool success = false;
+        comms.SetActive(false);
+        Debug.Log(phase.ToString() + " is the current phase");
 
         while (!success) // whole block runs until success
         {
@@ -172,6 +191,7 @@ public class TutorialScoreCounter : MonoBehaviour
                 {
                     success = true;
                     break;
+                   
                 }
 
                 elapsedTime += Time.deltaTime;
@@ -180,13 +200,21 @@ public class TutorialScoreCounter : MonoBehaviour
 
             if (!success)
             {
-                Debug.Log($"{phase} failed, restarting...");
+                yield return new WaitForSeconds(2);
+                tutorialRetryScreen.SetActive(true);
+                yield return new WaitForSeconds(7);
+                tutorialRetryScreen.SetActive(false);
                 beatSpawner.RestartFromCheckpoint(); // restart music & beats
-                yield return new WaitForSeconds(2f); // optional cooldown
+                
             }
         }
 
-        MarkCompleted(phase); // flag as completed when successful
+        perfect = 0;
+        good = 0;
+        MarkCompleted(phase);
+        Debug.Log(phase.ToString() + " was completed!");
+        yield return new WaitForSeconds(3);
+        comms.SetActive(true);
     }
 
 
