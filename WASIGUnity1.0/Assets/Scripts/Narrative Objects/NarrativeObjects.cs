@@ -8,6 +8,8 @@ using UnityEngine.UI;
     [HideInInspector]
     public AudioSource audioSource;
     [HideInInspector]
+    public AudioSource touchSound;
+    [HideInInspector]
     public ParticleSystem particles;
     [HideInInspector]
     public Canvas canvas;
@@ -53,6 +55,18 @@ using UnityEngine.UI;
 
     }
 
+    public virtual void FindComponents()
+    {
+        audioSource = GetComponent<AudioSource>();
+        particles = GetComponentInChildren<ParticleSystem>();
+        canvas = GetComponentInChildren<Canvas>();
+        images = canvas.GetComponentsInChildren<Image>();
+        animator = GetComponentInChildren<Animator>();
+        myCol = GetComponent<Collider>() ?? GetComponentInChildren<Collider>();
+        dialogueManager = GetComponentInChildren<DialogueManager>();
+        touchSound = GetComponentInChildren<AudioSource>();
+    }
+
 
     IEnumerator StartAnimation(Vector3 touchLocation)
     {
@@ -96,8 +110,10 @@ using UnityEngine.UI;
         Debug.Log("Successful hands!");
 
         UnSignpost();
+        touchSound.Play();
 
         // Approximate contact point for TRIGGERS:
+
         Vector3 pointOnMe = myCol ? myCol.ClosestPoint(other.bounds.center) : transform.position;
         Vector3 pointOnThem = other.ClosestPoint(pointOnMe);
         Vector3 spawnPos = (pointOnMe + pointOnThem) * 0.5f;

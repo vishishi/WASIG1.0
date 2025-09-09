@@ -46713,6 +46713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 521354946}
   heartParticles: {fileID: 860488140}
+  choiceManager: {fileID: 0}
   heartRight: 0
   heartLeft: 0
   bothTrue: 0
@@ -65473,10 +65474,6 @@ MonoBehaviour:
   heartParticles: {fileID: 860488140}
   peacePrefab: {fileID: 4961869915877618205, guid: ce62daaac92c44d48be577b601adfe68,
     type: 3}
-  spawnGO: {fileID: 1135229216}
-  rightHand: {fileID: 862560794}
-  leftHand: {fileID: 435257991}
-  spawnPoint: {fileID: 1135229217}
   timeElapsed: 0
   scoreCounter: {fileID: 1522564532}
   moduleEnabled: 0
@@ -79781,6 +79778,7 @@ MonoBehaviour:
   - {fileID: 6998077368723908507, guid: 9e4755bc3acb69a45a6d105cf9f83b6e, type: 3}
   barrier: {fileID: 1506042017}
   knp: {fileID: 1590814127}
+  stageSequencer: {fileID: 755247592}
   pausePoints:
   - time: 15
     duration: 7
@@ -79793,7 +79791,6 @@ MonoBehaviour:
   - {fileID: 3452406797305931171, guid: 4329b846599ef404992285338feb1e90, type: 3}
   - {fileID: 4961869915877618205, guid: ce62daaac92c44d48be577b601adfe68, type: 3}
   - {fileID: 6913391080521926532, guid: 6d3f59c8c7fa8534eb2cc7bc30c10f48, type: 3}
-  sequencer: {fileID: 755247592}
   gestureChoice: 0
 --- !u!1001 &1552629124
 PrefabInstance:

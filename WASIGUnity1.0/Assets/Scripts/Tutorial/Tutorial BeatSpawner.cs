@@ -56,7 +56,7 @@ public class TutorialBeatSpawner : MonoBehaviour
 
         // Start waiting for tutorial sequence
         StartCoroutine(MainLoop());
-        StartCoroutine(WaitForChoice());
+        //StartCoroutine(WaitForChoice());
     }
 
     private void Update()
@@ -114,6 +114,8 @@ public class TutorialBeatSpawner : MonoBehaviour
 
 
         }
+
+
     }
 
     IEnumerator SpawnBeatsFromTime(float startTime)

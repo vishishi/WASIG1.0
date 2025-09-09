@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Splash screen.unity
+    guid: 97474a16cbd8cc14e86be0dc7eb16250
+  - enabled: 1
     path: Assets/Scenes/ShikiBedroom.unity
     guid: a408bea6dd1f7b8478110bb388fbe953
   - enabled: 1

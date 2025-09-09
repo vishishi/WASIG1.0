@@ -10,13 +10,7 @@ public class Mug : NarrativeObjects
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        particles = GetComponentInChildren<ParticleSystem>();
-        canvas = GetComponentInChildren<Canvas>();
-        images = canvas.GetComponentsInChildren<Image>();
-        animator = GetComponentInChildren<Animator>();
-        myCol = GetComponent<Collider>() ?? GetComponentInChildren<Collider>();
-        dialogueManager = GetComponentInChildren<DialogueManager>();
+        FindComponents();
     }
 
     // Update is called once per frame

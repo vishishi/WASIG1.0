@@ -30,7 +30,7 @@ public class Beat : Interactable
         public Accuracy accuracy;
         [ColorUsage(true, true)] public Color color;
     }
-
+    public GameObject[] hitSounds;
     public HandIdentity handIdentity;
     private ParticleSystem[] particles;
     private ParticleSystem shape;
@@ -192,18 +192,21 @@ public class Beat : Interactable
             {
                 case Accuracy.Perfect:
                     scoreCounter.score += 125;
+                    StartCoroutine(InstantiateSound(0));
                     burstCount = 100;
                     scoreCounter.perfect++;
                     Debug.Log("Perfect!");
                     break;
                 case Accuracy.Good:
                     scoreCounter.score += 100;
+                    StartCoroutine(InstantiateSound(1));
                     burstCount = 75;
                     scoreCounter.good++;
                     Debug.Log("Good!");
                     break;
                 case Accuracy.Bad:
-                    scoreCounter.score += 50;
+                    scoreCounter.score += 75;
+                    StartCoroutine(InstantiateSound(2));
                     burstCount = 75;
                     scoreCounter.good++;
                     Debug.Log("Bad!");
@@ -222,19 +225,21 @@ public class Beat : Interactable
             {
                 case Accuracy.Perfect:
                     scoreCounter.score += 100;
-                    burstCount = 100;
-                    playHitFeedback.PlayPerfectHit(beatLocation);
+                    StartCoroutine(InstantiateSound(0));
+                    burstCount = 500;
                     scoreCounter.perfect++;
                     Debug.Log("Perfect!");
                     break;
                 case Accuracy.Good:
-                    scoreCounter.score += 75;
-                    burstCount = 75;
+                    scoreCounter.score += 50;
+                    StartCoroutine(InstantiateSound(1));
+                    burstCount = 200;
                     scoreCounter.good++;
                     Debug.Log("Good!");
                     break;
                 case Accuracy.Bad:
                     scoreCounter.score += 25;
+                    StartCoroutine(InstantiateSound(2));
                     burstCount = 75;
                     scoreCounter.good++;
                     Debug.Log("Bad!");
@@ -248,6 +253,15 @@ public class Beat : Interactable
 
 
         }
+    }
+
+    IEnumerator InstantiateSound(int accuracy)
+    {
+        GameObject sound = Instantiate(hitSounds[accuracy], transform.position, transform.rotation);
+        yield return new WaitForSeconds(2);
+        Destroy(sound);
+
+
     }
 
 

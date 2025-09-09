@@ -246,7 +246,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 30336859}
-  - component: {fileID: 30336858}
   m_Layer: 0
   m_Name: Gesture Spawn Location
   m_TagString: Untagged
@@ -254,20 +253,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &30336858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30336857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c7af60f02eb07241bfc0a3cf7900ad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  choiceManagerPrefab: {fileID: -7624613305261039162, guid: ac209508a3d01f741bc5f98c7a476a66,
-    type: 3}
 --- !u!4 &30336859
 Transform:
   m_ObjectHideFlags: 0
@@ -595,6 +580,90 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &52829599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 52829602}
+  - component: {fileID: 52829601}
+  - component: {fileID: 52829600}
+  m_Layer: 0
+  m_Name: Steven
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &52829600
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52829599}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &52829601
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52829599}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.96
+  m_Height: 4.01
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &52829602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52829599}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.080557264, z: -0, w: 0.99675}
+  m_LocalPosition: {x: -1.035, y: 9.812, z: 4.479}
+  m_LocalScale: {x: 0.21442999, y: 0.21442999, z: 0.21442999}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1914508460}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -9.241, z: 0}
 --- !u!1 &54056875
 GameObject:
   m_ObjectHideFlags: 0
@@ -19127,13 +19196,13 @@ MonoBehaviour:
   barrier: {fileID: 805141404}
   pausePoints:
   - time: 0
-    dialoguePoint: 7
+    dialoguePoint: 39
     requiredPhase: 2
   - time: 10
-    dialoguePoint: 10
+    dialoguePoint: 49
     requiredPhase: 1
   - time: 17
-    dialoguePoint: 15
+    dialoguePoint: 68
     requiredPhase: 3
   spawnTransform: {fileID: 30336857}
   gesturePrefab:
@@ -19547,7 +19616,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 505658387}
         m_TargetAssemblyTypeName: ChoiceManager, Assembly-CSharp
         m_MethodName: set_gesture2Selected
         m_Mode: 6
@@ -20345,7 +20414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1317848621}
   heartParticles: {fileID: 1908443891}
-  choiceManager: {fileID: 0}
+  choiceManager: {fileID: 505658387}
   heartRight: 0
   heartLeft: 0
   bothTrue: 0
@@ -26521,7 +26590,7 @@ MonoBehaviour:
   m_GesturePerformed:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 505658387}
         m_TargetAssemblyTypeName: ChoiceManager, Assembly-CSharp
         m_MethodName: set_gesture2Selected
         m_Mode: 6
@@ -33756,7 +33825,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e3bd56fc17e0b51499cac243667135fd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.463
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -34862,6 +34931,142 @@ MonoBehaviour:
     snippetTime: 3
     characterName: Maki
   - dialogueSentenceEnglish: "Let\u2019s go."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "OK, that wasn\u2019t that bad!"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s fun right? OK let\u2019s add the right hand."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: ' Already? '
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: " Well I trained for five years, you have five hours
+      until you debut, so\u2026 "
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Point taken.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s just the same thing. "
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "Pink for left, blue for right. Hit the triangles to
+      the beat\u2014"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: At the moment they overlap, which is also the moment
+      they reach the blue frame on my screen.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: ' A pro!'
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: ' A pro!'
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "I wish. Let\u2019s just give it a go"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: " I think I\u2019m getting the hang of it! "
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "You\u2019re doing great! But it\u2019s about to get
+      a bit more complicated."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Both hands?
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: Both hands.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: " When we point at the same time, it\u2019s for the
+      idol\u2019s symbol. Mine is\u2026"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: " When we point at the same time, it\u2019s for the
+      idol\u2019s symbol. Mine is\u2026"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: A panda.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "\u2026 "
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "Maki\u2026"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Of course, seeing as the switch was a last minute thing,
+      we don\u2019t have a symbol for you."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "So for now, you\u2019re going to be a panda too."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "Sis, are you sure you\u2019re OK with this?"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "Well\u2026 It was you who gave me that panda so\u2026"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "\u2026"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Anyway, this isn\u2019t a big step up. "
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Basically, for the pandas, you just point both hands
+      at the same time.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Got it.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "OK. Let\u2019s add that in."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "I won\u2019t let you down."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: ' I know.'
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: How was that?
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
@@ -39834,6 +40039,87 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1914508459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1914508460}
+  - component: {fileID: 1914508462}
+  - component: {fileID: 1914508461}
+  m_Layer: 0
+  m_Name: Hand Debugger
+  m_TagString: Hand
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1914508460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914508459}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.85, y: 0, z: -0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 52829602}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1914508461
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914508459}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1914508462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914508459}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1917352112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a,
@@ -40002,6 +40288,125 @@ MonoBehaviour:
   beatSpawner: {fileID: 648346001}
   choiceManager: {fileID: 505658387}
   hasChosen: 0
+--- !u!1 &1943630214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1943630216}
+  - component: {fileID: 1943630215}
+  - component: {fileID: 1943630218}
+  - component: {fileID: 1943630217}
+  - component: {fileID: 1943630219}
+  m_Layer: 0
+  m_Name: Debugger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1943630215
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943630214}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1943630216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943630214}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.347, y: 9.641, z: 5.453}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1943630217
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943630214}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -876546973899608171, guid: 1a8724cb4fc991b4b8482b4cd1aa5d5f, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1943630218
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943630214}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1943630219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943630214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8907aad2d102fc348a39d6c9aba638e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreCounter: {fileID: 955871641}
 --- !u!1 &1963633343
 GameObject:
   m_ObjectHideFlags: 0
@@ -45446,3 +45851,5 @@ SceneRoots:
   - {fileID: 335824307}
   - {fileID: 1629218260}
   - {fileID: 505658388}
+  - {fileID: 1943630216}
+  - {fileID: 52829602}

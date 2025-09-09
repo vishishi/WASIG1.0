@@ -17,6 +17,7 @@ MonoBehaviour:
     - 311826b272d5dd5488aa83a1b7d60e75
     - a408bea6dd1f7b8478110bb388fbe953
     - 1e1dfebe50fcbf24986b03ef50aa8c97
+    - 97474a16cbd8cc14e86be0dc7eb16250
     values:
     - goDatas_byGlobalId:
         keys:
@@ -136,6 +137,8 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1881619077-0
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-2012677620-0
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-2019728231-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-7850452364037595823-4853167343655517817
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1784410723-0
         values:
         - colorIndex: 0
           iconNameOrGuid: cs Script Icon
@@ -177,9 +180,52 @@ MonoBehaviour:
           iconNameOrGuid: TrailRenderer Icon
         - colorIndex: 9
           iconNameOrGuid: LightProbes Icon
+        - colorIndex: 6
+          iconNameOrGuid: WheelCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: BoxCollider Icon
     - goDatas_byGlobalId:
         keys:
         - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-970531546-0
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-648345998-0
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-52829599-0
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-100004-660165628
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-100002-660165628
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-1440348316-0
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-1870295256-0
         values:
         - colorIndex: 0
           iconNameOrGuid: cs Script Icon
+        - colorIndex: 4
+          iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 9
+          iconNameOrGuid: LightProbes Icon
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: Camera Icon
+        - colorIndex: 0
+          iconNameOrGuid: Canvas Icon
+        - colorIndex: 0
+          iconNameOrGuid: cs Script Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-97474a16cbd8cc14e86be0dc7eb16250-720531714-0
+        - globalObjectIdString: GlobalObjectId_V1-2-97474a16cbd8cc14e86be0dc7eb16250-552120837-0
+        - globalObjectIdString: GlobalObjectId_V1-2-97474a16cbd8cc14e86be0dc7eb16250-100004-1603121671
+        - globalObjectIdString: GlobalObjectId_V1-2-97474a16cbd8cc14e86be0dc7eb16250-1196880155-0
+        - globalObjectIdString: GlobalObjectId_V1-2-97474a16cbd8cc14e86be0dc7eb16250-1300917449-0
+        - globalObjectIdString: GlobalObjectId_V1-2-97474a16cbd8cc14e86be0dc7eb16250-1186791055-0
+        values:
+        - colorIndex: 6
+          iconNameOrGuid: Canvas Icon
+        - colorIndex: 3
+          iconNameOrGuid: Favorite
+        - colorIndex: 0
+          iconNameOrGuid: CapsuleCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: cs Script Icon
+        - colorIndex: 2
+          iconNameOrGuid: AudioSource Icon
+        - colorIndex: 2
+          iconNameOrGuid: 
