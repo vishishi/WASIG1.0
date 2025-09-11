@@ -13,7 +13,7 @@ public class DialogueSnippet
     public AudioClip snippetVA;
     public float snippetTime;
     public string characterName;
-    public float snippetPoint;
+ 
 
 
 
