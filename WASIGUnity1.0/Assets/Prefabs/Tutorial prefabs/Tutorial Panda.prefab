@@ -9838,10 +9838,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7345b7881d4969c43bd512d38554f53a,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1924852691167327217}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7345b7881d4969c43bd512d38554f53a,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: -1753208605939177304}
   m_SourcePrefab: {fileID: 100100000, guid: 7345b7881d4969c43bd512d38554f53a, type: 3}
 --- !u!1 &7056593963066649249 stripped
@@ -9911,28 +9907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorid: 2
---- !u!114 &1924852691167327217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7056593963066649249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e81112b416d40894095e7d25cfa91693, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myCollider: {fileID: 0}
-  myImage: {fileID: 0}
-  hitSounds: []
-  handIdentity: {fileID: 0}
-  hits: 0
-  hitAcc: 0
-  targetIntensity: -2
-  fadeDuration: 1.5
-  beatLocation: {x: 0, y: 0, z: 0}
-  accuracyColors: []
 --- !u!114 &-1753208605939177304
 MonoBehaviour:
   m_ObjectHideFlags: 0

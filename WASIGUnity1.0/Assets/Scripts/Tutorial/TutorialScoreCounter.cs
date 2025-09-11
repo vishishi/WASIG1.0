@@ -148,25 +148,25 @@ public class TutorialScoreCounter : MonoBehaviour
         {
             switch(dialogueManager.currentSnippetIndex)
             {
-                case 39:
+                case 37:
                 {
                         yield return new WaitForSeconds(snippetTime);
-                        yield return StartCoroutine(RunPhase(TutorialPhase.Right, 20, 3));
+                        yield return StartCoroutine(RunPhase(TutorialPhase.Right, 15, 3));
                 }
 
                     break;
-                case 49:
+                case 47:
                     {
                         yield return new WaitForSeconds(snippetTime);
-                        yield return StartCoroutine(RunPhase(TutorialPhase.Left, 20, 3));
+                        yield return StartCoroutine(RunPhase(TutorialPhase.Left, 15, 3));
                     }
 
                     break;
 
-                case 68:
+                case 67:
                     {
                         yield return new WaitForSeconds(snippetTime);
-                        yield return StartCoroutine(RunPhase(TutorialPhase.Panda, 20, 3));
+                        yield return StartCoroutine(RunPhase(TutorialPhase.Panda, 15, 3));
                     }
 
                     break;
@@ -213,7 +213,6 @@ public class TutorialScoreCounter : MonoBehaviour
         good = 0;
         MarkCompleted(phase);
         Debug.Log(phase.ToString() + " was completed!");
-        yield return new WaitForSeconds(3);
         comms.SetActive(true);
     }
 
