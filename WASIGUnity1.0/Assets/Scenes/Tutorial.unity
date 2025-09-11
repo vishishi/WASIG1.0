@@ -25520,6 +25520,61 @@ MonoBehaviour:
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+  - dialogueSentenceEnglish: "I won\u2019t lie, it\u2019s harder. There\u2019s a
+      lot happening."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "You\u2019ll get the hang of it."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "And you\u2019ll be pleased to know that because of
+      your unique situation, management have simplified your routine quite a bit,
+      at least for now."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "There\u2019s basically only one more thing to add."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: "That\u2019s a relief!"
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s important though, so pay attention."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: Yes boss!
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: So, for every concert, each idol chooses a signature
+      pose.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: This is a special pose, and the crowd love it when you
+      get it right.
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: How does it work?
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s not too hard! Just like everything else,
+      you have to do your pose when the lightshow tells you to."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s not too hard! Just like everything else,
+      you have to do your pose when the lightshow tells you to."
+    snippetVA: {fileID: 0}
+    snippetTime: 3
+    characterName: Shiki
   currentSnippetIndex: 0
   isTesting: 0
 --- !u!1 &1893499584
