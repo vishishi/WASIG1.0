@@ -13469,6 +13469,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &512000703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512000704}
+  m_Layer: 0
+  m_Name: KHeart Gesture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &512000704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512000703}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2110253101}
+  - {fileID: 1529909023}
+  m_Father: {fileID: 1492643642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &524487871
 GameObject:
   m_ObjectHideFlags: 0
@@ -19198,10 +19231,10 @@ MonoBehaviour:
   - time: 0
     dialoguePoint: 39
     requiredPhase: 2
-  - time: 10
+  - time: 20
     dialoguePoint: 49
     requiredPhase: 1
-  - time: 17
+  - time: 40
     dialoguePoint: 68
     requiredPhase: 3
   spawnTransform: {fileID: 30336857}
@@ -33473,6 +33506,7 @@ Transform:
   m_Children:
   - {fileID: 604816190}
   - {fileID: 2064594103}
+  - {fileID: 512000704}
   - {fileID: 1457809360}
   - {fileID: 263618869}
   m_Father: {fileID: 0}
@@ -33552,6 +33586,99 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 435.4, y: 188.5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1529909022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1529909023}
+  - component: {fileID: 1529909024}
+  m_Layer: 0
+  m_Name: R KHeart Gesture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1529909023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529909022}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512000704}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1529909024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529909022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf93899325d5df74eb9176e097ee3d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HandTrackingEvents: {fileID: 263618870}
+  m_HandShapeOrPose: {fileID: 11400000, guid: 8b47f621decd3354493c1e3255358a69, type: 2}
+  m_TargetTransform: {fileID: 0}
+  m_GesturePerformed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1730455289}
+        m_TargetAssemblyTypeName: PeaceTrigger, Assembly-CSharp
+        m_MethodName: TriggerRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 505658387}
+        m_TargetAssemblyTypeName: ChoiceManager, Assembly-CSharp
+        m_MethodName: set_gesture2Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  m_GestureEnded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1730455289}
+        m_TargetAssemblyTypeName: PeaceTrigger, Assembly-CSharp
+        m_MethodName: UntriggerRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_MinimumHoldTime: 1
+  m_GestureDetectionInterval: 0.5
+  m_StaticGestures: []
+  m_Highlight: {fileID: 0}
 --- !u!1 &1558958567
 GameObject:
   m_ObjectHideFlags: 0
@@ -34776,300 +34903,365 @@ MonoBehaviour:
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "I\u2019ve been to a bunch of idol concerts, sure."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "It\u2019s not like there\u2019s much else to do in
       this place, and there have been even more than usual recently."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "You can\u2019t get away from it"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "But I\u2019ve never been actually on the stage."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Security just waved me right through.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: It looks so weird with no one here.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "The tech is incredible though, I can\u2019t deny that."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "I wonder how\u2026)"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Blimey Maki, no time to even catch my breath! Better
       answer.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Are you psychic? I just got here
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "I\u2019ve done the walk from our place to the stage
       five to six times a week since I was 12, I know how long it takes."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: I added three minutes as you know it less well.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Minus one as you were in a hurry.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "\u2026Fair."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: You ready?
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "I kinda have to be, don\u2019t I? "
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: " Yes! Let\u2019s get started"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: 'OK, Shiki! So, as you know, idol concerts on our ship
       are a sound and light extravaganza!! '
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Fortunately for you, the flying lights aren\u2019t
       just fun for the audience to look at, they tell you when to move!"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: OK... But which lights and which moves??
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "I\u2019ll break it down. Let\u2019s do your left hand
       first."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Left is pink right?
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Left is pink. You read the handbook at least.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: 'OK Shiki, I want you to point at the pink triangles
       to the beat. | '
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Just point?
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Just point.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: 'If you really <i> feel </i> the rhythm it will be a
       vibe, trust me. '
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: 'OK, for those of us with slightly less rhythm in our
       bodies, when do you point? '
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: When the triangle and its spinning outline overlap.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Which is also the moment they reach the screen.  Which
       is also on beat.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: " It\u2019s really not that hard"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Easy for you to say\u2026"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: What was that?
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Nothing, let\u2019s try it."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Finally! OK, I\u2019ll turn on some music."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Point at the triangles with your left hand, Shiki!
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Let\u2019s go."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "OK, that wasn\u2019t that bad!"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "It\u2019s fun right? OK let\u2019s add the right hand."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: ' Already? '
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: " Well I trained for five years, you have five hours
       until you debut, so\u2026 "
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Point taken.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "It\u2019s just the same thing. "
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Pink for left, blue for right. Hit the triangles to
       the beat\u2014"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: At the moment they overlap, which is also the moment
       they reach the blue frame on my screen.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: ' A pro!'
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
-  - dialogueSentenceEnglish: ' A pro!'
-    snippetVA: {fileID: 0}
-    snippetTime: 3
-    characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "I wish. Let\u2019s just give it a go"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: " I think I\u2019m getting the hang of it! "
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "You\u2019re doing great! But it\u2019s about to get
       a bit more complicated."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Both hands?
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Both hands.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: " When we point at the same time, it\u2019s for the
       idol\u2019s symbol. Mine is\u2026"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: " When we point at the same time, it\u2019s for the
       idol\u2019s symbol. Mine is\u2026"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: A panda.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "\u2026 "
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Maki\u2026"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Of course, seeing as the switch was a last minute thing,
       we don\u2019t have a symbol for you."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "So for now, you\u2019re going to be a panda too."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Sis, are you sure you\u2019re OK with this?"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Well\u2026 It was you who gave me that panda so\u2026"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "\u2026"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "Anyway, this isn\u2019t a big step up. "
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Basically, for the pandas, you just point both hands
       at the same time.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: Got it.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "OK. Let\u2019s add that in."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: "I won\u2019t let you down."
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
+    snippetPoint: 0
   - dialogueSentenceEnglish: ' I know.'
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   - dialogueSentenceEnglish: How was that?
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Maki
+    snippetPoint: 0
   currentSnippetIndex: 0
   isTesting: 0
 --- !u!1 &1893499584
@@ -45757,6 +45949,99 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100040537}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2110253100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2110253101}
+  - component: {fileID: 2110253102}
+  m_Layer: 0
+  m_Name: L KHeart Gesture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2110253101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110253100}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 512000704}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2110253102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110253100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf93899325d5df74eb9176e097ee3d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HandTrackingEvents: {fileID: 1457809361}
+  m_HandShapeOrPose: {fileID: 11400000, guid: 7f9ad08e0222be5479bf4a9a423461f1, type: 2}
+  m_TargetTransform: {fileID: 0}
+  m_GesturePerformed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 505658387}
+        m_TargetAssemblyTypeName: ChoiceManager, Assembly-CSharp
+        m_MethodName: set_gesture2Selected
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1730455289}
+        m_TargetAssemblyTypeName: PeaceTrigger, Assembly-CSharp
+        m_MethodName: TriggerLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_GestureEnded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1730455289}
+        m_TargetAssemblyTypeName: PeaceTrigger, Assembly-CSharp
+        m_MethodName: UntriggerLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_MinimumHoldTime: 1
+  m_GestureDetectionInterval: 0.5
+  m_StaticGestures: []
+  m_Highlight: {fileID: 0}
 --- !u!1 &2120952882
 GameObject:
   m_ObjectHideFlags: 0

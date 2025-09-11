@@ -193,6 +193,9 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-100002-660165628
         - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-1440348316-0
         - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-1870295256-0
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-505658386-0
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-1629218258-0
+        - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-1917701998-0
         values:
         - colorIndex: 0
           iconNameOrGuid: cs Script Icon
@@ -206,6 +209,12 @@ MonoBehaviour:
           iconNameOrGuid: Camera Icon
         - colorIndex: 0
           iconNameOrGuid: Canvas Icon
+        - colorIndex: 0
+          iconNameOrGuid: cs Script Icon
+        - colorIndex: 0
+          iconNameOrGuid: cs Script Icon
+        - colorIndex: 0
+          iconNameOrGuid: AudioSource Icon
         - colorIndex: 0
           iconNameOrGuid: cs Script Icon
     - goDatas_byGlobalId:
