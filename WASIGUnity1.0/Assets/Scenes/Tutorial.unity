@@ -14516,6 +14516,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1870295257}
+    - targetCorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1134290858}
     - targetCorrespondingSourceObject: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a,
         type: 3}
       insertIndex: -1
@@ -17104,6 +17108,695 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112049999}
   m_CullTransparentMesh: 1
+--- !u!1 &1134290857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1134290858}
+  - component: {fileID: 1134290859}
+  m_Layer: 0
+  m_Name: BACK UP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1134290858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134290857}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1917352112}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1134290859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134290857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3811d5299b48e3e43a4c2383fffe0b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 1136095212}
+  characterNameText: {fileID: 864568499}
+  dialogueAudioSource: {fileID: 1917352115}
+  characterPortrait: {fileID: 45363629}
+  shikiSprite: {fileID: 21300000, guid: f671973af56c57c48abb287dddea2ac7, type: 3}
+  makiSprite: {fileID: 21300000, guid: 012169a26b7a0b74790b71a218e9272f, type: 3}
+  dialogueSnippets:
+  - dialogueSentenceEnglish: "(Wow, the stage is different when you\u2019re standing
+      on it.)"
+    snippetVA: {fileID: 8300000, guid: dba5d00ac7a2c824c98481b8084916c7, type: 3}
+    snippetTime: 4
+    characterName: Shiki
+  - dialogueSentenceEnglish: "(I\u2019ve been to a bunch of idol concerts, sure.
+      It\u2019s not like there\u2019s much else to do in this place, and there have
+      been even more than usual recently.)"
+    snippetVA: {fileID: 8300000, guid: 3a194f0aa8765134e9715a76cdc3b1bf, type: 3}
+    snippetTime: 9.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "(You can\u2019t get away from it.)"
+    snippetVA: {fileID: 8300000, guid: 58db69b51831a864b9ead0da63d09e86, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "(But I\u2019ve never been actually on the stage. Security
+      just waved me right through.)"
+    snippetVA: {fileID: 8300000, guid: 48c566df96e69c94196c67cb4d9ea6a8, type: 3}
+    snippetTime: 5.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "(It looks so weird with no one here. The tech is incredible
+      though, I can\u2019t deny that. I wonder how\u2026)"
+    snippetVA: {fileID: 8300000, guid: 08250e736b4cd7c439f2f6827a0885e0, type: 3}
+    snippetTime: 8.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: (Blimey Maki, no time to even catch my breath! Better
+      answer.)
+    snippetVA: {fileID: 8300000, guid: 6fa10a7187d2576469079dd0da13e423, type: 3}
+    snippetTime: 5.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: Are you psychic? I just got here
+    snippetVA: {fileID: 8300000, guid: 60bf584450dd15d469d9a5d016f0e207, type: 3}
+    snippetTime: 2.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I\u2019ve done the walk from our place to the stage
+      five to six times a week since I was 12, I know how long it takes. I added
+      three minutes as you know it less well. Minus one as you were in a hurry. "
+    snippetVA: {fileID: 8300000, guid: ca9ef33b34cb49242bdb19c1d7a5dee2, type: 3}
+    snippetTime: 11.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "\u2026Fair."
+    snippetVA: {fileID: 8300000, guid: a8f4f6219adb9794b9dec93148c52d2b, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: You ready?
+    snippetVA: {fileID: 8300000, guid: 162619544efb0e24eae1e7964708bec4, type: 3}
+    snippetTime: 1
+    characterName: Maki
+  - dialogueSentenceEnglish: "I kinda have to be, don\u2019t I? "
+    snippetVA: {fileID: 8300000, guid: 4e72da866b4a2b04daddf6b3e709694e, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: " Yes! Let\u2019s get started"
+    snippetVA: {fileID: 8300000, guid: 843bd254113d6c143ba5e4665ca4d4fc, type: 3}
+    snippetTime: 2.5
+    characterName: Maki
+  - dialogueSentenceEnglish: 'OK, Shiki! So, as you know, idol concerts on our ship
+      are a sound and light extravaganza!! '
+    snippetVA: {fileID: 8300000, guid: 569a76c415b1f2040acdf81aa04a7357, type: 3}
+    snippetTime: 8.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "Fortunately for you, the flying lights aren\u2019t
+      just fun for the audience to look at, they tell you when to move!"
+    snippetVA: {fileID: 8300000, guid: 8c0c1a2b924267e41afecb3468d6e444, type: 3}
+    snippetTime: 6.5
+    characterName: Maki
+  - dialogueSentenceEnglish: OK... But which lights and which moves??
+    snippetVA: {fileID: 8300000, guid: d1ef8969135ff914d91f44563922a182, type: 3}
+    snippetTime: 5.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I\u2019ll break it down. Let\u2019s do your left hand
+      first."
+    snippetVA: {fileID: 8300000, guid: 1ad89c5472127ba42bd7d0bd88c95414, type: 3}
+    snippetTime: 4.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Left is pink right?
+    snippetVA: {fileID: 8300000, guid: c05bfa4f5db213645acfbea68a278af0, type: 3}
+    snippetTime: 2.3
+    characterName: Shiki
+  - dialogueSentenceEnglish: Left is pink. You read the handbook at least.
+    snippetVA: {fileID: 8300000, guid: 46035c9ba4d48904a8975f7115bbd609, type: 3}
+    snippetTime: 2.5
+    characterName: Maki
+  - dialogueSentenceEnglish: 'OK Shiki, I want you to point at the pink triangles
+      to the beat. '
+    snippetVA: {fileID: 8300000, guid: 33151a2feb89ead48821f6b0a7a0cf14, type: 3}
+    snippetTime: 4.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Just point?
+    snippetVA: {fileID: 8300000, guid: 165f59b23f66828468429aa8515f5261, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: Just point.
+    snippetVA: {fileID: 8300000, guid: 6ecb4b5f3c5b06e4092266e1bdec5b6d, type: 3}
+    snippetTime: 1
+    characterName: Maki
+  - dialogueSentenceEnglish: 'If you really <i> feel </i> the rhythm it will be a
+      vibe, trust me. '
+    snippetVA: {fileID: 8300000, guid: c48c7c3c57356ad4f9d79a7dae166776, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: 'OK, for those of us with slightly <i> less </i> rhythm
+      in our bodies, when do you point? '
+    snippetVA: {fileID: 8300000, guid: a5a7fd06c9213ae4ba7a3c80faeb000c, type: 3}
+    snippetTime: 7.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: When the triangle and its spinning outline overlap.
+    snippetVA: {fileID: 8300000, guid: 40aa9abde6eb90b4eb1b35411e9c1772, type: 3}
+    snippetTime: 3.3
+    characterName: Maki
+  - dialogueSentenceEnglish: Which is also the moment they reach the screen.  Which
+      is also on beat.
+    snippetVA: {fileID: 8300000, guid: b7a404af0ef26944c9eb46962746b893, type: 3}
+    snippetTime: 4
+    characterName: Maki
+  - dialogueSentenceEnglish: " It\u2019s really not that hard."
+    snippetVA: {fileID: 8300000, guid: 2c80ebd92e663bc44bbb72bc0cef1f87, type: 3}
+    snippetTime: 1.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "Easy for you to say\u2026"
+    snippetVA: {fileID: 8300000, guid: e7bcc901e2abbc040b0c0e82e12ebfdf, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: What was that?
+    snippetVA: {fileID: 8300000, guid: 2bd0c6d10de0bda498047a944634e961, type: 3}
+    snippetTime: 1
+    characterName: Maki
+  - dialogueSentenceEnglish: "Nothing, let\u2019s try it."
+    snippetVA: {fileID: 8300000, guid: de2f2c5958da01645b29c97d7e5a1f02, type: 3}
+    snippetTime: 2.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Finally! OK, I\u2019ll turn on some music."
+    snippetVA: {fileID: 8300000, guid: df8be05b77e840048bb52bc29f3def1e, type: 3}
+    snippetTime: 4.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Point at the triangles with your left hand. Shiki, let's
+      go!
+    snippetVA: {fileID: 8300000, guid: a2f6e7e91684d1c4d8c602cd94c04455, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "OK, that wasn\u2019t that bad!"
+    snippetVA: {fileID: 8300000, guid: 1aaf7125d92bbdd47bf60f1701b2e2cb, type: 3}
+    snippetTime: 2.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s fun right? OK let\u2019s add the right hand."
+    snippetVA: {fileID: 8300000, guid: 9b063b396a5ae974b8a930531c0576ee, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: 'Already? '
+    snippetVA: {fileID: 8300000, guid: 8e1b70c224e514a4d8ae2ec0acb8eb67, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: " Well I trained for five years, you have five hours
+      until you debut, so\u2026 "
+    snippetVA: {fileID: 8300000, guid: c1ef59dc618508941866e5c0143bd604, type: 3}
+    snippetTime: 6.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Point taken.
+    snippetVA: {fileID: 8300000, guid: f3d80652f26d68e4681eaa3b21e6282d, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s just the same thing. "
+    snippetVA: {fileID: 8300000, guid: 24cb53ba16908c84fbd4ef2ac5dc125e, type: 3}
+    snippetTime: 1.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "Pink for left, blue for right. Hit the triangles to
+      the beat\u2014"
+    snippetVA: {fileID: 8300000, guid: 2d908307834f44141a216bab165d15f0, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: At the moment they overlap, which is also the moment
+      they reach the blue frame on my screen.
+    snippetVA: {fileID: 8300000, guid: 61304e1dc9f495241bd5c51707808b57, type: 3}
+    snippetTime: 5.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: ' A pro!'
+    snippetVA: {fileID: 8300000, guid: 06cb9e2b9d44d5347a44e1b178d12138, type: 3}
+    snippetTime: 1
+    characterName: Maki
+  - dialogueSentenceEnglish: "I wish. Let\u2019s just give it a go"
+    snippetVA: {fileID: 8300000, guid: 19696df4b137a414fa0d0a5f1e7b3cec, type: 3}
+    snippetTime: 3.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: " I think I\u2019m getting the hang of it! "
+    snippetVA: {fileID: 8300000, guid: 9dc7dafb61afb3149a81101a06a1915d, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "You\u2019re doing great! But it\u2019s about to get
+      a bit more complicated."
+    snippetVA: {fileID: 8300000, guid: 44e395cf3d4bb7444936a1525078ec50, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Both hands?
+    snippetVA: {fileID: 8300000, guid: 40f87db9c477a3f4c9ae680047b15833, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: Both hands.
+    snippetVA: {fileID: 8300000, guid: ffeecfc78e6761b4d95b801a1693483b, type: 3}
+    snippetTime: 1
+    characterName: Maki
+  - dialogueSentenceEnglish: " When we point at the same time, it\u2019s for the
+      idol\u2019s symbol. Mine is\u2026"
+    snippetVA: {fileID: 8300000, guid: eb22ebc3d8acab3499b21d62791bcc2e, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: A panda.
+    snippetVA: {fileID: 8300000, guid: 04036c47a72aa094092d2165940be717, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: "\u2026 "
+    snippetVA: {fileID: 0}
+    snippetTime: 1
+    characterName: Maki
+  - dialogueSentenceEnglish: "Maki\u2026"
+    snippetVA: {fileID: 8300000, guid: 388326394b621ee41b690320d0063129, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Of course, seeing as the switch was a last minute thing,
+      we don\u2019t have a symbol for you."
+    snippetVA: {fileID: 8300000, guid: a40c4f192e72ffa46a15554a6416db63, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "So for now, you\u2019re going to be a panda too."
+    snippetVA: {fileID: 8300000, guid: 3104da297a6e9b248bce9b1c44d11747, type: 3}
+    snippetTime: 4.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "Sis, are you sure you\u2019re OK with this?"
+    snippetVA: {fileID: 8300000, guid: 0999b30d09e7e3f4a95aa4908f6d698c, type: 3}
+    snippetTime: 3.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Well\u2026 It was you who gave me that panda so\u2026"
+    snippetVA: {fileID: 8300000, guid: ea07370b764c6ae4aaef6aa316a52812, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "\u2026"
+    snippetVA: {fileID: 0}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Anyway, this isn\u2019t a big step up. "
+    snippetVA: {fileID: 8300000, guid: 1774462c4fad9984c97d3e66830e6f96, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Basically, for the pandas, you just point both hands
+      at the same time.
+    snippetVA: {fileID: 8300000, guid: 0beef7a5b7c52154b8617cd163db6aa6, type: 3}
+    snippetTime: 4.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Got it.
+    snippetVA: {fileID: 8300000, guid: 7fc74f299b0544242b9b631105640ca8, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: "OK. Let\u2019s add that in."
+    snippetVA: {fileID: 8300000, guid: e1b827819d07701419b7aad0146c11de, type: 3}
+    snippetTime: 2.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "I won\u2019t let you down."
+    snippetVA: {fileID: 8300000, guid: 6b699ff9625a8cc4fbda5255afd6fa98, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: ' I know.'
+    snippetVA: {fileID: 8300000, guid: 480aa042eff7a8a488f690c565e69277, type: 3}
+    snippetTime: 1
+    characterName: Maki
+  - dialogueSentenceEnglish: How was that?
+    snippetVA: {fileID: 8300000, guid: 5e123f03112b34845876cb1f76de9783, type: 3}
+    snippetTime: 1.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "I won\u2019t lie, it\u2019s harder. There\u2019s a
+      lot happening."
+    snippetVA: {fileID: 8300000, guid: a00c5838684b4f84da47e376a8461f38, type: 3}
+    snippetTime: 3.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "You\u2019ll get the hang of it."
+    snippetVA: {fileID: 8300000, guid: b8353e498a7379c4a855be1e873e0295, type: 3}
+    snippetTime: 1.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "And you\u2019ll be pleased to know that because of
+      your unique situation, management have simplified your routine quite a bit,
+      at least for now."
+    snippetVA: {fileID: 8300000, guid: c55abbcbe81b68240a37f7bd1a34d290, type: 3}
+    snippetTime: 8.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "There\u2019s basically only one more thing to add."
+    snippetVA: {fileID: 8300000, guid: cf336992000267d4bbcbf2063d0ededb, type: 3}
+    snippetTime: 2.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "That\u2019s a relief!"
+    snippetVA: {fileID: 8300000, guid: 5fdfff24f9714a24a9486e2aea3eacef, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s important though, so pay attention."
+    snippetVA: {fileID: 8300000, guid: 5614090f810e19f45b42a024ba9962e1, type: 3}
+    snippetTime: 2.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Yes boss!
+    snippetVA: {fileID: 8300000, guid: dc14201f63c157f4ca90a1d696fc865c, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: So, for every concert, each idol chooses a signature
+      pose.
+    snippetVA: {fileID: 8300000, guid: 13820049e53b65e44999d95225009a01, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: This is a special pose, and the crowd love it when you
+      get it right.
+    snippetVA: {fileID: 8300000, guid: 2d2a46f82a0a03b48b71b9821a6a4d7a, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: How does it work?
+    snippetVA: {fileID: 8300000, guid: 80f7891ff58b69b4596d9201b4d983ad, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: Just like everything else, you have to do your pose
+      when the lightshow tells you to.
+    snippetVA: {fileID: 8300000, guid: 63d20822b22a097469ba82c448e7847e, type: 3}
+    snippetTime: 4.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "But first, you have to choose it of course. Let\u2019s
+      do that now."
+    snippetVA: {fileID: 8300000, guid: 06e01ece334589645b8e4fdf3eded74a, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Like, choose my pose right now?
+    snippetVA: {fileID: 8300000, guid: 06e01ece334589645b8e4fdf3eded74a, type: 3}
+    snippetTime: 3.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: You have three options.
+    snippetVA: {fileID: 8300000, guid: 461e7495862a27f47af05987a4251cc4, type: 3}
+    snippetTime: 1.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Just decide which one you want and hold it for a few
+      seconds.
+    snippetVA: {fileID: 8300000, guid: aa96dd6b8a559b64498b5a54266d67a9, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Then that will be set as your pose for the night!
+    snippetVA: {fileID: 8300000, guid: 7e0972b506014bb479bf607ce4e0f8cf, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "\u2026Interesting choice."
+    snippetVA: {fileID: 8300000, guid: aa96dd6b8a559b64498b5a54266d67a9, type: 3}
+    snippetTime: 1.5
+    characterName: Maki
+  - dialogueSentenceEnglish: What do you mean by that??
+    snippetVA: {fileID: 8300000, guid: 7fb3c5e19c69d8f4dbba68cc53d382cb, type: 3}
+    snippetTime: 2.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Nothing, nothing. You\u2019ll do great with that pose!
+      Now let\u2019s practise it."
+    snippetVA: {fileID: 8300000, guid: 7718b71e100e7b6419a126deefd26657, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "This one\u2019s a bit different, right?"
+    snippetVA: {fileID: 8300000, guid: f6f0c8268958c4844b98640e662e3d13, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Yeah, but they\u2019ll cue you for this too."
+    snippetVA: {fileID: 8300000, guid: 42455d0dbc6ab284bb2a6c2d22c9cdf8, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: When you see the sign of your pose just do it! Hold
+      it for maximum impact!
+    snippetVA: {fileID: 8300000, guid: 23a3e1107a28248478d12d40a998d07b, type: 3}
+    snippetTime: 6.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Just do it where I see it?
+    snippetVA: {fileID: 8300000, guid: c34bf22d16299ee4f8e5251e7e0432e0, type: 3}
+    snippetTime: 2.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Yep! And remember to hold for as long as you\u2019re
+      told, if you can, the crowd love that. Let\u2019s try it."
+    snippetVA: {fileID: 8300000, guid: ee1500e687fab094c88ff202da2e40c4, type: 3}
+    snippetTime: 7.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "I think I\u2019m getting the hang of this. Are we done
+      now?"
+    snippetVA: {fileID: 8300000, guid: 98bd3d9406579024fab66300dd062968, type: 3}
+    snippetTime: 3.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Almost. We can\u2019t forget the most important thing."
+    snippetVA: {fileID: 8300000, guid: 770724aa9a51a7f4ba09640186130cd0, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "What\u2019s that?"
+    snippetVA: {fileID: 8300000, guid: 86f7f2059fa37194e988da819b600c33, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: Well, question for you Shiki, Why are we here?
+    snippetVA: {fileID: 8300000, guid: a607fef064122b548b03c36f22599a18, type: 3}
+    snippetTime: 5.5
+    characterName: Maki
+  - dialogueSentenceEnglish: To give people something to do on this boring ship,
+      and feed the otaku so that they have something to write about on their blogs
+      and message boards?
+    snippetVA: {fileID: 8300000, guid: f2351d40273a10241ad55a2c1094d4aa, type: 3}
+    snippetTime: 8.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Hey, harsh! I\u2019ll admit it\u2019s pretty much the
+      only game in town, but some of those blogs are actually really well written!
+      I mean, the author of Goto\u2019s Garden is a poet."
+    snippetVA: {fileID: 8300000, guid: c2913b56842db514483473e92a95248f, type: 3}
+    snippetTime: 13.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Maki.
+    snippetVA: {fileID: 8300000, guid: e2ab28e2837261a479a302f4be1fa6fe, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Anyway, you\u2019re half correct."
+    snippetVA: {fileID: 8300000, guid: 6ccb32a5ef362dd4d8310000fd8c875c, type: 3}
+    snippetTime: 2.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "Haven\u2019t you ever thought that there might be another
+      purpose to all of this?"
+    snippetVA: {fileID: 8300000, guid: 5b1ecf342dab7184f9eace48be5c1ed0, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "Well\u2026 yeah. but you always clammed up when I tried
+      to talk to you about it."
+    snippetVA: {fileID: 8300000, guid: 1671b66fa01f792449ce59631ff1af89, type: 3}
+    snippetTime: 5.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I\u2019m sorry Shiki. You know the contracts I signed
+      when I started training? They had a bit about not telling."
+    snippetVA: {fileID: 8300000, guid: bd90a091ad7a32143bf9d701bf2f647e, type: 3}
+    snippetTime: 7.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "It\u2019s OK\u2026 I kind of figured there was something."
+    snippetVA: {fileID: 8300000, guid: 8bd0ddf144e923a4faf64ad9fcd9f42c, type: 3}
+    snippetTime: 3.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: I mean, everyone wonders why leadership encourages concert
+      attendance so much.
+    snippetVA: {fileID: 8300000, guid: f88708f55bad2794aa276606a2550218, type: 3}
+    snippetTime: 4.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: People make jokes about it.
+    snippetVA: {fileID: 8300000, guid: 34b6485a6522f044da30e6f23de89b96, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Yeah, like people drawing the pictures of the Admiral
+      with pink cat ears and glowsticks, it\u2019s funny."
+    snippetVA: {fileID: 8300000, guid: 33923ac18f485ad4c89b640ea66d5e01, type: 3}
+    snippetTime: 6.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "And, well\u2026 no offence but I\u2019m training to
+      be an engineer, and you\u2019re training to be an idol."
+    snippetVA: {fileID: 8300000, guid: e240eb1848e942b439b89fa56770e838, type: 3}
+    snippetTime: 8.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: Why does your programme have like, three times the resources
+      thrown at it than mine?
+    snippetVA: {fileID: 8300000, guid: 733b15b71ea3e094185ac4cf2136c3c5, type: 3}
+    snippetTime: 6.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: Well I always told you that what I do is important!
+    snippetVA: {fileID: 8300000, guid: 2be0d9363aeb27647a1874fd7f1f3572, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Of course music is important, Maki!
+    snippetVA: {fileID: 8300000, guid: 0e7286089e26b234f878775830cfb596, type: 3}
+    snippetTime: 4
+    characterName: Shiki
+  - dialogueSentenceEnglish: "You know I\u2019ve always supported you."
+    snippetVA: {fileID: 8300000, guid: eed666c702f5d9d488445cd67c38e65e, type: 3}
+    snippetTime: 2.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "But you asked me if I ever wondered if there was something
+      more behind this, I\u2019m saying I did."
+    snippetVA: {fileID: 8300000, guid: b46c15439ca5d2d4da811e37116f54f0, type: 3}
+    snippetTime: 5.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: Right. So.The big secret, or part of it.
+    snippetVA: {fileID: 8300000, guid: dc70229ba592ab44db5515e992a05436, type: 3}
+    snippetTime: 4.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "I\u2019m listening."
+    snippetVA: {fileID: 8300000, guid: 4b455184d69ab4a4eb785c0b62aae003, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "So, you really can\u2019t tell anyone this. They\u2019re
+      sorting a contract out for you right now. And I don\u2019t know everything\u2014"
+    snippetVA: {fileID: 8300000, guid: e229ee7d68ce9704eabf487f3b9e3da1, type: 3}
+    snippetTime: 9
+    characterName: Maki
+  - dialogueSentenceEnglish: Sure, of course.
+    snippetVA: {fileID: 8300000, guid: 60e9bac478bf92742b6545ac5406fe72, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: "And I don\u2019t really understand how it works, but\u2014"
+    snippetVA: {fileID: 8300000, guid: bea424e100f219b48a06c516b71b38db, type: 3}
+    snippetTime: 2
+    characterName: Maki
+  - dialogueSentenceEnglish: "Maki, you\u2019re the one who keeps saying we don\u2019t
+      have all day, what is it?"
+    snippetVA: {fileID: 8300000, guid: 1ef9fe9610697a3469060ab18cceaae4, type: 3}
+    snippetTime: 4.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Maki, you\u2019re the one who keeps saying we don\u2019t
+      have all day, what is it?"
+    snippetVA: {fileID: 8300000, guid: 1ef9fe9610697a3469060ab18cceaae4, type: 3}
+    snippetTime: 5
+    characterName: Shiki
+  - dialogueSentenceEnglish: The concerts help power the ship.
+    snippetVA: {fileID: 8300000, guid: cc89fb687baa7f447b181220a2fc7836, type: 3}
+    snippetTime: 3
+    characterName: Maki
+  - dialogueSentenceEnglish: ...
+    snippetVA: {fileID: 0}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: Our idol concerts. They power the ship.
+    snippetVA: {fileID: 8300000, guid: d98f44efe018a5b4882f2c65e6fa3d9a, type: 3}
+    snippetTime: 4
+    characterName: Maki
+  - dialogueSentenceEnglish: "\u2026What?!"
+    snippetVA: {fileID: 8300000, guid: 3f1798592e2a272409f0fabae96c4af3, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I said I don\u2019t know how it works! They don\u2019t
+      really tell us much more than that, and unlike you, I\u2019m not an engineer."
+    snippetVA: {fileID: 8300000, guid: 672d538c7ee23434bb7eeac102595f58, type: 3}
+    snippetTime: 7.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "It\u2019s something to do with the energy in the crowd.
+      The more they get excited, the more charge for the ship\u2019s power."
+    snippetVA: {fileID: 8300000, guid: 672d538c7ee23434bb7eeac102595f58, type: 3}
+    snippetTime: 8.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "\u2026I don\u2019t know what to say. I knew something
+      was going on, but I would have never guessed\u2014"
+    snippetVA: {fileID: 8300000, guid: d31fdfa2467b54547b92bcd7644ec1ec, type: 3}
+    snippetTime: 8.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "They keep it really secret. The only reason they\u2019re
+      letting you perform without an iron clad contract is because you\u2019re my
+      sister, they trust us, and there just isn\u2019t any time. You will be briefed
+      after the gig, though."
+    snippetVA: {fileID: 8300000, guid: f315426eb6cbb3c44865f2d96d83327d, type: 3}
+    snippetTime: 16.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Sis, this is a lot to process.
+    snippetVA: {fileID: 8300000, guid: 4206f693a8e076d4e9fef047844afdf6, type: 3}
+    snippetTime: 2.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Unfortunately you don\u2019t have time to process it
+      now. I\u2019ll just tell you what you need to know for this performance."
+    snippetVA: {fileID: 8300000, guid: f9b0fa07c21d6e0429db367f9ac78988, type: 3}
+    snippetTime: 7.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "\u2026OK?"
+    snippetVA: {fileID: 8300000, guid: b2a619f64c808234e8956d24ea795951, type: 3}
+    snippetTime: 1
+    characterName: Shiki
+  - dialogueSentenceEnglish: "It\u2019s simple really. On the right of your screen
+      you will see your score."
+    snippetVA: {fileID: 8300000, guid: 004e999921b59924491953803730b02c, type: 3}
+    snippetTime: 4.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "That\u2019s a system management has invented to show
+      you how you\u2019re doing. How much power you are generating for the ship,
+      I mean."
+    snippetVA: {fileID: 8300000, guid: 243dcdb571e91c542b2178572ba15448, type: 3}
+    snippetTime: 7.5
+    characterName: Maki
+  - dialogueSentenceEnglish: As I said earlier, the idol poses count for more.
+    snippetVA: {fileID: 8300000, guid: 074484b51c89c52498b1215b1136368c, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "So I\u2019m not just risking public humiliation by
+      performing untrained, this is actually like, a really important job. For the
+      whole ship."
+    snippetVA: {fileID: 8300000, guid: 1f4ec1384e3704f44a18f4ef9ea13e3c, type: 3}
+    snippetTime: 14.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: 'Pretty much yeah! '
+    snippetVA: {fileID: 8300000, guid: af9b046ba581a5546a0b8c3d7b90fc16, type: 3}
+    snippetTime: 1.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "But I know you can do it, Shiki. You\u2019ll smash
+      it up there."
+    snippetVA: {fileID: 8300000, guid: f20c94338d28d764c94e3393f7f0c9f9, type: 3}
+    snippetTime: 3.5
+    characterName: Maki
+  - dialogueSentenceEnglish: '*Knocking*'
+    snippetVA: {fileID: 0}
+    snippetTime: 2
+    characterName: 
+  - dialogueSentenceEnglish: "Oh that\u2019s the doctor. She\u2019s right, though.
+      I need to get off this call and rest now, otherwise I won\u2019t have the energy
+      to watch you this evening, even through the headset."
+    snippetVA: {fileID: 8300000, guid: 48be3183f51537946b877d637acb68ec, type: 3}
+    snippetTime: 11.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "So we\u2019re almost out of time. Listen Shiki, you
+      can\u2019t repeat what I just told you about the performances and the ship\u2019s
+      power, OK?"
+    snippetVA: {fileID: 8300000, guid: ef7ba85842e9a6d4ea735cf841bd6330, type: 3}
+    snippetTime: 9.5
+    characterName: Maki
+  - dialogueSentenceEnglish: 'Of course, but listen, we do need to talk more later. '
+    snippetVA: {fileID: 8300000, guid: 10dbadeba52052b46b752b3c342fd77e, type: 3}
+    snippetTime: 4.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: Once this concert is out of the way. I have so many
+      questions.
+    snippetVA: {fileID: 8300000, guid: b0d5d4d430011f14596545fdc3aeea24, type: 3}
+    snippetTime: 4.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Of course! But for now just focus on tonight. I think
+      I\u2019ve covered everything. I know you will be great."
+    snippetVA: {fileID: 8300000, guid: 0a1a256b143ea2d429b7cb27565de045, type: 3}
+    snippetTime: 9.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "Thanks. I\u2019ll try my best."
+    snippetVA: {fileID: 8300000, guid: a4a29b7cf3989e84085cdd7dfa751b81, type: 3}
+    snippetTime: 2.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: And enjoy yourself up there! Concerts can be scary,
+      but they are a lot of fun, I promise.
+    snippetVA: {fileID: 8300000, guid: be9b89980209f164f9454b4ffbb6d6b2, type: 3}
+    snippetTime: 8.5
+    characterName: Maki
+  - dialogueSentenceEnglish: I love you Maki.
+    snippetVA: {fileID: 8300000, guid: 24c764e251faf39419d5760ceccd7d46, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I love you too, sis. I\u2019ll be right there supporting
+      you. Well, I\u2019ll be here, watching you on a headset. But I\u2019ll be watching.
+      Bye, Shiki."
+    snippetVA: {fileID: 8300000, guid: 1961f74e6628f0144a4fd2a780025b0e, type: 3}
+    snippetTime: 11.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Bye, sis.
+    snippetVA: {fileID: 8300000, guid: 056ed5fbba5e6d34a9f64c54fd163a4e, type: 3}
+    snippetTime: 1.8
+    characterName: Shiki
+  currentSnippetIndex: 0
+  isTesting: 0
 --- !u!1 &1136095211
 GameObject:
   m_ObjectHideFlags: 0
