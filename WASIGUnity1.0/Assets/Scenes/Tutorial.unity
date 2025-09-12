@@ -25805,14 +25805,62 @@ MonoBehaviour:
     characterName: Maki
   - dialogueSentenceEnglish: "But I know you can do it, Shiki. You\u2019ll smash
       it up there."
-    snippetVA: {fileID: 8300000, guid: af9b046ba581a5546a0b8c3d7b90fc16, type: 3}
-    snippetTime: 3.5
-    characterName: Maki
-  - dialogueSentenceEnglish: "But I know you can do it, Shiki. You\u2019ll smash
-      it up there."
     snippetVA: {fileID: 8300000, guid: f20c94338d28d764c94e3393f7f0c9f9, type: 3}
     snippetTime: 3.5
     characterName: Maki
+  - dialogueSentenceEnglish: '*Knocking*'
+    snippetVA: {fileID: 0}
+    snippetTime: 2
+    characterName: 
+  - dialogueSentenceEnglish: "Oh that\u2019s the doctor. She\u2019s right, though.
+      I need to get off this call and rest now, otherwise I won\u2019t have the energy
+      to watch you this evening, even through the headset."
+    snippetVA: {fileID: 8300000, guid: 48be3183f51537946b877d637acb68ec, type: 3}
+    snippetTime: 11.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "So we\u2019re almost out of time. Listen Shiki, you
+      can\u2019t repeat what I just told you about the performances and the ship\u2019s
+      power, OK?"
+    snippetVA: {fileID: 8300000, guid: ef7ba85842e9a6d4ea735cf841bd6330, type: 3}
+    snippetTime: 9.5
+    characterName: Maki
+  - dialogueSentenceEnglish: 'Of course, but listen, we do need to talk more later. '
+    snippetVA: {fileID: 8300000, guid: 10dbadeba52052b46b752b3c342fd77e, type: 3}
+    snippetTime: 4.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: Once this concert is out of the way. I have so many
+      questions.
+    snippetVA: {fileID: 8300000, guid: b0d5d4d430011f14596545fdc3aeea24, type: 3}
+    snippetTime: 4.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "Of course! But for now just focus on tonight. I think
+      I\u2019ve covered everything. I know you will be great."
+    snippetVA: {fileID: 8300000, guid: 0a1a256b143ea2d429b7cb27565de045, type: 3}
+    snippetTime: 9.5
+    characterName: Maki
+  - dialogueSentenceEnglish: "Thanks. I\u2019ll try my best."
+    snippetVA: {fileID: 8300000, guid: a4a29b7cf3989e84085cdd7dfa751b81, type: 3}
+    snippetTime: 2.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: And enjoy yourself up there! Concerts can be scary,
+      but they are a lot of fun, I promise.
+    snippetVA: {fileID: 8300000, guid: be9b89980209f164f9454b4ffbb6d6b2, type: 3}
+    snippetTime: 8.5
+    characterName: Maki
+  - dialogueSentenceEnglish: I love you Maki.
+    snippetVA: {fileID: 8300000, guid: 24c764e251faf39419d5760ceccd7d46, type: 3}
+    snippetTime: 1.5
+    characterName: Shiki
+  - dialogueSentenceEnglish: "I love you too, sis. I\u2019ll be right there supporting
+      you. Well, I\u2019ll be here, watching you on a headset. But I\u2019ll be watching.
+      Bye, Shiki."
+    snippetVA: {fileID: 8300000, guid: 1961f74e6628f0144a4fd2a780025b0e, type: 3}
+    snippetTime: 11.5
+    characterName: Maki
+  - dialogueSentenceEnglish: Bye, sis.
+    snippetVA: {fileID: 8300000, guid: 056ed5fbba5e6d34a9f64c54fd163a4e, type: 3}
+    snippetTime: 1.8
+    characterName: Shiki
   currentSnippetIndex: 0
   isTesting: 0
 --- !u!1 &1893499584
