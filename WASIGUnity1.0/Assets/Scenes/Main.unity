@@ -9790,10 +9790,34 @@ MonoBehaviour:
   m_TargetTransform: {fileID: 0}
   m_GesturePerformed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 412035081}
+        m_TargetAssemblyTypeName: KHeartTrigger, Assembly-CSharp
+        m_MethodName: TriggerLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_GestureEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 412035081}
+        m_TargetAssemblyTypeName: KHeartTrigger, Assembly-CSharp
+        m_MethodName: UntriggerLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_MinimumHoldTime: 1
   m_GestureDetectionInterval: 0.5
   m_StaticGestures: []
@@ -10580,6 +10604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412035080}
+  - component: {fileID: 412035081}
   m_Layer: 0
   m_Name: K Trigger
   m_TagString: Untagged
@@ -10602,6 +10627,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1058438779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &412035081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412035079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d46c288d15eb504486f86a35178adb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 521354946}
+  heartParticles: {fileID: 860488140}
+  kHeartPrefab: {fileID: 4961869915877618205, guid: 581cc3bd2ec9428408f95457e4a86000,
+    type: 3}
+  spawnGO: {fileID: 1135229216}
+  spawnPoint: {fileID: 1135229217}
+  timeElapsed: 0
+  scoreCounter: {fileID: 1522564532}
+  moduleEnabled: 0
 --- !u!1001 &414803928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29276,18 +29322,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GestureFeedback, Assembly-CSharp
-        m_MethodName: Respond
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   m_GestureEnded:
     m_PersistentCalls:
       m_Calls:
@@ -47410,6 +47444,11 @@ MonoBehaviour:
   heartParticles: {fileID: 860488140}
   choiceManager: {fileID: -7624613305261039162, guid: ac209508a3d01f741bc5f98c7a476a66,
     type: 3}
+  heartPrefab: {fileID: 4961869915877618205, guid: e3ce72e3326c42948aa66687d1cd5d35,
+    type: 3}
+  spawnGO: {fileID: 1135229216}
+  spawnPoint: {fileID: 1135229217}
+  scoreCounter: {fileID: 1522564532}
   heartRight: 0
   heartLeft: 0
   bothTrue: 0
@@ -55087,7 +55126,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 360
+      scalar: 400
       minScalar: 300
       maxCurve:
         serializedVersion: 2
@@ -59623,7 +59662,7 @@ Transform:
   m_GameObject: {fileID: 1012327428}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7070181, y: -0.011203563, z: 0.011203563, w: -0.7070181}
-  m_LocalPosition: {x: 0.77, y: 11.7, z: -0.3}
+  m_LocalPosition: {x: 0.77, y: 10.78, z: -0.3}
   m_LocalScale: {x: 3.1900182, y: 3.1900182, z: 3.1900182}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65976,7 +66015,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 51.4
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -66406,6 +66445,8 @@ MonoBehaviour:
   heartParticles: {fileID: 860488140}
   peacePrefab: {fileID: 4961869915877618205, guid: ce62daaac92c44d48be577b601adfe68,
     type: 3}
+  spawnGO: {fileID: 1135229216}
+  spawnPoint: {fileID: 1135229217}
   timeElapsed: 0
   scoreCounter: {fileID: 1522564532}
   moduleEnabled: 0
@@ -95417,7 +95458,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 922186570}
         m_TargetAssemblyTypeName: GestureTrigger, Assembly-CSharp
-        m_MethodName: TriggerRight
+        m_MethodName: TriggerLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -95432,7 +95473,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 922186570}
         m_TargetAssemblyTypeName: GestureTrigger, Assembly-CSharp
-        m_MethodName: UntriggerRight
+        m_MethodName: UntriggerLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -95442,7 +95483,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_MinimumHoldTime: 1
+  m_MinimumHoldTime: 0.5
   m_GestureDetectionInterval: 0.5
   m_StaticGestures: []
   m_Highlight: {fileID: 0}
@@ -96321,10 +96362,34 @@ MonoBehaviour:
   m_TargetTransform: {fileID: 0}
   m_GesturePerformed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 412035081}
+        m_TargetAssemblyTypeName: KHeartTrigger, Assembly-CSharp
+        m_MethodName: TriggerRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_GestureEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 412035081}
+        m_TargetAssemblyTypeName: KHeartTrigger, Assembly-CSharp
+        m_MethodName: UntriggerRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_MinimumHoldTime: 1
   m_GestureDetectionInterval: 0.5
   m_StaticGestures: []

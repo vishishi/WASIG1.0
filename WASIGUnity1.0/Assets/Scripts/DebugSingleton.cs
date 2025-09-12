@@ -15,7 +15,7 @@ public class DebugSingleton : MonoBehaviour
             //choiceManagerPrefab.gesture3Selected = true;
 
             choiceManager = GetComponent<ChoiceManager>();
-            choiceManager.MarkGestureAsSelected("Gesture 2");
+            choiceManager.MarkGestureAsSelected("Gesture 3");
         //}
     }
 

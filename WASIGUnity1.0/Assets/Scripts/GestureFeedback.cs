@@ -6,6 +6,7 @@ public class GestureFeedback : MonoBehaviour
 {
     public ParticleSystem sparkles;
     public bool isGesturing = false;
+
     void Awake()
     {
         sparkles = gameObject.GetComponentInChildren <ParticleSystem>();

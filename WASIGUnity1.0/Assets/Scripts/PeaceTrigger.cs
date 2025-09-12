@@ -8,8 +8,8 @@ public class PeaceTrigger : MonoBehaviour
     public Image image;
     public ParticleSystem heartParticles;
     public GameObject peacePrefab;
-    //public GameObject spawnGO;
-   // public Transform spawnPoint;
+    public GameObject spawnGO;
+    public Transform spawnPoint;
 
     private bool hasFaded = false;
     private bool peaceRight = false;
@@ -33,9 +33,9 @@ public class PeaceTrigger : MonoBehaviour
         heartParticles.Play();
         heartParticles.Pause();
         moduleEnabled = true;
+        StartCoroutine(SpawnImage());
 
 
-     
 
     }
 
@@ -43,7 +43,7 @@ public class PeaceTrigger : MonoBehaviour
     void Update()
 
     {
-     
+
 
         if (peaceLeft)
         {
@@ -89,7 +89,7 @@ public class PeaceTrigger : MonoBehaviour
         peaceLeft = false;
         timeElapsed = 0;
         Debug.Log("time to 0");
- 
+
 
 
     }
@@ -100,7 +100,7 @@ public class PeaceTrigger : MonoBehaviour
         Debug.Log("right to false");
         timeElapsed = 0;
         Debug.Log("time to 0");
-      
+
     }
 
 
@@ -160,83 +160,87 @@ public class PeaceTrigger : MonoBehaviour
 
     }
 
-    //IEnumerator SpawnImage()
-    //{
-    //    const float fillDuration = 3.5f;   // seconds to fully fill
-    //    const float drainDuration = 0.5f;  // seconds to drain back to 0
-    //    const float destroyThreshold = 0.2f;
 
-    //    while (true)
-    //    {
-    //        // Wait until either peace is held
-    //        yield return new WaitUntil(() => peaceLeft || peaceRight);
 
-    //        // Spawn the filler
-    //        GameObject gestureFiller = Instantiate(
-    //            peacePrefab,
-    //            spawnPoint.position,          // spawnPoint should be a Transform
-    //            Quaternion.identity
-    //        );
-    //        Debug.Log("Peace gesture filler instantiated!");
-    //        ParticleSystem particle;
-    //        particle = gestureFiller.GetComponentInChildren<ParticleSystem>();
-    //        Image fillerImage = gestureFiller.GetComponentInChildren<Image>();
-    //        if (fillerImage == null)
-    //        {
-    //            Debug.LogWarning("No Image component found on spawned filler.");
-    //            // Wait until both are released before looping again
-    //            yield return new WaitUntil(() => !(peaceLeft || peaceRight));
-    //            continue;
-    //        }
+    IEnumerator SpawnImage()
+    {
+        const float fillDuration = 3.5f;   // seconds to fully fill
+        const float drainDuration = 0.5f;  // seconds to drain back to 0
+        const float destroyThreshold = 0.2f;
 
-    //        // Ensure known start value
-    //        fillerImage.fillAmount = 0f;
+        while (true)
+        {
+            // Wait until either peace is held
+            yield return new WaitUntil(() => peaceLeft || peaceRight);
 
-    //        // FILL while either hand is held
-    //        float t = 0f;
-    //        while (peaceLeft || peaceRight)
-    //        {
-    //            t += Time.deltaTime;
-    //            float normalized = Mathf.Clamp01(t / fillDuration);
+            // Spawn the filler
+            GameObject gestureFiller = Instantiate(
+                peacePrefab,
+                spawnPoint.position,          // spawnPoint should be a Transform
+                Quaternion.identity
+            );
+            Debug.Log("Peace gesture filler instantiated!");
+            ParticleSystem particle;
+            particle = gestureFiller.GetComponentInChildren<ParticleSystem>();
+            Image fillerImage = gestureFiller.GetComponentInChildren<Image>();
+            if (fillerImage == null)
+            {
+                Debug.LogWarning("No Image component found on spawned filler.");
+                // Wait until both are released before looping again
+                yield return new WaitUntil(() => !(peaceLeft || peaceRight));
+                continue;
+            }
 
-    //            fillerImage.fillAmount = normalized;
-    //            yield return null;
-    //        }
+            // Ensure known start value
+            fillerImage.fillAmount = 0f;
 
-    //        Debug.Log("gesture was filled up to: " + fillerImage.fillAmount);
+            // FILL while either hand is held
+            float t = 0f;
+            while (peaceLeft || peaceRight)
+            {
+                t += Time.deltaTime;
+                float normalized = Mathf.Clamp01(t / fillDuration);
 
- 
-    //        if (fillerImage.fillAmount >= 0.89f)
-    //        {
-    //            particle.Play();
-    //            scoreCounter.score += 500;
-    //            scoreCounter.perfect += 2;
-    //            yield return new WaitUntil(() => !particle.isPlaying);
-    //            Destroy(gestureFiller);
-    //            continue;
-    //        }
+                fillerImage.fillAmount = normalized;
+                yield return null;
+            }
 
-    //        // Otherwise DRAIN back down while neither is held
-    //        while (!(peaceLeft || peaceRight) && gestureFiller != null)
-    //        {
-    //            // Move from current fill to 0 over drainDuration
-    //            float step = Time.deltaTime / drainDuration;
-    //            fillerImage.fillAmount = Mathf.MoveTowards(fillerImage.fillAmount, 0f, step);
+            Debug.Log("gesture was filled up to: " + fillerImage.fillAmount);
 
-    //            if (fillerImage.fillAmount <= destroyThreshold)
-    //            {
-    //                Destroy(gestureFiller);
-    //                break;
-    //            }
 
-    //            yield return null;
-    //        }
+            if (fillerImage.fillAmount >= 0.89f)
+            {
+                particle.Play();
+                scoreCounter.score += 500;
+                scoreCounter.perfect += 2;
+                //yield return new WaitUntil(() => !particle.isPlaying);
+                Destroy(gestureFiller);
+                continue;
+            }
 
-            // If they start holding again mid-drain, loop will restart and spawn anew
+            // Otherwise DRAIN back down while neither is held
+            while (!(peaceLeft || peaceRight) && gestureFiller != null)
+            {
+                // Move from current fill to 0 over drainDuration
+                float step = Time.deltaTime / drainDuration;
+                fillerImage.fillAmount = Mathf.MoveTowards(fillerImage.fillAmount, 0f, step);
+
+                if (fillerImage.fillAmount <= destroyThreshold)
+                {
+                    Destroy(gestureFiller);
+                    break;
+                }
+
+                yield return null;
+            }
+
+
         }
+    }
+}
 
 
         #endregion
 
-    
+
 
