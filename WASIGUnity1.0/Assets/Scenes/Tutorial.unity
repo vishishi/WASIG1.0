@@ -25283,90 +25283,87 @@ MonoBehaviour:
     characterName: Maki
   - dialogueSentenceEnglish: 'OK, Shiki! So, as you know, idol concerts on our ship
       are a sound and light extravaganza!! '
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 569a76c415b1f2040acdf81aa04a7357, type: 3}
+    snippetTime: 8.5
     characterName: Maki
   - dialogueSentenceEnglish: "Fortunately for you, the flying lights aren\u2019t
       just fun for the audience to look at, they tell you when to move!"
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 8c0c1a2b924267e41afecb3468d6e444, type: 3}
+    snippetTime: 6.5
     characterName: Maki
   - dialogueSentenceEnglish: OK... But which lights and which moves??
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: d1ef8969135ff914d91f44563922a182, type: 3}
+    snippetTime: 5.5
     characterName: Shiki
   - dialogueSentenceEnglish: "I\u2019ll break it down. Let\u2019s do your left hand
       first."
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 1ad89c5472127ba42bd7d0bd88c95414, type: 3}
+    snippetTime: 4.5
     characterName: Maki
   - dialogueSentenceEnglish: Left is pink right?
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: c05bfa4f5db213645acfbea68a278af0, type: 3}
+    snippetTime: 2.3
     characterName: Shiki
   - dialogueSentenceEnglish: Left is pink. You read the handbook at least.
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 46035c9ba4d48904a8975f7115bbd609, type: 3}
+    snippetTime: 2.5
     characterName: Maki
   - dialogueSentenceEnglish: 'OK Shiki, I want you to point at the pink triangles
       to the beat. | '
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 33151a2feb89ead48821f6b0a7a0cf14, type: 3}
+    snippetTime: 4.5
     characterName: Maki
   - dialogueSentenceEnglish: Just point?
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 165f59b23f66828468429aa8515f5261, type: 3}
+    snippetTime: 1
     characterName: Shiki
   - dialogueSentenceEnglish: Just point.
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 6ecb4b5f3c5b06e4092266e1bdec5b6d, type: 3}
+    snippetTime: 1
     characterName: Maki
   - dialogueSentenceEnglish: 'If you really <i> feel </i> the rhythm it will be a
       vibe, trust me. '
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: c48c7c3c57356ad4f9d79a7dae166776, type: 3}
+    snippetTime: 5.5
     characterName: Maki
-  - dialogueSentenceEnglish: 'OK, for those of us with slightly less rhythm in our
-      bodies, when do you point? '
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+  - dialogueSentenceEnglish: 'OK, for those of us with slightly <i> less </i> rhythm
+      in our bodies, when do you point? '
+    snippetVA: {fileID: 8300000, guid: a5a7fd06c9213ae4ba7a3c80faeb000c, type: 3}
+    snippetTime: 7.5
     characterName: Shiki
   - dialogueSentenceEnglish: When the triangle and its spinning outline overlap.
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 40aa9abde6eb90b4eb1b35411e9c1772, type: 3}
+    snippetTime: 3.3
     characterName: Maki
   - dialogueSentenceEnglish: Which is also the moment they reach the screen.  Which
       is also on beat.
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: b7a404af0ef26944c9eb46962746b893, type: 3}
+    snippetTime: 3.5
     characterName: Maki
   - dialogueSentenceEnglish: " It\u2019s really not that hard"
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 2c80ebd92e663bc44bbb72bc0cef1f87, type: 3}
+    snippetTime: 1.5
     characterName: Maki
   - dialogueSentenceEnglish: "Easy for you to say\u2026"
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: e7bcc901e2abbc040b0c0e82e12ebfdf, type: 3}
+    snippetTime: 1.5
     characterName: Shiki
   - dialogueSentenceEnglish: What was that?
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 2bd0c6d10de0bda498047a944634e961, type: 3}
+    snippetTime: 1
     characterName: Maki
   - dialogueSentenceEnglish: "Nothing, let\u2019s try it."
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: de2f2c5958da01645b29c97d7e5a1f02, type: 3}
+    snippetTime: 2.5
     characterName: Shiki
   - dialogueSentenceEnglish: "Finally! OK, I\u2019ll turn on some music."
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: df8be05b77e840048bb52bc29f3def1e, type: 3}
+    snippetTime: 4.5
     characterName: Maki
-  - dialogueSentenceEnglish: Point at the triangles with your left hand, Shiki!
-    snippetVA: {fileID: 0}
-    snippetTime: 3
-    characterName: Maki
-  - dialogueSentenceEnglish: "Let\u2019s go."
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+  - dialogueSentenceEnglish: Point at the triangles with your left hand, Shiki! Let's
+      go!
+    snippetVA: {fileID: 8300000, guid: a2f6e7e91684d1c4d8c602cd94c04455, type: 3}
+    snippetTime: 3.5
     characterName: Maki
   - dialogueSentenceEnglish: "OK, that wasn\u2019t that bad!"
     snippetVA: {fileID: 0}
