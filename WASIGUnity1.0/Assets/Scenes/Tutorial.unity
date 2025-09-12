@@ -25233,71 +25233,53 @@ MonoBehaviour:
   - dialogueSentenceEnglish: "(I\u2019ve been to a bunch of idol concerts, sure.
       It\u2019s not like there\u2019s much else to do in this place, and there have
       been even more than usual recently.)"
-    snippetVA: {fileID: 8300000, guid: 80f7891ff58b69b4596d9201b4d983ad, type: 3}
+    snippetVA: {fileID: 8300000, guid: 3a194f0aa8765134e9715a76cdc3b1bf, type: 3}
     snippetTime: 9.5
     characterName: Shiki
   - dialogueSentenceEnglish: "(You can\u2019t get away from it.)"
-    snippetVA: {fileID: 8300000, guid: 820f507ddce3f8a4b9098f11f4a5a57c, type: 3}
+    snippetVA: {fileID: 8300000, guid: 58db69b51831a864b9ead0da63d09e86, type: 3}
     snippetTime: 1.5
     characterName: Shiki
   - dialogueSentenceEnglish: "(But I\u2019ve never been actually on the stage. Security
       just waved me right through.)"
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 48c566df96e69c94196c67cb4d9ea6a8, type: 3}
+    snippetTime: 5.5
     characterName: Shiki
-  - dialogueSentenceEnglish: Security just waved me right through.
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+  - dialogueSentenceEnglish: "(It looks so weird with no one here. The tech is incredible
+      though, I can\u2019t deny that. I wonder how\u2026)"
+    snippetVA: {fileID: 8300000, guid: 08250e736b4cd7c439f2f6827a0885e0, type: 3}
+    snippetTime: 7
     characterName: Shiki
-  - dialogueSentenceEnglish: It looks so weird with no one here.
-    snippetVA: {fileID: 0}
-    snippetTime: 3
-    characterName: Shiki
-  - dialogueSentenceEnglish: "The tech is incredible though, I can\u2019t deny that."
-    snippetVA: {fileID: 0}
-    snippetTime: 3
-    characterName: Shiki
-  - dialogueSentenceEnglish: "I wonder how\u2026)"
-    snippetVA: {fileID: 0}
-    snippetTime: 3
-    characterName: Shiki
-  - dialogueSentenceEnglish: Blimey Maki, no time to even catch my breath! Better
-      answer.
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+  - dialogueSentenceEnglish: (Blimey Maki, no time to even catch my breath! Better
+      answer.)
+    snippetVA: {fileID: 8300000, guid: 6fa10a7187d2576469079dd0da13e423, type: 3}
+    snippetTime: 5.5
     characterName: Shiki
   - dialogueSentenceEnglish: Are you psychic? I just got here
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 60bf584450dd15d469d9a5d016f0e207, type: 3}
+    snippetTime: 2.5
     characterName: Shiki
   - dialogueSentenceEnglish: "I\u2019ve done the walk from our place to the stage
-      five to six times a week since I was 12, I know how long it takes."
-    snippetVA: {fileID: 0}
-    snippetTime: 3
-    characterName: Maki
-  - dialogueSentenceEnglish: I added three minutes as you know it less well.
-    snippetVA: {fileID: 0}
-    snippetTime: 3
-    characterName: Maki
-  - dialogueSentenceEnglish: Minus one as you were in a hurry.
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+      five to six times a week since I was 12, I know how long it takes. I added
+      three minutes as you know it less well. Minus one as you were in a hurry. "
+    snippetVA: {fileID: 8300000, guid: ca9ef33b34cb49242bdb19c1d7a5dee2, type: 3}
+    snippetTime: 11.5
     characterName: Maki
   - dialogueSentenceEnglish: "\u2026Fair."
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: a8f4f6219adb9794b9dec93148c52d2b, type: 3}
+    snippetTime: 1
     characterName: Shiki
   - dialogueSentenceEnglish: You ready?
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 162619544efb0e24eae1e7964708bec4, type: 3}
+    snippetTime: 1
     characterName: Maki
   - dialogueSentenceEnglish: "I kinda have to be, don\u2019t I? "
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 4e72da866b4a2b04daddf6b3e709694e, type: 3}
+    snippetTime: 1.5
     characterName: Shiki
   - dialogueSentenceEnglish: " Yes! Let\u2019s get started"
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+    snippetVA: {fileID: 8300000, guid: 843bd254113d6c143ba5e4665ca4d4fc, type: 3}
+    snippetTime: 2.5
     characterName: Maki
   - dialogueSentenceEnglish: 'OK, Shiki! So, as you know, idol concerts on our ship
       are a sound and light extravaganza!! '
