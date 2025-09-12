@@ -25225,25 +25225,23 @@ MonoBehaviour:
   shikiSprite: {fileID: 21300000, guid: f671973af56c57c48abb287dddea2ac7, type: 3}
   makiSprite: {fileID: 21300000, guid: 012169a26b7a0b74790b71a218e9272f, type: 3}
   dialogueSnippets:
-  - dialogueSentenceEnglish: "Wow, the stage is different when you\u2019re standing
-      on it"
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+  - dialogueSentenceEnglish: "(Wow, the stage is different when you\u2019re standing
+      on it.)"
+    snippetVA: {fileID: 8300000, guid: dba5d00ac7a2c824c98481b8084916c7, type: 3}
+    snippetTime: 4.5
     characterName: Shiki
-  - dialogueSentenceEnglish: "I\u2019ve been to a bunch of idol concerts, sure."
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+  - dialogueSentenceEnglish: "(I\u2019ve been to a bunch of idol concerts, sure.
+      It\u2019s not like there\u2019s much else to do in this place, and there have
+      been even more than usual recently.)"
+    snippetVA: {fileID: 8300000, guid: 80f7891ff58b69b4596d9201b4d983ad, type: 3}
+    snippetTime: 9.5
     characterName: Shiki
-  - dialogueSentenceEnglish: "It\u2019s not like there\u2019s much else to do in
-      this place, and there have been even more than usual recently."
-    snippetVA: {fileID: 0}
-    snippetTime: 3
+  - dialogueSentenceEnglish: "(You can\u2019t get away from it.)"
+    snippetVA: {fileID: 8300000, guid: 820f507ddce3f8a4b9098f11f4a5a57c, type: 3}
+    snippetTime: 1.5
     characterName: Shiki
-  - dialogueSentenceEnglish: "You can\u2019t get away from it"
-    snippetVA: {fileID: 0}
-    snippetTime: 3
-    characterName: Shiki
-  - dialogueSentenceEnglish: "But I\u2019ve never been actually on the stage."
+  - dialogueSentenceEnglish: "(But I\u2019ve never been actually on the stage. Security
+      just waved me right through.)"
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
