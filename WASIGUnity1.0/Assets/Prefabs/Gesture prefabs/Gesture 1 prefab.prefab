@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 527c96acc578059448bf6c2ffe8c1cde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 131ef68ba959c8f468742c56e4c7cf89, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4977,7 +4977,7 @@ GameObject:
   - component: {fileID: 8254106161214467295}
   - component: {fileID: -1124240623081045277}
   m_Layer: 5
-  m_Name: Peace Sign blue
+  m_Name: Gesture 1 prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5154,7 +5154,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a9f95a1042d1d1b4ea5bb6a92b46d7f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01564b940b22d9847b2f44e4053bacab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
