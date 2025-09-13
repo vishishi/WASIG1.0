@@ -30110,7 +30110,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0b7cc1e9d6eaeeb46b3706f8f00446a5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -80976,6 +80976,8 @@ MonoBehaviour:
   - {fileID: 6998077368723908507, guid: 9e4755bc3acb69a45a6d105cf9f83b6e, type: 3}
   barrier: {fileID: 1506042017}
   knp: {fileID: 1590814127}
+  hypeTrackNormal: {fileID: 676859759}
+  hypeTrackHyperMode: {fileID: 1566119170}
   stageSequencer: {fileID: 755247592}
   pausePoints:
   - time: 15
@@ -81378,6 +81380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566119169}
   - component: {fileID: 1566119170}
+  - component: {fileID: 1566119171}
   m_Layer: 0
   m_Name: KNPHypeTrackHyperMode
   m_TagString: Untagged
@@ -81412,7 +81415,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6875d9ee72a9da0488b2dff977b6916d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -81496,6 +81499,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1566119171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566119168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e770769af1eedde44a71ebd21bdb1f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 1522564532}
 --- !u!1 &1570459989
 GameObject:
   m_ObjectHideFlags: 0
@@ -81852,7 +81868,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 831d434853a4404459ff84c236a48cda, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
