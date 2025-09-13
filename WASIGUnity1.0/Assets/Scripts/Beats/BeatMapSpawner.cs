@@ -18,7 +18,11 @@ public class BeatMapSpawner : MonoBehaviour
     public List<Transform> gridCells;
     public GameObject[] reticlePrefabs;
     public Transform barrier;
+
+    [Header("Music")]
     public AudioSource knp;
+    public AudioSource hypeTrackNormal;
+    public AudioSource hypeTrackHyperMode;
 
     private List<BeatEvent> beatEvents;
 
@@ -80,12 +84,15 @@ public class BeatMapSpawner : MonoBehaviour
         { 
 
             yield return new WaitUntil(() => stageSequencer.hasStarted);
-        //FMODUnity.RuntimeManager.PlayOneShot("event:/KagamiNoPanda");
-        knp.Play();
-        //hypeTrackAudio.SetActive(true);
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/KagamiNoPanda");
+            knp.Play();
+            hypeTrackNormal.Play();
+            hypeTrackHyperMode.Play();
+
+            //hypeTrackAudio.SetActive(true);
 
 
-        int beatIndex = 0;
+            int beatIndex = 0;
         int pauseIndex = 0;
 
         while (beatIndex < beatEvents.Count)
