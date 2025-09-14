@@ -19047,171 +19047,171 @@ MonoBehaviour:
   dialogueSnippets:
   - dialogueSentenceEnglish: "Oh, that\u2019s probably Maki. Better answer this.
       Did I take it off before sleeping? No, it\u2019s still on my wrist."
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 324ba052c345b5e4ab85568c5ec55de5, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "Morning sis. How\u2019s life in sick bay? "
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 7ffcea5025443864c9ac39814b3919b9, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "Sick bay is\u2026 sick bay."
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: eeee4e0f6d83bf04591fcb055adf09e9, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: But never mind that. How are you feeling? Today is concert
       day! First of the new season!!
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 1721acaabd0461a4dad2c69a5d91e09d, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: 'Oh really? I had no idea. '
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 12b0283dd340ed84c831a6440408532c, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "It\u2019s only the posters everywhere, the otaku going
       mad on the intranet, my 1000 unread messages\u2026 "
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 2f68acb6b7a4c734db2abed41c4ff75c, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "Come on, aren\u2019t you excited? The otaku are yapping
       even more than usual because their all-new star Shiki is making her unexpected
       debut."
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 07e505aff7fdfea4ab3142fc9870dc8a, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: "I\u2019m almost glad you took my place. It\u2019s more
       idol drama than we\u2019ve had in years."
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 6f4b25404837d8143af025024007e12e, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: "(It was Maki\u2019s dream to be up there today\u2026
       It\u2019s difficult to know what to say.)"
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 656a6a5636f358f4788075bdb64e1bf4, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "(Whether she wants me to be happy I\u2019m taking her
       place or not.)"
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 3d2698361f587504fa64ddd6ada8ffb5, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "(It\u2019s Maki. Of course most of her wants me to
       be excited. But a part of her must resent me\u2026)"
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 17153b98d677753439c67f5767874d03, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "(Either way, I\u2019m putting on a brave face.)"
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 0c8e61a468e21b74b96ae10d204150db, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: (To be honest, when I think about the concert today,
       I want to throw up.)
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 1b4f09d0984feec49acfba48992f6a02, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "Excited is\u2026 one word for how I\u2019m feeling."
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: a1f939e2489b2ee41ad7b86d5ab3ba3c, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "It\u2019s a lot, Maki, I won\u2019t lie."
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: d79da5ce354bf3c4e8611fea56ba51f0, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "But I committed to this. I won\u2019t let you down. "
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 733c0f9f7c83c714c8d0491daae92e78, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "You\u2019re going to be great!"
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 53684f4bb7470fb4799e91d38e3bebcd, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: On that note, I talked to my manager, sorry, your manager
       now, and we got some stage time for you to practice today!
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 3e641812e8a948143beb7ed00a2f0663, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: 'Thank the stars, I was terrified of going into the
       gig cold. When? '
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: e236245dfe8c1bd4dac2c52cc1b13fd2, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: 'Now! '
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: b290addc5f2f02a43ab950b54064140a, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: Now?!
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: c8367e53a1920684e844e547cbcd3378, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: 'Well, about fifteen minutes from now. '
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 780ac533996cb7243a9dc96b63835a46, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: Maki, I literally just woke up.
     snippetVA: {fileID: 0}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: When else would it be?! Shiki, your concert is literally
       today!
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: a1c8b79f773294f4cb5bd8e3dd68fe81, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: We need to fit in your rehearsal before everyone else
       sets up. So put on your costume and get over there!
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 7dfa6f36e6cb95e41bfd3d4931811509, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: Oh wow, OK! Thanks for swinging this for me, sis.
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 814568de16b424942b897066567e590b, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "Will you be there? Having the best idol on the ship
       show me how it\u2019s done would really help. "
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 446b908701588ba49b440d2156b36e90, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "\u2026 "
     snippetVA: {fileID: 0}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: (Foot in mouth. Shiki, you idiot).
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 952762582fbf6ff4ea667c6e256fe016, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: 'The doctor has ordered I stay on bed rest. '
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 3d9bb616f8ca8c147b5ad032927eccf8, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: "I\u2019m sorry, sis. I don\u2019t think I would be
       able to do the walk over, even if she let me go\u2026"
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 14b4e479e5313514d80fa8cb18dab486, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: "It\u2019s fine, Maki. Of course. I was being stupid,
       forget it. "
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: b0472f8b5843c7a44ac283f71628dc5e, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "But I\u2019ve got my headset so I\u2019ll be right
       with you on call! "
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 44fc936b31b2a5b45beb64c05a14334a, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: "The cameras and stuff on the stage are really good.
       Don\u2019t worry, I\u2019ll be able to point out exactly what you\u2019re doing
       wrong."
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 7db606a0063c5224abba2d907b9320ff, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: 'Love that for me, my baby sister, schooling me. '
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 80cf5e26e27d08e4ab3f3e8910d5091b, type: 3}
     snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: Hey, beats embarrassing yourself in front of the crowds!
       Now get your butt over there!
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 4c38520f3ec226642a884334ea7ed00b, type: 3}
     snippetTime: 3
-    characterName: Shiki
+    characterName: Maki
   - dialogueSentenceEnglish: Yes boss!
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: fc1fd1ee8625a8349bc20c898971fb71, type: 3}
     snippetTime: 3
     characterName: Shiki
   currentSnippetIndex: 0
