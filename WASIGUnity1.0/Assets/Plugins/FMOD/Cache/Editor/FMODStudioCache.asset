@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638912972260000000
+  lastModified: 638914692944331691
   FileSizes:
   - Name: Desktop
     Value: 1386
@@ -118,7 +118,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638899297220000000
+  lastModified: 638914692944301333
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -140,7 +140,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/HypeTrack.bank
   Name: HypeTrack
   StudioPath: bank:/HypeTrack
-  lastModified: 638912972260000000
+  lastModified: 638914692944078317
   FileSizes:
   - Name: Desktop
     Value: 7138272
@@ -181,7 +181,7 @@ MonoBehaviour:
   - {fileID: -4216587579583814281}
   StringsBanks:
   - {fileID: -6690322879505632687}
-  cacheTime: 638912972260000000
+  cacheTime: 638919687696253842
   cacheVersion: 131622
 --- !u!114 &517176625352221254
 MonoBehaviour:
@@ -225,7 +225,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/RhythmLevelFeedback.bank
   Name: RhythmLevelFeedback
   StudioPath: bank:/RhythmLevelFeedback
-  lastModified: 638912972260000000
+  lastModified: 638919687696253842
   FileSizes:
   - Name: Desktop
     Value: 57664
@@ -301,7 +301,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638911375280000000
+  lastModified: 638911466421805464
   FileSizes:
   - Name: Desktop
     Value: 5592736
@@ -429,7 +429,7 @@ MonoBehaviour:
   Path: Assets/FMOD/FMODBanks/Desktop/OpeningSequence.bank
   Name: OpeningSequence
   StudioPath: bank:/OpeningSequence
-  lastModified: 638912972260000000
+  lastModified: 638919687696243838
   FileSizes:
   - Name: Desktop
     Value: 273984
