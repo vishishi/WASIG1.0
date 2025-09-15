@@ -32,7 +32,7 @@ public class TutorialSequencer : MonoBehaviour
 
             switch(i)
             {
-                case 37:
+                case 30:
                 {
                 hasStarted = true;
                 yield return new WaitForSeconds(snippetTime);
@@ -41,14 +41,28 @@ public class TutorialSequencer : MonoBehaviour
 
                 }
                     break;
-                case 47:
+                case 40:
                     {
                         yield return new WaitForSeconds(snippetTime);
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Left));
                     }
                      break;
                
-                case 67:
+                case 59:
+                    {
+                        yield return new WaitForSeconds(snippetTime);
+                        yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Panda));
+                    }
+                    break;
+
+                case 75:
+                    {
+                        yield return new WaitForSeconds(snippetTime);
+                        yield return new WaitUntil(() => ChoiceManager.Instance.gesture1Selected || ChoiceManager.Instance.gesture2Selected || ChoiceManager.Instance.gesture3Selected);
+                    }
+                    break;
+
+                case 84:
                     {
                         yield return new WaitForSeconds(snippetTime);
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Panda));
