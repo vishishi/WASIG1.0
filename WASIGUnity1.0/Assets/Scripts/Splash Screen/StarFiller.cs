@@ -12,7 +12,6 @@ public class StarFiller : Interactable
     public TextMeshProUGUI text;
     public AudioSource fillerSound;
     public SplashScreenSequencer sequencer;
-    public ScreenFader screenFader;
     public float animationDuration;
     void Start()
     {
@@ -53,14 +52,10 @@ public class StarFiller : Interactable
         }
 
         starFiller.enabled = false;
-        emptyStar.enabled = false;
-        screenFader.ChangeScene("ShikiBedroom");
-
-
-
-        //Debug.Log("star image is disabled!");
-        //text.text = "Choose your level";
-        //sequencer.hasPointed = true;
+        emptyStar.enabled = false;  
+        Debug.Log("star image is disabled!");
+        text.text = "Choose your level";
+        sequencer.hasPointed = true;
 
         
        

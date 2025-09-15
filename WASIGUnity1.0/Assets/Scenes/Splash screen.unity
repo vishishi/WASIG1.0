@@ -85131,7 +85131,6 @@ MonoBehaviour:
   text: {fileID: 1109775301}
   fillerSound: {fileID: 2013448164}
   sequencer: {fileID: 1196880157}
-  screenFader: {fileID: 1030739898}
   animationDuration: 1
 --- !u!1001 &1402311154
 PrefabInstance:
