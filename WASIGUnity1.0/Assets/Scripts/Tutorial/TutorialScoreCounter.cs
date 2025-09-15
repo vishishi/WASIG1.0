@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum TutorialPhase
 {
@@ -21,6 +22,7 @@ public class TutorialScoreCounter : MonoBehaviour
     [HideInInspector] public int perfect;
     [HideInInspector] public int miss;
     [HideInInspector] public float snippetTime;
+    
 
 
     public bool completedGesture = false;
@@ -29,6 +31,8 @@ public class TutorialScoreCounter : MonoBehaviour
     public TutorialEnergyFiller energyFiller;
     public TutorialDialogueManager dialogueManager;
     public TutorialBeatSpawner beatSpawner;
+    public Image[] commsImages;
+    public Image backgroundImage;
 
     public GameObject tutorialRetryScreen;
     public GameObject comms;
@@ -139,6 +143,14 @@ public class TutorialScoreCounter : MonoBehaviour
     {
         return phaseCompletion[phase];
     }
+
+    public void AddPerfect()
+    {
+        if (hasChosen)
+        {
+            perfect += 3;
+        }
+    }
     #endregion
 
     #region Coroutines
@@ -148,14 +160,16 @@ public class TutorialScoreCounter : MonoBehaviour
         {
             switch(dialogueManager.currentSnippetIndex)
             {
-                case 37:
+                case 30:
                 {
+                        Debug.Log(" <color=#00FFFF> Score Counter: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
+                        Debug.Log(" <color=#00FFFF> Score Counter: </color> " + "read the snippet time as " + snippetTime.ToString());
                         yield return new WaitForSeconds(snippetTime);
                         yield return StartCoroutine(RunPhase(TutorialPhase.Right, 15, 3));
                 }
 
                     break;
-                case 47:
+                case 40:
                     {
                         yield return new WaitForSeconds(snippetTime);
                         yield return StartCoroutine(RunPhase(TutorialPhase.Left, 15, 3));
@@ -163,12 +177,18 @@ public class TutorialScoreCounter : MonoBehaviour
 
                     break;
 
-                case 67:
+                case 59:
                     {
                         yield return new WaitForSeconds(snippetTime);
                         yield return StartCoroutine(RunPhase(TutorialPhase.Panda, 15, 3));
                     }
+                    break;
 
+                case 84:
+                    {
+                        yield return new WaitForSeconds(snippetTime);
+                        yield return StartCoroutine(RunPhase(TutorialPhase.Gesture, 15, 3));
+                    }
                     break;
             }
             yield return null;
@@ -178,7 +198,16 @@ public class TutorialScoreCounter : MonoBehaviour
     IEnumerator RunPhase(TutorialPhase phase, float duration, int requiredPoints)
     {
         bool success = false;
-        comms.SetActive(false);
+        //yield return new WaitForSeconds(snippetTime);
+        if (phase != TutorialPhase.Gesture)
+        {
+            comms.SetActive(false);
+        }
+       // backgroundImage.color = new Color(0, 0, 0, 0);
+       // foreach (var image in commsImages)
+        //{
+         //   image.color = new Color (0, 0, 0, 0);
+        //}
         Debug.Log(phase.ToString() + " is the current phase");
 
         while (!success) // whole block runs until success
@@ -214,6 +243,11 @@ public class TutorialScoreCounter : MonoBehaviour
         MarkCompleted(phase);
         Debug.Log(phase.ToString() + " was completed!");
         comms.SetActive(true);
+       // backgroundImage.color = new Color(166, 242, 255, 0.14f);
+       // foreach (var image in commsImages)
+        //{
+         //   image.color = new Color( 1, 1, 1, 1 ); 
+        //}
     }
 
 

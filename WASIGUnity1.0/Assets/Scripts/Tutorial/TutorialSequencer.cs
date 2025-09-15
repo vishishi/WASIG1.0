@@ -7,11 +7,17 @@ public class TutorialSequencer : MonoBehaviour
     public TutorialDialogueManager dialogueManager;
     public bool hasStarted = false;
     public GameObject comms;
+    public GameObject poseSelector;
     public TutorialScoreCounter scoreCounter;
     [HideInInspector] public float snippetTime;
+    public ChoiceManager choiceManager;
+    public ScreenFader screenFader;
+
     void Start()
     {
         StartCoroutine(TutorialSequence());
+        StartCoroutine(ReachEnding());
+        poseSelector.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,43 +28,92 @@ public class TutorialSequencer : MonoBehaviour
 
     IEnumerator TutorialSequence()
     {
-        yield return new WaitForSeconds(3);
+       // yield return new WaitForSeconds(3);
         dialogueManager.StartConversation();
-        yield return new WaitForSeconds(snippetTime);
+       yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
         for (int i = 0; i < dialogueManager.dialogueSnippets.Length; i++)
         {
-            yield return new WaitForSeconds(snippetTime);
+  
             dialogueManager.NextDialogueSnippet();
+            Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
+            Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
+            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
 
-            switch(i)
+            switch (i)
             {
-                case 37:
+                case 29:
                 {
-                hasStarted = true;
-                yield return new WaitForSeconds(snippetTime);
-                yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Right));
-                
 
-                }
+                        //yield return new WaitForSeconds(snippetTime);
+                        Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
+                        Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
+                        yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Right));
+
+
+
+                    }
                     break;
-                case 47:
+                case 39:
                     {
-                        yield return new WaitForSeconds(snippetTime);
+                        
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Left));
                     }
                      break;
                
-                case 67:
+                case 58:
                     {
-                        yield return new WaitForSeconds(snippetTime);
+                        //yield return new WaitForSeconds(snippetTime);
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Panda));
                     }
                     break;
+
+                case 75:
+                    {
+                        //yield return new WaitForSeconds(snippetTime);
+                        comms.SetActive(false);
+                        poseSelector.SetActive(true);
+                        yield return new WaitUntil(() => (choiceManager.gesture1Selected || choiceManager.gesture2Selected || choiceManager.gesture3Selected));
+                        poseSelector.SetActive(false);
+                        comms.SetActive(true);
+                    }
+                    break;
+
+                case 83:
+                {
+
+                  
+                    yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
+                }
+
+                break;
+                               
+                    
+            }
+
+            if (dialogueManager.currentSnippetIndex >= dialogueManager.dialogueSnippets.Length)
+            {
+                Debug.Log("reached the end of the snippets!");
+                screenFader.ChangeScene("Main");
+                StopAllCoroutines();
             }
             yield return null;
 
         }
 
 
+    }
+
+    IEnumerator ReachEnding()
+    {
+        while (true)
+        {
+            if (dialogueManager.currentSnippetIndex == 152)
+            {
+                Debug.Log("reached the end of the snippets!");
+                screenFader.ChangeScene("Main");
+                StopAllCoroutines();
+            }
+            yield return null;
+        }
     }
 }

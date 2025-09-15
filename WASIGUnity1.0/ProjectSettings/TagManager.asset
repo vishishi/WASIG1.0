@@ -35,6 +35,7 @@ TagManager:
   - loading
   - Beat
   - Hand
+  - Gesture Prefabs
   layers:
   - Default
   - TransparentFX

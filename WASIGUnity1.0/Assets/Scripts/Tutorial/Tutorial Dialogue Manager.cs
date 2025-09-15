@@ -78,7 +78,7 @@ public class TutorialDialogueManager : MonoBehaviour
         {
 
             //increase index number of snippets
-            currentSnippetIndex++;
+           currentSnippetIndex++;
 
 
 
@@ -100,6 +100,14 @@ public class TutorialDialogueManager : MonoBehaviour
             {
                 characterPortrait.sprite = makiSprite;
             }
+
+            //currentSnippetIndex++;
+
+            // do some ui shit
+            // if character name = UI
+            //dont play audio
+            //wait for seconds
+            //instead of change portrait, show it in UI
 
 
 

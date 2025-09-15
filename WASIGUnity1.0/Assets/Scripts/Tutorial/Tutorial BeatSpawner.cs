@@ -68,7 +68,8 @@ public class TutorialBeatSpawner : MonoBehaviour
 
     IEnumerator MainLoop()
     {
-        
+        int i = 0;
+        GameObject gestureInstance;//Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
         // Step through pause points
         while (currentPauseIndex < pausePoints.Count)
         {
@@ -80,24 +81,65 @@ public class TutorialBeatSpawner : MonoBehaviour
             if (hasChosen)
             {
                 //yield return new WaitForSeconds(snippetTime);
+                
                 switch (gestureChoice)
-                {
+                { 
+                  
                     case 1:
-                        Instantiate(gesturePrefab[0], transform1.position, Quaternion.identity);
+                        i = 0; 
+                        Instantiate(gestureInstance =  Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity));
                         Debug.Log("prefab instantiated!");
+                        yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
+                        GameObject[] allInstances = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
+                        foreach (var instance in allInstances)
+                        {
+                            Destroy(instance);
+                            Debug.Log(instance.name + " has been " + "<color=red>DESTROYED</color>");
+                        }
+                     
+                        StopAllCoroutines();
+                        Debug.Log("<color=red> ALL COROUTINES HAVE STOPPED</color>");
+
                         break;
                     case 2:
-                        Instantiate(gesturePrefab[1], transform1.position, Quaternion.identity);
+                        i = 1;
+                        Instantiate(gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity));
                         Debug.Log("prefab instantiated!");
+                        GameObject[] a = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
+                        foreach(var instance in a)
+                        {
+                            Destroy(instance);
+                            Debug.Log(instance.name + " has been " + "<color=red>DESTROYED</color>");
+                        }
+                        
+                        StopAllCoroutines();
+                        Debug.Log("<color=red>ALL COROUTINES HAVE STOPPED</color>");
+
                         break;
                     case 3:
-                        Instantiate(gesturePrefab[2], transform1.position, Quaternion.identity);
-                        Debug.Log("prefab instantiated!");
+                        i = 2;
+                        Instantiate(gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity));
+                        GameObject[] b = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
+                        foreach (var instance in b)
+                        {
+                            Destroy(instance);
+                            Debug.Log(instance.name + " has been " + "<color=red>DESTROYED</color> ");
+                        }
+                        Debug.Log("<color=red>ALL COROUTINES HAVE STOPPED</color>");
+
                         break;
+
                 }
+
+                yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
+               
+
+
             }
             // Wait out the dialogue snippet duration
-            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[currentPause.dialoguePoint].snippetTime + 2);
+            Debug.Log(" <color=#FF00FF> Beat Spawner: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
+            Debug.Log(" <color=#FF00FF> Beat Spawner: </color> " + "read the snippet time as " + snippetTime.ToString());
+            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[currentPause.dialoguePoint].snippetTime);
 
             // Record checkpoint and start music/spawning
             lastCheckpointTime = currentPause.time;
@@ -113,8 +155,10 @@ public class TutorialBeatSpawner : MonoBehaviour
             currentPauseIndex++;
 
 
+
         }
 
+ 
 
     }
 
@@ -224,7 +268,7 @@ public class TutorialBeatSpawner : MonoBehaviour
                 if (pauseIndex < pausePoints.Count)
                 {
                     yield return new WaitUntil(() => pausePoints[pauseIndex].dialoguePoint == dialogueManager.currentSnippetIndex);
-                    yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+                    yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime + 2);
 
                     pauseIndex++;
                     continue;
