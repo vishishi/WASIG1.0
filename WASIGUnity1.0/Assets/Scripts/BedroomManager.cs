@@ -13,6 +13,7 @@ public class BedroomManager : MonoBehaviour
     public TextMeshProUGUI counter;
     public GameObject[] text;  
     public DialogueManager dialogueManager;
+    public ScreenFader screenFader;
 
     void Start()
     {
@@ -50,8 +51,8 @@ public class BedroomManager : MonoBehaviour
 
             }
 
-
-
+            comms.SetActive(false);
+            screenFader.ChangeScene("Tutorial");
 
 
 
