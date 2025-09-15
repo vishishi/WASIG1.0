@@ -25287,7 +25287,7 @@ MonoBehaviour:
     snippetTime: 7.5
     characterName: Maki
   - dialogueSentenceEnglish: '*Knocking*'
-    snippetVA: {fileID: 0}
+    snippetVA: {fileID: 8300000, guid: 580c6e42c40d3214fa268b0830eca91a, type: 3}
     snippetTime: 2
     characterName: 
   - dialogueSentenceEnglish: "Oh that\u2019s the doctor. She\u2019s right, though.
