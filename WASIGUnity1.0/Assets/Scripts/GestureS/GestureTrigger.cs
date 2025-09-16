@@ -210,7 +210,7 @@ public class GestureTrigger : MonoBehaviour
             Debug.Log("gesture was filled up to: " + fillerImage.fillAmount);
 
 
-            if (fillerImage.fillAmount >= 0.89f && scoreCounter != null)
+            if (fillerImage !=null && fillerImage.fillAmount >= 0.89f && scoreCounter != null)
             {
                 particle.Play();
                 scoreCounter.score += 500;

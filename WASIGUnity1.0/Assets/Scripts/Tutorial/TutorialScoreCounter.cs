@@ -237,6 +237,7 @@ public class TutorialScoreCounter : MonoBehaviour
 
             if (!success)
             {
+                beatSpawner.Extermination();
                 yield return new WaitForSeconds(2);
                 tutorialRetryScreen.SetActive(true);
                 yield return new WaitForSeconds(5);

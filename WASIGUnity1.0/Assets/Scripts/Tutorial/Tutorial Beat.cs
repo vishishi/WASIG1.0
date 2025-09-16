@@ -276,7 +276,7 @@ public class TutorialBeat : Interactable
     }
     public Accuracy CalculateAccuracy(float actualHitTime)
     {
-        float idealHitTime = spawnTime + 2.7f;
+        float idealHitTime = spawnTime + 1.6f;
         float offset = Mathf.Abs(actualHitTime - idealHitTime);
 
         if (offset <= 0.05f)

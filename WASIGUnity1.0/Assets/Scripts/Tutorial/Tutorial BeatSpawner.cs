@@ -220,8 +220,15 @@ public class TutorialBeatSpawner : MonoBehaviour
             spawnRoutine = null;
         }
 
+
+    }
+
+
+    public void Extermination()
+    {
+        StopCoroutine(spawnRoutine);
         GameObject[] tutorialBeats = GameObject.FindGameObjectsWithTag("Beat");
-        foreach(var beat in  tutorialBeats)
+        foreach (var beat in tutorialBeats)
         {
             Destroy(beat);
         }
@@ -230,10 +237,7 @@ public class TutorialBeatSpawner : MonoBehaviour
         {
             Destroy(reticle);
         }
-
-
     }
-
     public void SpawnBeat(BeatEvent beat)
     {
         int cellIndex = Mathf.Clamp(beat.cellIndex, 0, gridCells.Count - 1);
@@ -254,29 +258,7 @@ public class TutorialBeatSpawner : MonoBehaviour
         mover.moveSpeed = 4f;
     }
 
-    IEnumerator WaitForChoice()
-    {
-        while (true)
-        {
-            yield return new WaitUntil(() => hasChosen);
-            switch (gestureChoice)
-            {
-                case 1:
-                    StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[0]));
-                    break;
-                case 2:
-                    StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[1]));
-                    break;
-                case 3:
-                    StartCoroutine(SpawnBeatsWithPauses(gesturePrefab[2]));
-                    break;
-            }
 
-            yield return null;
-           Debug.Log("Gesture read by Beat Spawner!");
-            break;
-        }
-    }
 
     IEnumerator SpawnBeatsWithPauses(GameObject gesture)
     {
