@@ -18,7 +18,7 @@ public class DialogueManager : MonoBehaviour
     //[SerializeField] Button nextButton;
     //[SerializeField] GameObject dialogueObjectButton;
     //[SerializeField] GameObject dialogueScriptObject;
-    int numberOfDialogueObjects = 8;
+    //int numberOfDialogueObjects = 8;
 
     //make an array of the snippet class
     public DialogueSnippet[] dialogueSnippets;
