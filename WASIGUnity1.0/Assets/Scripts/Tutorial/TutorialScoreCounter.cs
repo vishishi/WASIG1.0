@@ -198,16 +198,11 @@ public class TutorialScoreCounter : MonoBehaviour
     IEnumerator RunPhase(TutorialPhase phase, float duration, int requiredPoints)
     {
         bool success = false;
-        //yield return new WaitForSeconds(snippetTime);
-        if (phase != TutorialPhase.Gesture)
-        {
+    
+     
             comms.SetActive(false);
-        }
-       // backgroundImage.color = new Color(0, 0, 0, 0);
-       // foreach (var image in commsImages)
-        //{
-         //   image.color = new Color (0, 0, 0, 0);
-        //}
+        
+
         Debug.Log(phase.ToString() + " is the current phase");
 
         while (!success) // whole block runs until success
@@ -243,11 +238,7 @@ public class TutorialScoreCounter : MonoBehaviour
         MarkCompleted(phase);
         Debug.Log(phase.ToString() + " was completed!");
         comms.SetActive(true);
-       // backgroundImage.color = new Color(166, 242, 255, 0.14f);
-       // foreach (var image in commsImages)
-        //{
-         //   image.color = new Color( 1, 1, 1, 1 ); 
-        //}
+
     }
 
 

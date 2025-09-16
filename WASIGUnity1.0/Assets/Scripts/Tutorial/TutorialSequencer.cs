@@ -8,10 +8,13 @@ public class TutorialSequencer : MonoBehaviour
     public bool hasStarted = false;
     public GameObject comms;
     public GameObject poseSelector;
-    public TutorialScoreCounter scoreCounter;
     [HideInInspector] public float snippetTime;
+
+    [Header("References")]
+    public TutorialScoreCounter scoreCounter;
     public ChoiceManager choiceManager;
     public ScreenFader screenFader;
+    public WatchInteractor watchInteractor;
 
     void Start()
     {
@@ -41,6 +44,15 @@ public class TutorialSequencer : MonoBehaviour
 
             switch (i)
             {
+                case 4:
+                    {
+                        watchInteractor.ReceiveCall();
+                        Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
+                        Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
+                        yield return new WaitUntil(() => watchInteractor.hasLooked);
+                    }
+
+                    break;
                 case 29:
                 {
 
@@ -55,7 +67,8 @@ public class TutorialSequencer : MonoBehaviour
                     break;
                 case 39:
                     {
-                        
+                        Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
+                        Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Left));
                     }
                      break;

@@ -86,8 +86,9 @@ public class TutorialBeatSpawner : MonoBehaviour
                 { 
                   
                     case 1:
-                        i = 0; 
-                        Instantiate(gestureInstance =  Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity));
+                        yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+                        i = 0;
+                        gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
                         Debug.Log("prefab instantiated!");
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
                         GameObject[] allInstances = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
@@ -102,9 +103,11 @@ public class TutorialBeatSpawner : MonoBehaviour
 
                         break;
                     case 2:
+                        yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
                         i = 1;
-                        Instantiate(gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity));
+                        gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
                         Debug.Log("prefab instantiated!");
+                        yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
                         GameObject[] a = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
                         foreach(var instance in a)
                         {
@@ -117,8 +120,9 @@ public class TutorialBeatSpawner : MonoBehaviour
 
                         break;
                     case 3:
+                        yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
                         i = 2;
-                        Instantiate(gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity));
+                        gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
                         GameObject[] b = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
                         foreach (var instance in b)
                         {
@@ -131,7 +135,7 @@ public class TutorialBeatSpawner : MonoBehaviour
 
                 }
 
-                yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
+                
                
 
 
@@ -194,9 +198,17 @@ public class TutorialBeatSpawner : MonoBehaviour
 
     public void RestartFromCheckpoint()
     {
-        Debug.Log("[Tutorial] Restarting from checkpoint at " + lastCheckpointTime + "s");
-        StopMusicAndSpawns();
-        StartSpawnFromCheckpoint(lastCheckpointTime);
+        if (!scoreCounter.isCompleted(TutorialPhase.Gesture))
+        {
+            Debug.Log("[Tutorial] Restarting from checkpoint at " + lastCheckpointTime + "s");
+            StopMusicAndSpawns();
+            StartSpawnFromCheckpoint(lastCheckpointTime);
+        }
+
+        else
+        {
+            StopAllCoroutines();
+        }
     }
 
     public void StopMusicAndSpawns()

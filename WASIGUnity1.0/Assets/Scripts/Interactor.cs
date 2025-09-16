@@ -42,7 +42,7 @@ public class Interactor : MonoBehaviour
     {
         Vector3 origin = transform.position;
         Vector3 direction = transform.forward;
-
+        Debug.DrawLine(origin, direction, Color.red);
         RaycastHit hit;
         if (Physics.Raycast(origin, direction, out hit, Mathf.Infinity, interactableLayer))
         {
@@ -52,9 +52,10 @@ public class Interactor : MonoBehaviour
             if (interactable != null)
             {
                 interactable.Interact(gameObject);
+                
             }
 
-
+           
             
            
         
