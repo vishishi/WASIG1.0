@@ -294,12 +294,12 @@ public class Beat : Interactable
     }
     public Accuracy CalculateAccuracy(float actualHitTime)
     {
-        float idealHitTime = spawnTime + 1.9f;
+        float idealHitTime = spawnTime + 1.76f;
         float offset = Mathf.Abs(actualHitTime - idealHitTime);
 
-        if (offset <= 0.05f)
+        if (offset <= 0.1f)
             return Accuracy.Perfect;
-        else if (offset <= 0.10f)
+        else if (offset <= 0.2f)
             return Accuracy.Good;
         else if (offset <= 0.25f)
             return Accuracy.Bad;

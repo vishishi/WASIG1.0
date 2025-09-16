@@ -30110,7 +30110,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0b7cc1e9d6eaeeb46b3706f8f00446a5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.304
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -32354,6 +32354,8 @@ MonoBehaviour:
   platformSound: {fileID: 1035629102}
   cheering: {fileID: 1002190014}
   hypeTrackNormal: {fileID: 676859759}
+  KNP: {fileID: 1590814127}
+  screenFader: {fileID: 0}
   isChearing: 0
   hasStarted: 0
 --- !u!4 &755328278 stripped
@@ -80956,7 +80958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd2a51ff1224cf4a9bba74cb1028b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatMapJSON: {fileID: 4900000, guid: ce642d8a28797b54fbbdc73e09dfeea8, type: 3}
+  beatMapJSON: {fileID: 4900000, guid: 6446029e43e0d8b43b44141d3c8d88f5, type: 3}
   beatPrefabs:
   - {fileID: 847908770007087361, guid: 18efff16a88566340a000db8be7241ae, type: 3}
   - {fileID: 8587977697133051227, guid: 49e3905b0aa888e4aa65e6850db56447, type: 3}
