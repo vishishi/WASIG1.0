@@ -5,6 +5,7 @@ using UnityEngine;
 public class TutorialSequencer : MonoBehaviour
 {
     public TutorialDialogueManager dialogueManager;
+    public TutorialBGMAudio bgmAudioManager;
     public bool hasStarted = false;
     public GameObject comms;
     public GameObject poseSelector;
@@ -44,12 +45,25 @@ public class TutorialSequencer : MonoBehaviour
 
             switch (i)
             {
+
+                /*case 2:
+                    {
+                        bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack1);
+                        break;
+                    } */
+                    
+
+
+
                 case 4:
                     {
+                        
                         watchInteractor.ReceiveCall();
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
                         yield return new WaitUntil(() => watchInteractor.hasLooked);
+                        //bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack1);
+
                     }
 
                     break;
@@ -57,6 +71,7 @@ public class TutorialSequencer : MonoBehaviour
                 {
 
                         //yield return new WaitForSeconds(snippetTime);
+                        //bgmAudioManager.StopTutorialBGMTrack();
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Right));

@@ -2139,9 +2139,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0
+  m_audioClip: {fileID: 8300000, guid: f29a6ca9583ec3242bfaca85bdfa85dd, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.846
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2422,14 +2422,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a2bb7dbb5461342934a0b093f634f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hyperModeHTref:
-    Guid:
-      Data1: 872300193
-      Data2: 1104867977
-      Data3: 438512812
-      Data4: 1208271645
-    Path: event:/HypeTrackHyperMode
-  score: {fileID: 0}
 --- !u!1 &743948717
 GameObject:
   m_ObjectHideFlags: 0

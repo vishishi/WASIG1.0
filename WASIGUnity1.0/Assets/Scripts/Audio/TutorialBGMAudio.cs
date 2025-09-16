@@ -24,7 +24,7 @@ public class TutorialBGMAudio : MonoBehaviour
     public void PlayTutorialBGMTrack(AudioClip currentTutorialBGMTrack)
     {
         
-        //tutorialBGMAudioSource.Stop();
+        tutorialBGMAudioSource.Stop();
         tutorialBGMAudioSource.clip = currentTutorialBGMTrack;
 
         if (currentTutorialBGMTrack == null)
