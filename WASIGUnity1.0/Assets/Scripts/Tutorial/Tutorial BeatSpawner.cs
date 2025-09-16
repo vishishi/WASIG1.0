@@ -78,68 +78,68 @@ public class TutorialBeatSpawner : MonoBehaviour
 
             // Wait until dialogue reaches the right snippet index
             yield return new WaitUntil(() => dialogueManager.currentSnippetIndex == currentPause.dialoguePoint);
-            if (hasChosen)
-            {
-                //yield return new WaitForSeconds(snippetTime);
+            //if (hasChosen)
+            //{
+            //    //yield return new WaitForSeconds(snippetTime);
                 
-                switch (gestureChoice)
-                { 
+            //    switch (gestureChoice)
+            //    { 
                   
-                    case 1:
-                        yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
-                        i = 0;
-                        gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
-                        Debug.Log("prefab instantiated!");
-                        yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
-                        GameObject[] allInstances = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
-                        foreach (var instance in allInstances)
-                        {
-                            Destroy(instance);
-                            Debug.Log(instance.name + " has been " + "<color=red>DESTROYED</color>");
-                        }
+            //        case 1:
+            //            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+            //            i = 0;
+            //            gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
+            //            Debug.Log("prefab instantiated!");
+            //            yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
+            //            GameObject[] allInstances = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
+            //            foreach (var instance in allInstances)
+            //            {
+            //                Destroy(instance);
+            //                Debug.Log(instance.name + " has been " + "<color=red>DESTROYED</color>");
+            //            }
                      
-                        StopAllCoroutines();
-                        Debug.Log("<color=red> ALL COROUTINES HAVE STOPPED</color>");
+            //            StopAllCoroutines();
+            //            Debug.Log("<color=red> ALL COROUTINES HAVE STOPPED</color>");
 
-                        break;
-                    case 2:
-                        yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
-                        i = 1;
-                        gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
-                        Debug.Log("prefab instantiated!");
-                        yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
-                        GameObject[] a = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
-                        foreach(var instance in a)
-                        {
-                            Destroy(instance);
-                            Debug.Log(instance.name + " has been " + "<color=red>DESTROYED</color>");
-                        }
+            //            break;
+            //        case 2:
+            //            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+            //            i = 1;
+            //            gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
+            //            Debug.Log("prefab instantiated!");
+            //            yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
+            //            GameObject[] a = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
+            //            foreach(var instance in a)
+            //            {
+            //                Destroy(instance);
+            //                Debug.Log(instance.name + " has been " + "<color=red>DESTROYED</color>");
+            //            }
                         
-                        StopAllCoroutines();
-                        Debug.Log("<color=red>ALL COROUTINES HAVE STOPPED</color>");
+            //            StopAllCoroutines();
+            //            Debug.Log("<color=red>ALL COROUTINES HAVE STOPPED</color>");
 
-                        break;
-                    case 3:
-                        yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
-                        i = 2;
-                        gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
-                        GameObject[] b = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
-                        foreach (var instance in b)
-                        {
-                            Destroy(instance);
-                            Debug.Log(instance.name + " has been " + "<color=red>DESTROYED</color> ");
-                        }
-                        Debug.Log("<color=red>ALL COROUTINES HAVE STOPPED</color>");
+            //            break;
+            //        case 3:
+            //            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+            //            i = 2;
+            //            gestureInstance = Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
+            //            GameObject[] b = GameObject.FindGameObjectsWithTag("Gesture Prefabs");
+            //            foreach (var instance in b)
+            //            {
+            //                Destroy(instance);
+            //                Debug.Log(instance.name + " has been " + "<color=red>DESTROYED</color> ");
+            //            }
+            //            Debug.Log("<color=red>ALL COROUTINES HAVE STOPPED</color>");
 
-                        break;
+            //            break;
 
-                }
+            //    }
 
                 
                
 
 
-            }
+            //}
             // Wait out the dialogue snippet duration
             Debug.Log(" <color=#FF00FF> Beat Spawner: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
             Debug.Log(" <color=#FF00FF> Beat Spawner: </color> " + "read the snippet time as " + snippetTime.ToString());

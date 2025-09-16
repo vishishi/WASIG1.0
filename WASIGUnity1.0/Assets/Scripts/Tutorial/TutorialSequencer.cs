@@ -74,7 +74,6 @@ public class TutorialSequencer : MonoBehaviour
                 case 29:
                 {
 
-                        //yield return new WaitForSeconds(snippetTime);
                         //bgmAudioManager.StopTutorialBGMTrack();
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
@@ -112,29 +111,18 @@ public class TutorialSequencer : MonoBehaviour
                     }
                     break;
 
-                case 83:
-                {
+                //case 83:
+                //{
                     
-                    gestures.SetActive(true);
-                    yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
-                    gestures.SetActive(false);
-                }
+                //    gestures.SetActive(true);
+                //    yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
+                //    gestures.SetActive(false);
+                //}
 
-                break;
+                //break;
                                
                     
             }
-
-            yield return null;
-
-            if (dialogueManager.currentSnippetIndex >= dialogueManager.dialogueSnippets.Length)
-            {
-                Debug.Log("reached the end of the snippets!");
-                screenFader.ChangeScene("Main");
-                StopAllCoroutines();
-            }
-            yield return null;
-
         }
 
 

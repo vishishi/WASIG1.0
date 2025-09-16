@@ -10,15 +10,18 @@ public class StageSequencer : MonoBehaviour
     public GameObject innerStage;
     public GameObject outerStage;
     public GameObject outerRing;
-
-
-    
-    
     public AudioSource platformSound;
     public AudioSource cheering;
+
+
+
+    [Header("Sounds")]
+    public AudioSource hypeTrackNormal;
+    public AudioSource KNP;
     // public ParticleSystem smoke;
 
-
+    public ScreenFader screenFader;
+    
     private Vector3 isPosition;
     private Vector3 osPosition;
     private Vector3 ovrPosition;
@@ -26,6 +29,7 @@ public class StageSequencer : MonoBehaviour
     private Vector3 osTargetPosition;
     private Vector3 ovrTargetPosition;
     private Vector3 circlePosition;
+    private Starstick stick;
 
 
     [HideInInspector]
@@ -55,9 +59,10 @@ public class StageSequencer : MonoBehaviour
         osTargetPosition = new Vector3 (osPosition.x, osPosition.y +2f, osPosition.z);
         ovrTargetPosition = new Vector3 (ovrPosition.x, ovrPosition.y + 2f, ovrPosition.z);
 
-      
+        stick = FindAnyObjectByType<Starstick>();
 
         StartCoroutine(OpeningSequence());
+        StartCoroutine(FinalSequence());
     }
 
     // Update is called once per frame
@@ -97,6 +102,9 @@ public class StageSequencer : MonoBehaviour
         isChearing = false;
         lightsAnimator.SetBool("hasBegan", true);
         hasStarted = true;
+
+        
+        StartCoroutine(HypeTrackMovement());
     
        
 
@@ -108,5 +116,34 @@ public class StageSequencer : MonoBehaviour
         
         
 
+    }
+
+    IEnumerator HypeTrackMovement()
+    {
+        yield return new WaitUntil(() => hypeTrackNormal.isPlaying);
+        stick.TriggerSync(16, 270);
+        yield return new WaitForSeconds(125.3f);
+        stick.TriggerSync(16, 270);
+        yield return new WaitForSeconds(125.3f);
+        stick.TriggerSync(16, 270);
+        
+
+
+    }
+
+    IEnumerator FinalSequence()
+    {
+        while (true)
+        {
+            yield return new WaitWhile(() => KNP.isPlaying);
+            isChearing = true;
+            cheering.Play();
+
+            yield return new WaitWhile(() => cheering.isPlaying);
+            Debug.Log("game has ended nya!");
+
+
+            yield return null;
+        }
     }
 }

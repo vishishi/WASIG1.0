@@ -129,6 +129,8 @@ public class BeatMapSpawner : MonoBehaviour
             yield return null;
         }
         yield return null;
+
+            break;
             }
     }
 
