@@ -114,7 +114,7 @@ public class TutorialSequencer : MonoBehaviour
 
                 case 83:
                 {
-
+                    
                     gestures.SetActive(true);
                     yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
                     gestures.SetActive(false);
