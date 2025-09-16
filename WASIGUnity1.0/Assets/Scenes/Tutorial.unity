@@ -7034,7 +7034,7 @@ PrefabInstance:
     - target: {fileID: 6041886253297765663, guid: 25585872312dff549b0d742eaaf6ccb8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.77
+      value: 6.19
       objectReference: {fileID: 0}
     - target: {fileID: 6041886253297765663, guid: 25585872312dff549b0d742eaaf6ccb8,
         type: 3}
@@ -12933,7 +12933,7 @@ Transform:
   m_GameObject: {fileID: 383833961}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.87, y: 8.361, z: 4.959999}
+  m_LocalPosition: {x: 0.87, y: 9.17, z: 3.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16085,15 +16085,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 1870295258}
-  bgmAudioManager: {fileID: 0}
+  bgmAudioManager: {fileID: 2068642644}
   hasStarted: 0
+  selectionMade: 0
   comms: {fileID: 632075489}
   poseSelector: {fileID: 1675442115}
+  gestures: {fileID: 1492643641}
   snippetTime: 0
   scoreCounter: {fileID: 955871641}
   choiceManager: {fileID: 505658387}
   screenFader: {fileID: 2079864383}
   watchInteractor: {fileID: 1468592302}
+  gestureSelector: {fileID: 0}
 --- !u!1 &1021850176
 GameObject:
   m_ObjectHideFlags: 0
@@ -17358,7 +17361,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157045157}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.0380001}
+  m_LocalPosition: {x: 0, y: 0, z: 1.54}
   m_LocalScale: {x: 0.0009999999, y: 0.0009999999, z: 0.0009999998}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -17369,7 +17372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2.3999996}
+  m_AnchoredPosition: {x: -0.02, y: 0.08}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1157045159
@@ -22662,6 +22665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e353b603cf53894e90df1fbb4fc7a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sequencer: {fileID: 970531548}
+  scoreCounter: {fileID: 955871641}
 --- !u!4 &1245988978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3288495761867447508, guid: 3f7511fbc40ae7a4b89c3298a3de199d,
@@ -23402,6 +23407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e353b603cf53894e90df1fbb4fc7a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sequencer: {fileID: 970531548}
+  scoreCounter: {fileID: 955871641}
 --- !u!1001 &1460752503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36214,6 +36221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e353b603cf53894e90df1fbb4fc7a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sequencer: {fileID: 970531548}
+  scoreCounter: {fileID: 955871641}
 --- !u!1 &1943630214
 GameObject:
   m_ObjectHideFlags: 0

@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: -6448306964602986844}
   m_Layer: 6
   m_Name: BluieTriangleReticle
-  m_TagString: Untagged
+  m_TagString: Reticle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

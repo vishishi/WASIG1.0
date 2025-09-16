@@ -5,9 +5,22 @@ using UnityEngine;
 public class TutorialSelectGesture : MonoBehaviour
 {
     private Animator gestureFiller;
+    public TutorialSequencer sequencer;
+    public TutorialScoreCounter scoreCounter;    
     void Start()
     {
-        gestureFiller = GetComponent<Animator>();   
+        gestureFiller = GetComponent<Animator>();
+        if (gestureFiller != null)
+        {
+            Debug.Log("gesture select animator found!");
+        }
+
+        else
+        {
+            Debug.Log("where the hell is it??");
+        }
+
+            
     }
 
     // Update is called once per frame
@@ -18,7 +31,25 @@ public class TutorialSelectGesture : MonoBehaviour
 
     public void FillImage()
     {
-        gestureFiller.SetBool("isGesture", true);
+        if (gestureFiller != null)
+        {
+            gestureFiller.SetBool("isGesture", true);
+        }
         Debug.Log("Gesture animator is playing in " + gameObject.name);
+    }
+
+    public void InformSequencer()
+    {
+        if (!sequencer.selectionMade)
+        {
+            sequencer.selectionMade = true;
+            Debug.Log("communicated to sequencer!");
+        }
+
+        else if (sequencer.selectionMade) 
+        {
+            scoreCounter.MarkCompleted(TutorialPhase.Gesture);
+            Debug.Log("animation was filled and gesture phase was over heeny");
+        }
     }
 }

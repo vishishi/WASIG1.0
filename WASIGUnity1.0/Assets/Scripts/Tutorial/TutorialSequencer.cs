@@ -7,8 +7,10 @@ public class TutorialSequencer : MonoBehaviour
     public TutorialDialogueManager dialogueManager;
     public TutorialBGMAudio bgmAudioManager;
     public bool hasStarted = false;
+    [HideInInspector] public bool selectionMade = false;
     public GameObject comms;
     public GameObject poseSelector;
+    public GameObject gestures;
     [HideInInspector] public float snippetTime;
 
     [Header("References")]
@@ -16,12 +18,14 @@ public class TutorialSequencer : MonoBehaviour
     public ChoiceManager choiceManager;
     public ScreenFader screenFader;
     public WatchInteractor watchInteractor;
+    public TutorialSelectGesture gestureSelector;
 
     void Start()
     {
         StartCoroutine(TutorialSequence());
         StartCoroutine(ReachEnding());
         poseSelector.SetActive(false);
+        gestures.SetActive(false);  
     }
 
     // Update is called once per frame
@@ -90,18 +94,20 @@ public class TutorialSequencer : MonoBehaviour
                
                 case 58:
                     {
-                        //yield return new WaitForSeconds(snippetTime);
+                       
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Panda));
                     }
                     break;
 
                 case 75:
                     {
-                        //yield return new WaitForSeconds(snippetTime);
+                        
+                        gestures.SetActive(true);
                         comms.SetActive(false);
                         poseSelector.SetActive(true);
-                        yield return new WaitUntil(() => (choiceManager.gesture1Selected || choiceManager.gesture2Selected || choiceManager.gesture3Selected));
-                        poseSelector.SetActive(false);
+                        yield return new WaitUntil(() => selectionMade);
+                        Destroy(poseSelector);
+                        gestures.SetActive(false);
                         comms.SetActive(true);
                     }
                     break;
@@ -109,14 +115,17 @@ public class TutorialSequencer : MonoBehaviour
                 case 83:
                 {
 
-                  
+                    gestures.SetActive(true);
                     yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
+                    gestures.SetActive(false);
                 }
 
                 break;
                                
                     
             }
+
+            yield return null;
 
             if (dialogueManager.currentSnippetIndex >= dialogueManager.dialogueSnippets.Length)
             {
@@ -143,5 +152,6 @@ public class TutorialSequencer : MonoBehaviour
             }
             yield return null;
         }
+        
     }
 }

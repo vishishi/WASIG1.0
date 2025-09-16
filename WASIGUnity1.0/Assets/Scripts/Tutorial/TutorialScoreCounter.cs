@@ -184,12 +184,12 @@ public class TutorialScoreCounter : MonoBehaviour
                     }
                     break;
 
-                case 84:
-                    {
-                        yield return new WaitForSeconds(snippetTime);
-                        yield return StartCoroutine(RunPhase(TutorialPhase.Gesture, 15, 3));
-                    }
-                    break;
+                //case 84:
+                    //{
+                    //    yield return new WaitForSeconds(snippetTime);
+                    //    yield return StartCoroutine(RunPhase(TutorialPhase.Gesture, 20, 3));
+                    //}
+                    //break;
             }
             yield return null;
         }
@@ -198,18 +198,31 @@ public class TutorialScoreCounter : MonoBehaviour
     IEnumerator RunPhase(TutorialPhase phase, float duration, int requiredPoints)
     {
         bool success = false;
-    
-     
-            comms.SetActive(false);
+
+
+
+
+        
         
 
         Debug.Log(phase.ToString() + " is the current phase");
 
         while (!success) // whole block runs until success
         {
+            if (isCompleted(phase))
+            {
+                success = true;
+            }
+
+            else if (!isCompleted(phase))
+            {
+                comms.SetActive(false);
+            }
+
             float elapsedTime = 0f;
 
-            while (elapsedTime < duration)
+
+                while (elapsedTime < duration)
             {
                 if (perfect + good >= requiredPoints) // use >= in case of overshoot
                 {
@@ -226,7 +239,7 @@ public class TutorialScoreCounter : MonoBehaviour
             {
                 yield return new WaitForSeconds(2);
                 tutorialRetryScreen.SetActive(true);
-                yield return new WaitForSeconds(7);
+                yield return new WaitForSeconds(5);
                 tutorialRetryScreen.SetActive(false);
                 beatSpawner.RestartFromCheckpoint(); // restart music & beats
                 

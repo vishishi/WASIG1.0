@@ -219,6 +219,19 @@ public class TutorialBeatSpawner : MonoBehaviour
             StopCoroutine(spawnRoutine);
             spawnRoutine = null;
         }
+
+        GameObject[] tutorialBeats = GameObject.FindGameObjectsWithTag("Beat");
+        foreach(var beat in  tutorialBeats)
+        {
+            Destroy(beat);
+        }
+        GameObject[] tutorialReticles = GameObject.FindGameObjectsWithTag("Reticle");
+        foreach (var reticle in tutorialReticles)
+        {
+            Destroy(reticle);
+        }
+
+
     }
 
     public void SpawnBeat(BeatEvent beat)
