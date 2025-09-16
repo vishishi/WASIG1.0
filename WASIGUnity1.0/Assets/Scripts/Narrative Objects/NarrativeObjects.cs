@@ -20,7 +20,7 @@ using UnityEngine.UI;
     public GameObject touchVFX;
     public BedroomManager bedroomManager;
     [HideInInspector]
-    public DialogueManager dialogueManager;
+    public DialogueObjectsManager dialogueObjectsManager;
     [HideInInspector]
     public Collider myCol;
    void Start()
@@ -63,7 +63,7 @@ using UnityEngine.UI;
         images = canvas.GetComponentsInChildren<Image>();
         animator = GetComponentInChildren<Animator>();
         myCol = GetComponent<Collider>() ?? GetComponentInChildren<Collider>();
-        dialogueManager = GetComponentInChildren<DialogueManager>();
+        dialogueObjectsManager = GetComponentInChildren<DialogueObjectsManager>();
         touchSound = GetComponentInChildren<AudioSource>();
     }
 
@@ -86,13 +86,13 @@ using UnityEngine.UI;
         animator.SetBool("hasTouched", true);
         Debug.Log(gameObject.name + " is playing now");
         yield return new WaitForSeconds(3);
-        dialogueManager.StartConversation();
-        yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+        dialogueObjectsManager.StartConversation();
+        yield return new WaitForSeconds(dialogueObjectsManager.dialogueObjectsSnippets[dialogueObjectsManager.currentSnippetIndex].snippetTime);
 
-        foreach (var snippets in dialogueManager.dialogueSnippets)
+        foreach (var snippets in dialogueObjectsManager.dialogueObjectsSnippets)
         {
-            yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
-            dialogueManager.NextDialogueSnippet();
+            yield return new WaitForSeconds(dialogueObjectsManager.dialogueObjectsSnippets[dialogueObjectsManager.currentSnippetIndex].snippetTime);
+            dialogueObjectsManager.NextDialogueSnippet();
 
         }
 

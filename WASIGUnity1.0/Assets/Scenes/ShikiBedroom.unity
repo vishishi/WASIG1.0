@@ -492,6 +492,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5599440595924554485, guid: ce46a9125a1c8f74698c940ab9158fe9,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1571767881}
+    - targetCorrespondingSourceObject: {fileID: 5599440595924554485, guid: ce46a9125a1c8f74698c940ab9158fe9,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1008132753}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5115778163452692559, guid: ce46a9125a1c8f74698c940ab9158fe9,
@@ -753,6 +757,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1101635424}
+    - targetCorrespondingSourceObject: {fileID: 5599440595924554485, guid: ce46a9125a1c8f74698c940ab9158fe9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1891280752}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5115778163452692559, guid: ce46a9125a1c8f74698c940ab9158fe9,
         type: 3}
@@ -982,7 +990,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   touchVFX: {fileID: 438364737867621480, guid: 0c87b1e8afada9f42a6074aea2046262, type: 3}
   bedroomManager: {fileID: 899296244}
-  dialogueManager: {fileID: 0}
+  dialogueObjectsManager: {fileID: 0}
   myCol: {fileID: 0}
 --- !u!1 &119036671 stripped
 GameObject:
@@ -1123,6 +1131,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2091311489}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f360a0af0f2d05f4f9dfe58ed3105553,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 969700738}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f360a0af0f2d05f4f9dfe58ed3105553,
         type: 3}
       insertIndex: -1
@@ -1980,6 +1992,71 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &244123607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 244123608}
+  - component: {fileID: 244123609}
+  m_Layer: 0
+  m_Name: Books Dialogue Objects Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &244123608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244123607}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 110732695}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &244123609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244123607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e270f43288c0247a4da068c0f0bf0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 1569898601}
+  dialogueAudioSource: {fileID: 1045626674}
+  dialogueObjectsSnippets:
+  - dialogueSentenceEnglish: 'Maki''s books on idols. '
+    snippetVA: {fileID: 8300000, guid: 164bba903e21a86439a730f117d56a3b, type: 3}
+    snippetTime: 3
+  - dialogueSentenceEnglish: 'Of course, I haven''t read any. '
+    snippetVA: {fileID: 8300000, guid: 0d259ab5fd6d57f439ea003b60a0d485, type: 3}
+    snippetTime: 3
+  - dialogueSentenceEnglish: 'Oh stars, she''s been preparing for this her whole
+      life and I''ve had like, 3 days?! '
+    snippetVA: {fileID: 8300000, guid: b2b8240e139920f418fd51bca1659a4c, type: 3}
+    snippetTime: 7
+  - dialogueSentenceEnglish: 'Fine. It''s fine. '
+    snippetVA: {fileID: 8300000, guid: 322d461a4bb62754bae82db081b609fe, type: 3}
+    snippetTime: 2
+  - dialogueSentenceEnglish: It has to be.
+    snippetVA: {fileID: 8300000, guid: 085e59e3c3b187d4790b818ff5d23a53, type: 3}
+    snippetTime: 3
+  currentSnippetIndex: 0
+  isTesting: 0
 --- !u!1 &247948963 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3212597575570184997, guid: 7979587fc3d2dbc4884503e5b8162edf,
@@ -16861,6 +16938,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Narration Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8244332387655302290, guid: a30a95e521154224c929c1d4d515712e,
+        type: 3}
+      propertyPath: m_Name
+      value: dialoguetext
+      objectReference: {fileID: 0}
     - target: {fileID: 8495296184058939181, guid: a30a95e521154224c929c1d4d515712e,
         type: 3}
       propertyPath: m_text
@@ -17896,7 +17978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &598271315
 Transform:
   m_ObjectHideFlags: 0
@@ -19045,10 +19127,20 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 32.6
       objectReference: {fileID: 0}
+    - target: {fileID: 5456233340318478202, guid: a30a95e521154224c929c1d4d515712e,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7394592183103608811, guid: a30a95e521154224c929c1d4d515712e,
         type: 3}
       propertyPath: m_Name
       value: Narration Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244332387655302290, guid: a30a95e521154224c929c1d4d515712e,
+        type: 3}
+      propertyPath: m_Name
+      value: dialogueText
       objectReference: {fileID: 0}
     - target: {fileID: 8495296184058939181, guid: a30a95e521154224c929c1d4d515712e,
         type: 3}
@@ -20674,6 +20766,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244332387655302290, guid: a30a95e521154224c929c1d4d515712e,
+        type: 3}
+      propertyPath: m_Name
+      value: dialogueText
       objectReference: {fileID: 0}
     - target: {fileID: 8495296184058939181, guid: a30a95e521154224c929c1d4d515712e,
         type: 3}
@@ -26319,6 +26416,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 598271315}
+    - targetCorrespondingSourceObject: {fileID: 8757060777043029958, guid: 510172323d8c25740843a82503b53bbf,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1878665268}
     - targetCorrespondingSourceObject: {fileID: 8757060777043029958, guid: 510172323d8c25740843a82503b53bbf,
         type: 3}
       insertIndex: -1
@@ -32426,6 +32527,65 @@ RectTransform:
   m_AnchoredPosition: {x: -443, y: -183}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &969700737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 969700738}
+  - component: {fileID: 969700739}
+  m_Layer: 0
+  m_Name: Mug Dialogue Objects Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &969700738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969700737}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1256219624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &969700739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969700737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e270f43288c0247a4da068c0f0bf0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 809205627}
+  dialogueAudioSource: {fileID: 1045626674}
+  dialogueObjectsSnippets:
+  - dialogueSentenceEnglish: 'Pandas, everywhere. '
+    snippetVA: {fileID: 8300000, guid: 067f233369edd0d4b94a91ffe5afbbb4, type: 3}
+    snippetTime: 2
+  - dialogueSentenceEnglish: 'I was worried it would be that thing where like, you
+      admit you like something and everyone now associates you with that, forever. '
+    snippetVA: {fileID: 8300000, guid: b31bd5521868f064f80aace965f5aa1c, type: 3}
+    snippetTime: 8
+  - dialogueSentenceEnglish: But Maki doesn't seem to get tired of the pandas, luckily.
+    snippetVA: {fileID: 8300000, guid: f8248fd1bb040d443b22cad9730452e6, type: 3}
+    snippetTime: 4
+  currentSnippetIndex: 0
+  isTesting: 0
 --- !u!1 &975682570
 GameObject:
   m_ObjectHideFlags: 0
@@ -33877,7 +34037,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   touchVFX: {fileID: 438364737867621480, guid: 0c87b1e8afada9f42a6074aea2046262, type: 3}
   bedroomManager: {fileID: 899296244}
-  dialogueManager: {fileID: 0}
+  dialogueObjectsManager: {fileID: 0}
   myCol: {fileID: 0}
 --- !u!82 &1100023161
 AudioSource:
@@ -34013,7 +34173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1101635424
 Transform:
   m_ObjectHideFlags: 0
@@ -35099,7 +35259,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   touchVFX: {fileID: 438364737867621480, guid: 0c87b1e8afada9f42a6074aea2046262, type: 3}
   bedroomManager: {fileID: 899296244}
-  dialogueManager: {fileID: 0}
+  dialogueObjectsManager: {fileID: 0}
   myCol: {fileID: 0}
 --- !u!65 &1208312378
 BoxCollider:
@@ -35825,7 +35985,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   touchVFX: {fileID: 438364737867621480, guid: 0c87b1e8afada9f42a6074aea2046262, type: 3}
   bedroomManager: {fileID: 899296244}
-  dialogueManager: {fileID: 0}
+  dialogueObjectsManager: {fileID: 0}
   myCol: {fileID: 0}
 --- !u!64 &1256219630
 MeshCollider:
@@ -36105,7 +36265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1305962257
 Transform:
   m_ObjectHideFlags: 0
@@ -41175,7 +41335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1335328556
 Transform:
   m_ObjectHideFlags: 0
@@ -41311,6 +41471,69 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 726e9404990ca874d9ffe524f5f5d1af, type: 3}
+--- !u!1 &1346276161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346276162}
+  - component: {fileID: 1346276163}
+  m_Layer: 0
+  m_Name: ComputerDialogueObjectsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346276162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346276161}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 614370207}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1346276163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346276161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e270f43288c0247a4da068c0f0bf0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 514645212}
+  dialogueAudioSource: {fileID: 1045626674}
+  dialogueObjectsSnippets:
+  - dialogueSentenceEnglish: 'The otaku blogs on this ship are pretty intense sometimes. '
+    snippetVA: {fileID: 8300000, guid: aa5f794e33a5c7b41aa97d7ed0c929bb, type: 3}
+    snippetTime: 4
+  - dialogueSentenceEnglish: 'I used to read them from time to time, check to see
+      whether Maki was mentioned. '
+    snippetVA: {fileID: 8300000, guid: afa4c6c1c7c20e745898de7adb78eb71, type: 3}
+    snippetTime: 5
+  - dialogueSentenceEnglish: Just being protective.
+    snippetVA: {fileID: 8300000, guid: e556361b8c471e14b9ae92600e22a0c4, type: 3}
+    snippetTime: 3
+  - dialogueSentenceEnglish: 'But now I know they''ll be talking about me, I can''t
+      even bear to go online. '
+    snippetVA: {fileID: 8300000, guid: f23fa2fe6130933459e43aa7bb54c00e, type: 3}
+    snippetTime: 6
+  currentSnippetIndex: 0
+  isTesting: 0
 --- !u!1 &1352897910
 GameObject:
   m_ObjectHideFlags: 0
@@ -43422,6 +43645,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1571767880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1571767881}
+  - component: {fileID: 1571767882}
+  m_Layer: 0
+  m_Name: Window Dialogue Objects Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1571767881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571767880}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1208312374}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1571767882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571767880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e270f43288c0247a4da068c0f0bf0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 1815761607}
+  dialogueAudioSource: {fileID: 1045626674}
+  dialogueObjectsSnippets:
+  - dialogueSentenceEnglish: I wonder what it would be like to look out of the window
+      and see something different..
+    snippetVA: {fileID: 8300000, guid: f5ea75abbef46f04fa159ac29549db7d, type: 3}
+    snippetTime: 5
+  currentSnippetIndex: 0
+  isTesting: 0
 --- !u!4 &1576048131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 952044976968806272, guid: 7979587fc3d2dbc4884503e5b8162edf,
@@ -53798,7 +54074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1621075977
 Transform:
   m_ObjectHideFlags: 0
@@ -56196,6 +56472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Narration Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244332387655302290, guid: a30a95e521154224c929c1d4d515712e,
+        type: 3}
+      propertyPath: m_Name
+      value: NarrationText
       objectReference: {fileID: 0}
     - target: {fileID: 8495296184058939181, guid: a30a95e521154224c929c1d4d515712e,
         type: 3}
@@ -61793,6 +62074,65 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d446315a670bb8245a029876f22a0501, type: 3}
+--- !u!1 &1878665267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1878665268}
+  - component: {fileID: 1878665269}
+  m_Layer: 0
+  m_Name: UniformDialogueObjectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1878665268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878665267}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1938773587}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1878665269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878665267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e270f43288c0247a4da068c0f0bf0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 1815761607}
+  dialogueAudioSource: {fileID: 1045626674}
+  dialogueObjectsSnippets:
+  - dialogueSentenceEnglish: 'Guess I''ll be wearing this today. '
+    snippetVA: {fileID: 8300000, guid: 188fcceceddc81a438816ea625d899de, type: 3}
+    snippetTime: 3
+  - dialogueSentenceEnglish: Miki is a little bit smaller than me but it just about
+      fits.
+    snippetVA: {fileID: 8300000, guid: d3b852a378c079d49a40d856c0f7c192, type: 3}
+    snippetTime: 5
+  - dialogueSentenceEnglish: ' There wasn''t any time for any major alterations. '
+    snippetVA: {fileID: 8300000, guid: a9f6578645e961b48aafd25148a5d5cf, type: 3}
+    snippetTime: 5
+  currentSnippetIndex: 0
+  isTesting: 0
 --- !u!1 &1881619077
 GameObject:
   m_ObjectHideFlags: 0
@@ -62063,6 +62403,59 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &1891280751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1891280752}
+  - component: {fileID: 1891280753}
+  m_Layer: 0
+  m_Name: Window Dialogue Objects Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1891280752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891280751}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 118208201}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1891280753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891280751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e270f43288c0247a4da068c0f0bf0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 590795318}
+  dialogueAudioSource: {fileID: 1045626674}
+  dialogueObjectsSnippets:
+  - dialogueSentenceEnglish: I wonder what it would be like to look out of the window
+      and see something different..
+    snippetVA: {fileID: 8300000, guid: f5ea75abbef46f04fa159ac29549db7d, type: 3}
+    snippetTime: 5
+  currentSnippetIndex: 0
+  isTesting: 0
 --- !u!1 &1900676437
 GameObject:
   m_ObjectHideFlags: 0
@@ -62205,6 +62598,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4553323878576002089, guid: f35c84b565f8cce4b9356880a0438791,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1346276162}
+    - targetCorrespondingSourceObject: {fileID: 4553323878576002089, guid: f35c84b565f8cce4b9356880a0438791,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1762024925}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3781747557506731667, guid: f35c84b565f8cce4b9356880a0438791,
@@ -62246,7 +62643,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   touchVFX: {fileID: 438364737867621480, guid: 0c87b1e8afada9f42a6074aea2046262, type: 3}
   bedroomManager: {fileID: 899296244}
-  dialogueManager: {fileID: 0}
+  dialogueObjectsManager: {fileID: 0}
   myCol: {fileID: 0}
 --- !u!82 &1911368808
 AudioSource:
@@ -62549,7 +62946,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   touchVFX: {fileID: 438364737867621480, guid: 0c87b1e8afada9f42a6074aea2046262, type: 3}
   bedroomManager: {fileID: 899296244}
-  dialogueManager: {fileID: 0}
+  dialogueObjectsManager: {fileID: 0}
   myCol: {fileID: 0}
 --- !u!82 &1938773589
 AudioSource:
@@ -62890,6 +63287,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fd12bcc609dbcee4e833970e22bb25f3,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 244123608}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fd12bcc609dbcee4e833970e22bb25f3,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 830172066}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fd12bcc609dbcee4e833970e22bb25f3,
@@ -63031,7 +63432,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   touchVFX: {fileID: 438364737867621480, guid: 0c87b1e8afada9f42a6074aea2046262, type: 3}
   bedroomManager: {fileID: 899296244}
-  dialogueManager: {fileID: 0}
+  dialogueObjectsManager: {fileID: 0}
   myCol: {fileID: 0}
 --- !u!54 &1952703442
 Rigidbody:
@@ -64347,7 +64748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2091311489
 Transform:
   m_ObjectHideFlags: 0
