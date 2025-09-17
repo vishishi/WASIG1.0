@@ -145,6 +145,10 @@ public class StageSequencer : MonoBehaviour
 
 
             yield return null;
+
+            break;
         }
+
+
     }
 }

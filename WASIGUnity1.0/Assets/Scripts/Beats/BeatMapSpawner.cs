@@ -118,6 +118,8 @@ public class BeatMapSpawner : MonoBehaviour
                 continue;
             }
 
+            StopAllCoroutines();
+
             // Spawn beat if it’s time
             if (!isPaused && beatIndex < beatEvents.Count && songTimer >= beatEvents[beatIndex].time)
             {
@@ -128,9 +130,9 @@ public class BeatMapSpawner : MonoBehaviour
 
             yield return null;
         }
-        yield return null;
+        
+           
 
-            break;
             }
     }
 

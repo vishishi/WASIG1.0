@@ -105,6 +105,8 @@ MonoBehaviour:
   - {r: 21.132076, g: 12.6446495, b: 0, a: 1}
   - {r: 0.13518442, g: 0.59109515, b: 1.8443027, a: 1}
   - {r: 2.4622889, g: 0.25759602, b: 2.4622889, a: 1}
-  overrideColor: {r: 0, g: 311.6648, b: 647.5583, a: 0}
+  overrideColor: {r: 0, g: 34.970356, b: 72.659294, a: 0}
   score: {fileID: 0}
+  isCheering: 0
   spawner: {fileID: 0}
+  syncBlendSpeed: 3

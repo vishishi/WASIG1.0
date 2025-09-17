@@ -150,10 +150,12 @@ public class Starstick : MonoBehaviour
             else if (score.isSuperCharged)
             {
                 // This stick advances its own local phases
-                float delta = wavingSpeed * Time.deltaTime *2;
+                float delta = wavingSpeed * Time.deltaTime * 2;
                 localPhaseX = Mathf.Repeat(localPhaseX + delta, Mathf.PI * 2f);
                 localPhaseY = Mathf.Repeat(localPhaseY + delta * 0.7f, Mathf.PI * 2f);
                 localPhaseZ = Mathf.Repeat(localPhaseZ + delta * 1.3f, Mathf.PI * 2f);
+
+
             }
             else if (stageSequencer.isChearing)
             {
