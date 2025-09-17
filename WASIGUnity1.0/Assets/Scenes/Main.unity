@@ -79966,6 +79966,7 @@ MonoBehaviour:
   isSuperCharged: 0
   isTesting: 0
   superChargeThreshold: 2
+  maxMiss: 1
 --- !u!4 &1522976243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3120309941702303621, guid: 58c340498fcd21f48ba095f89420d7d9,

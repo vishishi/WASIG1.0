@@ -21,9 +21,10 @@ public class ScoreCounter : MonoBehaviour
     public bool isTesting;
 
 
-    [SerializeField] private int superChargeThreshold = 3;
+    [SerializeField] private int superChargeThreshold = 0;
+    [SerializeField] private int maxMiss = 0;
 
-  
+
     private int lastPerfect = 0;
     private int lastMiss = 0;
     private int perfectStreak = 0;
@@ -57,7 +58,7 @@ public class ScoreCounter : MonoBehaviour
                 perfectStreak += dPerfect;
 
             // Any miss breaks the streak
-            if (dMiss > 0)
+            if (dMiss > maxMiss)
                 perfectStreak = 0;
 
             // Enter supercharge when we hit the threshold
