@@ -192,6 +192,8 @@ public class TutorialScoreCounter : MonoBehaviour
                     //break;
             }
             yield return null;
+
+            break;
         }
     }
 

@@ -50,34 +50,42 @@ public class TutorialSequencer : MonoBehaviour
             switch (i)
             {
 
-                /*case 2:
-                    {
-                        bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack1);
-                        break;
-                    } */
-                    
+                //case 2:
+                //    {
+                //        bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack1);
+                //        Debug.Log("case 2 audio is playing!");
+                        
+                //    }
+                //    break;
 
 
 
-                case 4:
+
+                case 3:
                     {
                         
                         watchInteractor.ReceiveCall();
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
                         yield return new WaitUntil(() => watchInteractor.hasLooked);
-                        //bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack1);
+                       
 
                     }
 
                     break;
+                case 10:
+                    {
+                        bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack1);
+                    }
+                    break;
                 case 29:
                 {
 
-                        //bgmAudioManager.StopTutorialBGMTrack();
+                        bgmAudioManager.StopTutorialBGMTrack();
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Right));
+                        bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack1);
 
 
 
@@ -85,22 +93,25 @@ public class TutorialSequencer : MonoBehaviour
                     break;
                 case 39:
                     {
+                        bgmAudioManager.StopTutorialBGMTrack();
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
                         Debug.Log(" <color=#FFFF00> Sequencer: </color> " + "read the snippet time as " + snippetTime.ToString());
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Left));
+                        bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack1);
                     }
                      break;
                
                 case 58:
                     {
-                       
+                        bgmAudioManager.StopTutorialBGMTrack();
                         yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Panda));
+                        bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack1);
                     }
                     break;
 
                 case 75:
                     {
-                        
+                        bgmAudioManager.StopTutorialBGMTrack();
                         gestures.SetActive(true);
                         comms.SetActive(false);
                         poseSelector.SetActive(true);
@@ -108,6 +119,19 @@ public class TutorialSequencer : MonoBehaviour
                         Destroy(poseSelector);
                         gestures.SetActive(false);
                         comms.SetActive(true);
+                        bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack2);
+                    }
+                    break;
+
+                case 80:
+                    {
+                        bgmAudioManager.StopTutorialBGMTrack();
+                    }
+                    break;
+
+                case 81:
+                    {
+                        bgmAudioManager.PlayTutorialBGMTrack(bgmAudioManager.tutorialBGMtrack3);
                     }
                     break;
 
@@ -135,6 +159,7 @@ public class TutorialSequencer : MonoBehaviour
             if (dialogueManager.currentSnippetIndex == 152)
             {
                 Debug.Log("reached the end of the snippets!");
+                bgmAudioManager.StopTutorialBGMTrack();
                 screenFader.ChangeScene("Main");
                 StopAllCoroutines();
             }

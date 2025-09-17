@@ -54,7 +54,7 @@ public class TutorialBGMAudio : MonoBehaviour
 
         while (timeElapsed < timeToFade)
         {
-            tutorialBGMAudioSource.volume = Mathf.Lerp(0, 0.75f, timeElapsed / timeToFade);
+            tutorialBGMAudioSource.volume = Mathf.Lerp(0, 0.3f, timeElapsed / timeToFade);
             timeElapsed += Time.deltaTime;
             yield return null;
 
@@ -69,7 +69,7 @@ public class TutorialBGMAudio : MonoBehaviour
 
         while (timeElapsed < timeToFade)
         {
-            tutorialBGMAudioSource.volume = Mathf.Lerp(0.75f, 0, timeElapsed / timeToFade);
+            tutorialBGMAudioSource.volume = Mathf.Lerp(0.3f, 0, timeElapsed / timeToFade);
             timeElapsed += Time.deltaTime;
             yield return null;
 

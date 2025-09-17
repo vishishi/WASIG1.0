@@ -141,7 +141,7 @@ public class StageSequencer : MonoBehaviour
             cheering.Play();
 
             yield return new WaitWhile(() => cheering.isPlaying);
-            Debug.Log("game has ended nya!");
+            screenFader.ChangeScene("End Screen");
 
 
             yield return null;

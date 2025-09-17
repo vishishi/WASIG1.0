@@ -68,8 +68,8 @@ public class TutorialBeatSpawner : MonoBehaviour
 
     IEnumerator MainLoop()
     {
-        int i = 0;
-        GameObject gestureInstance;//Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
+        //int i = 0;
+        //GameObject gestureInstance;//Instantiate(gesturePrefab[i], transform1.position, Quaternion.identity);
         // Step through pause points
         while (currentPauseIndex < pausePoints.Count)
         {

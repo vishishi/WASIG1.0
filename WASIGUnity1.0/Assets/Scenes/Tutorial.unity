@@ -30704,41 +30704,6 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: 7e0972b506014bb479bf607ce4e0f8cf, type: 3}
     snippetTime: 3.5
     characterName: Maki
-  - dialogueSentenceEnglish: "\u2026Interesting choice."
-    snippetVA: {fileID: 8300000, guid: aa96dd6b8a559b64498b5a54266d67a9, type: 3}
-    snippetTime: 1.5
-    characterName: Maki
-  - dialogueSentenceEnglish: What do you mean by that??
-    snippetVA: {fileID: 8300000, guid: 7fb3c5e19c69d8f4dbba68cc53d382cb, type: 3}
-    snippetTime: 2.5
-    characterName: Shiki
-  - dialogueSentenceEnglish: "Nothing, nothing. You\u2019ll do great with that pose!
-      Now let\u2019s practise it."
-    snippetVA: {fileID: 8300000, guid: 7718b71e100e7b6419a126deefd26657, type: 3}
-    snippetTime: 5.5
-    characterName: Maki
-  - dialogueSentenceEnglish: "This one\u2019s a bit different, right?"
-    snippetVA: {fileID: 8300000, guid: f6f0c8268958c4844b98640e662e3d13, type: 3}
-    snippetTime: 1.5
-    characterName: Shiki
-  - dialogueSentenceEnglish: "Yeah, but they\u2019ll cue you for this too."
-    snippetVA: {fileID: 8300000, guid: 42455d0dbc6ab284bb2a6c2d22c9cdf8, type: 3}
-    snippetTime: 3.5
-    characterName: Maki
-  - dialogueSentenceEnglish: When you see the sign of your pose just do it! Hold
-      it for maximum impact!
-    snippetVA: {fileID: 8300000, guid: 23a3e1107a28248478d12d40a998d07b, type: 3}
-    snippetTime: 6.5
-    characterName: Maki
-  - dialogueSentenceEnglish: Just do it where I see it?
-    snippetVA: {fileID: 8300000, guid: c34bf22d16299ee4f8e5251e7e0432e0, type: 3}
-    snippetTime: 2.5
-    characterName: Shiki
-  - dialogueSentenceEnglish: "Yep! And remember to hold for as long as you\u2019re
-      told, if you can, the crowd love that. Let\u2019s try it."
-    snippetVA: {fileID: 8300000, guid: ee1500e687fab094c88ff202da2e40c4, type: 3}
-    snippetTime: 7.5
-    characterName: Maki
   - dialogueSentenceEnglish: "I think I\u2019m getting the hang of this. Are we done
       now?"
     snippetVA: {fileID: 8300000, guid: 98bd3d9406579024fab66300dd062968, type: 3}
@@ -31110,7 +31075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37101,8 +37066,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialBGMtrack1: {fileID: 8300000, guid: fe903ace51c76714988a41c658adfd63, type: 3}
-  tutorialBGMtrack2: {fileID: 0}
-  tutorialBGMtrack3: {fileID: 0}
+  tutorialBGMtrack2: {fileID: 8300000, guid: f9a6bafddfe84ab4e9e9a6f95c63b62c, type: 3}
+  tutorialBGMtrack3: {fileID: 8300000, guid: 8694f8906dbb7d24499140164ac7ebcb, type: 3}
   tutorialBGMAudioSource: {fileID: 2068642643}
 --- !u!1 &2073448534
 GameObject:
