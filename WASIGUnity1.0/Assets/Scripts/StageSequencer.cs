@@ -135,7 +135,7 @@ public class StageSequencer : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitUntil(() => hasStarted);
+            yield return new WaitUntil(() => KNP.isPlaying);
             yield return new WaitWhile(() => KNP.isPlaying);
             isChearing = true;
             cheering.Play();
