@@ -20,9 +20,9 @@ public class SplashScreenSequencer : MonoBehaviour
 
     [Header ("References")]
     public GameObject pointableScreen;
-    public GameObject[] buttons; 
+    public GameObject rhythmButton;
     public ScreenFader screenFader;
-    public ChoiceManager choiceManager;
+  
 
     [HideInInspector] public bool hasPointed;
     [HideInInspector] public bool choseRythm = false;
@@ -33,11 +33,7 @@ public class SplashScreenSequencer : MonoBehaviour
     {
         StartCoroutine(SSSequencer());
         pointableScreen.SetActive(false);
-        foreach (var buttons in buttons)
-        {
-            buttons.SetActive(false);
-        }
-
+        rhythmButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -71,17 +67,12 @@ public class SplashScreenSequencer : MonoBehaviour
        
         yield return new WaitForSeconds(3);
         pointableScreen.SetActive(true);
-        yield return new WaitUntil(() => hasPointed);
-        Debug.Log("has pointed");
-      
-        foreach (var buttons in  buttons)
-        {
-            buttons.SetActive(true );
-        }
-        choiceManager.MarkGestureAsSelected("Gesture 2");
+    
+     
+        
        
         
-        yield return new WaitForSeconds(3);
+        
         yield return new WaitUntil(() => choseNarra || choseRythm);
         StartCoroutine(FadeMusic(0.1f, 0));
         
