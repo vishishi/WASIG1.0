@@ -7,7 +7,7 @@ using UnityEngine.UI;
 {
     [HideInInspector]
     public AudioSource audioSource;
-    [HideInInspector]
+    
     public AudioSource touchSound;
     [HideInInspector]
     public ParticleSystem particles;
@@ -44,7 +44,8 @@ using UnityEngine.UI;
 
     public virtual void UnSignpost()
     {
-        audioSource.Stop(); particles.Stop();
+        audioSource.Stop();
+        particles.Stop();
         Debug.Log (gameObject.name + " has stopped signposting!");
     }
 
@@ -64,7 +65,7 @@ using UnityEngine.UI;
         animator = GetComponentInChildren<Animator>();
         myCol = GetComponent<Collider>() ?? GetComponentInChildren<Collider>();
         dialogueObjectsManager = GetComponentInChildren<DialogueObjectsManager>();
-        touchSound = GetComponentInChildren<AudioSource>();
+      
     }
 
 
@@ -91,8 +92,9 @@ using UnityEngine.UI;
 
         foreach (var snippets in dialogueObjectsManager.dialogueObjectsSnippets)
         {
-            yield return new WaitForSeconds(dialogueObjectsManager.dialogueObjectsSnippets[dialogueObjectsManager.currentSnippetIndex].snippetTime);
             dialogueObjectsManager.NextDialogueSnippet();
+            yield return new WaitForSeconds(dialogueObjectsManager.dialogueObjectsSnippets[dialogueObjectsManager.currentSnippetIndex].snippetTime);
+            
 
         }
 
@@ -105,19 +107,21 @@ using UnityEngine.UI;
 
     protected virtual void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Hand")) return;
+        if (other.CompareTag("Hand"))
+        {
+            Debug.Log("Successful hands!");
+        
 
-        Debug.Log("Successful hands!");
+            UnSignpost();
+            touchSound.Play();
 
-        UnSignpost();
-        touchSound.Play();
+            // Approximate contact point for TRIGGERS:
 
-        // Approximate contact point for TRIGGERS:
-
-        Vector3 pointOnMe = myCol ? myCol.ClosestPoint(other.bounds.center) : transform.position;
-        Vector3 pointOnThem = other.ClosestPoint(pointOnMe);
-        Vector3 spawnPos = (pointOnMe + pointOnThem) * 0.5f;
-
-        PlayAnimation(spawnPos);
+            Vector3 pointOnMe = myCol ? myCol.ClosestPoint(other.bounds.center) : transform.position;
+            Vector3 pointOnThem = other.ClosestPoint(pointOnMe);
+            Vector3 spawnPos = (pointOnMe + pointOnThem) * 0.5f;
+            myCol.enabled = false;
+            PlayAnimation(spawnPos);
+        }
     }
 }

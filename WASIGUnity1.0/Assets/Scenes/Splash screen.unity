@@ -30117,18 +30117,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534609087}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -2493.0015}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -3055}
   m_LocalScale: {x: 10.268586, y: 5.949699, z: 5.9497}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 739931511}
   - {fileID: 2029576511}
   m_Father: {fileID: 187230744}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 1569.8496, y: -614}
+  m_AnchoredPosition: {x: 1624, y: 352}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &534609089
@@ -65526,9 +65526,6 @@ MonoBehaviour:
   - {fileID: 1625956655}
   pointableScreen: {fileID: 187230743}
   rhythmButton: {fileID: 0}
-  buttons:
-  - {fileID: 534609087}
-  - {fileID: 245798374}
   screenFader: {fileID: 1030739898}
   hasPointed: 0
   choseRythm: 0

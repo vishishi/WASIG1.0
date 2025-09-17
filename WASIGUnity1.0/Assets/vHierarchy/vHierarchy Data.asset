@@ -146,6 +146,7 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-2019728231-0
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-7850452364037595823-4853167343655517817
         - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1784410723-0
+        - globalObjectIdString: GlobalObjectId_V1-2-a408bea6dd1f7b8478110bb388fbe953-1324465484363781157-1108590958
         values:
         - colorIndex: 0
           iconNameOrGuid: cs Script Icon
@@ -191,6 +192,8 @@ MonoBehaviour:
           iconNameOrGuid: WheelCollider Icon
         - colorIndex: 0
           iconNameOrGuid: BoxCollider Icon
+        - colorIndex: 0
+          iconNameOrGuid: WheelCollider Icon
     - goDatas_byGlobalId:
         keys:
         - globalObjectIdString: GlobalObjectId_V1-2-1e1dfebe50fcbf24986b03ef50aa8c97-970531546-0

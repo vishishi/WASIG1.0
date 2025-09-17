@@ -18,6 +18,9 @@ public class DialogueObjectsManager : MonoBehaviour
     {
 
         dialogueText.text = dialogueObjectsSnippets[currentSnippetIndex].dialogueSentenceEnglish;
+        dialogueAudioSource.Stop();
+        dialogueAudioSource.clip = dialogueObjectsSnippets[currentSnippetIndex].snippetVA;
+        dialogueAudioSource.Play();
 
     }
 
