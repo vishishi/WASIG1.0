@@ -469,7 +469,7 @@ PrefabInstance:
     - target: {fileID: 5599440595924554485, guid: ce46a9125a1c8f74698c940ab9158fe9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7500001
+      value: 0.90000004
       objectReference: {fileID: 0}
     - target: {fileID: 5599440595924554485, guid: ce46a9125a1c8f74698c940ab9158fe9,
         type: 3}
@@ -35923,7 +35923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &933727066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37748,7 +37748,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a13f9224c686c094782e79e8b6703a1f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -38972,8 +38972,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.42, y: 1.95, z: 0.87}
-  m_Center: {x: -0.00000011920929, y: 1.75, z: -0.12}
+  m_Size: {x: 5.42, y: 1.95, z: 0.79}
+  m_Center: {x: -0.00000011920929, y: 1.75, z: -0.28}
 --- !u!82 &1208312381
 AudioSource:
   m_ObjectHideFlags: 0
@@ -38986,7 +38986,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a13f9224c686c094782e79e8b6703a1f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -39589,7 +39589,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a13f9224c686c094782e79e8b6703a1f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -55098,7 +55098,7 @@ PrefabInstance:
     - target: {fileID: 299991276946354888, guid: f4d747d2cb4f82d4aa061bed89931fa2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7500001
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 299991276946354888, guid: f4d747d2cb4f82d4aa061bed89931fa2,
         type: 3}
@@ -63006,7 +63006,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a13f9224c686c094782e79e8b6703a1f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 0.47
   Loop: 1
   Mute: 0
@@ -63413,7 +63413,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a13f9224c686c094782e79e8b6703a1f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -63789,7 +63789,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a13f9224c686c094782e79e8b6703a1f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -64074,7 +64074,27 @@ PrefabInstance:
     - target: {fileID: 4617284403785227391, guid: 66e275674b1c13b429aaafeeaec6b476,
         type: 3}
       propertyPath: m_Size.x
-      value: 5.47
+      value: 4.2998533
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617284403785227391, guid: 66e275674b1c13b429aaafeeaec6b476,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 6.468023
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617284403785227391, guid: 66e275674b1c13b429aaafeeaec6b476,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.58507717
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617284403785227391, guid: 66e275674b1c13b429aaafeeaec6b476,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617284403785227391, guid: 66e275674b1c13b429aaafeeaec6b476,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.26598862
       objectReference: {fileID: 0}
     - target: {fileID: 4813077249247778754, guid: 66e275674b1c13b429aaafeeaec6b476,
         type: 3}
@@ -64723,7 +64743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.07}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.17, y: 0.47}
+  m_AnchoredPosition: {x: -0.17, y: 0.254}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052182585

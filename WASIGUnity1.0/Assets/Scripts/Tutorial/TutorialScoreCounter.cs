@@ -33,6 +33,7 @@ public class TutorialScoreCounter : MonoBehaviour
     public TutorialBeatSpawner beatSpawner;
     public Image[] commsImages;
     public Image backgroundImage;
+    public AudioSource retryLine;
 
     public GameObject tutorialRetryScreen;
     public GameObject comms;
@@ -68,6 +69,7 @@ public class TutorialScoreCounter : MonoBehaviour
         lastMiss = miss;
         perfectStreak = 0;
         StartCoroutine(TutorialIdentifier());
+       
         
     }
 
@@ -156,10 +158,18 @@ public class TutorialScoreCounter : MonoBehaviour
     #region Coroutines
     IEnumerator TutorialIdentifier()
     {
-        while(true)
+        Debug.Log("Score counter coroutine started!");
+        while (dialogueManager.currentSnippetIndex < 60)
         {
             switch(dialogueManager.currentSnippetIndex)
             {
+                case 1:
+                    {
+                        Debug.Log(" <color=#00FFFF> Score Counter: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
+                        Debug.Log(" <color=#00FFFF> Score Counter: </color> " + "read the snippet time as " + snippetTime.ToString());
+                    }
+
+                    break;
                 case 30:
                 {
                         Debug.Log(" <color=#00FFFF> Score Counter: </color> " + "read the snippet number as " + dialogueManager.currentSnippetIndex.ToString());
@@ -181,19 +191,17 @@ public class TutorialScoreCounter : MonoBehaviour
                     {
                         yield return new WaitForSeconds(snippetTime);
                         yield return StartCoroutine(RunPhase(TutorialPhase.Panda, 15, 3));
+                        yield return new WaitUntil(() => isCompleted(TutorialPhase.Panda));
+                        Debug.Log("tutorial has been completed successfully");
+                        StopAllCoroutines();
+                       
                     }
                     break;
 
-                //case 84:
-                    //{
-                    //    yield return new WaitForSeconds(snippetTime);
-                    //    yield return StartCoroutine(RunPhase(TutorialPhase.Gesture, 20, 3));
-                    //}
-                    //break;
+
             }
             yield return null;
 
-            break;
         }
     }
 
@@ -213,13 +221,14 @@ public class TutorialScoreCounter : MonoBehaviour
         {
             if (isCompleted(phase))
             {
+                Debug.Log(phase.ToString() + "was completed before the loop");
                 success = true;
+                break;
             }
 
-            else if (!isCompleted(phase))
-            {
+         
                 comms.SetActive(false);
-            }
+            
 
             float elapsedTime = 0f;
 
@@ -239,16 +248,24 @@ public class TutorialScoreCounter : MonoBehaviour
 
             if (!success)
             {
+                Debug.Log(phase + " attempt failed. Restarting...");
                 beatSpawner.Extermination();
                 yield return new WaitForSeconds(2);
                 tutorialRetryScreen.SetActive(true);
-                yield return new WaitForSeconds(5);
+                retryLine.Play();
+                yield return new WaitWhile(() => retryLine.isPlaying);
                 tutorialRetryScreen.SetActive(false);
+                perfect = 0;
+                good = 0;
+                Debug.Log("<color=red>Failed the current phase</color>" + "<b>Score resetting<b/>"
+                    + "perfect: " + perfect +
+                    " good: " + good);
                 beatSpawner.RestartFromCheckpoint(); // restart music & beats
                 
             }
         }
-
+        Debug.Log("Number of perfects: " + perfect);
+        Debug.Log("Number of good: " + good);
         perfect = 0;
         good = 0;
         MarkCompleted(phase);

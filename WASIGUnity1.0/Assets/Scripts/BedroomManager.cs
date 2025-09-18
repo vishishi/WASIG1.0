@@ -33,7 +33,7 @@ public class BedroomManager : MonoBehaviour
         {
             yield return new WaitUntil(() => sceneChanger == 5);
             
-                watchInteractor.ReceiveCall();
+            watchInteractor.ReceiveCall();
             
             yield return new WaitUntil(() => watchInteractor.hasLooked);
             yield return new WaitForSeconds(5);
@@ -46,8 +46,9 @@ public class BedroomManager : MonoBehaviour
 
             foreach (var snippets in dialogueManager.dialogueSnippets)
             {
-                yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
                 dialogueManager.NextDialogueSnippet();
+                yield return new WaitForSeconds(dialogueManager.dialogueSnippets[dialogueManager.currentSnippetIndex].snippetTime);
+             
 
             }
 

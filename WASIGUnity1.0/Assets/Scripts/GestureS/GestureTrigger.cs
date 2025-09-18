@@ -113,28 +113,31 @@ public class GestureTrigger : MonoBehaviour
         Color startColor = image.color;
         Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 1f);
 
-   
+
 
         while (elapsed < duration)
         {
-            elapsed += Time.deltaTime;
-            float fadeProgress = Mathf.Clamp01(elapsed / duration);
-            image.color = Color.Lerp(startColor, targetColor, fadeProgress);
-
-            // Trigger particles halfway through fade
-            if (image.color.a >= 0.5f && !heartParticles.isPlaying)
+            if (scene.name != "Tutorial")
             {
-                heartParticles.Play();
-                Debug.Log("Particles playing!");
+                elapsed += Time.deltaTime;
+                float fadeProgress = Mathf.Clamp01(elapsed / duration);
+                image.color = Color.Lerp(startColor, targetColor, fadeProgress);
+
+                // Trigger particles halfway through fade
+                if (image.color.a >= 0.5f && !heartParticles.isPlaying)
+                {
+                    heartParticles.Play();
+                    Debug.Log("Particles playing!");
+                }
+
+                yield return null;
             }
 
-            yield return null;
+            // Wait for alpha to finish
+            yield return new WaitUntil(() => image.color.a >= 0.98f);
+            StartCoroutine(FadeOutImage(4));
+            bothTrue = false;
         }
-
-        // Wait for alpha to finish
-        yield return new WaitUntil(() => image.color.a >= 0.98f);
-        StartCoroutine(FadeOutImage(4));
-        bothTrue = false;
     }
 
     //Coroutine to make the heart fade out and the particles stop

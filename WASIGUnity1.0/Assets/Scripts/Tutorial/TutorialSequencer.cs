@@ -136,16 +136,7 @@ public class TutorialSequencer : MonoBehaviour
                     break;
 
 
-                //case 83:
-                //{
-                    
-                //    gestures.SetActive(true);
-                //    yield return new WaitUntil(() => scoreCounter.isCompleted(TutorialPhase.Gesture));
-                //    gestures.SetActive(false);
-                //}
-
-                //break;
-                               
+  
                     
             }
         }
@@ -157,7 +148,7 @@ public class TutorialSequencer : MonoBehaviour
     {
         while (true)
         {
-            if (dialogueManager.currentSnippetIndex == 152)
+            if (dialogueManager.currentSnippetIndex == dialogueManager.dialogueSnippets.Length)
             {
                 Debug.Log("reached the end of the snippets!");
                 bgmAudioManager.StopTutorialBGMTrack();
