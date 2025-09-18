@@ -30395,7 +30395,7 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: 6fa10a7187d2576469079dd0da13e423, type: 3}
     snippetTime: 5.5
     characterName: Shiki
-  - dialogueSentenceEnglish: Are you psychic? I just got here
+  - dialogueSentenceEnglish: Are you psychic? I just got here.
     snippetVA: {fileID: 8300000, guid: 60bf584450dd15d469d9a5d016f0e207, type: 3}
     snippetTime: 2.5
     characterName: Shiki
@@ -30417,7 +30417,7 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: 4e72da866b4a2b04daddf6b3e709694e, type: 3}
     snippetTime: 1.5
     characterName: Shiki
-  - dialogueSentenceEnglish: " Yes! Let\u2019s get started"
+  - dialogueSentenceEnglish: " Yes! Let\u2019s get started."
     snippetVA: {fileID: 8300000, guid: 843bd254113d6c143ba5e4665ca4d4fc, type: 3}
     snippetTime: 2.5
     characterName: Maki
@@ -30449,7 +30449,7 @@ MonoBehaviour:
     snippetTime: 2.5
     characterName: Maki
   - dialogueSentenceEnglish: 'OK Shiki, I want you to point at the pink triangles
-      to the beat. | '
+      to the beat. '
     snippetVA: {fileID: 8300000, guid: 33151a2feb89ead48821f6b0a7a0cf14, type: 3}
     snippetTime: 4.5
     characterName: Maki
@@ -30480,7 +30480,7 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: b7a404af0ef26944c9eb46962746b893, type: 3}
     snippetTime: 3.5
     characterName: Maki
-  - dialogueSentenceEnglish: " It\u2019s really not that hard"
+  - dialogueSentenceEnglish: " It\u2019s really not that hard."
     snippetVA: {fileID: 8300000, guid: 2c80ebd92e663bc44bbb72bc0cef1f87, type: 3}
     snippetTime: 1.5
     characterName: Maki
@@ -30544,7 +30544,7 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: 06cb9e2b9d44d5347a44e1b178d12138, type: 3}
     snippetTime: 1
     characterName: Maki
-  - dialogueSentenceEnglish: "I wish. Let\u2019s just give it a go"
+  - dialogueSentenceEnglish: "I wish. Let\u2019s just give it a go."
     snippetVA: {fileID: 8300000, guid: 19696df4b137a414fa0d0a5f1e7b3cec, type: 3}
     snippetTime: 3.5
     characterName: Shiki
@@ -30645,7 +30645,7 @@ MonoBehaviour:
       your unique situation, management have simplified your routine quite a bit,
       at least for now."
     snippetVA: {fileID: 8300000, guid: c55abbcbe81b68240a37f7bd1a34d290, type: 3}
-    snippetTime: 8.5
+    snippetTime: 9
     characterName: Maki
   - dialogueSentenceEnglish: "There\u2019s basically only one more thing to add."
     snippetVA: {fileID: 8300000, guid: cf336992000267d4bbcbf2063d0ededb, type: 3}
