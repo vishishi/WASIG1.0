@@ -15310,12 +15310,8 @@ MonoBehaviour:
   dialogueText: {fileID: 1610420004}
   dialogueAudioSource: {fileID: 800932625}
   dialogueObjectsSnippets:
-  - dialogueSentenceEnglish: Mine and Maki's tastes in decor can be... different
-      at times. But one thing we agree on is light. It can get so dingy and depressing
-      on this ship. I thought these pink lamps were a bit much when Maki got them,
-      but they brighten the room up. Leadership have been telling us that we need
-      to cut down on electricity usage recently though, so we can't keep them on
-      as much. I wonder why...
+  - dialogueSentenceEnglish: 'Mine and Maki''s tastes in decor can be... different
+      at times. '
     snippetVA: {fileID: 8300000, guid: b7a311e8694a78a42ad7cd48ec6ab856, type: 3}
     snippetTime: 5.5
   - dialogueSentenceEnglish: 'But one thing we agree on is light. It can get so dingy
@@ -15328,14 +15324,13 @@ MonoBehaviour:
     snippetTime: 5.5
   - dialogueSentenceEnglish: Leadership have been telling us that we need to cut
       down on electricity usage recently though, so we can't keep them on as much.
-      I wonder why...
     snippetVA: {fileID: 8300000, guid: 0e8d47028c7052b4897f683d18c469a2, type: 3}
     snippetTime: 7.5
   - dialogueSentenceEnglish: I wonder why...
     snippetVA: {fileID: 8300000, guid: 9603429c373575e4890f29154c025f80, type: 3}
-    snippetTime: 1.5
+    snippetTime: 2
   currentSnippetIndex: 0
-  isTesting: 0
+  isTesting: 1
 --- !u!4 &494231307 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b6f5cc38024d4164cbb59f9a79706ebb,
@@ -18225,7 +18220,7 @@ MonoBehaviour:
     characterName: Shiki
   - dialogueSentenceEnglish: "It\u2019s a lot, Maki, I won\u2019t lie."
     snippetVA: {fileID: 8300000, guid: d79da5ce354bf3c4e8611fea56ba51f0, type: 3}
-    snippetTime: 2.5
+    snippetTime: 3
     characterName: Shiki
   - dialogueSentenceEnglish: "But I committed to this. I won\u2019t let you down. "
     snippetVA: {fileID: 8300000, guid: 733c0f9f7c83c714c8d0491daae92e78, type: 3}
@@ -18255,7 +18250,7 @@ MonoBehaviour:
     characterName: Shiki
   - dialogueSentenceEnglish: 'Well, about fifteen minutes from now. '
     snippetVA: {fileID: 8300000, guid: 780ac533996cb7243a9dc96b63835a46, type: 3}
-    snippetTime: 2.5
+    snippetTime: 3
     characterName: Maki
   - dialogueSentenceEnglish: Maki, I literally just woke up.
     snippetVA: {fileID: 0}
