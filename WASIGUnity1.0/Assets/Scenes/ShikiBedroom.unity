@@ -18250,7 +18250,7 @@ MonoBehaviour:
     characterName: Shiki
   - dialogueSentenceEnglish: 'Well, about fifteen minutes from now. '
     snippetVA: {fileID: 8300000, guid: 780ac533996cb7243a9dc96b63835a46, type: 3}
-    snippetTime: 3
+    snippetTime: 3.5
     characterName: Maki
   - dialogueSentenceEnglish: Maki, I literally just woke up.
     snippetVA: {fileID: 0}
@@ -18273,7 +18273,7 @@ MonoBehaviour:
   - dialogueSentenceEnglish: "Will you be there? Having the best idol on the ship
       show me how it\u2019s done would really help. "
     snippetVA: {fileID: 8300000, guid: 446b908701588ba49b440d2156b36e90, type: 3}
-    snippetTime: 3
+    snippetTime: 3.5
     characterName: Shiki
   - dialogueSentenceEnglish: "\u2026 "
     snippetVA: {fileID: 0}
@@ -18315,7 +18315,7 @@ MonoBehaviour:
   - dialogueSentenceEnglish: Hey, beats embarrassing yourself in front of the crowds!
       Now get your butt over there!
     snippetVA: {fileID: 8300000, guid: 4c38520f3ec226642a884334ea7ed00b, type: 3}
-    snippetTime: 6.5
+    snippetTime: 7
     characterName: Maki
   - dialogueSentenceEnglish: Yes boss!
     snippetVA: {fileID: 8300000, guid: fc1fd1ee8625a8349bc20c898971fb71, type: 3}
