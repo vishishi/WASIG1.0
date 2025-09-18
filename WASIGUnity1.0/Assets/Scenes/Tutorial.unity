@@ -30554,7 +30554,7 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: 6fa10a7187d2576469079dd0da13e423, type: 3}
     snippetTime: 5.5
     characterName: Shiki
-  - dialogueSentenceEnglish: Are you psychic? I just got here
+  - dialogueSentenceEnglish: Are you psychic? I just got here.
     snippetVA: {fileID: 8300000, guid: 60bf584450dd15d469d9a5d016f0e207, type: 3}
     snippetTime: 2.5
     characterName: Shiki
@@ -30562,7 +30562,7 @@ MonoBehaviour:
       five to six times a week since I was 12, I know how long it takes. I added
       three minutes as you know it less well. Minus one as you were in a hurry. "
     snippetVA: {fileID: 8300000, guid: ca9ef33b34cb49242bdb19c1d7a5dee2, type: 3}
-    snippetTime: 11.5
+    snippetTime: 12
     characterName: Maki
   - dialogueSentenceEnglish: "\u2026Fair."
     snippetVA: {fileID: 8300000, guid: a8f4f6219adb9794b9dec93148c52d2b, type: 3}
@@ -30576,7 +30576,7 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: 4e72da866b4a2b04daddf6b3e709694e, type: 3}
     snippetTime: 1.5
     characterName: Shiki
-  - dialogueSentenceEnglish: " Yes! Let\u2019s get started"
+  - dialogueSentenceEnglish: " Yes! Let\u2019s get started."
     snippetVA: {fileID: 8300000, guid: 843bd254113d6c143ba5e4665ca4d4fc, type: 3}
     snippetTime: 2.5
     characterName: Maki
@@ -30608,7 +30608,7 @@ MonoBehaviour:
     snippetTime: 2.5
     characterName: Maki
   - dialogueSentenceEnglish: 'OK Shiki, I want you to point at the pink triangles
-      to the beat. | '
+      to the beat. '
     snippetVA: {fileID: 8300000, guid: 33151a2feb89ead48821f6b0a7a0cf14, type: 3}
     snippetTime: 4.5
     characterName: Maki
@@ -30639,7 +30639,7 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: b7a404af0ef26944c9eb46962746b893, type: 3}
     snippetTime: 3.5
     characterName: Maki
-  - dialogueSentenceEnglish: " It\u2019s really not that hard"
+  - dialogueSentenceEnglish: " It\u2019s really not that hard."
     snippetVA: {fileID: 8300000, guid: 2c80ebd92e663bc44bbb72bc0cef1f87, type: 3}
     snippetTime: 1.5
     characterName: Maki
@@ -30683,7 +30683,7 @@ MonoBehaviour:
     characterName: Maki
   - dialogueSentenceEnglish: Point taken.
     snippetVA: {fileID: 8300000, guid: f3d80652f26d68e4681eaa3b21e6282d, type: 3}
-    snippetTime: 1
+    snippetTime: 2
     characterName: Shiki
   - dialogueSentenceEnglish: "It\u2019s just the same thing. "
     snippetVA: {fileID: 8300000, guid: 24cb53ba16908c84fbd4ef2ac5dc125e, type: 3}
@@ -30703,7 +30703,7 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: 06cb9e2b9d44d5347a44e1b178d12138, type: 3}
     snippetTime: 1
     characterName: Maki
-  - dialogueSentenceEnglish: "I wish. Let\u2019s just give it a go"
+  - dialogueSentenceEnglish: "I wish. Let\u2019s just give it a go."
     snippetVA: {fileID: 8300000, guid: 19696df4b137a414fa0d0a5f1e7b3cec, type: 3}
     snippetTime: 3.5
     characterName: Shiki
@@ -30804,7 +30804,7 @@ MonoBehaviour:
       your unique situation, management have simplified your routine quite a bit,
       at least for now."
     snippetVA: {fileID: 8300000, guid: c55abbcbe81b68240a37f7bd1a34d290, type: 3}
-    snippetTime: 8.5
+    snippetTime: 9
     characterName: Maki
   - dialogueSentenceEnglish: "There\u2019s basically only one more thing to add."
     snippetVA: {fileID: 8300000, guid: cf336992000267d4bbcbf2063d0ededb, type: 3}
@@ -30947,14 +30947,6 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: 2be0d9363aeb27647a1874fd7f1f3572, type: 3}
     snippetTime: 3.5
     characterName: Maki
-  - dialogueSentenceEnglish: Of course music is important, Maki!
-    snippetVA: {fileID: 8300000, guid: 0e7286089e26b234f878775830cfb596, type: 3}
-    snippetTime: 4
-    characterName: Shiki
-  - dialogueSentenceEnglish: "You know I\u2019ve always supported you."
-    snippetVA: {fileID: 8300000, guid: eed666c702f5d9d488445cd67c38e65e, type: 3}
-    snippetTime: 2.5
-    characterName: Shiki
   - dialogueSentenceEnglish: "But you asked me if I ever wondered if there was something
       more behind this, I\u2019m saying I did."
     snippetVA: {fileID: 8300000, guid: b46c15439ca5d2d4da811e37116f54f0, type: 3}
@@ -30984,11 +30976,6 @@ MonoBehaviour:
   - dialogueSentenceEnglish: "Maki, you\u2019re the one who keeps saying we don\u2019t
       have all day, what is it?"
     snippetVA: {fileID: 8300000, guid: 1ef9fe9610697a3469060ab18cceaae4, type: 3}
-    snippetTime: 4.5
-    characterName: Shiki
-  - dialogueSentenceEnglish: "Maki, you\u2019re the one who keeps saying we don\u2019t
-      have all day, what is it?"
-    snippetVA: {fileID: 8300000, guid: 1ef9fe9610697a3469060ab18cceaae4, type: 3}
     snippetTime: 5
     characterName: Shiki
   - dialogueSentenceEnglish: The concerts help power the ship.
@@ -31014,7 +31001,7 @@ MonoBehaviour:
     characterName: Maki
   - dialogueSentenceEnglish: "It\u2019s something to do with the energy in the crowd.
       The more they get excited, the more charge for the ship\u2019s power."
-    snippetVA: {fileID: 8300000, guid: 672d538c7ee23434bb7eeac102595f58, type: 3}
+    snippetVA: {fileID: 8300000, guid: 937776f52303bab4fbd73e27175d5943, type: 3}
     snippetTime: 8.5
     characterName: Maki
   - dialogueSentenceEnglish: "\u2026I don\u2019t know what to say. I knew something
@@ -31139,12 +31126,6 @@ MonoBehaviour:
     snippetVA: {fileID: 8300000, guid: 48be3183f51537946b877d637acb68ec, type: 3}
     snippetTime: 11.5
     characterName: Maki
-  - dialogueSentenceEnglish: "So we\u2019re almost out of time. Listen Shiki, you
-      can\u2019t repeat what I just told you about the performances and the ship\u2019s
-      power, OK?"
-    snippetVA: {fileID: 8300000, guid: ef7ba85842e9a6d4ea735cf841bd6330, type: 3}
-    snippetTime: 9.5
-    characterName: Maki
   - dialogueSentenceEnglish: 'Of course, but listen, we do need to talk more later. '
     snippetVA: {fileID: 8300000, guid: 10dbadeba52052b46b752b3c342fd77e, type: 3}
     snippetTime: 4.5
@@ -31158,15 +31139,6 @@ MonoBehaviour:
       I\u2019ve covered everything. I know you will be great."
     snippetVA: {fileID: 8300000, guid: 0a1a256b143ea2d429b7cb27565de045, type: 3}
     snippetTime: 9.5
-    characterName: Maki
-  - dialogueSentenceEnglish: "Thanks. I\u2019ll try my best."
-    snippetVA: {fileID: 8300000, guid: a4a29b7cf3989e84085cdd7dfa751b81, type: 3}
-    snippetTime: 2.5
-    characterName: Shiki
-  - dialogueSentenceEnglish: And enjoy yourself up there! Concerts can be scary,
-      but they are a lot of fun, I promise.
-    snippetVA: {fileID: 8300000, guid: be9b89980209f164f9454b4ffbb6d6b2, type: 3}
-    snippetTime: 8.5
     characterName: Maki
   - dialogueSentenceEnglish: I love you Maki.
     snippetVA: {fileID: 8300000, guid: 24c764e251faf39419d5760ceccd7d46, type: 3}
