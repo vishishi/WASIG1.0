@@ -148,7 +148,7 @@ public class TutorialSequencer : MonoBehaviour
     {
         while (true)
         {
-            if (dialogueManager.currentSnippetIndex == dialogueManager.dialogueSnippets.Length)
+            if (dialogueManager.currentSnippetIndex == 138)
             {
                 Debug.Log("reached the end of the snippets!");
                 bgmAudioManager.StopTutorialBGMTrack();

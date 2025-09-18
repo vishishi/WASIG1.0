@@ -257,7 +257,7 @@ public class TutorialScoreCounter : MonoBehaviour
                 tutorialRetryScreen.SetActive(false);
                 perfect = 0;
                 good = 0;
-                Debug.Log("<color=red>Failed the current phase</color>" + "<b>Score resetting<b/>"
+                Debug.Log("<color=red> Failed the current phase </color>" + "<b> Score resetting <b/>"
                     + "perfect: " + perfect +
                     " good: " + good);
                 beatSpawner.RestartFromCheckpoint(); // restart music & beats
@@ -266,6 +266,9 @@ public class TutorialScoreCounter : MonoBehaviour
         }
         Debug.Log("Number of perfects: " + perfect);
         Debug.Log("Number of good: " + good);
+        Debug.Log("<color=green> Passed the current phase </color>" + "<b> Score resetting <b/>"
+                   + "perfect: " + perfect +
+                   " good: " + good);
         perfect = 0;
         good = 0;
         MarkCompleted(phase);

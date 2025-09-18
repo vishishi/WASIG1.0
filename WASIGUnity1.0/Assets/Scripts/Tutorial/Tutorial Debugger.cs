@@ -66,7 +66,7 @@ public class TutorialDebugger : MonoBehaviour
             {
                 case 1:
                     {
-                        dialogueManager.currentSnippetIndex = 152;
+                        dialogueManager.currentSnippetIndex = 138;
                         Debug.Log("FFS index is" + dialogueManager.currentSnippetIndex);
                        
                     }
