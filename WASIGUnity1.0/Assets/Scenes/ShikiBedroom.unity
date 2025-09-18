@@ -171,16 +171,16 @@ MonoBehaviour:
   dialogueText: {fileID: 868791570}
   dialogueAudioSource: {fileID: 800932625}
   dialogueObjectsSnippets:
-  - dialogueSentenceEnglish: 'Maki''s books on idols. '
-    snippetVA: {fileID: 8300000, guid: 164bba903e21a86439a730f117d56a3b, type: 3}
-    snippetTime: 3
-  - dialogueSentenceEnglish: 'Of course, I haven''t read any. '
-    snippetVA: {fileID: 8300000, guid: 0d259ab5fd6d57f439ea003b60a0d485, type: 3}
-    snippetTime: 3
-  - dialogueSentenceEnglish: 'Oh stars, she''s been preparing for this her whole
-      life and I''ve had like, 3 days?! '
-    snippetVA: {fileID: 8300000, guid: b2b8240e139920f418fd51bca1659a4c, type: 3}
-    snippetTime: 7
+  - dialogueSentenceEnglish: "If I go back to bed, I can pretend it's not concert
+      day...\n "
+    snippetVA: {fileID: 8300000, guid: 5531d16a198069041966a7d93ae77c87, type: 3}
+    snippetTime: 5.5
+  - dialogueSentenceEnglish: 'No, get up Shiki. You agreed to this. '
+    snippetVA: {fileID: 8300000, guid: 14aa596f880de284fa1214aceb76f91a, type: 3}
+    snippetTime: 3.3
+  - dialogueSentenceEnglish: There's no turning back now.
+    snippetVA: {fileID: 8300000, guid: 5f3bbb588322c9e4592716bb22aadcc7, type: 3}
+    snippetTime: 2.5
   - dialogueSentenceEnglish: 'Fine. It''s fine. '
     snippetVA: {fileID: 8300000, guid: 322d461a4bb62754bae82db081b609fe, type: 3}
     snippetTime: 2
@@ -15274,7 +15274,7 @@ GameObject:
   - component: {fileID: 492051943}
   - component: {fileID: 492051944}
   m_Layer: 0
-  m_Name: LampDialogueManager
+  m_Name: LampDialogueObjectsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15304,40 +15304,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 492051942}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 797c8bd9f9d1f0f459a048a05d813fe9, type: 3}
+  m_Script: {fileID: 11500000, guid: d7e270f43288c0247a4da068c0f0bf0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 0}
-  characterNameText: {fileID: 0}
-  dialogueAudioSource: {fileID: 0}
-  characterPortrait: {fileID: 0}
-  shikiSprite: {fileID: 0}
-  makiSprite: {fileID: 0}
-  dialogueSnippets:
-  - dialogueSentenceEnglish: 'Idol Planet, Goto''s Garden.. '
-    snippetVA: {fileID: 0}
-    snippetTime: 3
-    characterName: Shiki
-  - dialogueSentenceEnglish: 'The otaku blogs on this ship are pretty intense sometimes. '
-    snippetVA: {fileID: 8300000, guid: aa5f794e33a5c7b41aa97d7ed0c929bb, type: 3}
-    snippetTime: 4
-    characterName: Shiki
-  - dialogueSentenceEnglish: 'I used to read them from time to time, check to see
-      whether Maki was mentioned. '
-    snippetVA: {fileID: 8300000, guid: afa4c6c1c7c20e745898de7adb78eb71, type: 3}
-    snippetTime: 5
-    characterName: Shiki
-  - dialogueSentenceEnglish: 'Just being protective. '
-    snippetVA: {fileID: 8300000, guid: e556361b8c471e14b9ae92600e22a0c4, type: 3}
-    snippetTime: 3
-    characterName: Shiki
-  - dialogueSentenceEnglish: 'But now I know they''ll be talking about me, I can''t
-      even bear to go online. '
-    snippetVA: {fileID: 8300000, guid: f23fa2fe6130933459e43aa7bb54c00e, type: 3}
-    snippetTime: 6
-    characterName: Shiki
+  dialogueText: {fileID: 1610420004}
+  dialogueAudioSource: {fileID: 800932625}
+  dialogueObjectsSnippets:
+  - dialogueSentenceEnglish: Mine and Maki's tastes in decor can be... different
+      at times. But one thing we agree on is light. It can get so dingy and depressing
+      on this ship. I thought these pink lamps were a bit much when Maki got them,
+      but they brighten the room up. Leadership have been telling us that we need
+      to cut down on electricity usage recently though, so we can't keep them on
+      as much. I wonder why...
+    snippetVA: {fileID: 8300000, guid: b7a311e8694a78a42ad7cd48ec6ab856, type: 3}
+    snippetTime: 5.5
+  - dialogueSentenceEnglish: 'But one thing we agree on is light. It can get so dingy
+      and depressing on this ship. '
+    snippetVA: {fileID: 8300000, guid: 175d8b195e361744a8b1a43657edc4d2, type: 3}
+    snippetTime: 6.5
+  - dialogueSentenceEnglish: 'I thought these pink lamps were a bit much when Maki
+      got them, but they brighten the room up. '
+    snippetVA: {fileID: 8300000, guid: ac9b4d160aa713a439c25b5965f16e2b, type: 3}
+    snippetTime: 5.5
+  - dialogueSentenceEnglish: Leadership have been telling us that we need to cut
+      down on electricity usage recently though, so we can't keep them on as much.
+      I wonder why...
+    snippetVA: {fileID: 8300000, guid: 0e8d47028c7052b4897f683d18c469a2, type: 3}
+    snippetTime: 7.5
+  - dialogueSentenceEnglish: I wonder why...
+    snippetVA: {fileID: 8300000, guid: 9603429c373575e4890f29154c025f80, type: 3}
+    snippetTime: 1.5
   currentSnippetIndex: 0
-  isTesting: 1
+  isTesting: 0
 --- !u!4 &494231307 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b6f5cc38024d4164cbb59f9a79706ebb,
@@ -54142,6 +54140,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a30a95e521154224c929c1d4d515712e, type: 3}
+--- !u!114 &1610420004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3752736822035145536, guid: a30a95e521154224c929c1d4d515712e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1610420003}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1618695922
 PrefabInstance:
   m_ObjectHideFlags: 0
