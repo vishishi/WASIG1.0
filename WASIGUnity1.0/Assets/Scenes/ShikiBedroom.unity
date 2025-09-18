@@ -62453,7 +62453,7 @@ MonoBehaviour:
   - dialogueSentenceEnglish: 'Guess I''ll be wearing this today. '
     snippetVA: {fileID: 8300000, guid: 188fcceceddc81a438816ea625d899de, type: 3}
     snippetTime: 3
-  - dialogueSentenceEnglish: Miki is a little bit smaller than me but it just about
+  - dialogueSentenceEnglish: Maki is a little bit smaller than me but it just about
       fits.
     snippetVA: {fileID: 8300000, guid: d3b852a378c079d49a40d856c0f7c192, type: 3}
     snippetTime: 5
